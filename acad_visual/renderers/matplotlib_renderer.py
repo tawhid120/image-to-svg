@@ -123,9 +123,12 @@ class UniversalMatplotlibRenderer:
         anchor_map = {"start": "left", "middle": "center", "end": "right"}
         for lbl in self.ir.labels:
             w_pos = CoordinateTransformer.screen_to_world((lbl.x, lbl.y), self.ir.coordinate_frame, self.ir.width, self.ir.height, self.ir.padding)
-            clean_text = lbl.text.replace("^2", "$^2$").replace('"', '\\"').replace("'", "\\'")
+            txt = lbl.text
+            if any(sym in txt for sym in ["\\alpha", "\\beta", "\\gamma", "\\theta", "\\sqrt", "^2", "_", "="]):
+                if not txt.startswith("$"):
+                    txt = f"${txt}$"
             ha = anchor_map.get(lbl.anchor, "center")
-            code.append(f"    ax.text({w_pos[0]:.3f}, {w_pos[1]:.3f}, '{clean_text}', fontsize=15, ha='{ha}', va='center', zorder=5)")
+            code.append(f"    ax.text({w_pos[0]:.3f}, {w_pos[1]:.3f}, r'{txt}', fontsize=16, ha='{ha}', va='center', zorder=5)")
             code.append("")
 
         code.append("    plt.tight_layout()")

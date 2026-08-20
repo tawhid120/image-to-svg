@@ -41,6 +41,7 @@ class MasterReconstructionPipeline:
         contours = ContourExtractor.extract_contours(cv_data["denoised"])
         features = FeatureDetector.detect_features(cv_data["gray"], cv_data["binary"])
         features["image_size"] = cv_data["dimensions"]
+        features["image_path"] = image_path
         features["contours"] = contours
 
         # 3. Subject-Specific Semantic Scene Generation
