@@ -1,0 +1,386 @@
+{
+  "width": 650.0,
+  "height": 480.0,
+  "padding": 35.0,
+  "background_color": "#FFFFFF",
+  "coordinate_system": {
+    "origin_x": 0.0,
+    "origin_y": 0.0,
+    "scale_x": 1.0,
+    "scale_y": 1.0,
+    "invert_y": true,
+    "show_axes": false,
+    "x_range": [
+      -3.2,
+      5.2
+    ],
+    "y_range": [
+      -2.2,
+      3.4
+    ]
+  },
+  "points": [
+    {
+      "id": "pt_vertex",
+      "x": 255.95238095238093,
+      "y": 283.92857142857144,
+      "label": null,
+      "label_pos": "top_right",
+      "visible": true,
+      "color": "#000000",
+      "radius": 4.0,
+      "is_intersection": false
+    }
+  ],
+  "segments": [
+    {
+      "id": "secant_line",
+      "start": [
+        124.76190476190479,
+        413.43732142857147
+      ],
+      "end": [
+        425.11904761904765,
+        116.93044642857132
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 2.2,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    },
+    {
+      "id": "vertical_stem",
+      "start": [
+        255.95238095238093,
+        116.93044642857132
+      ],
+      "end": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 2.0,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    },
+    {
+      "id": "top_horizontal_m",
+      "start": [
+        255.95238095238093,
+        116.93044642857132
+      ],
+      "end": [
+        425.11904761904765,
+        116.93044642857132
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 2.0,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    },
+    {
+      "id": "left_horizontal_b",
+      "start": [
+        121.30952380952382,
+        178.13758928571428
+      ],
+      "end": [
+        255.95238095238093,
+        178.13758928571428
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 2.0,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    },
+    {
+      "id": "left_chord",
+      "start": [
+        121.30952380952382,
+        178.13758928571428
+      ],
+      "end": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 2.0,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    },
+    {
+      "id": "left_drop",
+      "start": [
+        204.16666666666669,
+        178.13758928571428
+      ],
+      "end": [
+        204.16666666666669,
+        243.23973214285712
+      ],
+      "arrows": "none",
+      "stroke_style": "solid",
+      "stroke_width": 1.8,
+      "color": "#111111",
+      "label": null,
+      "label_pos": "top"
+    }
+  ],
+  "parabolas": [
+    {
+      "id": "parabola_main",
+      "a": 0.38,
+      "b": 0.0,
+      "c": 0.0,
+      "domain": [
+        -2.7,
+        2.75
+      ],
+      "equation_label": "f(x) = ax^2 + bx + c",
+      "equation_label_pos": null,
+      "arrows": "both",
+      "stroke_style": "solid",
+      "stroke_width": 2.4,
+      "color": "#111111",
+      "samples": 100
+    }
+  ],
+  "curves": [],
+  "polygons": [],
+  "right_angles": [
+    {
+      "id": "ra_top",
+      "vertex": [
+        255.95238095238093,
+        116.93044642857132
+      ],
+      "arm1_pt": [
+        425.11904761904765,
+        116.93044642857132
+      ],
+      "arm2_pt": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "size": 18.0,
+      "color": "#000000",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "ra_left",
+      "vertex": [
+        204.16666666666669,
+        178.13758928571428
+      ],
+      "arm1_pt": [
+        121.30952380952382,
+        178.13758928571428
+      ],
+      "arm2_pt": [
+        204.16666666666669,
+        243.23973214285712
+      ],
+      "size": 16.0,
+      "color": "#000000",
+      "stroke_width": 1.6
+    }
+  ],
+  "arc_angles": [
+    {
+      "id": "arc_A",
+      "vertex": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "start_pt": [
+        255.95238095238093,
+        116.93044642857132
+      ],
+      "end_pt": [
+        425.11904761904765,
+        116.93044642857132
+      ],
+      "radius": 68.0,
+      "label": null,
+      "label_offset": 12.0,
+      "color": "#000000",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "arc_B",
+      "vertex": [
+        121.30952380952382,
+        178.13758928571428
+      ],
+      "start_pt": [
+        255.95238095238093,
+        178.13758928571428
+      ],
+      "end_pt": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "radius": 40.0,
+      "label": null,
+      "label_offset": 12.0,
+      "color": "#000000",
+      "stroke_width": 1.6
+    },
+    {
+      "id": "arc_C",
+      "vertex": [
+        255.95238095238093,
+        283.92857142857144
+      ],
+      "start_pt": [
+        121.30952380952382,
+        178.13758928571428
+      ],
+      "end_pt": [
+        124.76190476190479,
+        413.43732142857147
+      ],
+      "radius": 58.0,
+      "label": null,
+      "label_offset": 12.0,
+      "color": "#000000",
+      "stroke_width": 1.6
+    }
+  ],
+  "labels": [
+    {
+      "id": "lbl_formula",
+      "text": "f(x) = ax^2 + bx + c",
+      "x": 453.11904761904765,
+      "y": 112.93044642857132,
+      "font_size": 21.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "bold",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "start",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_m",
+      "text": "m",
+      "x": 354.15714285714284,
+      "y": 102.93044642857132,
+      "font_size": 19.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "middle",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_a",
+      "text": "a",
+      "x": 267.95238095238096,
+      "y": 149.5340178571428,
+      "font_size": 18.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "start",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_b",
+      "text": "b",
+      "x": 162.73809523809524,
+      "y": 164.13758928571428,
+      "font_size": 19.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "middle",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_n",
+      "text": "n",
+      "x": 243.95238095238093,
+      "y": 231.03308035714286,
+      "font_size": 18.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "end",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_A",
+      "text": "A",
+      "x": 273.86530722417683,
+      "y": 240.29403595499232,
+      "font_size": 19.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "middle",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_B",
+      "text": "B",
+      "x": 154.09312637982998,
+      "y": 189.61328484843935,
+      "font_size": 19.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "middle",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    },
+    {
+      "id": "lbl_C",
+      "text": "C",
+      "x": 204.16666666666669,
+      "y": 314.6785714285714,
+      "font_size": 21.0,
+      "font_family": "Times New Roman, STIXGeneral, Cambria Math, serif",
+      "font_weight": "normal",
+      "font_style": "italic",
+      "color": "#000000",
+      "anchor": "end",
+      "alignment_baseline": "central",
+      "math_mode": true,
+      "background_fill": "#FFFFFF"
+    }
+  ],
+  "metadata": {
+    "diagram_type": "calculus_conic_rate_of_change",
+    "source": "chapter_7_23"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "8485585c-5bcd-4c85-bfa5-7d4911babbd5": {
+    "answer_text": "$9\\times 10^{13}\\ \\mathrm{N/C}$",
+    "explanation_text": "প্রশ্নে $A$ ও $B$ বিন্দুতে যথাক্রমে $+100\\ \\mathrm{C}$ ও $-100\\ \\mathrm{C}$ চার্জ ধরলে (ঋণ চিহ্নটি প্রশ্নে বাদ পড়েছে), $C$ বিন্দুতে প্রতিটি চার্জের কারণে প্রাবল্য হয়:\n$E_{1}=E_{2}=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{r^{2}}=9\\times 10^{9}\\times \\frac{100}{(0.1)^{2}}=9\\times 10^{13}\\ \\mathrm{N/C}$\nসমবাহু ত্রিভুজ হওয়ায় $A\\to C$ ও $C\\to B$ দিকের প্রাবল্য দুটির মধ্যবর্তী কোণ $120^{\\circ}$। সুতরাং লব্ধি:\n$E=\\sqrt{E_{1}^{2}+E_{2}^{2}+2E_{1}E_{2}\\cos 120^{\\circ}}=\\sqrt{2E^{2}-E^{2}}=E=9\\times 10^{13}\\ \\mathrm{N/C}$\n(উভয় চার্জ $+100\\ \\mathrm{C}$ ধরলে লব্ধি $2E\\cos 30^{\\circ}=1.56\\times 10^{14}\\ \\mathrm{N/C}$ হতো, যা অপশনে নেই।)\nব্যাখ্যা: দুটি বিপরীতধর্মী সমমান চার্জের ক্ষেত্রে সমবাহু ত্রিভুজের তৃতীয় শীর্ষে লব্ধি প্রাবল্য একক চার্জজনিত প্রাবল্যের সমান হয়।",
+    "mcq_solution_index": 2
+  },
+  "4fedd2ce-7546-4dfc-ad9f-ac7f9f882169": {
+    "answer_text": "সঠিক উত্তর নেই",
+    "explanation_text": "দ্বিমেরুর অক্ষ বরাবর, কেন্দ্র হতে $r$ দূরত্বের বিন্দুতে বিভব: $V=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{p}{r^{2}}$\nএখানে দ্বিমেরু ভ্রামক $p=q(2a)=1\\times 10^{-6}\\times 0.05=5\\times 10^{-8}\\ \\mathrm{C\\,m}$, $r=15\\ \\mathrm{cm}=0.15\\ \\mathrm{m}$।\n$V=9\\times 10^{9}\\times \\frac{5\\times 10^{-8}}{(0.15)^{2}}=\\frac{450}{0.0225}=2\\times 10^{4}\\ \\mathrm{V}$\nসূক্ষ্ম হিসাবে $V=\\frac{kp}{r^{2}-a^{2}}=\\frac{9\\times 10^{9}\\times 5\\times 10^{-8}}{0.0225-0.000625}=2.06\\times 10^{4}\\ \\mathrm{V}$\nকোনো মানই প্রদত্ত অপশনের ($2\\times 10^{-15},\\ 3\\times 10^{-3},\\ 5\\times 10^{-2},\\ 2\\times 10^{7}\\ \\mathrm{V}$) সাথে মেলে না।\nব্যাখ্যা: অক্ষীয় বিন্দুতে দ্বিমেরুর বিভব $V\\approx \\frac{kp}{r^{2}}\\approx 2\\times 10^{4}\\ \\mathrm{V}$ হওয়ায় কোনো অপশন সঠিক নয়।",
+    "mcq_solution_index": 4
+  },
+  "11ed94ab-d851-441d-b6ab-d1d4f43c1e70": {
+    "answer_text": "$1.62\\times 10^{-4}\\ \\mathrm{J}$",
+    "explanation_text": "ধারকে সঞ্চিত শক্তি: $U=\\frac{1}{2}CV^{2}$\n$U=\\frac{1}{2}\\times 4\\times 10^{-6}\\times (9)^{2}=\\frac{1}{2}\\times 4\\times 10^{-6}\\times 81=162\\times 10^{-6}\\ \\mathrm{J}$\n$U=1.62\\times 10^{-4}\\ \\mathrm{J}$\nব্যাখ্যা: $U=\\frac{1}{2}CV^{2}$ সূত্রে $C=4\\ \\mu\\mathrm{F}=4\\times 10^{-6}\\ \\mathrm{F}$ ও $V=9\\ \\mathrm{V}$ বসালে $1.62\\times 10^{-4}\\ \\mathrm{J}$ পাওয়া যায়।",
+    "mcq_solution_index": 1
+  },
+  "867afddd-752e-4099-8786-9228ccf8662c": {
+    "answer_text": "77.96 N",
+    "explanation_text": "লব্ধির মান: $R=\\sqrt{P^{2}+Q^{2}+2PQ\\cos\\theta}$\n$R=\\sqrt{(20)^{2}+(60)^{2}+2\\times 20\\times 60\\times \\cos 30^{\\circ}}$\n$R=\\sqrt{400+3600+2400\\times 0.866}=\\sqrt{6078.4}$\n$R=77.96\\ \\mathrm{N}$\nব্যাখ্যা: $P=20\\ \\mathrm{N}$, $Q=60\\ \\mathrm{N}$, $\\theta=30^{\\circ}$ বসালে লব্ধি $77.96\\ \\mathrm{N}$ হয়।",
+    "mcq_solution_index": 2
+  },
+  "58ca0338-d9f3-4d16-9cb9-b83782b1c769": {
+    "answer_text": "$9\\times 10^{11}\\ \\mathrm{V}$",
+    "explanation_text": "চার্জিত গোলক পৃষ্ঠে বিভব: $V=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{R}$\n$V=9\\times 10^{9}\\times \\frac{10}{0.1}=9\\times 10^{11}\\ \\mathrm{V}$\nব্যাখ্যা: $R=10\\ \\mathrm{cm}=0.1\\ \\mathrm{m}$ ও $Q=10\\ \\mathrm{C}$ বসালে পৃষ্ঠে বিভব $9\\times 10^{11}\\ \\mathrm{V}$।",
+    "mcq_solution_index": 1
+  },
+  "66b0907c-3567-480e-859d-3bb62e078d49": {
+    "answer_text": "পরিবর্তনীয় ধারক",
+    "explanation_text": "রেডিও, টেলিভিশন প্রভৃতি ইলেকট্রনিক বর্তনীতে টিউন সার্কিটের কম্পাংক $f=\\frac{1}{2\\pi\\sqrt{LC}}$ সূত্র অনুযায়ী পরিবর্তনীয় ধারকের ধারকত্ব $C$ পরিবর্তন করে নির্ধারিত হয়।\nব্যাখ্যা: টিউন সার্কিটের কম্পাংক পরিবর্তন করতে হলে ধারকত্ব পরিবর্তনযোগ্য হতে হয়, তাই পরিবর্তনীয় ধারক ব্যবহৃত হয়।",
+    "mcq_solution_index": 1
+  },
+  "9248081a-6022-4f99-96d4-257b46a4f27c": {
+    "answer_text": "3/4",
+    "explanation_text": "সঞ্চিত শক্তি: $U=\\frac{1}{2}CV^{2}$। বিভব পার্থক্য অর্ধেক ($V'=\\frac{V}{2}$) হলে,\n$U'=\\frac{1}{2}C\\left(\\frac{V}{2}\\right)^{2}=\\frac{1}{4}\\times \\frac{1}{2}CV^{2}=\\frac{U}{4}$\nশক্তি হ্রাসের পরিমাণ: $U-U'=U-\\frac{U}{4}=\\frac{3U}{4}$\nব্যাখ্যা: শক্তি বিভবের বর্গের সমানুপাতিক, তাই বিভব অর্ধেক হলে শক্তি এক-চতুর্থাংশ হয় এবং হ্রাস হয় $\\frac{3}{4}$ অংশ।",
+    "mcq_solution_index": 3
+  },
+  "6fc4574e-dcd7-485f-9255-88c61f42d075": {
+    "answer_text": "5",
+    "explanation_text": "ধারক ব্যাটারির সাথে সংযুক্ত থাকলে বিভব পার্থক্য $V$ স্থির থাকে, এবং ডাই-ইলেকট্রিক ঢুকালে ধারকত্ব হয় $C'=\\kappa C$।\nসঞ্চিত শক্তি: $U=\\frac{1}{2}CV^{2}$ আর $U'=\\frac{1}{2}C'V^{2}=\\kappa U$\nদেওয়া আছে $U'=5U$, সুতরাং $\\kappa=5$\nব্যাখ্যা: স্থির বিভবে সঞ্চিত শক্তি ধারকত্বের সমানুপাতিক, তাই শক্তি পাঁচগুণ হলে ডাই-ইলেকট্রিক ধ্রুবক $\\kappa=5$।",
+    "mcq_solution_index": 2
+  },
+  "f5ce2161-284d-4da8-b929-c67870fd5748": {
+    "answer_text": "$2.5\\ \\mathrm{N\\,C^{-1}}$",
+    "explanation_text": "তড়িৎ প্রাবল্য: $E=\\frac{F}{q}$\n$E=\\frac{5\\ \\mathrm{N}}{2\\ \\mathrm{C}}=2.5\\ \\mathrm{N/C}=2.5\\ \\mathrm{N\\,C^{-1}}$\nব্যাখ্যা: $F=5\\ \\mathrm{N}$ বল ও $q=2\\ \\mathrm{C}$ আধান বসালে প্রাবল্য $2.5\\ \\mathrm{N\\,C^{-1}}$।",
+    "mcq_solution_index": 3
+  },
+  "7f0b274c-13c6-4e3c-b7f0-e4f93269a3bd": {
+    "answer_text": "1.64 cm",
+    "explanation_text": "শোলার বলকে স্থির রাখতে তড়িৎ বল = ওজন:\n$\\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}}=mg$\n$9\\times 10^{9}\\times \\frac{6.68\\times 10^{-9}\\times 6.54\\times 10^{-9}}{r^{2}}=0.15\\times 10^{-3}\\times 9.8=1.47\\times 10^{-3}\\ \\mathrm{N}$\n$\\frac{3.932\\times 10^{-7}}{r^{2}}=1.47\\times 10^{-3}\\ \\Rightarrow r^{2}=\\frac{3.932\\times 10^{-7}}{1.47\\times 10^{-3}}=2.675\\times 10^{-4}$\n$r=0.01635\\ \\mathrm{m}=1.635\\ \\mathrm{cm}\\approx 1.64\\ \\mathrm{cm}$\nব্যাখ্যা: কুলম্বের বিকর্ষণ বলকে ওজনের সমান করে $r^{2}=\\frac{kq_{1}q_{2}}{mg}$ থেকে দূরত্ব $1.64\\ \\mathrm{cm}$ পাওয়া যায়।",
+    "mcq_solution_index": 1
+  },
+  "b09dfc40-abd2-4ff8-bb01-b2d21fbcd7fe": {
+    "answer_text": "$6.25\\times 10^{18}$",
+    "explanation_text": "প্রতি ইলেকট্রনের আধান $e=1.6\\times 10^{-19}\\ \\mathrm{C}$।\n$1\\ \\mathrm{C}$ এ ইলেকট্রন সংখ্যা: $n=\\frac{1}{e}=\\frac{1}{1.6\\times 10^{-19}}=6.25\\times 10^{18}$\nব্যাখ্যা: মোট আধান $Q=ne$ সূত্রে $Q=1\\ \\mathrm{C}$ বসালে $n=6.25\\times 10^{18}$।",
+    "mcq_solution_index": 2
+  },
+  "840051b5-e20e-45ba-9649-59c681219d8e": {
+    "answer_text": "No correct answer",
+    "explanation_text": "পাতের ক্ষেত্রফল: $A=\\pi r^{2}=\\pi (0.08)^{2}=0.0201\\ \\mathrm{m^{2}}$\nধারকত্ব: $C=\\frac{\\epsilon_{0}A}{d}=\\frac{8.85\\times 10^{-12}\\times 0.0201}{0.002}=8.9\\times 10^{-11}\\ \\mathrm{F}$\nসঞ্চিত শক্তি: $U=\\frac{1}{2}CV^{2}=\\frac{1}{2}\\times 8.9\\times 10^{-11}\\times (100)^{2}=4.45\\times 10^{-7}\\ \\mathrm{J}$\nএই মান প্রদত্ত অপশনগুলোর (0.263, 0.235, 0.214, 0.278 J) কোনোটির সাথে মেলে না।\nব্যাখ্যা: $U=\\frac{1}{2}\\epsilon_{0}\\frac{A}{d}V^{2}=4.45\\times 10^{-7}\\ \\mathrm{J}$, যা অপশনে নেই, তাই সঠিক উত্তর নেই।",
+    "mcq_solution_index": 4
+  },
+  "7dd539d4-fb49-4bf4-83a5-d5b7935f29ea": {
+    "answer_text": "$6.25\\times 10^{18}$",
+    "explanation_text": "$Q=ne$ সূত্র থেকে, $1\\ \\mathrm{C}$ চার্জের জন্য প্রয়োজনীয় ইলেকট্রন:\n$n=\\frac{Q}{e}=\\frac{1}{1.6\\times 10^{-19}}=6.25\\times 10^{18}$\nব্যাখ্যা: প্রতিটি ইলেকট্রনের আধান $1.6\\times 10^{-19}\\ \\mathrm{C}$, তাই $1\\ \\mathrm{C}$ এ $6.25\\times 10^{18}$টি ইলেকট্রন।",
+    "mcq_solution_index": 3
+  },
+  "17b97baa-d075-4980-b64a-5e10e65aa387": {
+    "answer_text": "কোনটিই নয়",
+    "explanation_text": "তৃতীয় চার্জ প্রথম চার্জ থেকে $x$ দূরত্বে অবস্থান করলে বল শূন্য হতে হবে:\n$\\frac{1}{4\\pi\\epsilon_{0}}\\frac{5\\times 10}{x^{2}}=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{5\\times 10}{(3-x)^{2}}$\n$x^{2}=(3-x)^{2}\\ \\Rightarrow x=3-x\\ \\Rightarrow x=1.5\\ \\mathrm{cm}$\n$1.5\\ \\mathrm{cm}$ প্রদত্ত অপশনের (1, 2, 3 cm) কোনোটির সাথে মেলে না।\nব্যাখ্যা: সমমান দুই চার্জের মাঝখানে সমদূরত্বে ($1.5\\ \\mathrm{cm}$) বল শূন্য হয়, যা অপশনে নেই।",
+    "mcq_solution_index": 3
+  },
+  "a14df1e1-6f9b-4f8e-894c-89bb82942502": {
+    "answer_text": "কোনটিই নয়",
+    "explanation_text": "স্থির দূরত্বের সমান্তরাল পাত ধারকের ধারকত্ব $C=\\frac{\\epsilon_{0}A}{d}$ শুধুমাত্র পাতের ক্ষেত্রফল ও দূরত্বের উপর নির্ভরশীল; প্রযুক্ত বিভবের উপর নির্ভর করে না।\nব্যাখ্যা: ধারকত্ব জ্যামিতিক রাশি, বিভব বাড়ালে চার্জ বাড়ে কিন্তু $C=\\frac{Q}{V}$ ধ্রুব থাকে।",
+    "mcq_solution_index": 3
+  },
+  "1792eeb1-3f8d-49f3-b709-51845589c45a": {
+    "answer_text": "বর্গানুপাতিক",
+    "explanation_text": "চার্জিত ধারকের সঞ্চিত শক্তি: $U=\\frac{1}{2}CV^{2}$। ধারকত্ব $C$ ধ্রুব থাকলে $U\\propto V^{2}$, অর্থাৎ শক্তি ভোল্টেজের বর্গের সমানুপাতিক।\nব্যাখ্যা: $U=\\frac{1}{2}CV^{2}$ সূত্রে ভোল্টেজ দ্বিগুণ করলে শক্তি চারগুণ হয়।",
+    "mcq_solution_index": 2
+  },
+  "f209e755-983f-4e31-8065-1d1b480616a0": {
+    "answer_text": "400 V/m",
+    "explanation_text": "সুষম তড়িৎক্ষেত্রে প্রাবল্য: $E=\\frac{V}{d}$\n$E=\\frac{200\\ \\mathrm{V}}{0.5\\ \\mathrm{m}}=400\\ \\mathrm{V/m}$\nব্যাখ্যা: $50\\ \\mathrm{cm}=0.5\\ \\mathrm{m}$ ও $V=200\\ \\mathrm{V}$ বসালে $E=400\\ \\mathrm{V/m}$।",
+    "mcq_solution_index": 1
+  },
+  "0141d0b4-151f-42d5-b838-43f3438e4f5c": {
+    "answer_text": "No correct answer",
+    "explanation_text": "$A=1.5\\times 10^{6}\\ \\mathrm{mm^{2}}=1.5\\ \\mathrm{m^{2}}$, $d=2\\ \\mathrm{mm}=2\\times 10^{-3}\\ \\mathrm{m}$, $V=60\\ \\mathrm{V}$\nধারকত্ব: $C=\\frac{\\epsilon_{0}A}{d}=\\frac{8.854\\times 10^{-12}\\times 1.5}{2\\times 10^{-3}}=6.64\\times 10^{-9}\\ \\mathrm{F}$\nচার্জ: $Q=CV=6.64\\times 10^{-9}\\times 60=3.98\\times 10^{-7}\\ \\mathrm{C}$\nগণনাকৃত $3.98\\times 10^{-7}\\ \\mathrm{C}$ অপশনের ($1.56\\times 10^{-9},\\ 3.98\\times 10^{-8},\\ 4.82\\times 10^{-9},\\ 5.15\\times 10^{-9},\\ 6.64\\times 10^{-9}$) কোনোটির সাথে মেলে না।\nব্যাখ্যা: সঠিক চার্জ $3.98\\times 10^{-7}\\ \\mathrm{C}$, তাই কোনো সঠিক উত্তর নেই।",
+    "mcq_solution_index": 5
+  },
+  "c680c8da-07c5-4447-b599-7c3ff6f1de1c": {
+    "answer_text": "$\\dfrac{\\sigma}{\\epsilon_{0}}$",
+    "explanation_text": "অসীম তলের জন্য তলমাত্রিক চার্জ ঘনত্ব $\\sigma$ হলে একটি শিটের দুই পাশে প্রাবল্য $\\frac{\\sigma}{2\\epsilon_{0}}$। বিপরীতধর্মী চার্জযুক্ত দুটি শিটের মাঝখানে দুই শিটের প্রাবল্য একই দিকে যোগ হয়:\n$E=\\frac{\\sigma}{2\\epsilon_{0}}+\\frac{\\sigma}{2\\epsilon_{0}}=\\frac{\\sigma}{\\epsilon_{0}}$\nব্যাখ্যা: দুটি বিপরীত চার্জিত শিটের মধ্যবর্তী স্থানে প্রাবল্য $\\frac{\\sigma}{\\epsilon_{0}}$।",
+    "mcq_solution_index": 1
+  },
+  "16b92c7a-0673-4653-85f5-5899d68009b8": {
+    "answer_text": "$8.11\\times 10^{9}\\ \\mathrm{NC^{-1}}$",
+    "explanation_text": "তৃতীয় কৌণিক বিন্দুতে প্রাবল্য:\n$E_{1}=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{0.03}{(0.2)^{2}}=9\\times 10^{9}\\times \\frac{0.03}{0.04}=6.75\\times 10^{9}\\ \\mathrm{N/C}$\n$E_{2}=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{0.04}{(0.2)^{2}}=9\\times 10^{9}\\ \\mathrm{N/C}$\n$E_{1}$ ($+$ চার্জ থেকে তৃতীয় বিন্দুর দিকে) ও $E_{2}$ (ঋণ চার্জের দিকে) ভেক্টরের মধ্যবর্তী কোণ $120^{\\circ}$:\n$E=\\sqrt{E_{1}^{2}+E_{2}^{2}+2E_{1}E_{2}\\cos 120^{\\circ}}=\\sqrt{(6.75)^{2}+(9)^{2}-6.75\\times 9}\\times 10^{9}$\n$E=\\sqrt{45.56+81-60.75}\\times 10^{9}=\\sqrt{65.81}\\times 10^{9}=8.11\\times 10^{9}\\ \\mathrm{NC^{-1}}$\nব্যাখ্যা: দুটি চার্জজনিত প্রাবল্যের ভেক্টর যোগে তৃতীয় শীর্ষে $8.11\\times 10^{9}\\ \\mathrm{NC^{-1}}$।",
+    "mcq_solution_index": 1
+  },
+  "95657bab-ee87-429c-be5c-0aa124d16997": {
+    "answer_text": "300 J",
+    "explanation_text": "আধান স্থানান্তরে কৃত কাজ: $W=qV$\n$W=25\\ \\mathrm{C}\\times 12\\ \\mathrm{V}=300\\ \\mathrm{J}$\nব্যাখ্যা: ঋণ প্রান্ত থেকে ধন প্রান্তে $25\\ \\mathrm{C}$ চার্জ নিতে $12\\ \\mathrm{V}$ বিভব পার্থক্যের বিরুদ্ধে $300\\ \\mathrm{J}$ কাজ হয়।",
+    "mcq_solution_index": 0
+  },
+  "30bf5f0e-894a-4913-998d-3afba8ed5c4b": {
+    "answer_text": "4.14 cm",
+    "explanation_text": "$+10^{-6}\\ \\mathrm{C}$ চার্জ হতে $x$ দূরত্বে প্রাবল্য শূন্য হলে:\n$\\frac{1}{4\\pi\\epsilon_{0}}\\frac{10^{-6}}{x^{2}}=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{2\\times 10^{-6}}{(10-x)^{2}}$\n$\\frac{1}{x^{2}}=\\frac{2}{(10-x)^{2}}\\ \\Rightarrow \\frac{10-x}{x}=\\sqrt{2}\\ \\Rightarrow x=\\frac{10}{1+\\sqrt{2}}=\\frac{10}{2.414}=4.14\\ \\mathrm{cm}$\nব্যাখ্যা: $E=0$ বিন্দু ক্ষুদ্রতর চার্জের নিকটে, $x=\\frac{d}{1+\\sqrt{q_{2}/q_{1}}}=4.14\\ \\mathrm{cm}$।",
+    "mcq_solution_index": 0
+  },
+  "74c35304-7800-418a-9043-7780a0223cab": {
+    "answer_text": "$500\\ \\mathrm{V/m}$",
+    "explanation_text": "সুষম তড়িৎক্ষেত্রে: $E=\\frac{V}{d}$\n$E=\\frac{125\\ \\mathrm{V}}{0.25\\ \\mathrm{m}}=500\\ \\mathrm{V/m}$\nব্যাখ্যা: $25\\ \\mathrm{cm}=0.25\\ \\mathrm{m}$ ব্যবধান ও $125\\ \\mathrm{V}$ বিভব পার্থক্যে প্রাবল্য $500\\ \\mathrm{V/m}$।",
+    "mcq_solution_index": 1
+  },
+  "2aa4857a-0cf5-4386-9475-d1b3c918ada9": {
+    "answer_text": "জুল",
+    "explanation_text": "আধান $\times$ বিভব = $QV$। যেহেতু $V=\\frac{W}{Q}$ বা $W=QV$, তাই $QV$ এর একক জুল ($\\mathrm{J}$)।\nব্যাখ্যা: $Q$ (কুলম্ব) এবং $V$ (ভোল্ট) গুণফল কাজ বা শক্তির রাশি $W=QV$, যার একক জুল।",
+    "mcq_solution_index": 0
+  },
+  "15ad7296-3e36-4f55-aae8-a294283ae2cc": {
+    "answer_text": "9 kN",
+    "explanation_text": "কুলম্বের সূত্র: $F=\\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}}$\n$F=9\\times 10^{9}\\times \\frac{1\\times 1}{(1000)^{2}}=\\frac{9\\times 10^{9}}{10^{6}}=9000\\ \\mathrm{N}=9\\ \\mathrm{kN}$\nব্যাখ্যা: $r=1\\ \\mathrm{km}=1000\\ \\mathrm{m}$ বসালে বল $9000\\ \\mathrm{N}=9\\ \\mathrm{kN}$।",
+    "mcq_solution_index": 2
+  },
+  "203e72f5-c628-47a6-82fe-4ba0d2936138": {
+    "answer_text": "$1.76 \\times 10^{21}\\ \\mathrm{m/s^{2}}$",
+    "explanation_text": "ইলেকট্রনের উপর বল: $F=eE=1.6\\times 10^{-19}\\times 10^{10}=1.6\\times 10^{-9}\\ \\mathrm{N}$\nত্বরণ: $a=\\frac{F}{m}=\\frac{1.6\\times 10^{-9}}{9.1\\times 10^{-31}}=1.76\\times 10^{21}\\ \\mathrm{m/s^{2}}$\nব্যাখ্যা: $a=\\frac{eE}{m}=\\frac{1.6\\times 10^{-19}\\times 10^{10}}{9.1\\times 10^{-31}}=1.76\\times 10^{21}\\ \\mathrm{m/s^{2}}$।",
+    "mcq_solution_index": 1
+  },
+  "e976b4c7-08dd-4c1c-bbbd-b57a2f5c3f73": {
+    "answer_text": "শূন্য",
+    "explanation_text": "চার্জিত পরিবাহী গোলকের অভ্যন্তরে তড়িৎ ক্ষেত্র শূন্য ($E=0$), কারণ গোলকের সমস্ত চার্জ পৃষ্ঠে অবস্থান করে এবং ভেতরের কোনো বিন্দুকে ঘিরে গাউসীয় পৃষ্ঠের ভেতরে মোট চার্জ শূন্য থাকে।\nব্যাখ্যা: গাউসের সূত্র মতে চার্জিত গোলকের ভেতরে নিট চার্জ শূন্য হওয়ায় প্রাবল্য শূন্য।",
+    "mcq_solution_index": 3
+  },
+  "bce8492d-3792-4011-a52f-24d4848dec58": {
+    "answer_text": "$600\\ \\mathrm{Vm^{-1}}$",
+    "explanation_text": "সুষম তড়িৎক্ষেত্রে: $E=\\frac{V}{d}$\n$E=\\frac{150\\ \\mathrm{V}}{0.25\\ \\mathrm{m}}=600\\ \\mathrm{V/m}=600\\ \\mathrm{Vm^{-1}}$\nব্যাখ্যা: $25\\ \\mathrm{cm}=0.25\\ \\mathrm{m}$ ও $V=150\\ \\mathrm{V}$ বসালে $E=600\\ \\mathrm{Vm^{-1}}$।",
+    "mcq_solution_index": 1
+  },
+  "9f94ac8f-850c-4f52-8edf-206157fa42af": {
+    "answer_text": "$4.56\\times 10^{-8}\\ \\mathrm{C}$",
+    "explanation_text": "$A=1.56\\times 10^{6}\\ \\mathrm{mm^{2}}=1.56\\ \\mathrm{m^{2}}$, $d=2\\ \\mathrm{cm}=0.02\\ \\mathrm{m}$, $V=66\\ \\mathrm{V}$\nধারকত্ব: $C=\\frac{\\epsilon_{0}A}{d}=\\frac{8.85\\times 10^{-12}\\times 1.56}{0.02}=6.9\\times 10^{-10}\\ \\mathrm{F}$\nচার্জ: $Q=CV=6.9\\times 10^{-10}\\times 66=4.56\\times 10^{-8}\\ \\mathrm{C}$\nব্যাখ্যা: $C=\\frac{\\epsilon_{0}A}{d}$ থেকে $Q=CV$ বসালে প্রতিটি পাতে চার্জ $4.56\\times 10^{-8}\\ \\mathrm{C}$।",
+    "mcq_solution_index": 1
+  }
+}

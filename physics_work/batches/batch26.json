@@ -1,0 +1,417 @@
+{
+ "batch": 26,
+ "questions": [
+  {
+   "n": 726,
+   "id": "d91e5a39-3114-4b5e-896d-559849ac3d1c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের কোন লেখচিত্রটি একটি বিন্দু চার্জ থেকে দূরত্ব $r$ এর পরিবর্তনের সাথে বিভব $V$ এর পরিবর্তনকে সঠিকভাবে প্রকাশ করে? ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "ASCD (Agrani School and College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 727,
+   "id": "9046895f-72a5-40dd-8d4a-170988ccc1dd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "এক ফোঁটা তেলকে $400\\ V$ বিভব পার্থক্য দ্বারা স্থির রাখা হয়। একই পরিমাণ আধানবিশিষ্ট কিন্তু দ্বিগুণ ব্যাসার্ধের অপর এক ফোঁটা তেলকে স্থির রাখতে কত বিভব পার্থক্যের প্রয়োজন হবে ? ",
+   "options": [
+    "400 V",
+    "800 V ",
+    "1600 V ",
+    "3200 V"
+   ],
+   "images": [],
+   "src": "ASCD (Agrani School and College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 728,
+   "id": "650ec4bd-cdac-43f6-9162-036398f7221e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি আহিত বস্তুকে পৃথিবীর সাথে যুক্ত করলে বস্তুটির আধানের পরিমাণ—",
+   "options": [
+    "বৃদ্ধি পাবে",
+    "হ্রাস পাবে",
+    "শূন্য হবে",
+    "ধ্রুবক থাকবে"
+   ],
+   "images": [],
+   "src": "NGMCN (Narail Govt. Mohila College, Narail) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 729,
+   "id": "12d289b1-a84a-4b52-b0ed-ac8d5cab821a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$5NC^{-1}$ প্রাবল্যের সুষম তড়িৎ ক্ষেত্রে অবস্থিত দুটি বিন্দুর দূরত্ব $10\\ cm$ হলে, এদের বিভব পার্থক্য কত?  ",
+   "options": [
+    "0.02 V",
+    "0.5 V",
+    "2 V",
+    "50 V"
+   ],
+   "images": [],
+   "src": "MGWC (Moulvibazar Govt. Women College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 730,
+   "id": "5c2f6a2a-df4a-420f-b369-ec50b5f5883d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি সমান্তরাল পাতের মধ্যে তড়িৎক্ষেত্রের প্রাবল্য সুষম। একটি পাত্র হতে অন্যটির দূরত্ব বাড়ার সাথে বিভব নিচের কোন লেখচিত্র অনুযায়ী পরিবর্তিত হবে।   ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "CCCPCC (Chittagong City Corporation Premier College, Chottogram) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 731,
+   "id": "97fb624f-8c89-4bb5-88bf-5ab098c6bb84",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎক্ষেত্রের প্রাবল্য সমবিভব তল এর সাথে কত কোণ তৈরি করে?",
+   "options": [
+    "$0^\\circ$",
+    "$45^\\circ$",
+    "$90^\\circ$",
+    "যে কোনো কোণ তৈরি করতে পারে"
+   ],
+   "images": [],
+   "src": "NDC (Notre Dame College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 732,
+   "id": "e8bd27b1-67a3-4eb1-a0a1-5e8e8c19be4a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.25C$ ধনাত্মক চার্জ অসীম দূরত্ব হতে বৈদ্যুতিক ক্ষেত্রের কোনো বিন্দুতে আনতে যদি $2J$ কাজ সম্পন্ন হয় তবে উক্ত বিন্দুর বিভব কত?  ",
+   "options": [
+    "2 V",
+    "4 V",
+    "6 V",
+    "8 V"
+   ],
+   "images": [],
+   "src": "CGCC (Chittagong Govt. City College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 733,
+   "id": "e71ab144-ef2e-41aa-ae92-e2286e0244c7",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমবিভব তলের ক্ষেত্রে কোনটি সঠিক নয়?",
+   "options": [
+    "বিভব সর্বদাই শূন্য",
+    "বিভব পার্থক্য শূন্য",
+    "আধান পরিবহনে কাজ শূন্য",
+    "বিভব ধনাত্মক বা ঋণাত্মক হতে পারে "
+   ],
+   "images": [],
+   "src": "NGCC (Nawabgonj Govt. College, Chapai Nawabgonj) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 734,
+   "id": "564503c6-933d-489a-9b30-d2f240ea4fc7",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি চার্জিত গোলাকার পরিবাহীর—\n(i) অভ্যন্তরে প্রাবল্য শূন্য\n(ii) অভ্যন্তরে বিভব শূন্য\n(iii) পৃষ্ঠের সকল বিন্দুর বিভব সমান \nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "DPSC (Daud Public School And College, Jessore) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 735,
+   "id": "7540b6df-49c4-4a0f-9901-bd709695c1ca",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ দ্বিমেরু ভ্রামক এর একক কোনটি?",
+   "options": [
+    "$\\mathrm{Cm}^2$",
+    "$\\mathrm{Cm}^{-2}$",
+    "$\\mathrm{C}^2\\mathrm{m}^{-2}$",
+    "$\\mathrm{Cm}$"
+   ],
+   "images": [],
+   "src": "DPSC (Daud Public School And College, Jessore) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 736,
+   "id": "e5ce03d1-b7ea-4628-b09b-d6d027ac965c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎ দ্বি-পোলের জন্য তড়িৎ প্রাবল্য কীরূপে পরিবর্তিত হয়? ",
+   "options": [
+    "$r^{-1}$",
+    "$r^{-2}$",
+    "$r^{-3}$",
+    "$r^{-4}$"
+   ],
+   "images": [],
+   "src": "AKMCC (Abdul Kadir Molla City College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 737,
+   "id": "6692fc20-3004-43d8-bc4a-3f9aa5a237b3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন একটি আহিত বস্তুর আধানের জন্য গ্রহণযোগ্য মান— ",
+   "options": [
+    "$2.82\\times 10^{-16}\\mathrm{C}$",
+    "$2.83\\times 10^{-16}\\mathrm{C}$",
+    "$2.84\\times 10^{-16}\\mathrm{C}$",
+    "$2.85\\times 10^{-16}\\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "RGCR (Rangamati Govt. College, Rangamati) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 738,
+   "id": "202fee44-37e5-47ef-bd09-1a8758274be5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1$ কুলম্ব চার্জের জন্য কতটি ইলেকট্রনের প্রয়োজন?  ",
+   "options": [
+    "$6.023\\times 10^{23}$",
+    "$1.6\\times 10^{19}$",
+    "$6.25\\times 10^{18}$",
+    "$9.0\\times 10^{16}$"
+   ],
+   "images": [],
+   "src": "CCCPCC (Chittagong City Corporation Premier College, Chottogram) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 739,
+   "id": "e9e7e010-f42a-40f5-9476-ac6ebf4b9bc2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎ দ্বিমেরুর বিভব—\n(i) দ্বিমেরুর অক্ষ থেকে দূরত্বের বর্গের ব্যস্তানুপাতিক\n(ii) দ্বিমেরুর অক্ষ থেকে দূরত্বের ঘনের ব্যস্তানুপাতিক\n(iii) শূন্য, ধনাত্মক বা ঋণাত্মক হতে পারে \nনিচের কোনটি সঠিক?",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "NGCC (Nawabgonj Govt. College, Chapai Nawabgonj) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 740,
+   "id": "b009ae5c-bffc-4072-b7ad-c01df68fb1ab",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পরাবৈদ্যুতিক ধ্রুবক $K$ হলে— \n$\\begin{array}{l}\\text{(i) } k=\\dfrac{F_{0}}{F}\\\\\\text{(ii) } k=\\dfrac{\\epsilon}{\\epsilon_{0}}\\\\\\text{(iii) } k<1\\end{array}$\nনিচের কোনটি সঠিক?",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "NGCC (Nawabgonj Govt. College, Chapai Nawabgonj) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 741,
+   "id": "150b215f-8e67-4594-9867-b725c94e5f39",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকত্বের একক কী?  ",
+   "options": [
+    "জুল",
+    "ভোল্ট",
+    "ফ্যারাড ",
+    "হেনরি"
+   ],
+   "images": [],
+   "src": "ASCD (Agrani School and College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 742,
+   "id": "4eedfd34-0382-4273-b21d-700881087a2b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "গোলাকার পরিবাহীর ব্যাসার্ধ $9$ গুণ বৃদ্ধি করলে এবং এর তড়িৎ মাধ্যমাংক $3$ গুণ হ্রাস করলে ধারকত্বের কি পরিবর্তন হবে?  ",
+   "options": [
+    "কোন পরিবর্তন হয় না",
+    "27 গুণ বৃদ্ধি পাবে",
+    "9 গুণ হ্রাস পাবে",
+    "3 গুণ বৃদ্ধি পাবে"
+   ],
+   "images": [],
+   "src": "RUMC (Rajuk Uttara Model College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 743,
+   "id": "78cf213a-8fe9-4296-ae06-5f9834168e00",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি গোলীয় ধারকের ব্যাসার্ধ অর্ধেক করা হলে ধারকত্ব পূর্বের তুলনায় কত গুণ হবে? ",
+   "options": [
+    "$8$ গুণ",
+    "$4$ গুণ",
+    "$4$ গুণ",
+    "$\\dfrac{1}{2}$ গুণ"
+   ],
+   "images": [],
+   "src": "PAMC (Principal Abdul Majid College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 744,
+   "id": "eada1dff-9c02-4543-b276-86911742b62c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি $\\mathrm{Capacitor}$ কাজ করে— ",
+   "options": [
+    "DC সার্কিটে ",
+    "AC এবং DC সার্কিটে",
+    "AC সার্কিটে",
+    "কোনটিই নয় "
+   ],
+   "images": [],
+   "src": "NC (Narayanganj College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 745,
+   "id": "fe5630c7-e45e-4105-907a-c2c3ada2a604",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান্তরাল পাত ধারকের পাতের বাহিরে ক্ষেত্র প্রাবল্য কত? ",
+   "options": [
+    "$\\dfrac{\\sigma }{\\epsilon }$",
+    "$\\dfrac{\\sigma }{2\\epsilon }$",
+    "$0$",
+    "$-\\dfrac{\\sigma }{2\\epsilon}$"
+   ],
+   "images": [],
+   "src": "NGCC (Nawabgonj Govt. College, Chapai Nawabgonj) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 746,
+   "id": "c91eee6a-fdec-445b-8410-d6eae3bc37ad",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান্তরাল পাত ধারকের ধারকত্ব নির্ভর করে— \n(i) পাতের ক্ষেত্রফলের উপর \n(ii) পাতের মধ্যবর্তী দূরত্বের উপর\n(iii) পাত্রের মধ্যবর্তী ডাই ইলেকট্রিক মাধ্যমের উপর\nনিচের কোনটি সঠিক?",
+   "options": [
+    "i",
+    "iii",
+    "i ও ii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "MCC (Mirzapur Cadet College, Tangail) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 747,
+   "id": "e573c81c-3344-4b76-abfe-84513bdec8ee",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান্তরাল পাত ধারকের ক্ষেত্রে—\n(i) সমান ক্ষেত্রফল বিশিষ্ট হয়\n(ii) একই আকৃতির হয়\n(iii) ধাতব উপাদানের তৈরি হয় \nনিচের কোনটি সঠিক?  ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "NGMCN (Narail Govt. Mohila College, Narail) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 748,
+   "id": "0d5f8380-563f-4303-bb2c-3ca2a48a56d8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপকের চিত্রের আলোকে নিচের প্রশ্নের উত্তর দাও : \nএকটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $1.5\\ m^2$ এবং এর মাঝে $1\\ mm$ পুরু বায়ুস্তর আছে।\nধারকের ধারকত্ব কত হবে? ",
+   "options": [
+    "$3.27\\times 10^{-8}\\mathrm{~F}$",
+    "$1.327\\times 10^{-8}\\mathrm{~F}$",
+    "$0.327\\times 10^{-8}\\mathrm{~F}$",
+    "$1.327\\times 10^{-6}\\mathrm{~F}$"
+   ],
+   "images": [],
+   "src": "MGWC (Moulvibazar Govt. Women College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 749,
+   "id": "2d2c9873-dfe2-445b-a497-8325daee1eac",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপকের চিত্রের আলোকে নিচের প্রশ্নের উত্তর দাও : \nএকটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $1.5\\ m^2$ এবং এর মাঝে $1\\ mm$ পুরু বায়ুস্তর আছে।\nধারকটির ধারকত্ব বৃদ্ধির জন্য পাত দুটিকে— \n$ \\hspace{2cm} $ (i) কাছাকাছি আনতে হবে \n$ \\hspace{2cm} $ (ii) দূরে সরাতে হবে\n$ \\hspace{2cm} $ (iii) বড় করতে হবে \n$ \\hspace{1cm} $ নিচের কোনটি সঠিক?",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "MGWC (Moulvibazar Govt. Women College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 750,
+   "id": "91daf304-142b-4bc6-b2ac-f04e53fab366",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nচিত্রে $XY$ এর মধ্যকার তুল্য ধারকত্ব কত?  ",
+   "options": [
+    "$C$",
+    "$5C$",
+    "$\\dfrac{C}{5}$",
+    "$\\dfrac{5}{C}$"
+   ],
+   "images": [
+    "91daf304-142b-4bc6-b2ac-f04e53fab366_0.png"
+   ],
+   "src": "NC (Narayanganj College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 751,
+   "id": "184ae8d9-e532-472b-a0f0-cfc83d435e04",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nউদ্দীপকের চিত্রের আলোকে নিচের প্রশ্নের উত্তর দাও :  \nবর্তনীর তুল্য ধারকত্ব কত হবে? ",
+   "options": [
+    "2 F",
+    "3 F",
+    "7.33 F",
+    "12.33 F"
+   ],
+   "images": [
+    "184ae8d9-e532-472b-a0f0-cfc83d435e04_0.png"
+   ],
+   "src": "RUMC (Rajuk Uttara Model College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 752,
+   "id": "bd36016f-744c-4415-997a-274718685cf6",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nউদ্দীপকের চিত্রের আলোকে নিচের প্রশ্নের উত্তর দাও :  \n$2F$ ধারকত্ব বিশিষ্ট ধারকে কত চার্জ সঞ্চিত থাকবে?  ",
+   "options": [
+    "60 C",
+    "40 C",
+    "146.66 C ",
+    "172.36 C "
+   ],
+   "images": [
+    "bd36016f-744c-4415-997a-274718685cf6_0.png"
+   ],
+   "src": "RUMC (Rajuk Uttara Model College, Dhaka) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 753,
+   "id": "d6b40d7d-dc63-4eb4-b87d-b1054b0b38a9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $2m^2$। এর মাঝে $1mm$ পুরু বায়ুস্তর থাকলে ধারকত্ব হবে— ",
+   "options": [
+    "$\\dfrac{2 \\times 10^{3}}{\\epsilon_{0}}$",
+    "$2\\times 10^{-3}\\ \\epsilon _0$",
+    "$2\\times 10^{3\\ }\\epsilon _0$",
+    "$\\dfrac{2\\times 10^{-3}}{\\epsilon _0}$"
+   ],
+   "images": [],
+   "src": "CBCC (CoxsBazar City College) 2020 [Test Exam Question]"
+  },
+  {
+   "n": 754,
+   "id": "5effe5f2-299e-416c-8548-d0e994d9d047",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সবচেয়ে বেশি চার্জ থাকে বস্তুর— ",
+   "options": [
+    "কেন্দ্রে",
+    "সমতল পৃষ্ঠে",
+    "অবতল পৃষ্ঠে",
+    "উত্তল পৃষ্ঠে"
+   ],
+   "images": [],
+   "src": "GBMC (Govt. BM College, Barishal) 2020 [Test Exam Question]"
+  }
+ ]
+}

@@ -1,0 +1,423 @@
+{
+ "batch": 17,
+ "questions": [
+  {
+   "n": 465,
+   "id": "0b467c22-dbcf-43f5-b551-08daf6206316",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ফ্যারাড অর্থ কি?  ",
+   "options": [
+    "1 coul/V",
+    "1 Amp/V",
+    "1 Cal",
+    "1 বিভব"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 466,
+   "id": "63948f21-dafe-49f7-8268-019349f288ca",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুইটি সমান ধারকত্বের ধারককে প্রথমে শ্রেণীতে ও পরে সমান্তরালে সংযুক্ত করা হল। শ্রেণী ও সমান্তরাল সংযোগে তুল্য ধারকত্বের অনুপাত–  ",
+   "options": [
+    "1:1",
+    "4:1",
+    "1:2",
+    "1:4"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 467,
+   "id": "d7eda654-24c0-4416-8fdd-ae45d76a33ac",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চার্জ পরিবাহীর কোথায় অবস্থান করে? ",
+   "options": [
+    "ভিতরের পৃষ্ঠে",
+    "কেন্দ্রে",
+    "উভয় পৃষ্ঠে",
+    "বাইরের পৃষ্ঠে",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 468,
+   "id": "9fafe3ba-657d-4efb-969e-71bdab37adf4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ বিভব $\\mathrm{v} = 5x^2 + 10x – 9;$ এখানে $x$ দূরত্ব নির্দেশ করে। $x = 1$ হলে তড়িৎ ক্ষেত্রের মান কত?  ",
+   "options": [
+    "$-20v/m$",
+    "$-10v/m $",
+    "$-15v/m $",
+    "$1v / m$",
+    "$2v/m$"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 469,
+   "id": "77806801-69fc-47ac-8591-024e8ca0dcd4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বিচ্ছিন্ন সমান্তরাল পাত ধারকের পাতদ্বয়ের মধ্যবর্তী দূরত্ব দ্বিগুণ করার ফলে ধারকের সঞ্চিত শক্তির কি পরিমাণ পরিবর্তন হয়?  ",
+   "options": [
+    "দিগুণ",
+    "অর্ধেক",
+    "চার গুণ",
+    "এক-চতুর্থাংশ",
+    "অপরিবর্তিত থাকে"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 470,
+   "id": "6e1b3d17-e240-4031-9dcf-ee7faf3aae7b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.02m$ ব্যাসার্ধ বিশিষ্ট $64$ টি গোলাকার ফোঁটাকে একত্রিত করে একটি বড় ফোটায় পরিণত করা হল। যদি প্রতি ফোটায় $1C$ বিদ্যমান থাকে তবে বড় ফোঁটায় বিভব কত?  ",
+   "options": [
+    "$8.9\\times 10^{-10}\\mathrm{~V}$",
+    "$7.19\\times 10^{-10}\\mathrm{~V}$",
+    "$9.2\\times 10^{-10}\\mathrm{~V}$",
+    "$10.7\\times 10^{-10}\\mathrm{~V}$",
+    "$8.19\\times 10^{-10}\\mathrm{~V}$",
+    "$\\text{None}$"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 471,
+   "id": "c6d38859-7be0-4c31-b12c-a26901fbd474",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি ধারকের বিভবের পরিমাণ তিনগুণ করা হলে তার স্থিতি শক্তি কত গুণ বৃদ্ধি পাবে?  ",
+   "options": [
+    "3 গুন",
+    "1.5 গুণ ",
+    "6 গুণ",
+    "9 গুণ"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 472,
+   "id": "55eeac13-6b29-4a29-91e0-2501afcfbdf4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "FET এর বৈশিষ্ট্য নয় কোনটি? ",
+   "options": [
+    "ইনপুট রোধ বেশী",
+    "কারেন্ট নিয়ন্ত্রিত কৌশল",
+    "ইউনিপোলার",
+    "ভোল্টেজ নিয়ন্ত্রিত"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 473,
+   "id": "f39f869e-6125-41d7-a4cd-6e595ae1aef8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বৈদ্যুতিক বলরেখার ধর্ম নয় কোনটি? ",
+   "options": [
+    "বৈদ্যুতিক বলরেখা খোলা বক্র রেখা ",
+    "দুটি রেখা পরস্পরকে ছেদ করে না",
+    "পরিবাহীর অভ্যন্তরে বলরেখা বিদ্যমান ",
+    "রেখাগুলো ধন চার্জ থেকে উৎপন্ন হয়ে ঋণ চার্জে শেষ হয়"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 474,
+   "id": "4e055d65-77c2-4c39-9cfc-c792fb2c692f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ‍ ক্ষেত্রে $50\\ cm$ ব্যবধানে অবস্থিত দুইটি বিন্দুর বিভব পার্থক্য $200\\ V$ হলে তড়িৎ ক্ষেত্রের প্রাবল্য কত?  ",
+   "options": [
+    "$200\\mathrm{ \\ Vm}^{-1}$",
+    "$400\\mathrm{\\ Vm}^{-1}$",
+    "$600\\mathrm{\\ Vm}^{-1}$",
+    "$800\\mathrm{\\ Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 14-15 [Admission Exam Question]; SBAU (Sher-e-Bangla Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 475,
+   "id": "f615f47b-6bcd-4aa9-9a95-4988b3b6df10",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন তড়িৎক্ষেত্রের প্রাবল্য কত হলে সেখানে একটি ইলেকট্রনের ওজনের সমান বল অনুভব করবে? ইলেকট্রনের ভর $=9.1 \\times 10^{-31}$ কেজি এবং আধান $=1.6 \\times 10^{-19}$ কুলম্ব। ",
+   "options": [
+    "$5.57 \\times 10^{-11}$ নিউটন/কুলম্ব",
+    "$6.57 \\times 10^{-11}$ নিউটন/কুলম্ব",
+    "$7.57 \\times 10^{-11}$ নিউটন/কুলম্ব",
+    "$8.57 \\times 10^{-11}$ নিউটন/কুলম্ব"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 476,
+   "id": "9de431a4-26d1-4e0d-92db-422bc03cbe09",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$2\\mu F$ এর চার্জ বিহীন একটি ক্যাপাসিটরের মধ্যে দিয়ে $4A$ তড়িৎ প্রবাহ (ডি. সি) $3$ মিলিসেকেন্ডের জন্য প্রবাহিত করা হলো।ক্যাপাসিটরের দুই পাতের বিভব পার্থক্য কত?  ",
+   "options": [
+    "150 V",
+    "300 V",
+    "450 V",
+    "600 V"
+   ],
+   "images": [],
+   "src": "JGVC (Jhenidah Government Veterinary College) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 477,
+   "id": "445c0f34-593e-4e3f-a050-c87b713d78f3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকে চার্জের পরিমাণ 25 C। যদি প্রতিটি পাতের কার্যকরী ক্ষেত্রফল $5\\ cm^2$ হয় তড়িৎ ক্ষেত্রে তড়িৎ ফ্লাক্স ঘনত্ব কত হবে? ",
+   "options": [
+    "$40\\mathrm{KC} / \\mathrm{m}^{2}$",
+    "$50\\mathrm{KC} / \\mathrm{m}^{2}$",
+    "$60\\mathrm{KC} / \\mathrm{m}^{2}$",
+    "$70\\mathrm{KC} / \\mathrm{m}^{2}$",
+    "$\\text{No correct answer}$"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 478,
+   "id": "3d2e1335-e0e9-47f8-877a-52e98449720d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি গোলকের ব্যাসার্ধ হলো $9 \\times 10^{9} \\mathrm{~m}$। গোলকটির ধারকত্ব হলো$-$   ",
+   "options": [
+    "$1 \\mu \\mathrm{F}$",
+    "$1 \\rho \\mathrm{F}$",
+    "$10 \\mathrm{~F}$",
+    "$1 \\mathrm{~F}$"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 479,
+   "id": "3a763580-8fb2-49e9-9ab0-c65c96c7e6ee",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1$টি সুষম তড়িৎ ক্ষেত্রে $50cm$ ব্যবধানে অবস্থিত দু'টি বিন্দুর বিভব পার্থক্য $200V$ হলে তড়িৎ প্রাবল্য হবে-  ",
+   "options": [
+    "$850\\mathrm{Vm}^{-1}$",
+    "$1000\\mathrm{Vm}^{-1}$",
+    "$800\\mathrm{Vm}^{-1}$",
+    "$400\\mathrm{Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 480,
+   "id": "7bac80da-e66f-4eb5-950f-dc570f86a43d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4\\mu F$ এর $4$টি ধারক সিরিজে সংযোগ করা হলো। তাদের সমতুলা ধারকত্ব কত?   ",
+   "options": [
+    "$1\\mu F$",
+    "$2\\mu F$",
+    "$4\\mu F$",
+    "$16\\mu F$",
+    "$\\mathrm{None}$"
+   ],
+   "images": [],
+   "src": "RUET (Rajshahi University of Engineering & Technology) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 481,
+   "id": "15ad7296-3e36-4f55-aae8-a294283ae2cc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে এক কুলম্বের দু'টি আধান পরস্পর থেকে 1 km ব্যবধানে অবস্থিত হলে এদের মধ্যকার বল কত হবে? ",
+   "options": [
+    "3 kN",
+    "6 kN",
+    "9 kN",
+    "18 kN"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 18-19 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 15-16 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 13-14 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 12-13 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 482,
+   "id": "447b070e-7a33-4902-8122-83f6379c2796",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রতিটি পাতের পৃষ্ঠক্ষেত্রফল $1.4m^2$ এবং বায়ু মাধ্যমে পাতদ্বয়ের মধ্যবর্তী দূরত্ব $3cm$। ইহার ধারকত্ব নির্ণয় কর। ",
+   "options": [
+    "$4.1\\times 10^{-6}\\mu \\mathrm{F}$",
+    "$4.132\\times 10^{-4}\\mu \\mathrm{F}$",
+    "$4\\times 10^{-4}10\\mathrm{~F}$",
+    "$6.42\\times 10^{-4}\\mu \\mathrm{F}$",
+    "$4.4\\times 10^{-6}\\mu \\mathrm{F}$"
+   ],
+   "images": [],
+   "src": "KUET (Khulna University of Engineering & Technology) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 483,
+   "id": "f65e18dc-fbb1-4fe7-b9c0-1d9fb17bd4da",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের চিত্রে $A$ ও $B$ দুটি ধাতব পাত দেখানো হলো। $A$ পাতটি ঋণাত্মক ও $B$ পাতটি ধনাত্মক তড়িৎ বিভবে আছে। এদের মধ্যে বিভব পার্থক্য $4kV$ । $A$ পাত থেকে একটি মুক্ত ইলেকট্রন $B$ পাতে গেলে চূড়ান্ত গতিশক্তি কত হবে?\n\n \n  ",
+   "options": [
+    "$4.6 \\times 10^{-16} \\mathrm{~J$",
+    "$3.2 \\times 10^{-16} \\mathrm{~J}$",
+    "$4.8 \\times 10^{-16} \\mathrm{~J} $",
+    "$6.4 \\times 10^{-16} \\mathrm{~J}$"
+   ],
+   "images": [
+    "f65e18dc-fbb1-4fe7-b9c0-1d9fb17bd4da_0.png"
+   ],
+   "src": "KU-A (Khulna University (A Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 484,
+   "id": "d4da0ee5-7a65-44d8-84a6-cda4911b4747",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ইলেকট্রন ভোল্ট $(eV)$ কিসের একক?   ",
+   "options": [
+    "আধান",
+    "তীব্রতা",
+    "কাজ",
+    "প্রবাহ"
+   ],
+   "images": [],
+   "src": "JnU-A (Jagannath University (A Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 485,
+   "id": "16a8606c-8a5b-44d1-93dd-28f0eb2de6bd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4 \\mu F$ বিশিষ্ট একটি ধারককে (Capacitor) $9.0V$ ব্যাটারি দ্বারা আহিত (Charged) করা হল। ধারকটিতে কি পরিমাণ শক্তি সঞ্চিত হবে?  ",
+   "options": [
+    "$1.62\\times 10^{-4}\\mathrm{~J}$",
+    "$1.62\\mathrm{~J}$",
+    "$260\\mathrm{~J}$",
+    "$324\\mathrm{~J}$"
+   ],
+   "images": [],
+   "src": "JnU-A (Jagannath University (A Unit)) 13-14 [Admission Exam Question]; CU-A (University of Chittagong (Unit A)) 13-14 [Admission Exam Question]; CU-A (University of Chittagong (Unit A)) 02-03 [Admission Exam Question]"
+  },
+  {
+   "n": 486,
+   "id": "45ad1b07-35fd-4f53-89e2-c2538fd9ee9c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বিন্দু থেকে একটি সরলরেখায় প্রতি $1m$ পর পর অসীম সংখ্যক $1C$ চার্জ রাখা হলে ঐ বিন্দুতে তড়িৎ প্রাবল্য কত $ N/C? $ $\\left(\\sum 1 / n^{2}=\\pi^{2} / 6\\right)$ ",
+   "options": [
+    "$6.76\\times 10^{-11}$",
+    "$5.47\\times 10^{-9}$",
+    "$5.47\\times 10^9$",
+    "$9\\times 10^9$",
+    "$1.48\\times 10^{10}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 487,
+   "id": "e56a0ea9-8404-4f0d-956b-f4457dd3804a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি সমমানের ধারককে সমান্তরাল অবস্থায় $V$ ভোল্টেজে আহিত করা হল, ধারক দুটিকে শ্রেণীবদ্ধ অবস্থায় সমান শক্তি সঞ্চিত রাখতে হলে কোন ভোল্টেজে আহিত করতে হবে? ",
+   "options": [
+    "0.25V",
+    "0.5V",
+    "1V",
+    "2V",
+    "4V"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 488,
+   "id": "e6f66563-2cd3-4f1c-ba52-24f0df8bf77d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ ক্ষেত্রে $50\\ cm$ ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য $200V$ হলে তড়িৎ ক্ষেত্রের প্রাবল্য কত হবে?  ",
+   "options": [
+    "$400\\mathrm{Vm}^4$",
+    "$600\\mathrm{Vm}^{-1}$",
+    "$500\\mathrm{Vm}^{-1}$",
+    "$500\\mathrm{Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 489,
+   "id": "08bbee20-de00-4430-9033-046f8634a1bd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান ধারকত্বের দুটি ধারক শ্রেণিবদ্ধভাবে সংযুক্ত করলে তুল্য ধারকত্ব হবে–  ",
+   "options": [
+    "$4\\times 10^{-6}\\mathrm{~F}$",
+    "$6\\times 10^{-6}\\mathrm{~F}$",
+    "$4\\times 10^{-12}\\mathrm{~F}$",
+    "$12\\times 10^{-6}\\mathrm{~F}$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 490,
+   "id": "22a610ed-4e7a-4fe7-86a2-176cbcbad295",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের মধ্যে একটি ড্রাই-ইলেকট্রিক মাধ্যম রাখলে ধারকটির ধারকত্ব দ্বিগুণ হয় । উক্ত মাধ্যমটির ডাই ইলেকট্রিক ধ্রুবকের মান কত? ",
+   "options": [
+    "$4$",
+    "$2$",
+    "$\\dfrac{1}{2}$",
+    "$\\dfrac{1}{4}$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 491,
+   "id": "18bf523b-82c1-4688-96c6-46ba4eda8bf0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কার্শফের সুত্রগুলো প্রযোজ্য– ",
+   "options": [
+    "এসি ও ডিসি উভয়ের ক্ষেত্রে ",
+    "শুধুমাত্র এসি এর ক্ষেত্রে",
+    "শুধুমাত্র ডিসি এর ক্ষেত্রে",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 492,
+   "id": "2bc5ba22-7d14-438c-a7bf-c54c92825071",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি ফাপা গোলককে $2V$ বিভবে উন্নীত করা হলো $2.67\\times 10^{-11}C$ চার্জ দিয়ে। গোলকের ব্যাসার্ধ কত?  ",
+   "options": [
+    "10cm",
+    "8cm",
+    "14cm",
+    "12cm"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 493,
+   "id": "943d6d63-f1e2-40b5-b844-0895ba9012cf",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বিদ্যুতের ক্ষেত্রে ধনচার্জ ও ঋণচার্জ কে নামকরণ করেন? ",
+   "options": [
+    "কুলম্ব ",
+    "ফ্যারাডে",
+    "বেঞ্জামিন ফ্রাঙ্কলিন ",
+    "ওহম"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  }
+ ]
+}

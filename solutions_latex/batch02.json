@@ -1,0 +1,152 @@
+{
+ "af206e26-dc3d-4aec-8560-ec529ffbb635": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\nধরি, $\\alpha=\\sin^{-1}\\frac{3}{5}$। তাহলে $\\sin\\alpha=\\frac{3}{5}$ এবং $\\alpha\\in\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]$।\nএখন $\\cos\\alpha=\\sqrt{1-\\frac{9}{25}}=\\frac{4}{5}$, অর্থাৎ $\\alpha=\\cos^{-1}\\frac{4}{5}$।\nসুতরাং $\\sin^{-1}\\frac{3}{5}+\\cos^{-1}\\frac{4}{5}=\\alpha+\\alpha=2\\alpha=2\\sin^{-1}\\frac{3}{5}$।\n\nব্যাখ্যা: ৩-৪-৫ সমকোণী ত্রিভুজের ৩/৫ ও 4/5 যথাক্রমে sine ও cosine; অর্থাৎ দুটি কোণই একই কোণ $\\alpha$। ফলে যোগফল $2\\alpha$। প্রদত্ত অপশনগুলোর মানে প্রকৃত মান নেই (প্রশ্নটি ত্রুটিপূর্ণ); অপশনների মধ্যে পরীক্ষায় প্রচলিত উত্তর $\\frac{\\pi}{2}$ (OPT-3)।\n"
+ },
+ "455f1b6e-557c-4a2a-a054-110abb849f92": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\sqrt{3}}{2}$",
+  "explanation_text": "\n$2\\sin^{-1}x=\\sin^{-1}y$, $x=\\frac{\\sqrt{3}}{2}$\n$\\sin^{-1}x=\\sin^{-1}\\frac{\\sqrt{3}}{2}=\\frac{\\pi}{3}$\nসুতরাং $2\\sin^{-1}x=\\frac{2\\pi}{3}$ এবং $y=\\sin\\frac{2\\pi}{3}=\\frac{\\sqrt{3}}{2}$।\n\nব্যাখ্যা: $\\sin^{-1}y=\\frac{2\\pi}{3}$ থেকে $y=\\sin\\frac{2\\pi}{3}=\\frac{\\sqrt{3}}{2}$।\n"
+ },
+ "a12e0240-4b11-4526-a067-0b9c5cbd30ed": {
+  "mcq_solution_index": 1,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\tan\\left(\\tan^{-1}\\frac{1}{3}+\\tan^{-1}\\frac{1}{2}\\right)$\n=$\\tan\\left(\\tan^{-1}\\left(\\frac{\\frac{1}{3}+\\frac{1}{2}}{1-\\frac{1}{3}\\cdot\\frac{1}{2}}\\right)\\right)$\n=$\\tan\\left(\\tan^{-1}\\left(\\frac{\\frac{5}{6}}{\\frac{5}{6}}\\right)\\right)=\\tan(\\tan^{-1}1)=1$।\n\nব্যাখ্যা: $\\tan^{-1}a+\\tan^{-1}b=\\tan^{-1}\\frac{a+b}{1-ab}$ সূত্রে $ab=\\frac{1}{6}<1$ বলে সরাসরি প্রযোজ্য।\n"
+ },
+ "0d8c6ba4-6db7-4395-9bca-d8111fb6b72e": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{3 \\pi}{4}$",
+  "explanation_text": "\n$\\cot^{-1}\\frac{1}{3}=\\tan^{-1}3$ (যেহেতু $\\cot^{-1}x=\\tan^{-1}\\frac{1}{x}$)।\nতাই $\\tan^{-1}2+\\cot^{-1}\\frac{1}{3}=\\tan^{-1}2+\\tan^{-1}3$।\nএখানে $xy=2\\cdot3=6>1$, তাই সূত্র: $\\tan^{-1}2+\\tan^{-1}3=\\pi+\\tan^{-1}\\frac{2+3}{1-6}=\\pi+\\tan^{-1}(-1)=\\pi-\\frac{\\pi}{4}=\\frac{3\\pi}{4}$।\n\nব্যাখ্যা: $x>0,y>0,xy>1$ হলে $\\tan^{-1}x+\\tan^{-1}y=\\pi+\\tan^{-1}\\frac{x+y}{1-xy}$।\n"
+ },
+ "06650b80-05d6-45f3-87a6-b3d151ab725d": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{3 \\pi}{4}$",
+  "explanation_text": "\n$\\tan^{-1}2+\\tan^{-1}3$; এখানে $xy=6>1$।\nসুতরাং $\\tan^{-1}2+\\tan^{-1}3=\\pi+\\tan^{-1}\\frac{2+3}{1-2\\cdot3}=\\pi+\\tan^{-1}(-1)=\\pi-\\frac{\\pi}{4}=\\frac{3\\pi}{4}$।\n\nব্যাখ্যা: $\\frac{x+y}{1-xy}=-1$ অর্থাৎ কোণ $-\\frac{\\pi}{4}$; $\\pi$ যোগ করে মুখ্যমান $\\frac{3\\pi}{4}$ পাওয়া যায়।\n"
+ },
+ "22752243-d8f2-44e1-bf38-a93e1c0a159f": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{2}{\\sqrt{5}}$",
+  "explanation_text": "\nধরি, $\\alpha=\\cot^{-1}2$। তাহলে $\\cot\\alpha=2$ অর্থাৎ $\\tan\\alpha=\\frac{1}{2}$।\nসমকোণী ত্রিভুজ: বিপরীত বাহু ১, সন্নিহিত বাহু ২, অতিভুজ $\\sqrt{5}$।\nতাই $\\cos\\alpha=\\frac{\\text{সন্নিহিত}}{\\text{অতিভুজ}}=\\frac{2}{\\sqrt{5}}$।\n\nব্যাখ্যা: $\\cos\\alpha=\\frac{1}{\\sqrt{1+\\tan^{2}\\alpha}}=\\frac{1}{\\sqrt{1+\\frac{1}{4}}}=\\frac{2}{\\sqrt{5}}$।\n"
+ },
+ "e96f043e-21d4-4af4-b09d-3d4c6caae7c9": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{x}{\\sqrt{1-x^{2}}}$",
+  "explanation_text": "\nধরি, $\\alpha=\\cos^{-1}x$, অর্থাৎ $\\cos\\alpha=x$।\nতখন $\\tan\\alpha=\\frac{\\sqrt{1-x^{2}}}{x}$ এবং $\\cot^{-1}(\\tan\\alpha)=\\frac{\\pi}{2}-\\alpha$ (যেহেতু $\\cot^{-1}t=\\frac{\\pi}{2}-\\tan^{-1}t$)।\nসুতরাং $\\tan\\cot^{-1}\\tan\\cos^{-1}x=\\tan\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cot\\alpha=\\frac{x}{\\sqrt{1-x^{2}}}$।\n\nব্যাখ্যা: $\\tan\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cot\\alpha$ এবং $\\cot\\alpha=\\frac{\\cos\\alpha}{\\sin\\alpha}=\\frac{x}{\\sqrt{1-x^{2}}}$।\n"
+ },
+ "ae836816-7ba3-43ef-b7a0-c5686c88b18b": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{3}{4}$",
+  "explanation_text": "\n$\\sin\\cot^{-1}\\tan\\cos^{-1}\\frac{3}{4}$ — উপরের (৩৭ নং) নিয়মে:\n$\\cot^{-1}\\tan\\alpha=\\frac{\\pi}{2}-\\alpha$ যেখানে $\\alpha=\\cos^{-1}\\frac{3}{4}$।\nতাই $\\sin\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cos\\alpha=\\cos\\left(\\cos^{-1}\\frac{3}{4}\\right)=\\frac{3}{4}$।\n\nব্যাখ্যা: $\\sin\\left(\\frac{\\pi}{2}-A\\right)=\\cos A$ সূত্র।\n"
+ },
+ "5fc7e1d5-bd7b-435f-ad9c-2362e73e3cea": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\mathbf{X}$",
+  "explanation_text": "\n$\\sin\\cot^{-1}\\tan\\cos^{-1}x=\\sin\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cos\\alpha=x$, যেখানে $\\alpha=\\cos^{-1}x$।\nসুতরাং মান $x$।\n\nব্যাখ্যা: অপশন ১-এ $X$ মানে চলক $x$; ফলে গাণিতিক উত্তর $x$ অপশন ১-এর সাথে মেলে।\n"
+ },
+ "afaef826-322b-4631-bce0-1ac1c6e9045a": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{\\sqrt{5}}{3}$",
+  "explanation_text": "\n$\\tan(\\cos^{-1}x)=\\sin(\\tan^{-1}2)$\nLHS: $\\alpha=\\cos^{-1}x$ হলে $\\tan\\alpha=\\frac{\\sqrt{1-x^{2}}}{x}$।\nRHS: $\\tan^{-1}2=\\beta$ হলে $\\tan\\beta=2$, অতিভুজ $\\sqrt{5}$, তাই $\\sin\\beta=\\frac{2}{\\sqrt{5}}$।\nসুতরাং $\\frac{\\sqrt{1-x^{2}}}{x}=\\frac{2}{\\sqrt{5}}$\nবা, $5(1-x^{2})=4x^{2}$ বা, $5=9x^{2}$ বা, $x=\\frac{\\sqrt{5}}{3}$ (ধনাত্মক মান)।\n\nব্যাখ্যা: বর্গ করে সমাধান; $x>0$ ধরলে গ্রহণযোগ্য মান $\\frac{\\sqrt{5}}{3}$।\n"
+ },
+ "1be6a8df-5ba0-4fd2-870a-f81d72bf5ad5": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{6}$",
+  "explanation_text": "\nধরি, $\\alpha=\\arccos\\frac{\\sqrt{2}}{\\sqrt{3}}$, অর্থাৎ $\\cos\\alpha=\\frac{\\sqrt{2}}{\\sqrt{3}}$।\nতাহলে $\\sin\\alpha=\\sqrt{1-\\frac{2}{3}}=\\frac{1}{\\sqrt{3}}$।\nতাই $\\arctan\\left\\{\\sin\\alpha\\right\\}=\\arctan\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}$।\n\nব্যাখ্যা: $\\tan\\frac{\\pi}{6}=\\frac{1}{\\sqrt{3}}$ এবং $\\frac{\\pi}{6}\\in\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$।\n"
+ },
+ "baaf6d52-934e-4144-92e0-ce278906c4d3": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{-1}{3}$",
+  "explanation_text": "\n$\\sin^{-1}\\frac{2}{\\sqrt{5}}=\\tan^{-1}2$ (যেহেতু $\\sin\\alpha=\\frac{2}{\\sqrt{5}}$ হলে $\\tan\\alpha=\\frac{2}{1}=2$)।\nতাই $\\tan^{-1}2+\\tan^{-1}x=\\frac{\\pi}{4}$\nবা, $\\tan^{-1}\\frac{2+x}{1-2x}=\\frac{\\pi}{4}$\nবা, $\\frac{2+x}{1-2x}=1$ বা, $2+x=1-2x$ বা, $3x=-1$ বা, $x=-\\frac{1}{3}$।\n\nব্যাখ্যা: $\\sin^{-1}\\frac{2}{\\sqrt{5}}$ কোণটির বিপরীত বাহু ২, অতিভুজ $\\sqrt{5}$; সন্নিহিত বাহু ১, তাই tan = ২।\n"
+ },
+ "ce3cd0ed-dcee-4f7a-845b-a2eca4873067": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\theta=(2 n+1) \\frac{\\pi}{2}, n \\in \\mathbf{Z}$",
+  "explanation_text": "\n$\\cos2\\theta=-1=\\cos\\pi$\nসাধারণ সমাধান: $2\\theta=2n\\pi\\pm\\pi$\nঅর্থাৎ $2\\theta=(2n+1)\\pi$ (একই সেট)\nবা, $\\theta=(2n+1)\\frac{\\pi}{2}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos x=\\cos\\pi\\Rightarrow x=2n\\pi\\pm\\pi$; $2n\\pi+\\pi=(2n+1)\\pi$ এবং $2n\\pi-\\pi=(2n-1)\\pi$ একই সেট নির্দেশ করে।\n"
+ },
+ "9c222521-3fdb-4970-bed0-6d72b8740b6e": {
+  "mcq_solution_index": 2,
+  "answer_text": "$(2 n+1) \\frac{\\pi}{18}$",
+  "explanation_text": "\n$\\tan5\\theta\\cdot\\tan4\\theta=1$\nবা, $\\tan5\\theta=\\frac{1}{\\tan4\\theta}=\\cot4\\theta=\\tan\\left(\\frac{\\pi}{2}-4\\theta\\right)$\nতাই $5\\theta=n\\pi+\\frac{\\pi}{2}-4\\theta$\nবা, $9\\theta=n\\pi+\\frac{\\pi}{2}$\nবা, $\\theta=\\frac{n\\pi}{9}+\\frac{\\pi}{18}=\\frac{(2n+1)\\pi}{18}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan A=\\tan B\\Rightarrow A=n\\pi+B$ সূত্র প্রয়োগ করা হয়েছে।\n"
+ },
+ "8136b77f-b0dd-4753-8471-75debb3548ad": {
+  "mcq_solution_index": 0,
+  "answer_text": "$(2 n+1) \\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sec x=\\sec(x+\\pi)$ সমীকরণকে $\\cos x=\\cos(x+\\pi)$ আকারে লিখি।\nসাধারণ সমাধান: $x=2n\\pi\\pm(x+\\pi)$।\n$+$ চিহ্নে: $x=2n\\pi+x+\\pi$ — অসম্ভব।\n$-$ চিহ্নে: $x=2n\\pi-x-\\pi$ বা, $2x=2n\\pi-\\pi$ বা, $x=n\\pi-\\frac{\\pi}{2}$।\n$n\\in\\mathbb{Z}$-এর জন্য ইহা $(2n+1)\\frac{\\pi}{2}$ সেটের সমান।\n\nব্যাখ্যা: $\\cos x=\\cos y\\Rightarrow x=2n\\pi\\pm y$ সূত্রমতে মান আসে $(2n+1)\\frac{\\pi}{2}$; তবে $\\sec x$ ঐ বিন্দুগুলিতে সংজ্ঞায়িত নয় বলে সমীকরণের প্রকৃত সমাধান নেই — প্রশ্নটি সূত্র প্রয়োগের ধারণা যাচাই করে।\n"
+ },
+ "0ebe3e09-e9ce-415c-8514-168568eff17a": {
+  "mcq_solution_index": 3,
+  "answer_text": "$n \\pi \\pm \\frac{\\pi}{6}$",
+  "explanation_text": "\n$2\\cos2\\theta-1=0$\nবা, $\\cos2\\theta=\\frac{1}{2}=\\cos\\frac{\\pi}{3}$\nতাই $2\\theta=2n\\pi\\pm\\frac{\\pi}{3}$\nবা, $\\theta=n\\pi\\pm\\frac{\\pi}{6}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos x=\\cos\\alpha\\Rightarrow x=2n\\pi\\pm\\alpha$; উভয়পক্ষকে ২ দিয়ে ভাগ করলে $n\\pi\\pm\\frac{\\pi}{6}$।\n"
+ },
+ "1d4ec6e8-d31f-4115-8577-144e46dd3459": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\sqrt{5}}{2}$",
+  "explanation_text": "\nধরি, $\\alpha=\\operatorname{cosec}^{-1}\\frac{3}{2}$। তাহলে $\\operatorname{cosec}\\alpha=\\frac{3}{2}$ বা $\\sin\\alpha=\\frac{2}{3}$।\nসমকোণী ত্রিভুজ: বিপরীত বাহু ২, অতিভুজ ৩, সন্নিহিত বাহু $\\sqrt{9-4}=\\sqrt{5}$।\nতাই $\\cot\\alpha=\\frac{\\sqrt{5}}{2}$।\n$\\cot^{-1}p=\\alpha$ হলে $p=\\cot\\alpha=\\frac{\\sqrt{5}}{2}$।\n\nব্যাখ্যা: $\\cot^{-1}p=\\alpha\\iff\\cot\\alpha=p$।\n"
+ },
+ "f00c4188-c7df-4ce8-9b7d-3e98fb525bbe": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{n \\pi}{3}+\\frac{\\pi}{12}$",
+  "explanation_text": "\n$\\tan3\\theta=1=\\tan\\frac{\\pi}{4}$\nসুতরাং $3\\theta=n\\pi+\\frac{\\pi}{4}$\nবা, $\\theta=\\frac{n\\pi}{3}+\\frac{\\pi}{12}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan x=\\tan\\alpha\\Rightarrow x=n\\pi+\\alpha$।\n"
+ },
+ "dc0bdc06-2983-4fc1-b2a5-d37108e586ce": {
+  "mcq_solution_index": 0,
+  "answer_text": "$(4 n-1) \\frac{\\pi}{4} ; n \\in \\mathbb{Z}$",
+  "explanation_text": "\n$\\tan\\theta+1=0$ বা, $\\tan\\theta=-1=\\tan\\left(-\\frac{\\pi}{4}\\right)$\nসুতরাং $\\theta=n\\pi-\\frac{\\pi}{4}=(4n-1)\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $n\\pi-\\frac{\\pi}{4}=\\frac{4n-1}{4}\\pi$, তাই $(4n-1)\\frac{\\pi}{4}$ — যা $\\tan$-এর মুখ্য/সাধারণ সমাধানের সংক্ষিপ্ত রূপ।\n"
+ },
+ "381142a4-7f44-4247-8e7d-4810cbef9765": {
+  "mcq_solution_index": 4,
+  "answer_text": "No correct answer",
+  "explanation_text": "\n$\\sqrt{2}\\sin\\theta+1=0$\nবা, $\\sin\\theta=-\\frac{1}{\\sqrt{2}}=\\sin\\left(-\\frac{\\pi}{4}\\right)$\nসুতরাং $\\theta=n\\pi+(-1)^{n}\\left(-\\frac{\\pi}{4}\\right)=n\\pi-(-1)^{n}\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\nযাচাই: $n=0$ দিলে $\\theta=-\\frac{\\pi}{4}$, $n=1$ দিলে $\\theta=\\frac{5\\pi}{4}$ — উভয় ক্ষেত্রে $\\sin\\theta=-\\frac{1}{\\sqrt{2}}$। ✓\n\nব্যাখ্যা: প্রদত্ত অপশনগুলোর মধ্যে সঠিক এই সাধারণ সমাধানটির রূপ নেই, তাই সঠিক উত্তর: \"No correct answer\"।\n"
+ },
+ "8b0063ca-7f18-4c0b-af7c-8a89cf8fa68a": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{\\mathrm{n} \\pi}{2}+(-1)^{n} \\frac{\\pi}{12}$",
+  "explanation_text": "\n$\\sin2\\theta=\\frac{1}{2}=\\sin\\frac{\\pi}{6}$\nসুতরাং $2\\theta=n\\pi+(-1)^{n}\\frac{\\pi}{6}$\nবা, $\\theta=\\frac{n\\pi}{2}+(-1)^{n}\\frac{\\pi}{12}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\sin x=\\sin\\alpha\\Rightarrow x=n\\pi+(-1)^{n}\\alpha$; উভয়পক্ষ ২ দিয়ে ভাগ।\n"
+ },
+ "90c10d2c-6b7d-4ce7-a4e1-362844029b9a": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{2}{3} n \\pi \\pm \\frac{\\pi}{9}$",
+  "explanation_text": "\n$\\cos3\\theta=\\frac{1}{2}=\\cos\\frac{\\pi}{3}$\nসুতরাং $3\\theta=2n\\pi\\pm\\frac{\\pi}{3}$\nবা, $\\theta=\\frac{2n\\pi}{3}\\pm\\frac{\\pi}{9}=\\frac{2}{3}n\\pi\\pm\\frac{\\pi}{9}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos x=\\cos\\alpha\\Rightarrow x=2n\\pi\\pm\\alpha$; উভয়পক্ষ ৩ দিয়ে ভাগ।\n"
+ },
+ "2fdbb26d-a653-4571-95de-dbcc84821813": {
+  "mcq_solution_index": 0,
+  "answer_text": "$-\\frac{\\pi}{6},-\\frac{5 \\pi}{6}$",
+  "explanation_text": "\n$\\sin x=-\\frac{1}{2}=\\sin\\left(-\\frac{\\pi}{6}\\right)$\n$-\\pi\\leq x\\leq\\pi$ ব্যবধিতে: $x=-\\frac{\\pi}{6}$ অথবা $x=-\\frac{5\\pi}{6}$ (যেহেতু $\\sin\\left(-\\frac{5\\pi}{6}\\right)=-\\frac{1}{2}$)।\n\nব্যাখ্যা: $\\sin x=-\\frac{1}{2}$-এর $[-\\pi,\\pi]$ ব্যবধির দুইটি সমাধান — $-\\frac{\\pi}{6}$ ও $-\\frac{5\\pi}{6}$ (তৃতীয় ও চতুর্থ চতুর্ভাগ)।\n"
+ },
+ "e0d9c9b4-6a2f-4357-8733-f0f574d5ba7d": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{2 \\pi}{3}$",
+  "explanation_text": "\n$\\sec\\theta=-2$ বা, $\\cos\\theta=-\\frac{1}{2}$।\n$\\frac{\\pi}{2}<\\theta<\\pi$ (দ্বিতীয় চতুর্ভাগ) ব্যবধিতে $\\cos\\theta=-\\frac{1}{2}$ হলে $\\theta=\\pi-\\frac{\\pi}{3}=\\frac{2\\pi}{3}$।\n\nব্যাখ্যা: $\\cos\\frac{\\pi}{3}=\\frac{1}{2}$; দ্বিতীয় চতুর্ভাগে $\\cos\\theta=-\\frac{1}{2}$ হয় $\\theta=\\pi-\\frac{\\pi}{3}=\\frac{2\\pi}{3}$-তে।\n"
+ },
+ "c43a513e-191b-4e07-87d9-51fbfb9c0c94": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{3}$",
+  "explanation_text": "\n$\\operatorname{cosec}\\theta+\\cot\\theta=\\sqrt{3}$\nবা, $\\frac{1}{\\sin\\theta}+\\frac{\\cos\\theta}{\\sin\\theta}=\\sqrt{3}$\nবা, $\\frac{1+\\cos\\theta}{\\sin\\theta}=\\sqrt{3}$\nবা, $\\cot\\frac{\\theta}{2}=\\sqrt{3}$ ($\\frac{1+\\cos\\theta}{\\sin\\theta}=\\cot\\frac{\\theta}{2}$ পরিচয়)\nবা, $\\tan\\frac{\\theta}{2}=\\frac{1}{\\sqrt{3}}=\\tan\\frac{\\pi}{6}$\n$0<\\theta<2\\pi$ বলে $\\frac{\\theta}{2}=\\frac{\\pi}{6}$, অর্থাৎ $\\theta=\\frac{\\pi}{3}$।\n\nব্যাখ্যা: $(0,2\\pi)$ ব্যবধিতে $\\tan\\frac{\\theta}{2}=\\frac{1}{\\sqrt{3}}$-এর একমাত্র গ্রহণযোগ্য মান $\\frac{\\theta}{2}=\\frac{\\pi}{6}$।\n"
+ },
+ "1f8f7d77-c7a7-41ad-bf9e-909e27ed2607": {
+  "mcq_solution_index": 2,
+  "answer_text": "$2 n \\pi+\\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\cos\\theta+\\sin\\theta=\\sqrt{2}$\nবা, $\\sqrt{2}\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)=\\sqrt{2}$\nবা, $\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)=1=\\sin\\frac{\\pi}{2}$\nসুতরাং $\\theta+\\frac{\\pi}{4}=2n\\pi+\\frac{\\pi}{2}$\nবা, $\\theta=2n\\pi+\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos\\theta+\\sin\\theta=\\sqrt{2}\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)$; এরপর $\\sin x=1$-এর সাধারণ সমাধান।\n"
+ },
+ "aa4eb7d8-d10d-41d2-9cfc-387abac3b0f0": {
+  "mcq_solution_index": 3,
+  "answer_text": "i, ii ও iii ",
+  "explanation_text": "\ni. $\\sin^{-1}x$-এর ডোমেন $[-1,1]$ — সঠিক।\nii. $\\cos^{-1}x$-এর রেঞ্জ $[0,\\pi]$ — সঠিক।\niii. $\\tan^{-1}x$-এর ডোমেন $(-\\infty,\\infty)$ — সঠিক।\nতিনটি বিবৃতিই সঠিক, তাই উত্তর: i, ii ও iii।\n\nব্যাখ্যা: বিপরীত ত্রিকোণমিতিক ফাংশনের ডোমেন-রেঞ্জের মৌলিক সংজ্ঞা: $\\sin^{-1}x,\\cos^{-1}x$-এর ডোমেন $[-1,1]$; $\\tan^{-1}x$-এর ডোমেন সব বাস্তব সংখ্যা।\n"
+ },
+ "d628aa25-910e-4fa6-a2ae-cc76d7759563": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\nঅবান্তর মূল (extraneous root):\ni. মূল সমীকরণটিকে সিদ্ধ করে না — সঠিক।\nii. সমীকরণে বর্গ করলে উদ্ভূত হয় — সঠিক (বর্গ করার ফলে অতিরিক্ত মূল আসতে পারে)।\niii. বর্গমূল করলে পাওয়া যায় — ভুল (বর্গমূল করলে অবান্তর মূল তৈরি হয় না)।\nসুতরাং সঠিক: i ও ii।\n\nব্যাখ্যা: যেমন $\\sqrt{x}=x-2$ সমীকরণ বর্গ করলে $x=(x-2)^{2}$ থেকে $x=1,4$ আসে; যাচাইয়ে $x=1$ মূল সমীকরণ সিদ্ধ করে না — ইহাই অবান্তর মূল।\n"
+ },
+ "76b609d7-bb17-42d8-831b-cecbf4116dc0": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$g(y)+g(\\sqrt{1-y^{2}})=\\sin^{-1}y+\\sin^{-1}\\sqrt{1-y^{2}}$\nধরি, $\\sin^{-1}\\sqrt{1-y^{2}}=\\beta$, অর্থাৎ $\\sin\\beta=\\sqrt{1-y^{2}}$; তখন $\\cos\\beta=y$, অর্থাৎ $\\beta=\\cos^{-1}y$ (ধনাত্মক $y$-র জন্য)।\nতাই যোগফল $=\\sin^{-1}y+\\cos^{-1}y=\\frac{\\pi}{2}$ (পূরক কোণ পরিচয়)।\n\nব্যাখ্যা: যেকোনো $x\\in[-1,1]$-এর জন্য $\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}$; এখানে $\\sin^{-1}\\sqrt{1-y^{2}}=\\cos^{-1}y$।\n"
+ },
+ "2bf80348-aac7-4259-88eb-a08272034e59": {
+  "mcq_solution_index": 0,
+  "answer_text": "$n \\pi \\pm \\frac{\\pi}{6}, n \\in z$",
+  "explanation_text": "\n$f(x)f(2x)=1$ বা, $\\tan x\\cdot\\tan2x=1$।\n$\\tan2x=\\frac{2\\tan x}{1-\\tan^{2}x}$ সূত্র ব্যবহার করে:\n$\\tan x\\cdot\\frac{2\\tan x}{1-\\tan^{2}x}=1$\nবা, $2\\tan^{2}x=1-\\tan^{2}x$\nবা, $3\\tan^{2}x=1$\nবা, $\\tan x=\\pm\\frac{1}{\\sqrt{3}}=\\tan\\left(\\pm\\frac{\\pi}{6}\\right)$\nসুতরাং $x=n\\pi\\pm\\frac{\\pi}{6}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan x=\\tan\\alpha$ হলে $x=n\\pi+\\alpha$; চিহ্ন দুটি মিলিয়ে $x=n\\pi\\pm\\frac{\\pi}{6}$।\n"
+ }
+}

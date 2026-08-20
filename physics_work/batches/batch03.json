@@ -1,0 +1,423 @@
+{
+ "batch": 3,
+ "questions": [
+  {
+   "n": 59,
+   "id": "bee100dd-2c36-4ef6-bb4d-cbc0890372f4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ফ্লাক্সের একক-  ",
+   "options": [
+    "$\\mathrm{Nm}^{-2} \\mathrm{C}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}$",
+    "$\\mathrm{N}^{-1} \\mathrm{~m}^{2} \\mathrm{C}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}^{-1}$"
+   ],
+   "images": [],
+   "src": "SB (Sylhet Board) 2024 [Board Exam Question]; JB (Jessore Board) 2022 [Board Exam Question]; ChB (Chattogram Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 60,
+   "id": "b36cdcd0-075e-43e1-9c54-cc314a6cec9a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nউপরে প্রদত্ত বর্তনীর তুল্য ধারকত্ব কত?  ",
+   "options": [
+    "1µF",
+    "2µF",
+    "3µF",
+    "4µF"
+   ],
+   "images": [
+    "b36cdcd0-075e-43e1-9c54-cc314a6cec9a_0.webp"
+   ],
+   "src": "SB (Sylhet Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 61,
+   "id": "348a1538-6ebc-4406-a335-e8682eb67ac4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চার্জের কোয়ান্টায়ন অনুসারে একটি চার্জিত বস্তুতে চার্জের পরিমাণ নিচের কোনটি হতে পারে না?  ",
+   "options": [
+    "$-1.6 \\times 10^{-19} \\mathrm{C}$",
+    "$+2 \\times 10^{-19} \\mathrm{C}$",
+    "$-3.2 \\times 10^{-19} \\mathrm{C}$",
+    "$+4.8 \\times 10^{-19} \\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "SB (Sylhet Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 62,
+   "id": "aae901c3-5601-4b45-8ff4-881f67a5d081",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি চার্জিত সমতল পরিবাহীর সন্নিকটে তড়িৎ প্রাবল্যের মান কোনটি? ",
+   "options": [
+    "$E=\\frac{\\sigma}{2 \\epsilon_{0}}$",
+    "$\\mathrm{E}=\\frac{\\sigma}{\\epsilon_{0}}$",
+    "$\\mathrm{E}=\\frac{2 \\epsilon_{0}}{\\sigma}$",
+    "$E=\\frac{E_{0}}{\\sigma}$"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2024 [Board Exam Question]; CB (Cumilla Board) 2017 [Board Exam Question]"
+  },
+  {
+   "n": 63,
+   "id": "7ea77b48-fc03-492e-9a86-687cfbecb54b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকত্বের একক নিচের কোনটি? ",
+   "options": [
+    "জুল",
+    "কুলম্ব",
+    "ভোল্ট",
+    "ফ্যারাড"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2024 [Board Exam Question]; CB (Cumilla Board) 2017 [Board Exam Question]"
+  },
+  {
+   "n": 64,
+   "id": "05ecf85d-4a7d-476f-b20b-ab63b6587099",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোনো একটি বিন্দুতে তড়িৎ বিভব $V=(6 x-3 y+2 z) V$ হলে ঐ বিন্দুতে তড়িৎ প্রাবল্য কত? ",
+   "options": [
+    "$5 \\mathrm{NC}^{-1}$",
+    "$7 \\mathrm{NC}^{-1}$",
+    "$31 \\mathrm{NC}^{-1}$",
+    "$49 \\mathrm{NC}^{-1}$"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 65,
+   "id": "351a6755-0c69-4e8c-9130-ce22ca4763d0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "এক খণ্ড মেঘে কী পরিমাণ চার্জ আছে তা মাপা যায় কোন সূত্রের সাহায্যে? ",
+   "options": [
+    "ওহমের সূত্র",
+    "গাউসের সূত্র",
+    "কার্শফের সূত্র",
+    "কুলম্বের সূত্র"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 66,
+   "id": "4d2050b2-3483-44a3-8bc4-b0bc94c94959",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রযুক্ত ভোল্টেজ স্থির রেখে পাত দুটির ব্যবধান 25% কমানো হলে ধারকে সঞ্চিত শক্তির শতকরা কত পরিবর্তন হবে? ",
+   "options": [
+    "16.10%",
+    "33.33%",
+    "45.38%",
+    "77.77%"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 67,
+   "id": "982f148e-e763-4fe6-9b62-b9631e3c771e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ প্রাবল্য বনাম দূরত্বের লেখচিত্র কোনটি? ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 68,
+   "id": "f9cbad1b-9b7f-4b26-be9d-ca68fb9c1852",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎ দ্বিমেরুর ক্ষেত্রে তড়িৎ বিভবের মান দূরত্বের (r) সাথে কীভাবে পরিবর্তিত হয়? ",
+   "options": [
+    "$\\mathbf{r}^{-1}$",
+    "$\\mathbf{r}^{-2}$",
+    "$\\mathbf{r}^{-3}$",
+    "$\\mathbf{r}^{-3}$"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 69,
+   "id": "c3a1aa38-8f79-4d55-86a8-b6aafa46811f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের কোন ভেক্টরটি $\\overrightarrow{\\mathbf{A}}=\\hat{\\mathbf{i}}+\\hat{\\mathbf{j}}$ এর সমান্তরাল? ",
+   "options": [
+    "$\\hat{\\mathbf{i}}+\\hat{\\mathrm{k}}$",
+    "$\\hat{j}+\\hat{k}$",
+    "$2 \\hat{i}+2 \\hat{j}$",
+    "$2 \\hat{\\mathrm{i}}+2 \\hat{\\mathrm{k}}$"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 70,
+   "id": "7c1c53ca-06e8-48f1-b21f-37aeb9f3ad9d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$\\alpha$ ও $\\theta$ এর মধ্যে সম্পর্ক- ",
+   "options": [
+    "$2 \\theta=\\alpha$",
+    "$\\alpha=\\frac{\\theta}{3}$",
+    "$\\theta=2 \\alpha$",
+    "$\\theta=\\frac{\\alpha}{3}$"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 71,
+   "id": "c22bf0ed-20eb-4d21-bab8-71b535477279",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রে একটি সুক্ষ্ম তড়িৎক্ষেত্র— \n$\\vec{E}=(2 \\hat{i}+5 \\hat{j}+6 \\hat{k}) N C^{-1}$\n \nতড়িৎক্ষেত্রের ZX তলে স্থাপিত $40 m^2$ ক্ষেত্রফল বিশিষ্ট তলে তড়িৎ ফ্লাক্স?",
+   "options": [
+    "$200 \\mathrm{Nm}^{2} \\mathrm{C}^{-1}$ ",
+    "$250 \\mathrm{Nm}^{2} \\mathrm{C}^{-1}$ ",
+    "$100 \\mathrm{Nm}^{2} \\mathrm{C}^{-1}$ ",
+    "$300 \\mathrm{Nm}^{2} \\mathrm{C}^{-1}$ "
+   ],
+   "images": [
+    "c22bf0ed-20eb-4d21-bab8-71b535477279_0.webp"
+   ],
+   "src": "JB (Jessore Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 72,
+   "id": "dbb03c54-104a-43ba-b6e9-aa95a021484d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি সমান্তরাল পাতের মধ্যে তড়িৎক্ষেত্রের প্রাবল্য সুষম। একটি পাত্র হতে অন্যটির দূরত্ব বাড়ার সাথে বিভব কোন লেখচিত্র অনুযায়ী পরিবর্তিত হবে।  ",
+   "options": [
+    " মূল বিন্দুগামী সরলরেখা",
+    " বক্ররেখা ",
+    " সরলরেখা",
+    " প্যারাবোলা"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 73,
+   "id": "fcb482ab-0240-4274-b21e-58dd38c6c066",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রে ABC ত্রিভুজের AB = AC = 2 BD = 2 CD এবং $q_B = + 2C ও $q_C$ = + 4 C। A ও D বিন্দুর বিভব যথাক্রমে $V_A$ এবং $V_D$\n\n \nনিচের কোনটি সঠিক? ",
+   "options": [
+    "$V_A>V_D $",
+    "$V_A<V_D $",
+    "$V_A=V_D $",
+    "$2V_D > V_A$"
+   ],
+   "images": [
+    "fcb482ab-0240-4274-b21e-58dd38c6c066_0.webp"
+   ],
+   "src": "BB (Barisal Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 74,
+   "id": "86fd88a6-9342-4044-99a6-3e5777024234",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমবিভব তলের বৈশিষ্ট্য হলো- \ni. দুটি সমবিভব তল কখনো পরম্পরকে ছেদ করে না \nii. সমবিভব তলে আধানগুলো গতিশীল থাকে।\niii. সমবিভব তলকে তড়িৎ বল রেখাগুলো সমকোণে ছেদ করে।\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i , ii ও iii"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 75,
+   "id": "8df086a3-79de-4969-baa8-cc0908374001",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বর্গক্ষেত্রের শীর্ষবিন্দুতে চারটি বিন্দু আধান আছে। যাদের মান যথাক্রমে –Q, –q, 2q এবং 2Q। Q ও q এর মধ্যে নিচের কোন সম্পর্কের জন্য বর্গক্ষেত্রের কেন্দ্রে বিভব শূন্য হবে?  ",
+   "options": [
+    "Q= -q",
+    "$Q=-\\frac{1}{q}$",
+    "Q = q",
+    "$Q=\\frac{1}{q}$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 76,
+   "id": "a7bdd22a-7d8c-4b42-9a74-07e307b630aa",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সবচেয়ে বেশি আধান থাকে আহিত বস্তুর- ",
+   "options": [
+    "কেন্দ্রে",
+    "অবতল তলে",
+    "উত্তল তলে",
+    "সমতল তলে"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]; DB (Dhaka Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 77,
+   "id": "735f9095-0e02-4398-936f-72c37e27571b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রে বর্গক্ষেত্রের D বিন্দুতে কত চার্জ স্থাপন করলে এর কেন্দ্রে বিভব শূন্য হবে? \n \n  ",
+   "options": [
+    "-15C",
+    "-13C",
+    "-10C",
+    "-0C"
+   ],
+   "images": [
+    "735f9095-0e02-4398-936f-72c37e27571b_0.webp"
+   ],
+   "src": "JB (Jessore Board) 2023 [Board Exam Question]; DB (Dhaka Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 78,
+   "id": "3270491f-4221-4e5a-8889-96ba2dbdd9b4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পরাবৈদ্যুতিক ধ্রুবক k হলে-\n$\\begin{array}{l}\\text{i. } \\quad \\frac{F_{0}}{F}\\\\\\text{ii. } \\frac{\\epsilon}{\\epsilon_{0}}\\\\\\text{iii. } \\frac{C_0}{C}\\end{array}$\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2023 [Board Exam Question]; MSB (Mymensingh Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 79,
+   "id": "7b9143c7-285c-4f65-88b2-f70ef1a4b5a1",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোনো গোলাকার পরিবাহীর ধারকত্ব 1F হলে এর ব্যাসার্ধ হবে— ",
+   "options": [
+    "1m",
+    "$9 \\times 10^{5} \\mathrm{~m}$",
+    "$9 \\times 10^{9} \\mathrm{~m}$",
+    "$9 \\times 10^{11} \\mathrm{~m}$"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 80,
+   "id": "6c95af8d-8978-4111-8ab1-63c780725976",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "1C ধনাত্মক আধান থেকে নির্গত বলরেখার সংখ্যা —  ",
+   "options": [
+    "$9 \\times 10^{9}$",
+    "$8.85 \\times 10^{-12}$",
+    "$\\frac{1}{8.85 \\times 10^{-12}}$",
+    "$\\frac{1}{9 \\times 10^{9}}$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 81,
+   "id": "09598409-ccbc-4aa1-b0ac-ca29bc20560c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \n\nধারকদ্বয়ের বিভব পার্থক্যের অনুপাত —  ",
+   "options": [
+    "1:3",
+    "1:2",
+    "2:1",
+    "3:1"
+   ],
+   "images": [
+    "09598409-ccbc-4aa1-b0ac-ca29bc20560c_0.png"
+   ],
+   "src": "RB (Rajshahi Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 82,
+   "id": "ed297b43-a1b5-4db6-b18f-96423684b253",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বস্তুর মোট চার্জ হতে পারে নিম্নের কোনটি?  ",
+   "options": [
+    "$3 \\times 10^{-19} \\mathrm{C}$",
+    "$4 \\times 10^{-19} \\mathrm{C}$",
+    "$5.76 \\times 10^{-19} \\mathrm{C}$",
+    "$6.4 \\times 10^{-19} \\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 83,
+   "id": "157eb9b0-773e-4c84-bb15-7d658c303d25",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কুলম্বের সূত্র- \ni. কেবল বিন্দু চার্জের ক্ষেত্রে প্রযোজ্য\nii. গতিশীল চার্জের ক্ষেত্রে প্রযোজ্য নয়\niii. মাধ্যমের উপর নির্ভর করে\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 84,
+   "id": "9202c20f-bc69-4a05-a904-fe7711b38a38",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি চার্জের মধ্যে ক্রিয়াশীল স্থির তড়িৎ বল— \ni. অন্য কোনো চার্জের উপস্থিতির উপর নির্ভর করে না\nii. অসংরক্ষণশীল\niii. এর সীমা অসীম\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 85,
+   "id": "20bcadc4-1cf7-4de0-bc7c-f0a9867dbfab",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ভূ-সংযুক্ত বস্তুর তড়িৎ বিভব— ",
+   "options": [
+    "ঋণাত্মক",
+    "শূন্য",
+    "ধনাত্মক",
+    "অসীম"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 86,
+   "id": "faa9205d-e8ba-4ca4-b990-bf9851f30416",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তারের 50° C তাপমাত্রায় রোধ 5$\\Omega$ এবং 100° C তাপমাত্রায় -রোধ 6$\\Omega$ । 0°C তাপমাত্রায় তারটির রোধ হবে—   ",
+   "options": [
+    "1$\\Omega$",
+    "2$\\Omega$",
+    "3$\\Omega$",
+    "4$\\Omega$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2023 [Board Exam Question]"
+  },
+  {
+   "n": 87,
+   "id": "e5496685-83dd-4271-9634-4c341a3d0dc9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রের প্রতিটি ধারকের ধারকত্ব $3 \\mu \\mathrm{F}$। A ও B বিন্দুর মধ্যে কার্যকর ধারকত্ব হবে—\n\n \n  ",
+   "options": [
+    "3/4μF",
+    "6μF",
+    "3μF",
+    "5μF"
+   ],
+   "images": [
+    "e5496685-83dd-4271-9634-4c341a3d0dc9_0.png"
+   ],
+   "src": "DB (Dhaka Board) 2022 [Board Exam Question]"
+  }
+ ]
+}

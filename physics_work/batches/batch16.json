@@ -1,0 +1,419 @@
+{
+ "batch": 16,
+ "questions": [
+  {
+   "n": 436,
+   "id": "aab3d55f-290e-43e4-8c91-8f85c8d3839d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "শূন্য মাধ্যমে $1C$ মানের দুটি চার্জকে $1m$ দূরত্বে স্থাপন করলে বিকর্ষণ বলের মান হবে$-$   ",
+   "options": [
+    "$9\\times 10^9\\mathrm{~N}$",
+    "$11\\times 10^9\\mathrm{~N}$",
+    "$1.6\\times 10^9\\mathrm{~N}$",
+    "কোনটিই নয় "
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 437,
+   "id": "61ee3c61-89bf-4eca-bf56-0fada026ea20",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "স্থির চার্জের উপর চৌম্বক বল (magnetic force)$-$ ",
+   "options": [
+    "অত্যন্ত কম",
+    "অত্যন্ত বেশী",
+    "শূন্য",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "JnU-A (Jagannath University (A Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 438,
+   "id": "c89e14d3-2bc3-47de-8b25-2f54353f8cb3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$40cm$ দূরত্বে অবস্থিত $-6\\times 10^{-9}\\mathrm{C}$ ও $-6\\times 10^{-9}\\mathrm{C}$ মানের দুটি চার্জের সংযোগ রেখার ঠিক মধ্যবিন্দুতে তড়িৎ প্রাবল্য হবে$-$  ",
+   "options": [
+    "$180\\mathrm{NC}^{-1}318\\mathrm{~V}$",
+    "$1.8\\mathrm{NC}^{-1}31.8\\mathrm{~V}$",
+    "$0\\text{NC}^{-1}318\\mathrm{~V}$",
+    "কোনটিই নয় "
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 439,
+   "id": "6595584e-b6a7-46a5-b0f8-4fa7b7fdd3ba",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1m$ ব্যাসার্ধের একটি গোলককে বায়ুতে স্থাপন করে $2\\times 10^{-9}$ চার্জে চার্জিত করা হলো। গোলকের কেন্দ্র থেকে $0.1\\ m$ দূরে কোন বিন্দুতে তড়িৎ প্রাবল্য ও বিভব যথাক্রমে$-$ ",
+   "options": [
+    "$180NC^{-1}$ ও $18V $ ",
+    "$1.8NC^{-1}$ ও $1.8V$  ",
+    "$0NC^{-1}$ ও $18 V$ ",
+    "কোনটিই নয় "
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 440,
+   "id": "b1ee0ac7-66e1-4460-8ea8-2c557b9cb552",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বল নলে (tube of force) কত সংখ্যক বলরেখা (lines of force) থাকে? ",
+   "options": [
+    "$\\epsilon$",
+    "$2\\epsilon$",
+    "$\\frac{1}{\\epsilon}$",
+    "$\\frac{\\epsilon}{2}$"
+   ],
+   "images": [],
+   "src": "JnU-A (Jagannath University (A Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 441,
+   "id": "ea77c77f-85e7-436e-8c6b-a209d1c68723",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি ধারকের ধারকত্বের মান অপরটির মানের অর্ধেক হলে তাদের সমান্তরাল সমবায়ে থাকাকালীন তুল্য ধারকত্ব শ্রেণি সমবায়ে থাকাকালীন তুল্য ধারকত্বের কত গুণ হবে? ",
+   "options": [
+    "2 গুণ",
+    "4.5 গুণ",
+    "2.5 গুণ",
+    "3.5 গুণ"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 442,
+   "id": "084b961b-5f96-4f68-bb4d-628620a9861f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান ধারকত্বের তিনটি ধারক প্রথমে শ্রেণিতে এবং পরে সমান্তরাল সমবায়ে যুক্ত করা হলো। এ দু'ক্ষেত্রের তুল্য ধারকত্ব-এর অনুপাত কত?  ",
+   "options": [
+    "1 : 4",
+    "1 : 6",
+    "1 : 9",
+    "1 : 12"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 443,
+   "id": "88f9b3f6-bbf6-41f2-b566-1347b748dad2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$2, 3$ ও $6\\ \\mu F$ এর তিনটি ধারক শ্রেণি সমবায়ে $10V$ উৎসের সাথে সংযুক্ত। $3\\ \\mu F$ ধারকটিতে আধানের পরিমাণ$-$ ",
+   "options": [
+    "$5\\mu F$",
+    "$18\\mu F$",
+    "$12\\mu F$",
+    "$15\\mu F$",
+    "$10\\mu F$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 444,
+   "id": "ecb139d9-ec49-4519-ba56-68a56a200901",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.5m$ বাহুবিশিষ্ট একটি সমবাহু ত্রিভুজের তিন শীর্ষবিন্দুতে তিনটি আধান $q_{1}=+2 \\times 10^{-8} \\mathrm{C},\\ q_{2}=-3 \\times 10^{-8} \\mathrm{C}$ এবং $q_{3}=+4 \\times 10^{-8}\\mathrm{C}$ স্থাপন করলে ত্রিভুজের কেন্দ্রে বিভব কত $V$ হবে?   ",
+   "options": [
+    "835.3 ",
+    "535.3",
+    "935.3",
+    "965.3"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 445,
+   "id": "d394ae19-1be0-427d-a941-ecbd9cb55e9c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের চিত্রে বৈদ্যুতিক সমবিভব ভলগুলোর মধ্যে বিভব পার্থক্য $0.33V$ এবং তলগুলো $11cm$ ব্যবধানে রয়েছে। তড়িৎক্ষে প্রাবল্য কত $Vm^{-1}?$ \n$\\\\$\n$\\begin{array}{|l|l|l|l|} \\hline \\ \\ & \\ \\ & \\ \\ & \\ \\ \\\\ \\hline \\end{array}$   ",
+   "options": [
+    "0.03 ",
+    "0.11",
+    "0.30",
+    "0.33",
+    "3.00"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 446,
+   "id": "e249dde4-782b-42e9-8b91-f72091c1ebef",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রটিতে ব্যবহৃত সকল ধারকের মান $C$ হলে, $A$ ও $B$ বিন্দুর মধ্যবর্তী কার্যকরী ধারকত্ব কত? \n \n ",
+   "options": [
+    "C",
+    "3 C",
+    "1.5 C",
+    "6 C"
+   ],
+   "images": [
+    "e249dde4-782b-42e9-8b91-f72091c1ebef_0.png"
+   ],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 447,
+   "id": "247b95a6-8836-45cf-9cea-a759cad29881",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রের ন্যায় আহিতকরণের পর দেখা গেল যে $A$ বস্তুটিকে ঋণাত্মক আধান তৈরি হয়েছে, যদি $A$ কাঁচের তৈরি হয়, তবে তাকে ঘষা হয়েছিল– \n \n",
+   "options": [
+    "ফ্লানেল দিয়ে",
+    "রেশম দিয়ে",
+    "ইবোনাইট দিয়ে",
+    "সিলিকা দিয়ে"
+   ],
+   "images": [
+    "247b95a6-8836-45cf-9cea-a759cad29881_0.png"
+   ],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 448,
+   "id": "b4789f6d-f0b5-40cd-a5f7-604bbbeb20df",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "1 অ্যাম্পিয়ার কারেন্ট হল- ",
+   "options": [
+    "$1 \\mathrm{\\ Cs}^{-2}$",
+    "$1 \\mathrm{\\ Cs}^{-1}$",
+    "$1 \\mathrm{\\ C}^{2} \\mathrm{~s}^{-1}$",
+    "$1 \\mathrm{\\ C}^{2} \\mathrm{~s}^{-2}$"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 449,
+   "id": "a807280e-a0b9-4970-becb-175c390fc169",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$m\\ kg$ ভর এবং $Q\\ Coul$ চার্জ বিশিষ্ট একটি ধনাত্মক চার্জ কণা স্থিরাবস্থা হতে $V\\ volt$ বিভব পার্থক্যে চালিত হয়। $J$ একক এর গতিশক্তি হলো$-$  ",
+   "options": [
+    "$QV$",
+    "$mQV$",
+    "$mQ/V $",
+    "$\\frac{m}{QV}$"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 450,
+   "id": "ce044b04-edf9-4009-8670-5caa77572421",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি চার্জিত সংযুক্ত বস্তুর মধ্যে চার্জ প্রবাহিত হতে থাকে যতক্ষন না তাদের–",
+   "options": [
+    "চার্জ সমান হয়",
+    "বিভব সমান হয়",
+    "ধারকত্ব সমান হয়",
+    "সঞ্চিত শক্তি সমান হয়"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 451,
+   "id": "21777dc7-18fa-42d2-8305-a249d54e95ee",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন দুটি স্কেলার রাশি?  ",
+   "options": [
+    "তড়িৎক্ষেত্র, তড়িৎ বিভব ",
+    "গতিশক্তি, বেগ",
+    "কেন্দ্রীয় বল, তাপমাত্রা",
+    "চার্জ, কম্পাঙ্ক"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 452,
+   "id": "c39408fe-43d4-4b0e-8f3c-ed97c140b904",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.02m$ ব্যাসার্ধ বিশিষ্ট $64$ টি গোলাকার ফোঁটাকে একত্রিত করে একটি বড় ফোটায় পরিণত করা হল। যদি প্রতি ফোটার $1C$ চার্জ বিদ্যমান থাকে, তবে বড় ফোটার বিভব কত হবে? ",
+   "options": [
+    "$7.2\\times 10^8\\mathrm{~V}$",
+    "$8.4\\times 10^9\\mathrm{~V}$",
+    "$7.19\\times 10^{12}\\mathrm{~V}$",
+    "$7.08\\times 10^{11}\\mathrm{~V}$",
+    "$8.19\\times 10^{10}\\mathrm{~V}$"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 453,
+   "id": "96793b58-b3d8-4358-910e-e678fb769f33",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তিনটি ধারকের ধারকত্ব যথাক্রমে $2\\mu F,3\\mu F ও 6\\mu F$। এদেরকে শ্রেণীতে সংযুক্ত করলে তুল্য ধারকত্ব কত হবে? ",
+   "options": [
+    "$0.5\\mu F$",
+    "$2\\mu F$",
+    "$3\\mu F$",
+    "$1\\mu F$",
+    "$\\mathrm{None}$"
+   ],
+   "images": [],
+   "src": "RUET (Rajshahi University of Engineering & Technology) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 454,
+   "id": "8ced7920-7647-423d-b3d7-109bf94e4dec",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "A $2.2\\mu F$ capacitor is first charged so that the electric potential difference is $6.0V$. How much additional charge is needed to increase the electric potential difference to $15.0V$?  ",
+   "options": [
+    "$18.7\\ \\mu C$",
+    "$19.4\\ \\mu C$",
+    "$18.8\\ \\mu C$",
+    "$19.8\\ \\mu C$"
+   ],
+   "images": [],
+   "src": "IUT (Islamic University of Technology) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 455,
+   "id": "6dd94b84-a005-4459-969b-01883ebfc492",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "Three particles are placed in a line. The left has a charge of $-67\\mu C$, the middle $+45\\mu C$ and the right $-83\\mu C$. The middle is $72cm$ from each of the others. What is force on the middle particle? ",
+   "options": [
+    "12 N",
+    "22 N",
+    "16 N",
+    "13.0 N"
+   ],
+   "images": [],
+   "src": "IUT (Islamic University of Technology) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 456,
+   "id": "1d86bb70-216a-485e-91d5-e9e0e84ed0de",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$5\\mu F$ এর $5$ টি ধারক সিরিজ সংযোগে যুক্ত করা হলো। ঐ ধারকগুলোর সমতুল্য ধারকত্ব হচ্ছে$-$  ",
+   "options": [
+    "$5\\mu F$",
+    "$4\\mu F$",
+    "$1\\mu F$",
+    "$10\\mu F$"
+   ],
+   "images": [],
+   "src": "DU-A (University of Dhaka (A Unit)) 14-15 [Admission Exam Question]; JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]; JnU-A (Jagannath University (A Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 457,
+   "id": "eb760451-bfb4-4a62-a1f8-1d8e2bf7cdd9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "Two $10\\mu F$ capacitors are connected in parallel and the combination is fed by a $12V$ battery. What is the energy stored in the capacitors?  ",
+   "options": [
+    "1.35 mJ",
+    "1.10 mJ",
+    "1.44 mJ",
+    "1.56 mJ"
+   ],
+   "images": [],
+   "src": "IUT (Islamic University of Technology) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 458,
+   "id": "cf6bc114-20da-4d7b-b2e2-ac00fbf364c2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুইটি গোলকের ব্যাসার্ধ যথাক্রমে $2cm$ এবং $4 cm$। এদেরকে যথাক্রমে $1000$ কুলম্ব এবং $2000$ কুলম্ব চার্জে চার্জিত করা হল। ক্ষুদ্র এবং বৃহৎ গোলকের চার্জের তল ঘনত্বের অনুপাত কত? ",
+   "options": [
+    "2 : 1",
+    "1 : 2",
+    "4 : 1",
+    "1 : 4"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 459,
+   "id": "c5559cd6-b77d-468c-9a71-9e2d403697a6",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন তড়িৎ ক্ষেত্রের প্রাবল্য কত হলে একটি ইলেকট্রন তার ওজনের সমান বল অনুভব করবে?   ",
+   "options": [
+    "$5.57\\times 10^{-33}NC^{-1}$",
+    "$5.57\\times 10^{-31}NC^{-1}$",
+    "$5.57\\times 10^{-19}NC^{-1}$",
+    "$5.57\\times 10^{-11}NC^{-1}$"
+   ],
+   "images": [],
+   "src": "KU-A (Khulna University (A Unit)) 14-15 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 09-10 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 08-09 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 460,
+   "id": "29f68f72-f5ba-4094-98ad-6ccbb47f3146",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $3$ গুণ বৃদ্ধি পেলে এবং পাতদ্বয়ের মধ্যবর্তী দূরত্ব $6$ গুণ হ্রাস পেলে ধারকের ধারকত্ব কত হবে?  ",
+   "options": [
+    "18 গুণ বৃদ্ধি পাবে",
+    "18 গুণ হ্রাস পাবে ",
+    "2 গুণ বৃদ্ধি পাবে",
+    "2 গুণ হ্রাস পাবে"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 461,
+   "id": "f5e07c56-a160-43ff-b7e4-b08ccc7dadb9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি অন্তরীত পরিবাহীতে $10$ কুলম্ব চার্জ প্রদান করায় এর বিভব $2V$ হলো। পরিবাহীর ধারকত্ব কত হবে?  ",
+   "options": [
+    "$5F $",
+    "$\\frac{1}{5}F$",
+    "$20F$",
+    "$\\frac{1}{20}F$"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 462,
+   "id": "e3e66a2d-cad6-4a07-a4b2-9af9f491053f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তিনটি ধারকের ধারকত্ব যথাক্রমে $1,2,3 \\mu F$ সমান্তরাল বিন্যাস এর তুল্য ধারকত্ব কত হবে?  ",
+   "options": [
+    "$6 \\mu F$",
+    "$\\frac{6}{11} \\mu F$",
+    "$\\frac{11}{6} \\mu F$",
+    "$\\frac{1}{6} \\mu F$"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]; CU-A (University of Chittagong (Unit A)) 11-12 [Admission Exam Question]"
+  },
+  {
+   "n": 463,
+   "id": "4279f710-bdc3-4bf0-9222-87001a05eec3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$2, 3$ ও $6 \\mu F$ ধারকত্বের ধারক তিনটিকে শ্রেণিবদ্ধভাবে সাজানোর পর $10V$ ব্যাটারির সঙ্গে সংযোগ দেয়া হলে বর্তনীতে চার্জের পরিমাণ কত?   ",
+   "options": [
+    "$1.0\\times 10^{-5}\\mathrm{C}$",
+    "$1.0\\times 10^{-5}$",
+    "$3.0\\times 10^{-5}\\mathrm{C}$",
+    "$6.0\\times 10^{-5}\\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 14-15 [Admission Exam Question]"
+  },
+  {
+   "n": 464,
+   "id": "adb44c19-3d3d-40e8-a8cd-e0374b4cba04",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি $+2C$ এবং $+6C$ বিন্দু চার্জ $12N$ বলে বিকর্ষণ করে। যদি প্রতিটি চার্জকে $– 4C$ চার্জ প্রদান করা হয়, তখন বল হবে—  ",
+   "options": [
+    "4N আকর্ষণ",
+    "4N বিকর্ষণ",
+    "8N আকর্ষণ",
+    "8N বিকর্ষণ"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 14-15 [Admission Exam Question]"
+  }
+ ]
+}

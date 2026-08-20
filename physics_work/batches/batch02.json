@@ -1,0 +1,417 @@
+{
+ "batch": 2,
+ "questions": [
+  {
+   "n": 30,
+   "id": "0fbcac07-9bfa-4d18-aff4-bb5e4c3290f1",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কুলম্বের সূত্রটি নিচের কোনটির ক্ষেত্রে প্রযোজ্য?",
+   "options": [
+    "যে কোনো চার্জ",
+    "বৃহৎ চার্জ",
+    "ক্ষুদ্র চার্জ",
+    "বিন্দু চার্জ"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2025 [Board Exam Question]"
+  },
+  {
+   "n": 31,
+   "id": "2a6679b0-29c5-4a8f-a98b-42e9b4a2328d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎক্ষেত্রকে যদি $(6\\overline{i}+4\\overline{j}+3\\overline{k})$ দ্বারা প্রকাশ করা হয়, তবে xy তলে অবস্থিত 20m2 ক্ষেত্রফলবিশিষ্ট তলের মধ্যদিয়ে অতিক্রান্ত তরিৎফ্লাস্কের পরিমাণ নির্ণয় কর।",
+   "options": [
+    "60 একক",
+    "80 একক",
+    "120 একক",
+    "140 একক"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2025 [Board Exam Question]"
+  },
+  {
+   "n": 32,
+   "id": "d7cfcfb5-673b-4619-9fb0-28b66bdd08b7",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ বলরেখা সমবিভব তলকে ছেদ করে-",
+   "options": [
+    "0° কোণে",
+    "45° কোণে",
+    "60° কোণে",
+    "90° কোণে"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2025 [Board Exam Question]"
+  },
+  {
+   "n": 33,
+   "id": "46a33d3c-9b2a-4f44-8241-c7067ec467e4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের P বিন্দুর বিভবের নাম কী?\n\n \n",
+   "options": [
+    "অপারেটিং বিভব",
+    "নী বিভব",
+    "বিনাশী বিভব",
+    "সূচন বিভব"
+   ],
+   "images": [
+    "46a33d3c-9b2a-4f44-8241-c7067ec467e4_0.webp"
+   ],
+   "src": "DB (Dhaka Board) 2025 [Board Exam Question]"
+  },
+  {
+   "n": 34,
+   "id": "a7bdd22a-7d8c-4b42-9a74-07e307b630aa",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সবচেয়ে বেশি আধান থাকে আহিত বস্তুর- ",
+   "options": [
+    "কেন্দ্রে",
+    "অবতল তলে",
+    "উত্তল তলে",
+    "সমতল তলে"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]; DB (Dhaka Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 35,
+   "id": "2b5b0a6b-53ea-4ce4-982f-0483d50a200e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান ধারকত্বের তিনটি ধারক প্রথমে শ্রেণিতে এবং পরে সমান্তরালে যুক্ত করা হলো। এই দু'ক্ষেত্রের তুল্য ধারকত্বের অনুপাত কত হবে? ",
+   "options": [
+    "1 : 4",
+    "1 : 6",
+    "1 : 9",
+    "1 : 12"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 36,
+   "id": "0d05d82a-5bca-4111-958e-53de77dc05cf",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কুলম্ব ধ্রুবকের একক কোনটি? ",
+   "options": [
+    "$C^{2} N^{-1} m^{-2}$",
+    "$\\mathrm{C}^{2} \\mathrm{Nm}^{-2}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}^{-2}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}^{2}$"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 37,
+   "id": "9802cd0a-c35a-468a-a079-8ef615e527ed",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের কোন পদার্থের পরাবৈদ্যুতিক ধ্রুবকের মান সর্বোচ্চ? ",
+   "options": [
+    "বায়ু",
+    "কাগজ",
+    "সিলিকন",
+    "পানি"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 38,
+   "id": "838f679f-0d38-4352-b6eb-e64782fdc3c1",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nচিত্রের P বিন্দুতে শূন্য মাধ্যমে তড়িৎ প্রাবল্য কত? ",
+   "options": [
+    "$\\frac{\\sigma^{\\prime}}{\\epsilon_{0}}$",
+    "0",
+    "1",
+    "$\\frac{\\sigma}{2 \\epsilon_{0}}$"
+   ],
+   "images": [
+    "838f679f-0d38-4352-b6eb-e64782fdc3c1_0.webp"
+   ],
+   "src": "DB (Dhaka Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 39,
+   "id": "be166e5a-39a8-424d-897a-8f0dbf53ccc0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "আধান ও বিভবের গুণফলের একক কোনটি?  ",
+   "options": [
+    "ভোল্ট",
+    "ফ্যারাড",
+    "জুল",
+    "হেনরি"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 40,
+   "id": "0ec8d891-056a-493d-8d92-bacbf3bfa5f4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ প্রাবল্য (E) ও চার্জ থেকে দূরত্ব (r) এর সম্পর্কসূচক লেখচিত্র কোনটি? ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2024 [Board Exam Question]; SB (Sylhet Board) 2016 [Board Exam Question]"
+  },
+  {
+   "n": 41,
+   "id": "cfe2bb95-ed7f-4144-bff5-8addfef2d391",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "20 cm ব্যাসার্ধের একটি ফাঁপা গোলককে বায়ুতে স্থাপন করে $2 ×$${ }^{10^{-9}} \\mathrm{C}$  চার্জে চার্জিত করা হলো। গোলকের কেন্দ্র থেকে 18cm দূরে কোনো বিন্দুর বিভব কত?  ",
+   "options": [
+    "0 Volt",
+    "45 Volt",
+    "90 Volt",
+    "100 Volt"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 42,
+   "id": "d8246ad0-a702-4362-acf8-3acee7aeb475",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "শূন্য মাধ্যমে তড়িৎ ভেদন যোগ্যতার একক কোনটি? ",
+   "options": [
+    "$\\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+    "$NA^{-2}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}^{-2}$",
+    "$\\mathrm{Am}^{-2}$"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2024 [Board Exam Question]; DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 43,
+   "id": "14c2b1d2-81c7-4806-af99-1aab86cc9635",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ দ্বিমেরু ভ্রামকের মাত্রা কোনটি? ",
+   "options": [
+    "$\\mathrm{LT}^{-1}$",
+    "$\\text { LTI }$",
+    "$\\mathrm{L}^{2} \\mathrm{TI}$",
+    "$\\mathbf{L T I}^{2}$"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 44,
+   "id": "47799a9b-d520-4ebd-850d-5d775648e722",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন গোলাকার পরিবাহীর আধান ও ক্ষেত্রফল চারগুণ করা হলে চার্জের তলমাত্রিক ঘনত্ব হবে-  ",
+   "options": [
+    "ষোলোগুণ",
+    "চারগুণ",
+    "অসীম",
+    "অপরিবর্তিত থাকবে"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 45,
+   "id": "abbd26c7-b803-4a8d-ba3e-79ce80638394",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চার্জিত গোলকের জন্য দূরত্ব বনাম বিভবের লেখচিত্রটি হবে- ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2024 [Board Exam Question]; ChB (Chattogram Board) 2017 [Board Exam Question]"
+  },
+  {
+   "n": 46,
+   "id": "46236f6c-1035-4472-b73e-fabe539693d9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চার্জিত গোলকের কেন্দ্র হতে দূরত্ব বৃদ্ধির সাথে প্রাবল্যের পরিবর্তনের ক্ষেত্রে নিম্নের কোন লেখচিত্রটি প্রযোজ্য? ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 47,
+   "id": "7ff8fe5b-4987-4f58-a046-8aa30a0a8273",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ দ্বিমেরু ভ্রামকের একক নিচের কোনটি? ",
+   "options": [
+    "কুলম্ব/মিটার",
+    "কুলম্ব-মিটার",
+    "মিটার/কুলম্ব",
+    "কুলম্ব/মিটার $^2$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 48,
+   "id": "075d308a-3f2f-4c7a-9e84-51c8efbe845d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ প্রাবল্য ও তড়িৎ বিভবের মধ্যে সম্পর্ক নিম্নের কোনটি? ",
+   "options": [
+    "$E=\\frac{V}{r}$",
+    "$V=\\frac{E}{r}$",
+    "$E=\\frac{r}{V}$",
+    "$E=\\frac{V}{r^{2}}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 49,
+   "id": "ddefbfb7-fbf2-4ba1-8784-9cb00c649ce5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "শূন্য মাধ্যমে 1C ধনাত্মক চার্জ হতে কত তড়িৎ ফ্লাক্স নির্গত হবে? ",
+   "options": [
+    "$8.85 \\times 10^{-12}$$\\mathrm{Nm}^{2} \\mathrm{C}^{-1}$",
+    "$8.85 \\times 10^{12}$$\\mathrm{Nm}^{2} \\mathrm{C}^{-1}$",
+    "$1.1 \\times 10^{-11}$$\\mathrm{Nm}^{2} \\mathrm{C}^{-1}$",
+    "$1.1 \\times 10^{11}$$\\mathrm{Nm}^{2} \\mathrm{C}^{-1}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 50,
+   "id": "2090d638-9328-4c99-b626-53ab9d288599",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ বিভবের ঋণাত্মক গ্রেডিয়েন্টকে কী বলে? ",
+   "options": [
+    "চার্জ ঘনত্ব",
+    "তড়িৎ ফ্লাক্স",
+    "তড়িৎ প্রাবল্য",
+    "ধারকত্ব"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 51,
+   "id": "6a56ca27-3c6a-4d86-ab8c-12d1e76e015d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সরু তারের দৈর্ঘ্য $4m.$ এটিতে $+ 6µC$ চার্জ থাকলে-\ni. তারটি থেকে তড়িৎ বলরেখা বাইরের দিকে নির্গত হয়। \nii. তারটির একক দৈর্ঘ্য চার্জের পরিমাণ $1.5 \\times 10^{-6} \\mathrm{Cm}^{-1}$ \niii. তারটির কেন্দ্র হতে $2m$ দূরে তড়িৎ প্রাবল্যের মান $13.48 \\times 10^{3}$$\\mathrm{Vm}^{-1}$\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 52,
+   "id": "5c01283d-b03a-4f9a-9e82-78af80dceaf8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি সমান ধারকত্বের ধারককে প্রথমে শ্রেণিতে পরে সমান্তরালে যুক্ত করলে তুল্য ধারকত্বের অনুপাত কত? ",
+   "options": [
+    "1 : 4",
+    "1 : 2",
+    "2 : 1",
+    "4 : 1"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 53,
+   "id": "5494a454-bd00-46d9-9e39-7d2eeeb2731c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ধারকত্ব ও তড়িৎ বিভবের গুণফল নির্দেশ করে-  ",
+   "options": [
+    "চার্জ",
+    "কাজ",
+    "চার্জ ঘনত্ব",
+    "তড়িৎ পরিবাহীতা"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 54,
+   "id": "d7665cd6-de6c-4d42-bb53-8ea72f5d48dc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ বিভব ও চার্জের গুণফলের একক কী? ",
+   "options": [
+    "$\\mathrm{NC}^{-1}$",
+    "$\\mathrm{JC}^{-1}$",
+    "J",
+    "F"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 55,
+   "id": "56aca9a7-f111-4610-8a42-50a2ae5ad40f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পরস্পর থেকে 3m দূরত্বে বায়ু মাধ্যমে + 2C এর দুটি চার্জ স্থাপন করলে এদের মধ্যকার বল কত হবে? ",
+   "options": [
+    "$3 \\times 10^{9} \\mathrm{~N}$",
+    "$4 \\times 10^{9} \\mathrm{~N}$",
+    "$8 \\times 10^{9} \\mathrm{~N}$",
+    "$9 \\times 10^{9} \\mathrm{~N}$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 56,
+   "id": "2a5c8812-485f-438f-a30d-7009509a1e10",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "গাউসের সূত্রানুসারে কোনটি সঠিক? ",
+   "options": [
+    "$\\mu_{0} \\varphi=q$",
+    "$\\mu_{0} q=\\varphi$",
+    "$t_{0} q=\\varphi$",
+    "$q=\\phi \\epsilon_{0}$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 57,
+   "id": "ead33264-6a36-44aa-8e8d-6d7491798efa",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান্তরাল পাত ধারক-এর ধারকত্ব কোন কোন বিষয়ের উপর নির্ভর করে?\ni. মাধ্যমের প্রকৃতির উপর\nii. প্রত্যেক পাতের ক্ষেত্রফল \niii. পাতদ্বয়ের মধ্যবর্তী দূরত্ব\nনিচের কোনটি সঠিক?  ",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2024 [Board Exam Question]"
+  },
+  {
+   "n": 58,
+   "id": "0decdd92-4e1d-442a-95ca-9b45e4a89443",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \nচিত্রের গোলাকার পরিবাহীটি + Q চার্জে চার্জিত-\n$\\text { i. } \\quad V_{B}=V_{C}$\n$\\text { ii. } V_{A}=V_{B}$\n$\\text { iii. } V_{A}<V_{B}$\nনিচের কোনটি সঠিক?  ",
+   "options": [
+    "i ও ii",
+    "ii ও iii",
+    "i ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [
+    "0decdd92-4e1d-442a-95ca-9b45e4a89443_0.webp"
+   ],
+   "src": "ChB (Chattogram Board) 2024 [Board Exam Question]"
+  }
+ ]
+}

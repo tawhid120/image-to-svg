@@ -1,0 +1,418 @@
+{
+ "batch": 20,
+ "questions": [
+  {
+   "n": 552,
+   "id": "2b9b24af-f271-4fa5-a5a5-fd9ff3a452ab",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1$ টি ইলেকট্রনের চার্জ এর পরিমাণ হল$-$ ",
+   "options": [
+    "$1.602 \\times 10^{-17}$ কুলম্ব",
+    "$1.902 \\times 10^{-19}$ কুলম্ব",
+    "$1.602 \\times 10^{-19}$ কুলম্ব",
+    "$1.702 \\times 10^{-18}$ কুলম্ব"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 10-11 [Admission Exam Question]"
+  },
+  {
+   "n": 553,
+   "id": "1d86bb70-216a-485e-91d5-e9e0e84ed0de",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$5\\mu F$ এর $5$ টি ধারক সিরিজ সংযোগে যুক্ত করা হলো। ঐ ধারকগুলোর সমতুল্য ধারকত্ব হচ্ছে$-$  ",
+   "options": [
+    "$5\\mu F$",
+    "$4\\mu F$",
+    "$1\\mu F$",
+    "$10\\mu F$"
+   ],
+   "images": [],
+   "src": "DU-A (University of Dhaka (A Unit)) 14-15 [Admission Exam Question]; JU-A (Jahangirnagar University (A Unit)) 14-15 [Admission Exam Question]; JnU-A (Jagannath University (A Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 554,
+   "id": "15ad7296-3e36-4f55-aae8-a294283ae2cc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে এক কুলম্বের দু'টি আধান পরস্পর থেকে 1 km ব্যবধানে অবস্থিত হলে এদের মধ্যকার বল কত হবে? ",
+   "options": [
+    "3 kN",
+    "6 kN",
+    "9 kN",
+    "18 kN"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 18-19 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 15-16 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 13-14 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 12-13 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 555,
+   "id": "3185ec66-268e-4c27-a704-7e731d3a8d0e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1\\ metre$ দূরত্বে অবস্থিত দুটি $1\\ coulomb$ চার্জের মধ্যে কি পরিমাণ বল বিদ্যমান থাকে?  ",
+   "options": [
+    "$1\\mathrm{~N}$",
+    "$10^9\\mathrm{~N}$",
+    "$100\\mathrm{~N}$",
+    "$9\\times 10^9\\mathrm{~N}$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 17-18 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 556,
+   "id": "bce8492d-3792-4011-a52f-24d4848dec58",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ ক্ষেত্রে 25 cm ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য 150 V হলে তড়িৎ ক্ষেত্রের প্রাবল্য কত? ",
+   "options": [
+    "$300 \\mathrm{\\ Vm}^{-1}$",
+    "$600 \\mathrm{\\ Vm}^{-1}$",
+    "$450 \\mathrm{\\ Vm}^{-1}$",
+    "$900 \\mathrm{\\ Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 16-17 [Admission Exam Question]; SAU (Sylhet Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 557,
+   "id": "c5559cd6-b77d-468c-9a71-9e2d403697a6",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন তড়িৎ ক্ষেত্রের প্রাবল্য কত হলে একটি ইলেকট্রন তার ওজনের সমান বল অনুভব করবে?   ",
+   "options": [
+    "$5.57\\times 10^{-33}NC^{-1}$",
+    "$5.57\\times 10^{-31}NC^{-1}$",
+    "$5.57\\times 10^{-19}NC^{-1}$",
+    "$5.57\\times 10^{-11}NC^{-1}$"
+   ],
+   "images": [],
+   "src": "KU-A (Khulna University (A Unit)) 14-15 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 09-10 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 08-09 [Admission Exam Question]; RU-C (University of Rajshahi (C Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 558,
+   "id": "4e055d65-77c2-4c39-9cfc-c792fb2c692f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ‍ ক্ষেত্রে $50\\ cm$ ব্যবধানে অবস্থিত দুইটি বিন্দুর বিভব পার্থক্য $200\\ V$ হলে তড়িৎ ক্ষেত্রের প্রাবল্য কত?  ",
+   "options": [
+    "$200\\mathrm{ \\ Vm}^{-1}$",
+    "$400\\mathrm{\\ Vm}^{-1}$",
+    "$600\\mathrm{\\ Vm}^{-1}$",
+    "$800\\mathrm{\\ Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 14-15 [Admission Exam Question]; SBAU (Sher-e-Bangla Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 559,
+   "id": "b69d0b69-be7a-4613-821b-0178f1e4b8be",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি পরিবাহকের ধারকত্ব $40\\ F$। এতে কত আধান প্রদান করলে এর বিভব $10\\ V$ হবে? ",
+   "options": [
+    "400C",
+    "320C",
+    "410C",
+    "380C"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 10-11 [Admission Exam Question]"
+  },
+  {
+   "n": 560,
+   "id": "a1d380d4-944e-404e-8f51-e6b0a90a652a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কম জায়গার বেশি তড়িৎ সঞ্চয় করে রাখার জন্য নিচের কোনটি ব্যবহার করা হয়? ",
+   "options": [
+    "ইলেকট্রো নাইট্রিক ধারক",
+    "অস্ত্রধারক",
+    "সিরামিক ধারক",
+    "পরিবর্তনীয় বায়ু ধারক"
+   ],
+   "images": [],
+   "src": "SBAU (Sher-e-Bangla Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 561,
+   "id": "46c199b0-1bf2-4894-8aec-a4f8b493a3aa",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "q এবং 4q আধান 1m দূরত্বে রাখা আছে। সংযোগ রেখার q আধান থেকে কত দূরে তড়িৎ প্রাবল্য শূন্য হবে?  ",
+   "options": [
+    "$\\frac{1}{4} \\mathrm{~m}$",
+    "$\\frac{1}{3} \\mathrm{~m}$",
+    "$\\frac{1}{2} \\mathrm{~m}$",
+    "$\\frac{3}{4} \\mathrm{~m}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 562,
+   "id": "7ab4e1b4-d73b-4570-8b5d-14552042565c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পাশের ছবিতে দেখানো উপায়ে অসীম সংখ্যক ধারক সাজানো আছে। প্রতিটি ধারকের মান F হলে মোট ধারকত্ব কত? \n\n \n  ",
+   "options": [
+    "1.6 F",
+    "1.0 F",
+    "0.5 F",
+    " 0.0 F",
+    "অপশনে নেই"
+   ],
+   "images": [
+    "7ab4e1b4-d73b-4570-8b5d-14552042565c_0.webp"
+   ],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 563,
+   "id": "53d3b9be-a269-4913-a6de-1b4030c5f255",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বিদ্যুৎ দূরবর্তী স্থানে প্রেরণ করতে হলে অতিরিক্ত বেশি ভোল্টেজে পাঠানোর কারন- ",
+   "options": [
+    "বিদ্যুৎ চুরি রোধের জন্য",
+    "তাপের মাধ্যমে বিদ্যুৎ নষ্ট রোধের জন্য",
+    "তারের ব্যয় কমানোর জন্য",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 564,
+   "id": "67fbecaf-5c25-4359-ade2-e56177a54c40",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1.4 \\  \\mu F$ ধারকত্ব বিশিষ্ট একটি ইলেকট্রনিক যন্ত্রের টার্মিনালদ্বয়ের মধ্যে বিভব পার্থক্য $300V$ হলে, ধারকে সঞ্চিত শক্তির পরিমাণ কত? ",
+   "options": [
+    "0.063 J",
+    "0.63 J",
+    "6.3 J",
+    "63.0 J"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 565,
+   "id": "f6a45f8c-e6d1-4a12-aa42-9f644109d12c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কম জায়গায় বেশি তড়িৎ সঞ্চয় করে রাখার জন্য নিচের কোনটি ব্যবহার করা হয়? ",
+   "options": [
+    "ইলেকট্রো লাইটিক ধারক",
+    "অভ্রধারক",
+    "সিরামিক ধারক",
+    "পরিবর্তনীয় বায়ু ধারক"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 566,
+   "id": "20282391-d4b8-477b-af79-1aa2e41f2b24",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "If the charge on a capacitor is increased by $2\\ C$, the energy stored in it increases by $21\\%$. What is the original charge of the capacitor?  ",
+   "options": [
+    "10 C",
+    "20 C",
+    "30 C",
+    "40 C"
+   ],
+   "images": [],
+   "src": "IUT (Islamic University of Technology) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 567,
+   "id": "aa89f18b-b98b-4d20-b144-ae3011acd207",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.01\\ m$ এবং $0.03\\ m$ ব্যাসার্ধের দুটি গোলককে পরস্পরের পৃষ্ঠ হতে $0.20\\ m$ দূরত্বে রাখা হলো। প্রত্যেক গোলককে $100\\ C$ চার্জ প্রদান করা হলে তাদের মধ্যে কত বল ক্রিয়া করবে? ",
+   "options": [
+    "$1.56 \\times 10^{15} \\mathrm{~N}$",
+    "$1.56 \\times 10^{13} \\mathrm{~N}$",
+    "$2.56 \\times 10^{15} \\mathrm{~N}$",
+    "$2.25 \\times 10^{15} \\mathrm{~N}$"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 568,
+   "id": "c0c8d6d2-dba9-4418-8a8f-c2cb2c5c2630",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "A বিন্দু এবং তারপর থেকে 1m দূরে B বিন্দুতে 2q এবং q আধান রাখা হলে কোন বিন্দুতে তড়িৎগ্রাবল্য শুন্য হবে  AB রেখার A এবং B বিন্দু থেকে যথাক্রমে- ",
+   "options": [
+    "$2+\\sqrt{2} m, 1+\\sqrt{2} m$",
+    "$2-\\sqrt{2} m, -1+\\sqrt{2} m$",
+    "$1+\\sqrt{2} m, \\sqrt{2} m$",
+    "$\\sqrt{2} m, - \\sqrt{2} m$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 569,
+   "id": "d08839c6-1f2a-4ede-aff4-9f949efa610e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চিত্রে প্রত্যেকটি ধারকের মান F হলে মোট ধারকত্ব কত?\n\n \n  ",
+   "options": [
+    "$7 \\ F$",
+    "$3 \\ F$",
+    "$\\frac{15}{11} \\mathrm{~F}$",
+    "$\\frac{17}{11} \\mathrm{~F}$"
+   ],
+   "images": [
+    "d08839c6-1f2a-4ede-aff4-9f949efa610e_0.png"
+   ],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 570,
+   "id": "b846db0e-aa86-42e0-b821-b96079ae5173",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোনটি সত্য? ",
+   "options": [
+    "ভোল্ট মিটার ও অ্যামিটারের রোধ অত্যন্ত কম",
+    "ভোল্ট মিটারের রোধ অত্যন্ত কম ও অ্যামিটারের রোধ অত্যন্ত বেশি",
+    "ভোল্ট মিটারের রোধ অত্যন্ত বেশি ও অ্যামিটারের রোধ অত্যন্ত কা",
+    "ভোল্ট মিটার ও অ্যামিটারের রোধ অত্যন্ত বেশি"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 571,
+   "id": "5f8455ae-de0f-447f-96e3-7bc3bc069888",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1.2 \\mu \\mathrm{F}$ বিশিষ্ট একটি ইলেকট্রনিক যন্ত্রের টার্মিনালদ্বয়ের মধ্যে 2000V বিভব পার্থক্য প্রয়োগ করা হলে ধারকে সঞ্চিত শক্তির পরিমাণ কত?  ",
+   "options": [
+    "1.2 J",
+    "3.6 J",
+    "2.4 J",
+    "4.8 J"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 572,
+   "id": "7300e959-952d-4ce6-be6b-f45c814b3a48",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "এক্স-রে এর তরঙ্গ দৈর্ঘ্য নিচের কোনটির কাছাকাছি? ",
+   "options": [
+    "$10^{-15} \\mathrm{~m}$",
+    "$10^{10} \\mathrm{~m}$",
+    "$10^{-10} \\mathrm{~m}$",
+    "$10^{7} \\mathrm{~m}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 573,
+   "id": "20a1ab0b-4c49-49b3-b5e7-2af535208259",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "4 টি একই মানের $\\left(q=2 \\times 10^{-6}\\right)$ তড়িৎ চার্জ একটি বর্গক্ষেত্রের (প্রতি বাহুর দৈর্ঘ্য 0.2m) চার কোণায় স্থাপন করা হলে এর কেন্দ্রবিন্দুতে বৈদ্যুতিক প্রাবল্য হবে ",
+   "options": [
+    "$15 \\times 10^{5} \\mathrm{NC}^{-1}$",
+    "$0 \\mathrm{NC}^{-1}$",
+    "$18 \\times 10^{5} \\mathrm{NC}^{-1}$",
+    "$11 \\times 10^{5} \\mathrm{NC}^{-1}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 574,
+   "id": "a889c2d2-a83d-40a4-99ea-f52e16ea2b76",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "গতিশীল চার্জের (চার্জ = q) উপর চৌম্বকক্ষেত্রের (চৌম্বক প্রাবল্য $=\\overrightarrow{\\mathrm{B}}$ ) বলের সমীকরণ হল- ",
+   "options": [
+    "$\\overrightarrow{\\mathrm{F}}=\\mathrm{q}(\\vec{v}-\\overrightarrow{\\mathrm{B}})$",
+    "$\\overrightarrow{\\mathrm{F}}=\\mathrm{q} \\overrightarrow{\\mathrm{v}} \\cdot \\overrightarrow{\\mathrm{B}}$",
+    "$\\vec{F}=q \\vec{v} \\times \\vec{B}$",
+    "$\\overrightarrow{\\mathrm{F}}=\\mathrm{q}(\\vec{v}+\\overrightarrow{\\mathrm{B}})$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 575,
+   "id": "a490316f-d830-4a82-b162-3c7d7d3e0ce0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমবিভব তল ও তড়িৎ প্রাবল্য পরস্পরের- ",
+   "options": [
+    "সমান্তরাল",
+    "বিপরীতমুখী",
+    "লম্ব",
+    "কোনটিই না"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 576,
+   "id": "16a8606c-8a5b-44d1-93dd-28f0eb2de6bd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4 \\mu F$ বিশিষ্ট একটি ধারককে (Capacitor) $9.0V$ ব্যাটারি দ্বারা আহিত (Charged) করা হল। ধারকটিতে কি পরিমাণ শক্তি সঞ্চিত হবে?  ",
+   "options": [
+    "$1.62\\times 10^{-4}\\mathrm{~J}$",
+    "$1.62\\mathrm{~J}$",
+    "$260\\mathrm{~J}$",
+    "$324\\mathrm{~J}$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 13-14 [Admission Exam Question]; JnU-A (Jagannath University (A Unit)) 13-14 [Admission Exam Question]; CU-A (University of Chittagong (Unit A)) 02-03 [Admission Exam Question]"
+  },
+  {
+   "n": 577,
+   "id": "8f6920b1-87f6-4c20-99bf-614c016cd3e4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎক্ষেত্রে 50cm ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য 200V হলে, তড়িৎ ক্ষেত্র প্রাবল্য-  ",
+   "options": [
+    "$200 \\mathrm{Vm}^{-1}$",
+    "$400 \\mathrm{Vm}^{-1}$",
+    "$100 \\mathrm{Vm}^{-1}$",
+    "$50 \\mathrm{Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 578,
+   "id": "62a3feab-913b-4821-be56-2abae5af37b2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পাশের ছবিতে প্রত্যেকটি ধারকের মান F হলে মোট ধারকত্ব কত?\n\n \n  ",
+   "options": [
+    "F/4",
+    "F/2",
+    "F",
+    "2F"
+   ],
+   "images": [
+    "62a3feab-913b-4821-be56-2abae5af37b2_0.png"
+   ],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 579,
+   "id": "1404a211-64d5-4cc1-82af-6ba0840d5e49",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি প্রোটনকে শূন্যে ভাসমান রাখতে হলে কতটুকু তড়িৎ  ক্ষেত্রের  প্রাবল্যের মাঝে রাখতে হবে? ",
+   "options": [
+    "$1.0 \\times 10^{-7} \\mathrm{~N} / \\mathrm{C}$",
+    "$1.67 \\times 10^{-27} \\mathrm{~N} / \\mathrm{C}$",
+    "$9.1 \\times 10^{-31} \\mathrm{~N} / \\mathrm{C}$",
+    "কোনটি না "
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 07-08 [Admission Exam Question]"
+  },
+  {
+   "n": 580,
+   "id": "c83dcfab-b934-42ef-9ca0-79b3023b766d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "3Å দূরত্বে দুটি হাইড্রোজেন নিউক্লিয়াসের মধ্যবর্তী বিকর্ষণ বলের মান কত? ",
+   "options": [
+    "$2.56 \\times 10^{-19} N$",
+    "$2.56 \\times 10^{-9} N$",
+    "$25.6 \\times 10^{-19} N$",
+    "$25.6 \\times 10^{-9} N$"
+   ],
+   "images": [],
+   "src": "প্রামাণিক স্যার  (বিষয়ঃ HSC- পদার্থ বিজ্ঞান;)  [অনুশীলনীর প্রশ্ন]"
+  }
+ ]
+}

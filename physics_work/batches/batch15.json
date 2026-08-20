@@ -1,0 +1,418 @@
+{
+ "batch": 15,
+ "questions": [
+  {
+   "n": 407,
+   "id": "8485585c-5bcd-4c85-bfa5-7d4911babbd5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমবাহু ত্রিভুজের $A,\\ B$ এবং $C$ তিনটি কৌণিক বিন্দু এবং ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য $0.1m$। ত্রিভুজের $A$ এবং $B$ বিন্দুতে যথাক্রমে $+100C$ এবং $100C$ চার্জ স্থাপন করা হলো। $C$ বিন্দুতে প্রাবল্যের মান কত?  ",
+   "options": [
+    "$9\\times 10^{10}\\mathrm{~N}/\\mathrm{C}$",
+    "$7\\times 10^{12}\\mathrm{~N}/\\mathrm{C}$",
+    "$9\\times 10^{13}\\mathrm{~N}/\\mathrm{C}$",
+    "$5\\times 10^{16}\\mathrm{~N}/\\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "NSTU-A (Noakhali Science & Technology University (A Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 408,
+   "id": "4fedd2ce-7546-4dfc-ad9f-ac7f9f882169",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$+1 \\mu C$ এবং $-1 \\mu C$ আধান দুটিকে $5\\ cm$ ব্যবধানে রেখে একটি তড়িৎ দ্বিমেরু গঠন করা হলো। এই দ্বিমেরুর অক্ষ বরাবর $15\\ cm$ দূরের কোন একটি বিন্দুতে তড়িৎ বিভব কত? ",
+   "options": [
+    "$2\\times 10^{-15}\\text{ volt }$",
+    "$3\\times 10^{-3}\\text{ volt }$",
+    "$5\\times 10^{-2}\\text{ volt }$",
+    "$2\\times 10^7\\text{ volt }$",
+    "সঠিক উত্তর নেই"
+   ],
+   "images": [],
+   "src": "NSTU-A (Noakhali Science & Technology University (A Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 409,
+   "id": "11ed94ab-d851-441d-b6ab-d1d4f43c1e70",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4 \\mu F$ একটি ধারককে $9.0V$ ব্যাটারী দ্বারা চার্জিত করলে এতে কি পরিমাণ শক্তি সঞ্চিত হবে?  ",
+   "options": [
+    "$2.62\\times 10^{-4}\\mathrm{~J}$",
+    "$1.62\\times 10^{-4}\\mathrm{~J}$",
+    "$3.62\\times 10^{-4}\\mathrm{~J}$",
+    "$4.62\\times 10^{-4}\\mathrm{~J}$"
+   ],
+   "images": [],
+   "src": "NSTU-A (Noakhali Science & Technology University (A Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 410,
+   "id": "867afddd-752e-4099-8786-9228ccf8662c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": " $20\\ N$ এবং $60\\ N$ মানের দুটি ভেক্টর রাশির মধ্যকার কোণ $30^\\circ $। রাশি দুটির লব্ধির মান কত?  ",
+   "options": [
+    "69.77 N",
+    "97.77 N",
+    "77.96 N",
+    "77.69 N"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 411,
+   "id": "58ca0338-d9f3-4d16-9cb9-b83782b1c769",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$10\\ cm$ ব্যাসার্ধের একটি গোলক পৃষ্ঠে $10\\ C$ আধান স্থাপন করলে এর পৃষ্ঠে তড়িৎ বিভব কত?  ",
+   "options": [
+    "$7.9\\times 10^{11}\\mathrm{~V}$",
+    "$9\\times 10^{11}\\mathrm{~V}$",
+    "$9.7\\times 10^{11}\\mathrm{~V}$",
+    "$9.2\\times 10^{-11}\\mathrm{~V}$"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 412,
+   "id": "66b0907c-3567-480e-859d-3bb62e078d49",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ইলেকট্রনিক বর্তনীতে টিউন সার্কিট কম্পাংক নির্ধারণে কোন ধারক ব্যবহৃত হয়?",
+   "options": [
+    "কাগজ ধারক",
+    "পরিবর্তনীয় ধারক",
+    "স্থিরমান ধারক",
+    "অভ্র ধারক"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 413,
+   "id": "9248081a-6022-4f99-96d4-257b46a4f27c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান্তরাল পাত ধারকের পাতদ্বয়ের বিভব পার্থক্য যদি অর্ধেক হয়ে যায় সঞ্চিত শক্তি কী পরিমাণ হ্রাস পাবে? ",
+   "options": [
+    "1/4",
+    "3/8",
+    "1/8",
+    "3/4"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 414,
+   "id": "6fc4574e-dcd7-485f-9255-88c61f42d075",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের দুই প্লেটের মাঝে ডাই-ইলেকট্রিক পদার্থ ঢুকালে তার সঞ্চিত শক্তি পাঁচগুণ বৃদ্ধি পায়। ঐ পদার্থের ডাই-ইলেকট্রিক ধ্রুবকের মান হয়–  ",
+   "options": [
+    "$\\dfrac{1}{25}$",
+    "$\\dfrac{1}{5}$",
+    "$5$",
+    "$25$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 415,
+   "id": "f5ce2161-284d-4da8-b929-c67870fd5748",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "যদি একটি তড়িৎ ক্ষেত্রের কোন বিন্দুতে 2 C আধান 5 N বল অনুভব করে তাহলে ঐ বিন্দুতে তড়িৎ প্রাবল্যের মান কত হবে?  ",
+   "options": [
+    "$1.5\\mathrm{\\ NC}^{-1}$",
+    "$2.1\\mathrm{\\ NC}^{-1}$",
+    "$2.2\\mathrm{\\ NC}^{-1}$",
+    "$2.5\\mathrm{\\ NC}^{-1}$"
+   ],
+   "images": [],
+   "src": "JGVC (Jhenidah Government Veterinary College) 17-18 [Admission Exam Question]"
+  },
+  {
+   "n": 416,
+   "id": "7f0b274c-13c6-4e3c-b7f0-e4f93269a3bd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.15gm$ ভরের একটি শোলার বলে $-6.68 \\times 10^{-9} \\mathrm{C}$ আধান দেওয়া আছে। $+6.54 \\times 10^{-9} \\mathrm{C}$ আধান যুক্ত একটি বস্তু কত উপরে $B$ থেকে শোলায় বলকে শূন্যে স্থির অবস্থায় রাখতে পারবে?  ",
+   "options": [
+    "2.0 cm ",
+    "1.64 cm",
+    "1.58 cm",
+    "1.5 cm",
+    "1.48 cm"
+   ],
+   "images": [],
+   "src": "KUET (Khulna University of Engineering & Technology) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 417,
+   "id": "b09dfc40-abd2-4ff8-bb01-b2d21fbcd7fe",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1 \\text{coulomb}$ চার্জ কতটি ইলেকট্রনের সমান?  ",
+   "options": [
+    "$300\\times 10^8$",
+    "$9\\times 10^9$",
+    "$6.25\\times 10^{18}$",
+    "$6.03\\times 10^{-34}$"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 418,
+   "id": "840051b5-e20e-45ba-9649-59c681219d8e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "Two parallel circular plates of radius $0.08m$ are placed in air. The distance between the plates is $0.002m$ and are kept at a potential difference of $100V$. What is electrical energy stored in the system? ",
+   "options": [
+    "0.263 J",
+    "0.235 J",
+    "0.214 J",
+    "0.278 J",
+    "No correct answer"
+   ],
+   "images": [],
+   "src": "IUT (Islamic University of Technology) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 419,
+   "id": "7dd539d4-fb49-4bf4-83a5-d5b7935f29ea",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1$ কুলম্ব চার্জের জন্য কতগুলো ইলেক্ট্রনের প্রয়োজন হবে? ",
+   "options": [
+    "$6.02\\times 10^{23}$",
+    "$1.5\\times 10^{19}$",
+    "$9.0\\times 10^{16}$",
+    "$6.25\\times 10^{18}$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 420,
+   "id": "17b97baa-d075-4980-b64a-5e10e65aa387",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$3cm$ দূরে অবস্থিত দুটি $5\\ C$ চার্জের মধ্যে একটি সরল রেখায় তৃতীয় একটি $10\\ C$ চার্জ বসানো হল। প্রথম চার্জ হতে কত দূরত্বে তৃতীয় চার্জ বসালে উহার উপর শক্তি বল শূন্য হবে?   ",
+   "options": [
+    "1 cm",
+    "2 cm",
+    "3 cm",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 421,
+   "id": "a14df1e1-6f9b-4f8e-894c-89bb82942502",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি স্থির দূরত্বে রাখা সমান্তরাল পাত ধারকের ধারকত্ব তার উপর প্রযুক্ত বিদ্যুৎ বিভবের$-$  ",
+   "options": [
+    "সমানুপাতিক ",
+    "ব্যাস্তানুপাতিক ",
+    "বৰ্গানুপাতিক",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 422,
+   "id": "1792eeb1-3f8d-49f3-b709-51845589c45a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": " কোন চার্জিত ধারকের শক্তি, তাহার উপরে প্রযুক্ত ভোল্টেজের$-$  ",
+   "options": [
+    "সমানুপাতিক",
+    "ব্যাস্তানুপাতিক",
+    "বর্গানুপাতিক",
+    "বর্গের ব্যাস্তানুপাতিক"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 423,
+   "id": "f209e755-983f-4e31-8065-1d1b480616a0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎক্ষেত্রে $50\\ cm$ ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য $200V$। তড়িৎক্ষেত্রের প্রাবল্য কত $V / m?$ ",
+   "options": [
+    "200",
+    "400",
+    "600",
+    "700",
+    "800"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 424,
+   "id": "0141d0b4-151f-42d5-b838-43f3438e4f5c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $1.5\\times 10^6mm^2$ এবং পাতদ্বয়ের মধ্যবর্তী দূরত্ব $2mm$। যদি বিভব পার্থক্য $60V$ হয় তবে প্রত্যেক পাতের চার্জ কত $C?\\ [\\varepsilon_0=8.854\\times 10^{-12}F/m]$ ",
+   "options": [
+    "$1.56\\times 10^{-9}$",
+    "$3.98\\times 10^{-8}$",
+    "$4.82\\times 10^{-9}$",
+    "$5.15\\times 10^{-9}$",
+    "$6.64\\times 10^{-9}$",
+    "$\\text{No correct answer}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 425,
+   "id": "c680c8da-07c5-4447-b599-7c3ff6f1de1c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি পাতলা চার্জিত শিটের মধ্যবর্তী স্থানে তড়িৎ প্রাবল্যের রাশিমালা$-$ ",
+   "options": [
+    "$\\dfrac{2\\sigma }{\\varepsilon _0}$",
+    "$\\dfrac{\\sigma }{\\varepsilon _0}$",
+    "$\\dfrac{\\sigma }{2\\varepsilon _0}$",
+    "$5\\dfrac{4\\sigma }{\\varepsilon _0}$"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 426,
+   "id": "16b92c7a-0673-4653-85f5-5899d68009b8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$0.2m$ বাহু বিশিষ্ট একটি সমবাহু ত্রিভুজের দুই কৌণিক বিন্দুতে চার্জের পরিমাণ $0.03C$ ও $– 0.04C$। তৃতীয় কৌণিক বিন্দুতে প্রাবল কত?  ",
+   "options": [
+    "$9\\times 10^9NC^{-1}$",
+    "$8.11\\times 10^9NC^{-1}$",
+    "$8.19\\times 10^9NC^{-1}$",
+    "$9.11\\times 10^9NC^{-1}$"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 427,
+   "id": "95657bab-ee87-429c-be5c-0aa124d16997",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি $IPS$ এর ব্যাটারীর বিভব পার্থক্য $12V$ হলে $25 C$ চার্জ $(-ve)$ প্রান্ত থেকে $(+ve)$ প্রান্তে নিতে কাজের পরিমাণ কত?  ",
+   "options": [
+    "300J",
+    "320J",
+    "350J",
+    "700J"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 428,
+   "id": "30bf5f0e-894a-4913-998d-3afba8ed5c4b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$10^{-6} \\mathrm{C}$ এবং $2\\times 10^{-6} \\mathrm{C}$ মানের দুইটি আধান বিন্দু পরস্পর হতে $10\\rm{cm}$ দূরে অবস্থিত। আধান দুটির সংযোগকারী রেখার কোন বিন্দুতে তড়িৎ প্রাবল্য শূন্য হবে? ",
+   "options": [
+    "4.14 cm",
+    "4.86 cm",
+    "6.21 cm",
+    "8.32 cm"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 429,
+   "id": "74c35304-7800-418a-9043-7780a0223cab",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎক্ষেত্রে $25$ সে.মি. ব্যবধানে অবস্থিত দুটি বিন্দু $A$ ও $B$ এর বিভব পার্থক্য $125\\ V$। তড়িৎ ক্ষেত্রটির প্রাবল্য কত?    ",
+   "options": [
+    "$250 V / m$",
+    "$500 V / m$",
+    "$500 m$",
+    "$200 m$"
+   ],
+   "images": [],
+   "src": "SBAU (Sher-e-Bangla Agricultural University) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 430,
+   "id": "2aa4857a-0cf5-4386-9475-d1b3c918ada9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "আধান ও বিভবের গুণফলের একক কি? ",
+   "options": [
+    "জুল",
+    "ভোল্ট",
+    "ফ্যারাড",
+    "হেনরি"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 431,
+   "id": "15ad7296-3e36-4f55-aae8-a294283ae2cc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে এক কুলম্বের দু'টি আধান পরস্পর থেকে 1 km ব্যবধানে অবস্থিত হলে এদের মধ্যকার বল কত হবে? ",
+   "options": [
+    "3 kN",
+    "6 kN",
+    "9 kN",
+    "18 kN"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 18-19 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 15-16 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 13-14 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 12-13 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 432,
+   "id": "203e72f5-c628-47a6-82fe-4ba0d2936138",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$10^{10}$ নিউটন/কুলম্ব মানের একটি সুষম তড়িৎক্ষেত্রে স্থাপিত ইলেকট্রনের ত্বরণ কত হবে?  ",
+   "options": [
+    "$2.98 \\times 10^{21} \\mathrm{~m} / \\mathrm{s}^{2}$",
+    "$1.76 \\times 10^{21} \\mathrm{~m} / \\mathrm{s}^{2}$",
+    "$3.1 \\times 10^{22} \\mathrm{~m} / \\mathrm{s}^{2}$",
+    "$2.31 \\times 10^{20} \\mathrm{~m} / \\mathrm{s}^{2}$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 18-19 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 15-16 [Admission Exam Question]"
+  },
+  {
+   "n": 433,
+   "id": "e976b4c7-08dd-4c1c-bbbd-b57a2f5c3f73",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "গোলকের অভ্যন্তরে প্রাবল্যের মান – ",
+   "options": [
+    "কম",
+    "বেশী",
+    "সমান",
+    "শূন্য"
+   ],
+   "images": [],
+   "src": "JGVC (Jhenidah Government Veterinary College) 16-17 [Admission Exam Question]"
+  },
+  {
+   "n": 434,
+   "id": "bce8492d-3792-4011-a52f-24d4848dec58",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ ক্ষেত্রে 25 cm ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য 150 V হলে তড়িৎ ক্ষেত্রের প্রাবল্য কত? ",
+   "options": [
+    "$300 \\mathrm{\\ Vm}^{-1}$",
+    "$600 \\mathrm{\\ Vm}^{-1}$",
+    "$450 \\mathrm{\\ Vm}^{-1}$",
+    "$900 \\mathrm{\\ Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "SAU (Sylhet Agricultural University) 16-17 [Admission Exam Question]; SAU (Sylhet Agricultural University) 09-10 [Admission Exam Question]"
+  },
+  {
+   "n": 435,
+   "id": "9f94ac8f-850c-4f52-8edf-206157fa42af",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের প্রত্যেক পাতের ক্ষেত্রফল $1.56 \\times 10^{6} \\mathrm{~mm}^{2}$ এবং পাতদ্বয় পরস্পর হতে $2cm$ দূরে অবস্থিত। যদি পাতদ্বয়ের বিভব পার্থক্য $66V$ হয়, তবে প্রত্যেকটি পাতে চার্জের পরিমাণ কত? ",
+   "options": [
+    "$3.98\\times 10^{-8}\\mathrm{C}$",
+    "$4.56\\times 10^{-8}\\mathrm{C}$",
+    "$6.906\\times 10^{10}\\mathrm{~F}$",
+    "$6.64\\times 10^{-10}\\mathrm{~F}$",
+    "$4.7 \\times 10^{-8} \\mathrm{C}$"
+   ],
+   "images": [],
+   "src": "KUET (Khulna University of Engineering & Technology) 15-16 [Admission Exam Question]"
+  }
+ ]
+}

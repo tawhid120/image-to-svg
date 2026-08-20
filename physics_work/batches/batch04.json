@@ -1,0 +1,423 @@
+{
+ "batch": 4,
+ "questions": [
+  {
+   "n": 88,
+   "id": "cbed90bf-5c47-4243-a408-f4aeec1e0836",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পৃথিবীর ব্যাসার্ধ 6500 km এর ধারকত্ব কত? ",
+   "options": [
+    "$711 \\mathrm{~F}$",
+    "$722 \\mu \\mathrm{F}$",
+    "$640 \\mu \\mathrm{F}$",
+    "$614 \\mu \\mathrm{F}$"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 89,
+   "id": "6c6511f1-23ab-45cd-ae8d-852ee850f083",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি চার্জিত বস্তুকে পৃথিবীর সাথে যুক্ত করলে বস্তুটিকে আধানের পরিমাণ—  ",
+   "options": [
+    "বৃদ্ধি পাবে",
+    "শূন্য হবে",
+    "হ্রাস পাবে ",
+    "অপরিবর্তিত হবে"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 90,
+   "id": "c33ce4a7-a820-4a3e-a770-b074e201e445",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ক্ষেত্রের কোনো বিন্দুর বিভব হচ্ছে— ",
+   "options": [
+    "অসীম বিন্দু থেকে এক ঋণাত্মক চার্জ আনতে কৃতকাজ",
+    "ঐ বিন্দুতে একক ধনাত্মক চার্জের উপর ক্রিয়াশীল বল",
+    "অসীম দূর থেকে একক ধনাত্মক চার্জ আনতে কৃতকাজ",
+    "ঐ বিন্দুতে একক ঋণাত্মক চার্জের ওপর ক্রিয়াশীল বল"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 91,
+   "id": "7a6c408f-4cfd-47f6-a7d1-db599010a1c2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ভোল্ট এর তুল্য একক কোনটি? ",
+   "options": [
+    "$\\mathrm{JC}^{-1}$",
+    "$\\text { J.C }$",
+    "$\\text { N.C }{ }^{-1}$",
+    "$\\text { N.m }{ }^{-1}$"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 92,
+   "id": "11c37b75-34e8-4dcd-b314-c735e4a4e1a8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ প্রাবল্য ও দূরত্বের মধ্যকার সম্পর্কযুক্ত লেখচিত্র কোনটি? ",
+   "options": [
+    "(empty option)",
+    "(empty option)",
+    "(empty option)",
+    "(empty option)"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 93,
+   "id": "086c6dbf-de09-4973-8580-9f325c710d11",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি ধারকের দুই পাতের মধ্যে বিভব পার্থক্য 150 V। ধারকে সঞ্চিত শক্তি $14.9 \\times 10^{-7} \\mathrm{~J}$। ধারকের ধারকত্ব কত?  ",
+   "options": [
+    "$1.3 \\times 10^{-5} \\mathrm{~F}$",
+    "$6.5 \\times 10^{-9} \\mathrm{~F}$",
+    "$1.3 \\times 10^{-10} \\mathrm{~F}$",
+    "$6.5 \\times 10^{-10} \\mathrm{~F}$"
+   ],
+   "images": [],
+   "src": "MSB (Mymensingh Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 94,
+   "id": "b69e0302-0459-4234-8a6f-eec25960c170",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পরাবৈদ্যুতিক ধ্রুবকের একক কোনটি? ",
+   "options": [
+    "$\\mathrm{C}^{2} \\mathrm{~N}^{-2} \\mathrm{~m}^{-1}$",
+    "$\\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-1}$",
+    "$\\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+    "একক বিহীন"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 95,
+   "id": "34d4ec03-1ed1-498d-a9e6-ea6f18716da1",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমবিভব তল ও তড়িৎ ক্ষেত্রের মধ্যবর্তী কোণ কত ডিগ্রি?",
+   "options": [
+    "0°",
+    "45°",
+    "90°",
+    "180°"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 96,
+   "id": "0dba996e-fbc4-4c2b-b645-f2819aabf691",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎ দ্বিমেরুর ক্ষেত্রে দূরত্বের সাথে তড়িৎ প্রাবল্য কীরূপ সম্পর্কিত?",
+   "options": [
+    "$\\mathrm{E} \\propto \\frac{1}{\\mathrm{r}}$",
+    "$E \\propto \\frac{1}{r^{2}}$",
+    "$E \\propto \\frac{1}{r^{3}}$",
+    "$E \\propto \\frac{1}{r^{4}}$"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 97,
+   "id": "d629fa88-62ef-4e68-bb51-c3d25e99e817",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "5 সেঃ মি ব্যাসার্ধের চার্জিত ফাঁপা গোলকের পৃষ্ঠে বিভব 10 V হলে কেন্দ্রে বিভব হবে—",
+   "options": [
+    "0 V ",
+    "2 V ",
+    "5 V ",
+    "10 V"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 98,
+   "id": "d77206fb-0f25-46a6-a29d-5e39e99d2f80",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ প্রবেশ্যতার S.I একক হলো— ",
+   "options": [
+    "$\\mathrm{Nm}^{-2} \\mathrm{C}^{-2}$",
+    "$\\mathrm{N}^{-1} \\mathrm{~m}^{-2} \\mathrm{C}^{-2}$",
+    "$\\mathrm{Nm}^{-2} \\mathrm{C}^{2}$",
+    "$\\mathrm{N}^{-1} \\mathrm{~m}^{-2} \\mathrm{C}^{2}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 99,
+   "id": "d8246ad0-a702-4362-acf8-3acee7aeb475",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "শূন্য মাধ্যমে তড়িৎ ভেদন যোগ্যতার একক কোনটি? ",
+   "options": [
+    "$\\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+    "$NA^{-2}$",
+    "$\\mathrm{Nm}^{2} \\mathrm{C}^{-2}$",
+    "$\\mathrm{Am}^{-2}$"
+   ],
+   "images": [],
+   "src": "RB (Rajshahi Board) 2024 [Board Exam Question]; DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 100,
+   "id": "a8de3804-5021-4a81-a9fb-0cfdebb8fa2a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোনো তড়িৎ দ্বিমেরুর অক্ষের উপর মধ্যবিন্দু হতে । দূরত্বে কোনো বিন্দুতে তড়িৎ বিভব হলো—\n( যেখানে $\\mathrm{P}=2 l \\mathrm{q}$ )",
+   "options": [
+    "$\\mathrm{V}=\\frac{1}{4 \\pi \\epsilon_{0}}=\\frac{\\mathrm{P}}{(\\mathrm{r}-l)}$",
+    "$\\mathrm{V}=\\frac{1}{4 \\pi \\epsilon_{0}}=\\frac{\\mathrm{P}}{(\\mathrm{r}+l)}$",
+    "$\\mathrm{V}=\\frac{1}{4 \\pi \\epsilon_{0}}=\\frac{\\mathrm{P}}{\\left(\\mathrm{r}^{2}-l^{2}\\right)}$",
+    "$\\mathrm{V}=\\frac{1}{4 \\pi \\epsilon_{0}}=\\frac{\\mathrm{P}}{\\left(\\mathrm{r}^{3}-l^{3}\\right)}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 101,
+   "id": "9e16186a-9bd3-4f78-808a-05d623f862c2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "100 cm ব্যাসার্ধবিশিষ্ট একটি গোলকের পরিবাহীর পৃষ্ঠে $5 \\times 10^{-11}$ কুলম্ব চার্জ প্রদান করা হলো। গোলকের কেন্দ্রে থেকে 25 cm দূরে তড়িৎ বিভব হবে—  ",
+   "options": [
+    "3.6 V",
+    "1.8 V",
+    "0,9 V",
+    "0.45 V"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 102,
+   "id": "34e68a6f-390a-4307-813b-8ab8f1cedb33",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "গোলকের পরিবাহীর ধারকত্ব উহার ব্যাসার্ধের— ",
+   "options": [
+    "সমানুপাতিক",
+    "বর্গের ব্যস্তানুপাতিক",
+    "বর্গমূলের সমানুপাতিক ",
+    "ব্যস্তানুপাতিক"
+   ],
+   "images": [],
+   "src": "CB (Cumilla Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 103,
+   "id": "df4c1da8-ea6d-4b4f-918c-ea286581ac80",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের কোনটি পোলার ডাইইলেকট্রিক পদার্থ নয়?",
+   "options": [
+    "$\\mathrm{NH}_{3}$",
+    "$\\mathrm{HCl}$",
+    "$\\mathrm{H}_{2} \\mathrm{O}$",
+    "$\\mathrm{CH}_{4}$"
+   ],
+   "images": [],
+   "src": "ChB (Chattogram Board) 2022 [Board Exam Question]; BB (Barisal Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 104,
+   "id": "d50ab69f-592c-462f-a453-aee81ddcd790",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ফ্লাক্সের একক কী? ",
+   "options": [
+    "$\\mathrm{NC}^{-1} \\mathrm{~m}^{2}$",
+    "$\\mathrm{JC}^{-1}$",
+    "$\\mathrm{V}^{}$",
+    "$\\mathrm{Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2022 [Board Exam Question]; ChB (Chattogram Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 105,
+   "id": "99f7b181-40b7-44b9-a6f7-aa53d8141e94",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পৃথিবীকে 6400 km ব্যাসার্ধের একটি ধারক মনে করলে ধারকত্ব কত হবে? ",
+   "options": [
+    "$320 \\ \\mu \\mathrm{F}$",
+    "$420 \\ \\mu \\mathrm{F}$",
+    "$511 \\ \\mu \\mathrm{F}$",
+    "$711 \\ \\mu \\mathrm{F}$"
+   ],
+   "images": [],
+   "src": "JB (Jessore Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 106,
+   "id": "7fcdd369-8f42-4ea4-89c4-89fc8639700b",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \n\nউপরের চিত্রে A ও B বিন্দুর মধ্যে তুল্য ধারকত্ব কত? ",
+   "options": [
+    "$0.015 \\ \\mu \\mathrm{F}$",
+    "$0.03 \\ \\mu \\mathrm{F}$",
+    "$0.05 \\ \\mu \\mathrm{F}$",
+    "$0.06 \\ \\mu \\mathrm{F}$"
+   ],
+   "images": [
+    "7fcdd369-8f42-4ea4-89c4-89fc8639700b_0.png"
+   ],
+   "src": "BB (Barisal Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 107,
+   "id": "b12ded4e-6478-4ecc-9421-3679b2b65e6c",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎক্ষেত্রে 50 cm ব্যবধানে অবস্থিত দুটি বিন্দুর বিভব পার্থক্য 200 V। প্রাবল্য কত? ",
+   "options": [
+    "$50 \\mathrm{\\ Vm}^{-1}$",
+    "$100 \\mathrm{\\ Vm}^{-1}$",
+    "$400 \\mathrm{\\ Vm}^{-1}$",
+    "$1600 \\mathrm{\\ Vm}^{-1}$"
+   ],
+   "images": [],
+   "src": "BB (Barisal Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 108,
+   "id": "4b571ac2-722a-4dd3-b97f-ec0f7a20db10",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "\n \n\nচিত্রে বর্গক্ষেত্রের ৪র্থ কৌণিক বিন্দুতে কত চার্জ স্থাপন করলে কেন্দ্রে বিভব শূন্য হবে?  ",
+   "options": [
+    "- 3C",
+    "3C",
+    "5C ",
+    "7C"
+   ],
+   "images": [
+    "4b571ac2-722a-4dd3-b97f-ec0f7a20db10_0.png"
+   ],
+   "src": "BB (Barisal Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 109,
+   "id": "e22a43db-9ec7-4c6f-b15c-b24e7985b899",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকের প্রতীক—\n\n \n\nনিচের কোনটি সঠিক? ",
+   "options": [
+    "i ও ii",
+    "i ও iii",
+    "ii ও iii",
+    "i, ii ও iii"
+   ],
+   "images": [
+    "e22a43db-9ec7-4c6f-b15c-b24e7985b899_0.png"
+   ],
+   "src": "JB (Jessore Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 110,
+   "id": "08378b41-5678-4aab-bd22-1a4c2ce5482f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপকটি পড়ো এবং প্রশ্নের উত্তর দাও:\n$+5 \\mu \\mathrm{C}$ চার্জ দুটিকে 4 mm ব্যবধানে রেখে একটি তড়িৎ দ্বিমেরু গঠন করা হলো । দ্বিমেরুটিকে $2 \\times 10^{4} \\mathrm{NC}^{-1}$ প্রাবল্যের তড়িৎ ক্ষেত্রে লম্বভাবে স্থাপন করা হলো।\nউদ্দীপকে তড়িৎ দ্বিমেরু ভ্রামক কত? ",
+   "options": [
+    "$2 \\times 10^{-8} \\mathrm{Cm}$",
+    "$1.6 \\times 10^{-8} \\mathrm{Cm}$",
+    "$1.4 \\times 10^{-8} \\mathrm{Cm}$",
+    "$1.2 \\times 10^{-8} \\mathrm{Cm}$"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 111,
+   "id": "cc93adca-ed15-4fb6-bf3d-08827e305a96",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপকটি পড়ো এবং প্রশ্নের উত্তর দাও:\n$+5 \\mu \\mathrm{C}$ চার্জ দুটিকে 4 mm ব্যবধানে রেখে একটি তড়িৎ দ্বিমেরু গঠন করা হলো । দ্বিমেরুটিকে $2 \\times 10^{4} \\mathrm{NC}^{-1}$ প্রাবল্যের তড়িৎ ক্ষেত্রে লম্বভাবে স্থাপন করা হলো।\nদ্বিমেরুটিকে তড়িৎ ক্ষেত্রে লম্বভাবে স্থাপন করতে কত টর্কের প্রয়োজন হবে? ",
+   "options": [
+    "$6 \\times 10^{-4} \\mathrm{Nm}$",
+    "$4 \\times 10^{-4} \\mathrm{Nm}$",
+    "$2 \\times 10^{-4} \\mathrm{Nm}$",
+    "$1.2 \\times 10^{-4} \\mathrm{Nm}$"
+   ],
+   "images": [],
+   "src": "DB (Dhaka Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 112,
+   "id": "d4698a84-4b20-4bf8-b591-1a33a0245e32",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপক পড়ো এবং প্রশ্নের উত্তর দাও:\nn সংখ্যক C ধারকত্বের ধারককে V ভোল্ট উৎসের সাথে যথাক্রমে শ্রেণি ও সমান্তরালে যুক্ত করা হলো।\nশ্রেণি ও সমান্তরালে তুল্য ধারকত্ব যথাক্রমে $\\mathrm{C}_{\\mathrm{s}}$ ও $\\mathrm{C}_{\\mathrm{p}}$ হলে নিচের কোনটি সঠিক? ",
+   "options": [
+    "$\\mathrm{C}_{\\mathrm{p}}=\\mathrm{n}^{2} \\mathrm{C}_{\\mathrm{s}}$",
+    "$\\mathrm{C}_{\\mathrm{p}}=\\mathrm{nC}_{\\mathrm{s}}$",
+    "$\\mathrm{C}_{\\mathrm{p}}=\\frac{\\mathrm{C}_{\\mathrm{s}}}{\\mathrm{n}}$",
+    "$\\mathrm{C}_{\\mathrm{p}}=\\frac{\\mathrm{C}_{\\mathrm{s}}}{\\mathrm{n}^{2}}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 113,
+   "id": "e5072c48-f9cd-4772-bbe4-573687c3e060",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "উদ্দীপক পড়ো এবং প্রশ্নের উত্তর দাও:\nn সংখ্যক C ধারকত্বের ধারককে V ভোল্ট উৎসের সাথে যথাক্রমে শ্রেণি ও সমান্তরালে যুক্ত করা হলো ।\nউদ্দীপকে শ্রেণি ও সমান্তরালে তুল্য ধারকের সঞ্চিত শক্তি যথাক্রমে $\\mathrm{U}_{\\mathrm{s}}$ ও $\\mathrm{U}_{p}$ হলে নিচের কোনটি সঠিক? ",
+   "options": [
+    "$U_{p}=\\frac{U_{s}}{n}$",
+    "$U_{p}=U_{s}$",
+    "$\\mathrm{U}_{\\mathrm{p}}=\\mathrm{nU}_{\\mathrm{s}}$",
+    "$\\mathrm{U}_{\\mathrm{p}}=\\mathrm{n}^{2} \\mathrm{U}_{\\mathrm{s}}$"
+   ],
+   "images": [],
+   "src": "DiB (Dinajpur Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 114,
+   "id": "c7d5c373-1572-4672-b050-3d8bd2d852c3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের উদ্দীপক থেকে  প্রশ্নের উত্তর দাও:\nABNM একটি বর্গক্ষেত্র যার M ও N বিন্দুতে সমমানের বিপরীতধর্মী দুটি চার্জ স্থাপন করা হয়েছে।\n\n \n\nবর্গক্ষেত্রের কেন্দ্রে নিট তড়িৎ ক্ষেত্রের দিক বর্গক্ষেত্রের সাপেক্ষে কোন দিকে হবে? ",
+   "options": [
+    "উপরের দিকে",
+    "নিচের দিকে",
+    "ডান দিকে",
+    "বাম দিকে"
+   ],
+   "images": [
+    "c7d5c373-1572-4672-b050-3d8bd2d852c3_0.png"
+   ],
+   "src": "ChB (Chattogram Board) 2022 [Board Exam Question]; JB (Jessore Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 115,
+   "id": "073bfc9a-4773-4846-8aac-0a6483ab09b1",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের উদ্দীপক থেকে প্রশ্নের উত্তর দাও:\nABNM একটি বর্গক্ষেত্র যার M ও N বিন্দুতে সমমানের বিপরীতধর্মী দুটি চার্জ স্থাপন করা হয়েছে।\n\n \n\nকোন বিন্দুতে তড়িৎ ক্ষেত্রের মান সবচেয়ে বেশি হবে?",
+   "options": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "images": [
+    "073bfc9a-4773-4846-8aac-0a6483ab09b1_0.png"
+   ],
+   "src": "ChB (Chattogram Board) 2022 [Board Exam Question]; JB (Jessore Board) 2022 [Board Exam Question]"
+  },
+  {
+   "n": 116,
+   "id": "a544da69-3cf1-4027-b603-c73dbfefcca8",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের চিত্রের ভিত্তিতে প্রশ্নের উত্তর দাও:\n\n \n\nP- একটি ফাঁপা গোলক যার পৃষ্ঠে $+2 \\times 10^{-10} \\mathrm{C}$ চার্জ রয়েছে।\nA বিন্দুর বিভব কত? ",
+   "options": [
+    "35 V",
+    "45 V",
+    "55 V",
+    "60 V"
+   ],
+   "images": [
+    "a544da69-3cf1-4027-b603-c73dbfefcca8_0.png"
+   ],
+   "src": "ChB (Chattogram Board) 2022 [Board Exam Question]"
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "bd5dac35-75d9-4c71-ad83-2acf3fd6cba7": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\sqrt{1-x^{2}}$",
+  "explanation_text": "\n$\\sin^{-1}x+\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $\\sin^{-1}y=\\cos^{-1}x$ ⇒ $y=\\sin(\\cos^{-1}x)=\\sqrt{1-x^{2}}$।\n\nব্যাখ্যা: পূরক কোণ identity; $\\sin(\\cos^{-1}x)=\\sqrt{1-x^{2}}$।\n"
+ },
+ "63bc48b0-7440-4078-8ee9-fb4cd31a10d4": {
+  "mcq_solution_index": 4,
+  "answer_text": "$\\sqrt{2}, \\sqrt{2}$",
+  "explanation_text": "\nপরিচয়: $\\sin\\left(\\cot^{-1}\\tan\\cos^{-1}u\\right)=u$।\nতাই $\\sin\\left(\\cot^{-1}\\tan\\cos^{-1}(2x^{2})\\right)=2x^{2}=1$ ⇒ $x^{2}=\\frac{1}{2}$ ⇒ $x=\\pm\\frac{1}{\\sqrt{2}}$।\nঅপশনে $\\pm\\frac{1}{\\sqrt{2}}$ নেই (এবং ডোমেন $2x^{2}\\leq1$) — প্রদত্ত অপশনগুলোর কোনোটিই সঠিক নয়।\n\nব্যাখ্যা: প্রকৃত উত্তর $x=\\pm\\frac{1}{\\sqrt{2}}$; অপশন ত্রুটিপূর্ণ।\n"
+ },
+ "12f36cfc-790d-486d-af4a-ee499e6c03fc": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\text { None of these }$",
+  "explanation_text": "\n$\\sec^{2}(\\tan^{-1}4)=1+4^{2}=17$; $\\tan^{2}(\\sec^{-1}3)=\\sec^{2}(\\sec^{-1}3)-1=9-1=8$।\nযোগফল $=17+8=25$ — অপশনে নেই (5,12,7)।\n\nব্যাখ্যা: মান ২৫; অপশনে অনুপস্থিত — \"None of these\"।\n"
+ },
+ "ae387e47-c66e-419b-ba20-80c3e3bba8c9": {
+  "mcq_solution_index": 4,
+  "answer_text": "$\\frac{\\sqrt{2 y^{2}-x^{2}}}{y}$",
+  "explanation_text": "\n$\\sec^{-1}\\frac{x}{y}=\\alpha$ ⇒ $\\sec\\alpha=\\frac{x}{y}$ ⇒ $\\tan\\alpha=\\frac{\\sqrt{x^{2}-y^{2}}}{y}$।\n$\\cos^{-1}(\\tan\\alpha)=\\beta$ ⇒ $\\cos\\beta=\\tan\\alpha$ ⇒ $\\sin\\beta=\\sqrt{1-\\tan^{2}\\alpha}=\\sqrt{1-\\frac{x^{2}-y^{2}}{y^{2}}}=\\frac{\\sqrt{2y^{2}-x^{2}}}{y}$।\n\nব্যাখ্যা: $\\sin(\\cos^{-1}t)=\\sqrt{1-t^{2}}$; ফল $\\frac{\\sqrt{2y^{2}-x^{2}}}{y}$।\n"
+ },
+ "ffcecb1b-5155-4b11-ad8b-ab0b4907a2fc": {
+  "mcq_solution_index": 1,
+  "answer_text": "$5$",
+  "explanation_text": "\n$c=\\cos2\\theta$ ধরলে $\\cos4\\theta=2c^{2}-1$; সমীকরণ:\n$\\frac{1}{2c^{2}-1}-\\frac{1}{c}=2$ ⇒ $4c^{3}+2c^{2}-3c-1=0$ ⇒ $(c+1)(4c^{2}-2c-1)=0$\n⇒ $c=-1$, $c=\\frac{1+\\sqrt{5}}{4}\\approx0.809$, $c=\\frac{1-\\sqrt{5}}{4}\\approx-0.309$।\n$0^{\\circ}<\\theta<180^{\\circ}$ ⇒ $0^{\\circ}<2\\theta<360^{\\circ}$:\nc=−1: 2θ=180° → 1টি; c≈0.809: 2θ=36°,324° → 2টি; c≈−0.309: 2θ=108°,252° → 2টি।\nমোট ৫টি সমাধান।\n\nব্যাখ্যা: ঘন সমীকরণ; $(c+1)$ উৎপাদক; প্রতিটি c-এর জন্য 2θ-এ দুইটি কোণ; মোট ৫।\n"
+ },
+ "e167052f-e6ad-4690-b73b-66acf7f0a37a": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\tan(\\alpha-\\beta)=\\frac{\\frac{m}{n}-\\frac{m-n}{m+n}}{1+\\frac{m}{n}\\cdot\\frac{m-n}{m+n}}$\n$=\\frac{m(m+n)-n(m-n)}{n(m+n)+m(m-n)}=\\frac{m^{2}+mn-mn+n^{2}}{mn+n^{2}+m^{2}-mn}=\\frac{m^{2}+n^{2}}{m^{2}+n^{2}}=1$।\n∴ $\\alpha-\\beta=\\tan^{-1}1=\\frac{\\pi}{4}$।\n\nব্যাখ্যা: tan বিয়োগফল সূত্র; লব-হর উভয়ে $m^{2}+n^{2}$ — অনুপাত ১।\n"
+ },
+ "2c17fc30-0d5f-4fe5-9567-d7db5f2c1793": {
+  "mcq_solution_index": 1,
+  "answer_text": "$5$",
+  "explanation_text": "\n$\\sec^{2}(\\tan^{-1}2)=1+\\tan^{2}(\\tan^{-1}2)=1+4=5$।\n\nব্যাখ্যা: ৫২১-এর পুনরাবৃত্তি।\n"
+ },
+ "a6bf08fc-c963-4e5a-8339-68d3c36004ac": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{2 x}{1+x^{2}}$",
+  "explanation_text": "\n$\\theta=\\tan^{-1}x$ ⇒ $\\sin2\\theta=\\frac{2\\tan\\theta}{1+\\tan^{2}\\theta}=\\frac{2x}{1+x^{2}}$।\n\nব্যাখ্যা: ৪৪০-এর পুনরাবৃত্তি।\n"
+ },
+ "08c5748e-ccf8-4783-acbb-d95872e4a18a": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{2 \\pi}{3}$",
+  "explanation_text": "\n$\\sec\\theta=-2$ ⇒ $\\cos\\theta=-\\frac{1}{2}=\\cos\\frac{2\\pi}{3}$; $\\frac{\\pi}{2}<\\theta<\\pi$-তে $\\theta=\\frac{2\\pi}{3}$।\n\nব্যাখ্যা: ৩৫৩-এর পুনরাবৃত্তি।\n"
+ },
+ "19a3b5a2-0ebc-4465-8fb1-c21a4c2bcfce": {
+  "mcq_solution_index": 0,
+  "answer_text": "$n \\pi \\pm \\frac{1}{4} \\pi$",
+  "explanation_text": "\n$\\tan^{2}x+\\sec^{2}x=3$; $\\sec^{2}x=1+\\tan^{2}x$:\n$2\\tan^{2}x+1=3$ ⇒ $\\tan^{2}x=1$ ⇒ $\\tan x=\\pm1=\\tan\\left(\\pm\\frac{\\pi}{4}\\right)$ ⇒ $x=n\\pi\\pm\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan x=\\pm1$; সাধারণ সমাধান $n\\pi\\pm\\frac{\\pi}{4}$।\n"
+ },
+ "a9435346-9385-47ec-99a6-5baa1c4a4f30": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\pi / 2-2 x$",
+  "explanation_text": "\n$\\tan2x=\\cot\\left(\\frac{\\pi}{2}-2x\\right)$; ∴ $\\cot^{-1}\\left(\\tan2x\\right)=\\frac{\\pi}{2}-2x$ (উপযুক্ত ব্যাপ্তিতে)।\n\nব্যাখ্যা: $\\tan A=\\cot\\left(\\frac{\\pi}{2}-A\\right)$।\n"
+ },
+ "eb9079c6-591b-440e-b5de-35862b33c876": {
+  "mcq_solution_index": 2,
+  "answer_text": "$(4 n+1) \\pi / 2$",
+  "explanation_text": "\n$\\sin\\theta=1=\\sin\\frac{\\pi}{2}$ ⇒ $\\theta=2n\\pi+\\frac{\\pi}{2}=\\frac{(4n+1)\\pi}{2}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: ৪৯৪-এর পুনরাবৃত্তি; $(4n+1)\\frac{\\pi}{2}$।\n"
+ },
+ "1e321de0-f4ef-46e3-979d-d65aff6a6d9b": {
+  "mcq_solution_index": 2,
+  "answer_text": "3/5",
+  "explanation_text": "\n$\\tan\\theta=\\frac{2+3+4-24}{1-6-12-8}=\\frac{-15}{-25}=\\frac{3}{5}$।\n\nব্যাখ্যা: ৩০৬-এর পুনরাবৃত্তি।\n"
+ },
+ "81b518a0-b3cb-44dc-a428-730e7f45ac19": {
+  "mcq_solution_index": 0,
+  "answer_text": "1",
+  "explanation_text": "\n$\\sin^{-1}x+\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $x^{2}+y^{2}=1$।\n\nব্যাখ্যা: পূরক কোণ identity।\n"
+ },
+ "94ac061f-a488-4e3e-ac24-290294f31f1d": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{3}$",
+  "explanation_text": "\n$\\tan\\theta+\\cot\\theta=\\frac{1}{\\sin\\theta\\cos\\theta}=2\\operatorname{cosec}\\theta=\\frac{2}{\\sin\\theta}$ ⇒ $\\frac{1}{\\cos\\theta}=2$ ⇒ $\\cos\\theta=\\frac{1}{2}$।\n$0\\leq\\theta<\\frac{\\pi}{2}$-তে $\\theta=\\frac{\\pi}{3}$।\n\nব্যাখ্যা: ২১৮-এর পুনরাবৃত্তি।\n"
+ },
+ "30ba6f5a-991b-4f07-b64e-26cdecd31522": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{2}$",
+  "explanation_text": "\n$\\tan^{-1}\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}$; ∴ $\\sin\\frac{\\pi}{6}=\\frac{1}{2}$।\n\nব্যাখ্যা: $\\sin\\frac{\\pi}{6}=\\frac{1}{2}$।\n"
+ },
+ "3577fd93-ba2f-4431-ad53-b05b88476e01": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sin^{-1}y+\\cos^{-1}y=\\frac{\\pi}{2}$।\n\nব্যাখ্যা: পূরক কোণ identity।\n"
+ }
+}

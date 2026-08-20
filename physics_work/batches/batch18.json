@@ -1,0 +1,413 @@
+{
+ "batch": 18,
+ "questions": [
+  {
+   "n": 494,
+   "id": "e19c187c-33a0-4865-9d58-126632b321a5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি গোলাকার পরিবাহীর ব্যাসার্ধ $0.5m$ এবং তাতে $10C$ চার্জ দেওয়া আছে। গোলকের কেন্দ্র হতে $0.1m$ দূরত্বে বৈদ্যুতিক বিভবের মান কত হবে? ",
+   "options": [
+    "$9\\times 10^9\\mathrm{~V}$",
+    "$1.8\\times 10^{11}\\mathrm{~V}$",
+    "$9\\times 10^{11}\\mathrm{~V}$",
+    "$3.6\\times 10^{11}\\mathrm{~V}$"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 495,
+   "id": "922e625b-139a-47ed-8252-1ceb8cd1df7e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বিভব বিভাজকে শ্রেণি সমবায়ে সজ্জিত দুইটি রোধের মান যথাক্রমে $20\\Omega$ এবং $60\\Omega$। উৎস ভোল্টেজ $12V$ হলে দ্বিতীয় রোধের প্রান্তে আউটপুট ভোল্টেজ কত হবে?  ",
+   "options": [
+    "12V",
+    "9V",
+    "6V",
+    "3V"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]; PUST-B (Pabna University of Science and Technology (B Unit)) 12-13 [Admission Exam Question]; PUST-B (Pabna University of Science and Technology (B Unit)) 11-12 [Admission Exam Question]"
+  },
+  {
+   "n": 496,
+   "id": "129e803c-babc-4065-a521-21a94089094d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "মাল্টিমিটার দ্বারা পরিমাপ করা যায় না– ",
+   "options": [
+    "রোধ",
+    "তড়িৎ প্রবাহ",
+    "বিভব পার্থক্য",
+    "চৌম্বক ক্ষেত্র"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 497,
+   "id": "1f7a2966-707f-4586-8bdb-bc39068e48dd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সিরিজ সার্কিটে যদি বেশি বাতি সংযুক্ত করা হয় তাহলে শক্তির উৎসে প্রবাহ কি হবে?  ",
+   "options": [
+    "বৃদ্ধি পাবে",
+    "কমে যাবে",
+    "একই থাকবে",
+    "অপরিবর্তীত থাকবে",
+    "কোনহি নয়"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 498,
+   "id": "0ffc874d-0e65-481f-a596-48da77fbbcf4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তিনটি ধারকের ধারকত্ব যথাক্রমে $10 \\mu \\mathrm{F}, 5 \\mu \\mathrm{r}, 5 \\mu \\mathrm{F}$। এদের দ্বিতীয় ও তৃতীয়টিকে শ্রেণিবদ্ধ ভাবে সাজিয়ে প্রথমটির সাথে সমান্তরালে যুক্ত করা হলে তুল্য ধারকত্ব কত হবে? ",
+   "options": [
+    "$5\\mu \\mathrm{~F}$",
+    "$10\\mu \\mathrm{~F}$",
+    "$12.5 \\mu \\mathrm{~F}$",
+    "$20 \\mu \\mathrm{~F}$"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 499,
+   "id": "02e45822-efd1-4960-9dd9-4e9aaf3ca72e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি ধারক প্রতি সেকেন্ডে অর্ধেক চার্জ হারায় । যদি ধারকটিতে চার্জ হারানো শুরুর $5sec.$ পরে $q$ একক চার্জ থাকে তবে ধারকটির প্রাথমিক চার্জ কত ছিল?  ",
+   "options": [
+    "4q একক",
+    "16q একক",
+    "8q একক",
+    "32q একক"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 13-14 [Admission Exam Question]; BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 500,
+   "id": "eece45a8-4c19-487f-8783-e937fcae4784",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বিদ্যুৎবীক্ষণ যন্ত্রের সাহায্যে কোনটি জানা যায় না?",
+   "options": [
+    "চার্জের পরিমাণ",
+    "চার্জের অস্তিত্ব",
+    "চার্জের প্রকৃতি",
+    "চার্জের প্রবেশ্যতা"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 501,
+   "id": "5633287e-3e5f-4aec-b106-55dbd7698ab9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$6.24 \\times 10^{21}$ গুলি ইলেকট্রন কি পরিমাণ তড়িৎ বহন করে?  ",
+   "options": [
+    "500 কুলম্ব",
+    "1000 কুলম্ব",
+    "1500 কুলম্ব",
+    "2000 কুলম্ব"
+   ],
+   "images": [],
+   "src": "CVASU (Chattogram Veterinary and Animal Sciences University) 13-14 [Admission Exam Question]"
+  },
+  {
+   "n": 502,
+   "id": "e3fd736e-8bf9-45e1-93db-6f8dd2554dc9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সাবানের বুদবুদকে চার্জ দেয়া হল। এর ব্যাসার্ধ$–$  ",
+   "options": [
+    "কমবে",
+    "বাড়বে",
+    "পরিবর্তন হবে না",
+    "কোনটিই না"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 503,
+   "id": "7295fc05-f9d6-4407-bfbb-e3bb2326cf0e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4\\mu \\ F$ একটি ধারককে $9\\ volts$ ব্যাটারী দ্বারা আহিত করলে এতে কি পরিমাণ শক্তি সঞ্চিত হবে। ",
+   "options": [
+    "$1.62\\times 10^{-4}\\text{ Joule}$",
+    "$1.8\\times 10^{-5}\\text{ Joule}$",
+    "$36\\times 10^{-5}\\text{ Joule}$",
+    "$8.1\\times 10^{-5}\\text{ Joule 36}$"
+   ],
+   "images": [],
+   "src": "BUET (Bangladesh University of Engineering & Technology) 08-09 [Admission Exam Question]; BUTex (Bangladesh University of Textiles) 11-12 [Admission Exam Question]"
+  },
+  {
+   "n": 504,
+   "id": "15ad7296-3e36-4f55-aae8-a294283ae2cc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে এক কুলম্বের দু'টি আধান পরস্পর থেকে 1 km ব্যবধানে অবস্থিত হলে এদের মধ্যকার বল কত হবে? ",
+   "options": [
+    "3 kN",
+    "6 kN",
+    "9 kN",
+    "18 kN"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 18-19 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 15-16 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 13-14 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 12-13 [Admission Exam Question]; BAU (Bangladesh Agricultural University) 08-09 [Admission Exam Question]"
+  },
+  {
+   "n": 505,
+   "id": "2fa4bdc5-af06-4f96-8020-5b814b5af40f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "কোন তড়িৎ ক্ষেত্রের প্রাবল্য কত হলে সেখানে একটি ইলেকট্রন তার ওজনের সমান বল অনুভব করবে? ",
+   "options": [
+    "$5.57\\times 10^{-11}NC^{-1}$",
+    "$4.67\\times 10^{-12}NC^{-1}$",
+    "$6.51\\times 10^{-12}NC^{-1}$",
+    "$5.57\\times 10^{-11}NC^{-2}$",
+    "$5.57\\times 10^{-10}NC^{-2}$"
+   ],
+   "images": [],
+   "src": "SUST-B (Shahjalal University of Science & Technology (B Unit)) 12-13 [Admission Exam Question]; NSTU-A (Noakhali Science & Technology University (A Unit)) 11-12 [Admission Exam Question]"
+  },
+  {
+   "n": 506,
+   "id": "74ff43fc-857c-4b4a-adfe-2259244b25cd",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "মাটিতে কী ধরনের আধান থাকে?",
+   "options": [
+    "ঋণাত্মক",
+    "ধনাত্মক",
+    "নিরপেক্ষ",
+    "বিপরীতার্থক"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 507,
+   "id": "84686ee6-4c4a-4a00-84a6-45eaf8e29356",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকের ক্ষেত্রে সঠিক?",
+   "options": [
+    "$W=\\dfrac{1C}{2Q}$",
+    "$W=\\dfrac{1}{2}CV$",
+    "$W=\\dfrac{1}{2}QV$",
+    "$W=QV^2$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 508,
+   "id": "2d16356f-edb7-4f5c-a1bb-81780fd7a676",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "পরিবাহীর তলের যে অংশের বক্রতা বেশি সে অংশে সঞ্চিত চার্জের পরিমাণ......। ",
+   "options": [
+    "কম",
+    "বেশি",
+    "দ্বিগুন",
+    "অর্ধেক"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 509,
+   "id": "e9c70f4a-b616-4608-9b33-9e744dafa0d9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান ধারকত্বের দুটি ধারকের সমান্তরাল সমবায় থাকাকালীন ধারকত্ব শ্রেণীবদ্ধ সমবায়ে থাকাকালীন ধারকত্বের ....... গুণ। ",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 510,
+   "id": "4ee9c55c-a110-4c05-86f2-d83190e55358",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$r$ ব্যাসার্ধের গোলাকার পরিবাহীর ধারকত্ব কোনটি? ",
+   "options": [
+    "$\\dfrac{1}{4\\pi \\epsilon _0}\\dfrac{Q}{r}$",
+    "$4\\pi \\in _0r$",
+    "$4\\pi \\in _0r$",
+    "$\\dfrac{1}{4\\pi \\epsilon _0}\\dfrac{Q}{r^2}$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 511,
+   "id": "facfe1ad-1f03-4dcd-813e-eb2b67d69728",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে এক কুলম্বের দুটি আধান পরস্পর থেকে $1km$ ব্যবধানে অবস্থিত হলে এদের মধ্যকার বল কত হবে?  ",
+   "options": [
+    "$9\\times 10^4\\mathrm{~N}$",
+    "$9\\times 10^3\\mathrm{~N}$",
+    "$9\\times 10^9\\mathrm{~N}$",
+    "$8\\times 10^9\\mathrm{~N}$"
+   ],
+   "images": [],
+   "src": "PUST-B (Pabna University of Science and Technology (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 512,
+   "id": "1787902c-c4b8-43a3-adbd-da535e4c6c28",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বায়ুতে একটি বর্গক্ষেত্রের 3টি কৌণিক বিন্দুতে যথাক্রমে $6C,\\ 8C,\\ -2C$ আধান স্থাপন করা হল। ৪র্থ কৌণিক বিন্দুতে কত আধান স্থাপন করলে বর্গক্ষেত্রের কেন্দ্রে বিভব শুন্য হবে?  ",
+   "options": [
+    "$-12C$",
+    "$12C$",
+    "$16C$",
+    "$-16C$"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 513,
+   "id": "92315f29-323e-4eef-a650-2ccbdd73518f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান সংখ্যক পজিটিভ ও নেগেটিভ আয়নের মিশ্রণকে বলা হয়– ",
+   "options": [
+    "পদার্থের আয়নিক অবস্থা ",
+    "পদার্থের প্লাজমা অবস্থা ",
+    "পদার্থের নিরপেক্ষ অবস্থা ",
+    "পদার্থের সান্দ্রঅবস্থা "
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 514,
+   "id": "7379469e-5372-4c19-80f0-ca259e2743cb",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "লেকল্যান্স কোষের তড়িৎচালক শক্তি নিম্নের কোনটি? ",
+   "options": [
+    "2.2",
+    "1.4",
+    "1.9",
+    "2.0"
+   ],
+   "images": [],
+   "src": "JUST-C (Jessore University of Science & Technology (C Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 515,
+   "id": "0397aff8-4751-4718-b64d-f19209801150",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ চালক বল ($e.m.f.$) ধনাত্মক হলে কোষ বিক্রিয়াটি– ",
+   "options": [
+    "স্বতঃস্ফুর্তভাবে ঘটবে ",
+    "মোটেও ঘটবে না",
+    "সাম্যাবস্থায় থাকবে",
+    "কোনটিই সঠিক নয়"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 516,
+   "id": "2de6d4be-2124-449f-ae36-b118999bcb56",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$12cm$ ব্যাসের বৃত্তের পরিধিতে $10\\ Coul$ এর পাঁচটি চার্জ স্থাপন করা হলে। বৃত্তের কেন্দ্রে বিভব কত হবে?  ",
+   "options": [
+    "$7.5\\times 10^{12}\\mathrm{~V}$",
+    "$3.75\\times 10^{10}\\mathrm{~V}$",
+    "$7.5\\times 10^{10}\\mathrm{~V}$",
+    "কোনটিই সঠিক নয়"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 517,
+   "id": "b6a6cd51-7142-4a46-ab1d-5879cbcc2afa",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$6 \\mu F$ ও $4\\mu F$ ধারকত্বের দুটি ধারককে শ্রেণিতে সাজালে তুল্য ধারকত্ব কত হবে?  ",
+   "options": [
+    "$13 \\mu \\mathrm{~F}$",
+    "$30/13\\mu \\mathrm{~F}$",
+    "$27/5 \\mu \\mathrm{~F}$",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 518,
+   "id": "4bd92005-142c-4a0a-aa16-605013cbe2bf",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সমান্তরাল পাত ধারকের মধ্যে একটি ডাই ইলেকট্রিক পাত স্থাপন করায় এর সঞ্চিত শক্তি $5$ গুণ বৃদ্ধি পেল। পদার্থের ডাই ইলেকট্রিক ধ্রুবক এর মান কত? ",
+   "options": [
+    "$1/25$",
+    "$1/5$",
+    "$5$",
+    "$25$"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 519,
+   "id": "a793e327-88c8-4477-a536-46b8b8cef297",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$16\\ coul$ ও $4\\ coul$ চার্জ বিশিষ্ট দুটি বস্তুকে শূন্য মাধ্যমে কত দূরত্বে রাখলে তাদের মধ্যবর্তী বল $9 \\times 10^9\\ N$ হবে?  ",
+   "options": [
+    "$2 cm$",
+    "$200 cm$",
+    "$400 cm$",
+    "কোনটিই নয়"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 520,
+   "id": "6cf2d7b9-5cc5-4468-9669-315e1dee42c7",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$4\\mu F$ ধারকত্ব বিশিষ্ট চারটি সমান ধারকের দুটি করে শ্রেণি সমবায়ে সাজিয়ে শ্রেণিবদ্ধ ধারকগুলোকে সমান্তরালে সাজালে তুল্য ধারকত্ব কত হবে?  ",
+   "options": [
+    "$1 \\mu \\mathrm{F}$",
+    "$4 \\mu \\mathrm{F}$",
+    "$0.25 \\mu \\mathrm{F}$",
+    "$2 \\mu \\mathrm{F}$"
+   ],
+   "images": [],
+   "src": "BSMRSTU-B (Bangabandhu Sheikh Mujibur Rahman Science and Technology University, Gopalganj (B Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 521,
+   "id": "6b7a22b6-eab7-423a-be25-c9fc14705c72",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "শূন্যস্থানের ভেদন যোগ্যতা $(\\text{Permitivity of free speace})$ এর মান কত? ",
+   "options": [
+    "$8.854\\times 10^{-12}C^2N^{-1}m^{-2}$",
+    "$8.854\\times 10^{-9}C^2N^{-1}m^{-2}$",
+    "$9\\times 10^9Nm^2C^{-2}$",
+    "$8.854\\times 10^{-12}Nm^{-2}C^{-2}$"
+   ],
+   "images": [],
+   "src": "MBSTU-A (Mawlana Bhashani Science & Technology University (A Unit)) 12-13 [Admission Exam Question]"
+  },
+  {
+   "n": 522,
+   "id": "292c7eb8-f6d3-4781-9eeb-50b2cbec5efe",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমান ধারকত্বের দুটি ধারকের সমান্তরাল সমবায়ে থাকাকালীন ধারকত্ব শ্রেণিবদ্ধ সমবায়ে ধারকত্বের কতগুণ হবে? ",
+   "options": [
+    "দ্বিগুন",
+    "তিনগুণ",
+    "চারগুণ",
+    "পাঁচগুণ"
+   ],
+   "images": [],
+   "src": "BAU (Bangladesh Agricultural University) 12-13 [Admission Exam Question]"
+  }
+ ]
+}

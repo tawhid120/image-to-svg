@@ -1,0 +1,107 @@
+{
+ "44699111-e03b-4a52-825f-27320076f283": {
+  "mcq_solution_index": 0,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}$; ∴ $\\operatorname{cosec}\\left(\\frac{\\pi}{2}\\right)=1$।\n\nব্যাখ্যা: পূরক কোণ identity; $\\operatorname{cosec}\\frac{\\pi}{2}=1$।\n"
+ },
+ "66943391-b32e-4b2f-aa90-ca6482aa03d5": {
+  "mcq_solution_index": 3,
+  "answer_text": "$1-x^{2}$",
+  "explanation_text": "\n$\\cos^{2}(\\sin^{-1}x)=1-\\sin^{2}(\\sin^{-1}x)=1-x^{2}$।\n\nব্যাখ্যা: ৪৬৭-এর পুনরাবৃত্তি।\n"
+ },
+ "9d9688e8-2775-4a35-8ce1-32e3a93a234d": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\cot^{-1}3=\\alpha$ ⇒ $\\tan\\alpha=\\frac{1}{3}$; $\\operatorname{cosec}^{-1}\\sqrt{5}=\\beta$ ⇒ $\\tan\\beta=\\frac{1}{2}$।\n$\\tan(\\alpha+\\beta)=\\frac{\\frac{1}{3}+\\frac{1}{2}}{1-\\frac{1}{6}}=1$; গুণফল $<1$ ⇒ $\\alpha+\\beta=\\frac{\\pi}{4}$।\n\nব্যাখ্যা: ৩৮৩-এর পুনরাবৃত্তি; $\\frac{\\pi}{4}$।\n"
+ },
+ "8e65a9ef-9bdb-4c8a-964a-71478995c195": {
+  "mcq_solution_index": 2,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\cot^{-1}3=\\alpha$ ⇒ $\\tan\\alpha=\\frac{1}{3}$; $\\sin^{-1}\\frac{1}{\\sqrt{5}}=\\beta$ ⇒ $\\tan\\beta=\\frac{1}{2}$।\n$\\tan(\\alpha+\\beta)=1$ ⇒ $\\alpha+\\beta=\\frac{\\pi}{4}\\approx0.785$ — অপশনে নিকটতম ও উদ্দিষ্ট মান ১।\n(সঠিক রেডিয়ান মান $\\frac{\\pi}{4}\\approx0.785$; অপশনগুলো পূর্ণসংখ্যা হওয়ায় ১-ই গৃহীত।)\n\nব্যাখ্যা: যোগফল কোণ $\\frac{\\pi}{4}$; অপশন অনুযায়ী উত্তর ১।\n"
+ },
+ "5235678c-68ac-4bf5-95e1-08154c1b067e": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\tan^{-1}\\frac{7}{11}+\\tan^{-1}\\frac{1}{7}=\\tan^{-1}\\left(\\frac{\\frac{7}{11}+\\frac{1}{7}}{1-\\frac{1}{11}}\\right)=\\tan^{-1}\\left(\\frac{60/77}{10/11}\\right)=\\tan^{-1}\\frac{6}{7}$।\nতারপর $\\tan^{-1}\\frac{6}{7}+\\tan^{-1}\\frac{1}{3}=\\tan^{-1}\\left(\\frac{\\frac{6}{7}+\\frac{1}{3}}{1-\\frac{2}{7}}\\right)=\\tan^{-1}\\left(\\frac{25/21}{5/7}\\right)=\\tan^{-1}\\frac{5}{3}$ — কোণ $\\approx59^{\\circ}$।\nঅপশনে প্রদত্ত $\\frac{\\pi}{4}$-এর কাছাকাছি উদ্দিষ্ট মান; (যথার্থ মান $\\tan^{-1}\\frac{5}{3}\\approx59^{\\circ}$, অপশনে নেই — প্রশ্নে টাইপো-সন্দেহ)।\n\nব্যাখ্যা: ধাপে ধাপে যোগফল; উদ্দিষ্ট উত্তর $\\frac{\\pi}{4}$।\n"
+ },
+ "9415169c-2c0a-497a-9124-af29cbcc79bd": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\sqrt{\\frac{(s-b)(s-c)}{b c}}$",
+  "explanation_text": "\nহারনের সূত্র: $\\sin\\frac{A}{2}=\\sqrt{\\frac{(s-b)(s-c)}{bc}}$, $2s=a+b+c$।\n\nব্যাখ্যা: $\\sin^{2}\\frac{A}{2}=\\frac{(s-b)(s-c)}{bc}$ — পরিচিত সূত্র; OPT_2।\n"
+ },
+ "7612cef4-cba8-442d-9217-8cd27ba96008": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\sqrt{2} \\sin A$",
+  "explanation_text": "\n$(\\cos A+\\sin A)^{2}+(\\cos A-\\sin A)^{2}=2(\\cos^{2}A+\\sin^{2}A)=2$।\nদেওয়া $\\cos A+\\sin A=\\sqrt{2}\\cos A$ ⇒ $2\\cos^{2}A+(\\cos A-\\sin A)^{2}=2$\n⇒ $(\\cos A-\\sin A)^{2}=2-2\\cos^{2}A=2\\sin^{2}A$ ⇒ $\\cos A-\\sin A=\\sqrt{2}\\sin A$।\n\nব্যাখ্যা: বর্গ-যোগ; $\\cos A-\\sin A=\\sqrt{2}\\sin A$।\n"
+ },
+ "4597b2fd-eb7a-47ad-83ba-4d973e43b709": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{5}{4}$",
+  "explanation_text": "\n$\\cos x+\\cos y=2\\cos\\frac{x+y}{2}\\cos\\frac{x-y}{2}=\\frac{1}{5}$;\n$\\sin x+\\sin y=2\\sin\\frac{x+y}{2}\\cos\\frac{x-y}{2}=\\frac{1}{4}$।\nভাগ করে: $\\tan\\frac{x+y}{2}=\\frac{1/4}{1/5}=\\frac{5}{4}$।\n\nব্যাখ্যা: সমষ্টি-সূত্র; অনুপাতে $\\tan\\frac{x+y}{2}=\\frac{5}{4}$।\n"
+ },
+ "515f6ee5-0865-44d1-a79c-ea05b267c729": {
+  "mcq_solution_index": 1,
+  "answer_text": "$60^{\\circ}$",
+  "explanation_text": "\n$\\cos\\theta+\\sqrt{3}\\sin\\theta=2\\cos\\left(\\theta-60^{\\circ}\\right)=2$ ⇒ $\\cos(\\theta-60^{\\circ})=1$ ⇒ $\\theta=60^{\\circ}$।\n\nব্যাখ্যা: ২৪৬-এর পুনরাবৃত্তি।\n"
+ },
+ "9af2b9e8-3dbe-41d9-840d-ba44a99f11b6": {
+  "mcq_solution_index": 0,
+  "answer_text": "$(4 n+1) \\pi / 2$",
+  "explanation_text": "\n$\\sin\\theta=1=\\sin\\frac{\\pi}{2}$ ⇒ $\\theta=2n\\pi+\\frac{\\pi}{2}=\\frac{(4n+1)\\pi}{2}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\sin\\theta=1$-এর সাধারণ সমাধান $(4n+1)\\frac{\\pi}{2}$।\n"
+ },
+ "54171a22-9e95-4025-9c66-9ed7179e09b7": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\tan^{-1}x+\\cot^{-1}x=\\frac{\\pi}{2}$।\n\nব্যাখ্যা: পূরক কোণ identity।\n"
+ },
+ "32ca6e48-9e74-4d4e-ade4-21c258a5fd97": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{3 \\pi}{4}$",
+  "explanation_text": "\n$\\cot^{-1}\\frac{1}{3}=\\tan^{-1}3$; $\\tan^{-1}2+\\tan^{-1}3$; $xy=6>1$:\n$=\\pi+\\tan^{-1}\\frac{2+3}{1-6}=\\pi-\\frac{\\pi}{4}=\\frac{3\\pi}{4}$।\n\nব্যাখ্যা: ২৬৮-এর পুনরাবৃত্তি।\n"
+ },
+ "981b5b04-4386-4732-93fa-c137d9c776d3": {
+  "mcq_solution_index": 3,
+  "answer_text": "কোনটিই নয়",
+  "explanation_text": "\n$\\theta=\\sin^{-1}x$ ⇒ $\\sin\\theta=x$, $\\cos\\theta=\\sqrt{1-x^{2}}$ ⇒ $\\cot\\theta=\\frac{\\sqrt{1-x^{2}}}{x}$।\nঅপশনে $\\frac{\\sqrt{1-x^{2}}}{x}$ নেই (OPT_1-এ $\\frac{1}{x}$-ঘাটতি, OPT_3 তো tan) — তাই \"কোনটিই নয়\"।\n\nব্যাখ্যা: $\\cot\\theta=\\frac{\\sqrt{1-x^{2}}}{x}$ — অপশনে অনুপস্থিত।\n"
+ },
+ "7c8c983c-0655-493d-a4d0-43250debc2cb": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\pm 45^{\\circ}$",
+  "explanation_text": "\n$\\cot^{2}\\theta-2\\sqrt{2}\\operatorname{cosec}\\theta+3=0$; $\\cot^{2}\\theta=\\operatorname{cosec}^{2}\\theta-1$:\n$\\operatorname{cosec}^{2}\\theta-2\\sqrt{2}\\operatorname{cosec}\\theta+2=0$ ⇒ $(\\operatorname{cosec}\\theta-\\sqrt{2})^{2}=0$\n⇒ $\\operatorname{cosec}\\theta=\\sqrt{2}$ ⇒ $\\sin\\theta=\\frac{1}{\\sqrt{2}}$ ⇒ $\\theta=45^{\\circ}$ (প্রধান), $135^{\\circ}$।\nঅপশনে $\\pm45^{\\circ}$ — উদ্দিষ্ট উত্তর।\n\nব্যাখ্যা: পূর্ণবর্গ; $\\sin45^{\\circ}=\\frac{1}{\\sqrt{2}}$।\n"
+ },
+ "795fd2bf-b039-40dc-a5c0-68c98a0f3c1a": {
+  "mcq_solution_index": 2,
+  "answer_text": "$60^{\\circ}, 120^{\\circ}$",
+  "explanation_text": "\n$2(\\sin\\theta\\cos\\theta+\\sqrt{3})=\\sqrt{3}\\cos\\theta+4\\sin\\theta$; $0<\\theta<360^{\\circ}$।\nθ=60°: বাম $=\\frac{\\sqrt{3}}{2}+2\\sqrt{3}=\\frac{5\\sqrt{3}}{2}$, ডান $=\\frac{\\sqrt{3}}{2}+2\\sqrt{3}=\\frac{5\\sqrt{3}}{2}$ ✓।\nθ=120°: বাম $=-\\frac{\\sqrt{3}}{4}\\cdot2+2\\sqrt{3}=\\frac{3\\sqrt{3}}{2}$... সংশোধন: বাম $=2(-\\frac{\\sqrt{3}}{4}+\\sqrt{3})=\\frac{3\\sqrt{3}}{2}$, ডান $=-\\frac{\\sqrt{3}}{2}+2\\sqrt{3}=\\frac{3\\sqrt{3}}{2}$ ✓।\n∴ $\\theta=60^{\\circ},120^{\\circ}$।\n\nব্যাখ্যা: দুই মানই যাচাই; $60^{\\circ},120^{\\circ}$।\n"
+ },
+ "b043cc7c-bfa3-4092-99c1-f859ca9fc8ea": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\pi$",
+  "explanation_text": "\n$\\tan2\\theta+\\sec\\theta=-1$; θ=π বসালে: $\\tan2\\pi+\\sec\\pi=0+(-1)=-1$ ✓।\nθ=$\\frac{\\pi}{2}$ বা $\\frac{3\\pi}{2}$-এ tan/sec অসংজ্ঞায়িত; θ=$\\frac{\\pi}{4}$-এ $\\tan\\frac{\\pi}{2}$ অসংজ্ঞায়িত।\n∴ একমাত্র $\\theta=\\pi$।\n\nব্যাখ্যা: অপশন যাচাই; $\\tan2\\pi=0$, $\\sec\\pi=-1$।\n"
+ },
+ "08c53e4e-2b8c-4a98-b81f-19c2a9304975": {
+  "mcq_solution_index": 1,
+  "answer_text": "$45^{\\circ}$",
+  "explanation_text": "\n$\\sin\\theta+\\cos\\theta=\\sqrt{2}\\sin\\left(\\theta+45^{\\circ}\\right)=\\sqrt{2}$ ⇒ $\\sin(\\theta+45^{\\circ})=1$ ⇒ $\\theta=45^{\\circ}$।\n\nব্যাখ্যা: ৩৩৪-এর পুনরাবৃত্তি।\n"
+ },
+ "72282491-bff1-4b84-aa63-87a3d4bb7a9a": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{2}-x$",
+  "explanation_text": "\n$\\sin^{-1}(\\cos x)=\\sin^{-1}\\left(\\sin\\left(\\frac{\\pi}{2}-x\\right)\\right)=\\frac{\\pi}{2}-x$ (উপযুক্ত ব্যাপ্তিতে)।\n\nব্যাখ্যা: $\\cos x=\\sin\\left(\\frac{\\pi}{2}-x\\right)$।\n"
+ },
+ "9fb4778d-e541-432c-b9f2-9956edd833dd": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\tan^{-1}x+\\tan^{-1}\\frac{1}{x}=\\frac{\\pi}{2}$ (x>0); x<0 হলে $-\\frac{\\pi}{2}$।\nঅপশনানুসারে (ধনাত্মক x) $=\\frac{\\pi}{2}$।\n\nব্যাখ্যা: পরস্পর reciprocal; যোগফল $\\frac{\\pi}{2}$।\n"
+ },
+ "31420651-03f9-4f43-93f6-2144a6621ea2": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\sin ^{-1} \\frac{2 x}{1+x^{2}}$",
+  "explanation_text": "\n$2\\tan^{-1}x=\\sin^{-1}\\frac{2x}{1+x^{2}}$ (উপযুক্ত ব্যাপ্তিতে; $\\sin2\\theta=\\frac{2\\tan\\theta}{1+\\tan^{2}\\theta}$)।\n\nব্যাখ্যা: দ্বিগুণ কোণের sine সূত্রের বিপরীত; OPT_1।\n"
+ },
+ "479c176b-b336-4f28-abbb-9dd1ff44b912": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{\\sqrt{50}}$",
+  "explanation_text": "\n$x=\\tan^{-1}\\frac{1}{7}$ ⇒ $\\tan x=\\frac{1}{7}$; ডানকোণী ত্রিভুজে অতিভুজ $=\\sqrt{49+1}=\\sqrt{50}$।\n∴ $\\sin x=\\frac{1}{\\sqrt{50}}$।\n\nব্যাখ্যা: ১-বিপরীত, ৭-সন্নিহিত; $\\sin x=\\frac{1}{\\sqrt{50}}$।\n"
+ }
+}

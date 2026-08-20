@@ -1,0 +1,152 @@
+JSON report written to: outputs/libSignatureKiller.x86_64.json
+
+======================================================================
+ELF ANALYSIS REPORT
+======================================================================
+File     : /root/dari/lib/x86_64/libSignatureKiller.so
+Size     : 23056 bytes (22.52 KB)
+SHA-256  : c216091d6dd468785d33fb68a55fd3d71cce6f3ddde5b45eda999cc298707ca9
+Class    : ELF64, little endian
+Type     : ET_DYN
+Machine  : AMD x86-64
+Entry    : 0x1c70
+
+--- Dynamic ---
+SONAME  : libSignatureKiller.so
+NEEDED  : liblog.so, libm.so, libdl.so, libc.so
+
+--- Symbols ---
+Exported (defined) : 7
+  STT_FUNC STB_GLOBAL Java_bin_mt_signature_KillerApplication_hookApkPath @ 0x1cd0 (size 192)
+  STT_FUNC STB_GLOBAL xhook_register @ 0x1eb0 (size 5)
+  STT_FUNC STB_GLOBAL xhook_refresh @ 0x1ed0 (size 5)
+  STT_FUNC STB_GLOBAL xhook_ignore @ 0x1ec0 (size 5)
+  STT_FUNC STB_GLOBAL xhook_clear @ 0x1ee0 (size 7)
+  STT_FUNC STB_GLOBAL xhook_enable_debug @ 0x1ef0 (size 5)
+  STT_FUNC STB_GLOBAL xhook_enable_sigsegv_protection @ 0x1f00 (size 5)
+Imported (undefined): 32
+  __cxa_finalize
+  __cxa_atexit
+  strcmp
+  __android_log_print
+  regcomp
+  malloc
+  strdup
+  pthread_mutex_lock
+  pthread_mutex_unlock
+  free
+  sigemptyset
+  sigaction
+  pthread_create
+  pthread_cond_signal
+  pthread_join
+  regfree
+  siglongjmp
+  pthread_self
+  pthread_setname_np
+  pthread_cond_wait
+  memset
+  fopen
+  fgets
+  sscanf
+  strlen
+  regexec
+  strcpy
+  fclose
+  sigsetjmp
+  strstr
+  mprotect
+  __errno
+
+--- Sections ---
+  .note.android.ident    addr=0x270 off=0x270 size=0x98
+  .note.gnu.build-id     addr=0x308 off=0x308 size=0x24
+  .dynsym                addr=0x330 off=0x330 size=0x3c0
+  .gnu.version           addr=0x6f0 off=0x6f0 size=0x50
+  .gnu.version_r         addr=0x740 off=0x740 size=0x20
+  .gnu.hash              addr=0x760 off=0x760 size=0x40
+  .hash                  addr=0x7a0 off=0x7a0 size=0x148
+  .dynstr                addr=0x8e8 off=0x8e8 size=0x23a
+  .rela.dyn              addr=0xb28 off=0xb28 size=0x78
+  .rela.plt              addr=0xba0 off=0xba0 size=0x330
+  .rodata                addr=0xed0 off=0xed0 size=0x4f0
+  .eh_frame_hdr          addr=0x13c0 off=0x13c0 size=0x15c
+  .eh_frame              addr=0x1520 off=0x1520 size=0x74c
+  .text                  addr=0x1c70 off=0x1c70 size=0x30b8
+  .plt                   addr=0x4d30 off=0x4d30 size=0x230
+  .data.rel.ro           addr=0x5f60 off=0x4f60 size=0x8
+  .fini_array            addr=0x5f68 off=0x4f68 size=0x10
+  .dynamic               addr=0x5f78 off=0x4f78 size=0x1b0
+  .got.plt               addr=0x6128 off=0x5128 size=0x128
+  .data                  addr=0x7250 off=0x5250 size=0x28
+  .bss                   addr=0x7280 off=0x5278 size=0x170
+  .comment               addr=0x0 off=0x5278 size=0xb1
+  .shstrtab              addr=0x0 off=0x5329 size=0xe1
+
+--- Segments ---
+  PT_PHDR        off=0x40 vaddr=0x40 filesz=0x230 memsz=0x230 flags=4
+  PT_LOAD        off=0x0 vaddr=0x0 filesz=0x4f60 memsz=0x4f60 flags=5
+  PT_LOAD        off=0x4f60 vaddr=0x5f60 filesz=0x2f0 memsz=0x2f0 flags=6
+  PT_LOAD        off=0x5250 vaddr=0x7250 filesz=0x28 memsz=0x1a0 flags=6
+  PT_DYNAMIC     off=0x4f78 vaddr=0x5f78 filesz=0x1b0 memsz=0x1b0 flags=6
+  PT_GNU_RELRO   off=0x4f60 vaddr=0x5f60 filesz=0x2f0 memsz=0x10a0 flags=4
+  PT_GNU_EH_FRAME off=0x13c0 vaddr=0x13c0 filesz=0x15c memsz=0x15c flags=4
+  PT_GNU_STACK   off=0x0 vaddr=0x0 filesz=0x0 memsz=0x0 flags=6
+  PT_NOTE        off=0x270 vaddr=0x270 filesz=0x98 memsz=0x98 flags=4
+  PT_NOTE        off=0x308 vaddr=0x308 filesz=0x24 memsz=0x24 flags=4
+
+--- Relocations: 39 ---
+  .rela.dyn 0x5f60 8 
+  .rela.dyn 0x5f68 8 
+  .rela.dyn 0x5f70 8 
+  .rela.dyn 0x7258 8 
+  .rela.dyn 0x7268 8 
+  .rela.plt 0x6140 7 __cxa_finalize
+  .rela.plt 0x6148 7 __cxa_atexit
+  .rela.plt 0x6150 7 xhook_register
+  .rela.plt 0x6158 7 xhook_refresh
+  .rela.plt 0x6160 7 strcmp
+  .rela.plt 0x6168 7 __android_log_print
+  .rela.plt 0x6170 7 regcomp
+  .rela.plt 0x6178 7 malloc
+  .rela.plt 0x6180 7 strdup
+  .rela.plt 0x6188 7 pthread_mutex_lock
+  .rela.plt 0x6190 7 pthread_mutex_unlock
+  .rela.plt 0x6198 7 free
+  .rela.plt 0x61a0 7 sigemptyset
+  .rela.plt 0x61a8 7 sigaction
+  .rela.plt 0x61b0 7 pthread_create
+  .rela.plt 0x61b8 7 pthread_cond_signal
+  .rela.plt 0x61c0 7 pthread_join
+  .rela.plt 0x61c8 7 regfree
+  .rela.plt 0x61d0 7 siglongjmp
+  .rela.plt 0x61d8 7 pthread_self
+  .rela.plt 0x61e0 7 pthread_setname_np
+  .rela.plt 0x61e8 7 pthread_cond_wait
+  .rela.plt 0x61f0 7 memset
+  .rela.plt 0x61f8 7 fopen
+  .rela.plt 0x6200 7 fgets
+
+--- Notes ---
+  Android: Container({'abi_os': 21, 'abi_major': 3420786, 'abi_minor': 0, 'abi_tiny': 0})
+  GNU: 9af9171b01e4cb93e3c52201cd855992bbcb808c
+
+--- Strings: 245 printable strings ---
+  URLs (1):
+    [0x528b] Android (8075178, based on r437112b) clang version 14.0.1 (https://android.googlesource.com/toolchain/llvm-project 8671348b81b95fc603505dfc881b45103bee1731)
+  Domains (6):
+    [0xae4] libc.so
+    [0xaf1] liblog.so
+    [0xafb] libm.so
+    [0xb03] libdl.so
+    [0xb0c] libSignatureKiller.so
+    [0x1280] unexpected r_addend in android.rel section
+  Paths (2):
+    [0x11c4] /proc/self/maps
+    [0x12be] fopen /proc/self/maps failed
+  JNI exports (1):
+    [0x905] Java_bin_mt_signature_KillerApplication_hookApkPath
+
+--- Flutter/Dart snapshot ---
+  Is Flutter AOT: False
+

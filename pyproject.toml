@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acad-visual"
+version = "2.5.0"
+description = "A powerful, multi-disciplinary open-source framework for semantic visual understanding, pixel-evidence constraint solving, and publication-quality vector synthesis from academic diagrams."
+readme = "README.md"
+authors = [
+    { name = "AcadVisual Contributors" }
+]
+license = { text = "MIT" }
+keywords = [
+    "diagram-reconstruction",
+    "vector-synthesis",
+    "computer-vision",
+    "svg",
+    "tikz",
+    "latex",
+    "mathematics",
+    "physics",
+    "chemistry",
+    "biology",
+    "academic-visuals",
+    "ransac",
+    "ocr"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "numpy>=1.22.0",
+    "opencv-python>=4.6.0",
+    "matplotlib>=3.5.0",
+    "scipy>=1.8.0",
+    "sympy>=1.10.0"
+]
+
+[project.scripts]
+acad_visual = "acad_visual.cli.main:main"
+acad-visual = "acad_visual.cli.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/tawhid120/acad-visual"
+"Bug Tracker" = "https://github.com/tawhid120/acad-visual/issues"
+"Documentation" = "https://github.com/tawhid120/acad-visual#readme"

@@ -1,0 +1,416 @@
+{
+ "batch": 12,
+ "questions": [
+  {
+   "n": 320,
+   "id": "b3274e82-e8d1-4068-9009-321ff7d00b82",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "বৈদ্যুতিক ফ্লাক্সের একক-",
+   "options": [
+    "Nm²/C",
+    "Nm/C",
+    "N/C",
+    "N/m²"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 321,
+   "id": "92f5f5b2-fba4-4102-937a-485c6e069674",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "1C চার্জের জন্য কতগুলো ইলেকট্রনের প্রয়োজন হবে?",
+   "options": [
+    "$6.25 \\times 10^{18}$",
+    "$9 \\times 10^9$",
+    "$1.6 \\times 10^{-19}$",
+    "$1.6 \\times 10^{19}$"
+   ],
+   "images": [],
+   "src": "BUTex (Bangladesh University of Textiles) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 322,
+   "id": "fdef7b22-e8f9-45d0-a2e7-8c89f8fcdfe0",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "সমবিভব বল ও তড়িৎ প্রাবল্য পরস্পরের কী?",
+   "options": [
+    "সমান্তরাল",
+    "বিপরীত মুখী",
+    "লম্ব",
+    "একমুখী"
+   ],
+   "images": [],
+   "src": "HSTU-B (Hajee Mohammad Danesh Science & Technology University (B Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 323,
+   "id": "7b9b3b16-83b7-4be6-b1f4-8859e95b3937",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকত্ব যুক্ত AC সার্কিটে প্রবাহ ও বিভবের দশা পার্থক্য কত?",
+   "options": [
+    "90°",
+    "180°",
+    "45°",
+    "0°"
+   ],
+   "images": [],
+   "src": "HSTU-B (Hajee Mohammad Danesh Science & Technology University (B Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 324,
+   "id": "5033197f-3680-4504-b91c-58e78b0b3d97",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ফ্লাক্সের একক কী?",
+   "options": [
+    "$NC^{-1}m^{-1}$",
+    "$NC^{-1}m^2$",
+    "$Nm^{-2}C^{-2}$",
+    "$Nm^{-2}C$"
+   ],
+   "images": [],
+   "src": "HSTU-B (Hajee Mohammad Danesh Science & Technology University (B Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 325,
+   "id": "0451fd69-d1fa-4ccf-b0df-612256abba0a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$5\\mathrm{cm}$ ব্যাসার্ধের একটি গোলাকার চালকের পৃষ্ঠে বিভব $100\\mathrm{V}$ হলে, এর কেন্দ্রে বিভব কত হবে?",
+   "options": [
+    "$0,\\mathrm{V}$",
+    "$50,\\mathrm{V}$",
+    "$100,\\mathrm{V}$",
+    "$200,\\mathrm{V}$"
+   ],
+   "images": [],
+   "src": "HSTU-B (Hajee Mohammad Danesh Science & Technology University (B Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 326,
+   "id": "6116102c-e603-4179-ba07-dc02ba0b5a1f",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি সুষম তড়িৎ ক্ষেত্রের 50 cm ব্যবধানে অবস্থিত দুইটি বিন্দুর বিভব পার্থক্য 200 V। তড়িৎ ক্ষেত্রের প্রাবল্য কত?",
+   "options": [
+    "200 V/m",
+    "400 V/m",
+    "100 V/m",
+    "500 V/m"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 327,
+   "id": "5a5c7f92-4829-4630-8157-93f0e9ae5af5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি তড়িৎ দ্বিপোলের জন্য তড়িৎ ক্ষেত্র, দূরত্ব $r$-এর সাথে কীভাবে পরিবর্তিত হয়?",
+   "options": [
+    "$r^{-1}$",
+    "$r^{-2}$",
+    "$r$",
+    "$r^{-3}$"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 328,
+   "id": "bc74737a-32b2-4b82-88fd-886f8e249114",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তড়িৎ ফ্লাক্স এর একক কী?",
+   "options": [
+    "$NC^{-1}m^{-1}$",
+    "$NC^{-1}m^2$",
+    "$Nm^{-2}C^{-2}$",
+    "$Nm^{-2}C$"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 329,
+   "id": "22af4258-3bcb-4888-97fc-c7cf4c930415",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি দ্বি-পোলের জন্য তড়িৎ প্রাবল্য কিভাবে পরিবর্তিত হয়?",
+   "options": [
+    "$\\propto \\frac{1}{r}$",
+    "$\\propto \\frac{1}{r^2}$",
+    "$\\propto \\frac{1}{r^3}$",
+    "$\\propto \\frac{1}{r^4}$"
+   ],
+   "images": [],
+   "src": "HSTU-A (Hajee Mohammad Danesh Science & Technology University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 330,
+   "id": "ea349e5d-df88-4edd-bd0c-e4933cc8be96",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বিন্দুতে তড়িৎ বিভব, $V=-5x+3y+\\sqrt{15}z$ হলো ঐ বিন্দুতে তড়িৎ প্রাবল্য কত?",
+   "options": [
+    "3 Unit",
+    "4 Unit",
+    "5 Unit",
+    "7 Unit",
+    "9 Unit"
+   ],
+   "images": [],
+   "src": "KUET (Khulna University of Engineering & Technology) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 331,
+   "id": "bb56aeaf-9b24-4379-bc80-918088e180a4",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুইটি ধারকের-ধারকত্ব যথাক্রমে $C_{1}=5\\mu F$ এবং $C_{2}=25\\mu F$ ধারক দুইটি 600 Volt বিভবের সাথে শ্রেণি সংযোগে আছে। দ্বিতীয় ধারকের মধ্যে সঞ্চিত শক্তি কত?",
+   "options": [
+    "$25\\times10^{-4}J$",
+    "0.125 J",
+    "0.625 J",
+    "100 J",
+    "500 J"
+   ],
+   "images": [],
+   "src": "KUET (Khulna University of Engineering & Technology) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 332,
+   "id": "9f57186c-85f8-4851-b2c4-585ad0e7062a",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "10 m ব্যাসার্ধের বৃত্তের কেন্দ্রে 10 µC তড়িতাধান অবস্থিত। একটি একক ধনাত্মক আধানকে বৃত্তের পরিধি বরাবর একবার প্রদক্ষিণ করাতে সম্পাদিত কাজের পরিমান কত?",
+   "options": [
+    "0",
+    "100 J",
+    "10 J",
+    "150 J",
+    "$100\\times10^{4}J$"
+   ],
+   "images": [],
+   "src": "RUET (Rajshahi University of Engineering & Technology) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 333,
+   "id": "06d0b299-7970-4727-8c49-0ba7febccfed",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "5 µF ও 10 µF এর দুইটি ধারক শ্রেণীবদ্ধভাবে সংযুক্ত করলে সমতুল্য ধারকত্বের মান কত হবে?",
+   "options": [
+    "$3\\times10^{-6}F$",
+    "0.2 µF",
+    "0.5 µF",
+    "3.33 µF",
+    "0.03 µF"
+   ],
+   "images": [],
+   "src": "RUET (Rajshahi University of Engineering & Technology) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 334,
+   "id": "cb089e8e-88c2-4a16-bc89-db2b408344f2",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি স্থির ইলেকট্রন কত শক্তি সংরক্ষণ করে?",
+   "options": [
+    "$8.19\\times10^{-14}J$",
+    "$9.81\\times10^{-14}J$",
+    "$1.89\\times10^{-14}J$",
+    "$1.89\\times10^{14}J$",
+    "$8.19\\times10^{14}J$"
+   ],
+   "images": [],
+   "src": "RUET (Rajshahi University of Engineering & Technology) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 335,
+   "id": "9ff095c5-e474-46a8-af09-90ac6647e523",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "তিনটি সমান মানের ধারক সমান্তরালে যুক্ত থাকলে বর্তনীর তুল্য ধারকত্ব শ্রেণি সমবায়ে যুক্ত তুল্য ধারকত্বের তুলনায় কত?",
+   "options": [
+    "এক তৃতীয়াংশ",
+    "3 গুণ",
+    "9 গুণ",
+    "এক নবমাংশ"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 336,
+   "id": "8e578a35-a473-4fed-a203-ce0f5f6cdc29",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি পাতলা ফাঁপা পরিবাহী গোলকের ব্যাসার্ধ R = 15cm । এতে $Q=6\\times10^{-6}C$ আধান প্রদান করা হয়েছে। গোলকের কেন্দ্রে বৈদ্যুতিক ক্ষেত্রের মান কত?",
+   "options": [
+    "$0NC^{-1}$",
+    "$2.4\\times10^{6}NC^{-1}$",
+    "$4.8\\times10^{6}NC^{-1}$",
+    "$6.0\\times10^{6}NC^{-1}$"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 337,
+   "id": "1395faf5-8a0e-4f20-90e3-bb62fa155261",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "4 cm ব্যাসার্ধের একটি চার্জিত গোলকের চার্জের তল ঘনত্ব 1 একক। ঐ গোলকে সঞ্চিত চার্জের পরিমাণ কত একক?",
+   "options": [
+    "402.4",
+    "502.6",
+    "202.4",
+    "125.6"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 338,
+   "id": "7afbdd9c-eb3c-4548-a4b1-ec721ac8bce7",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "4 cm ব্যাসার্ধের একটি চার্জিত গোলকের চার্জের তল ঘনত্ব 1 একক। ঐ গোলকে সঞ্চিত চার্জের পরিমাণ কত একক?",
+   "options": [
+    "402.4",
+    "502.6",
+    "202.4",
+    "125.6"
+   ],
+   "images": [],
+   "src": "RU-C (University of Rajshahi (C Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 339,
+   "id": "6f13e48b-72df-4d0f-92da-bed17c20fa2d",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "চার্জের কোয়ান্টাম নিয়মানুসারে নিচের কোন চার্জটি কোনও বস্তুতে থাকা সম্ভব? (ইলেকট্রনের $=1.6\\times10^{-19}C$ )",
+   "options": [
+    "$3\\times10^{-19}C$",
+    "$3.2\\times10^{-19}C$",
+    "$4.9\\times10^{-19}C$",
+    "$6\\times10^{9}C$"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 340,
+   "id": "005415a2-59b9-4966-bd1b-63353f1b4f83",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "15 cm ব্যাসার্ধের একটি চার্জিত গোলকের কেন্দ্র থেকে 20 cm দূরে অবস্থিত একটি বিন্দুতে বৈদ্যুতিক ক্ষেত্র $6\\times10^{3}N/C$ গোলকটিতে চার্জের পরিমান কত nC?",
+   "options": [
+    "27.6",
+    "26.7",
+    "37.6",
+    "36.7"
+   ],
+   "images": [],
+   "src": "KU-A (Khulna University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 341,
+   "id": "0cc7bf81-ede7-4f30-95df-0bd1416e6ae5",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "নিচের কোনটির মধ্যে ডাইপোল-ডাইপোল আকর্ষণ বিদ্যমান ?",
+   "options": [
+    "$NH_{3}$",
+    "$CH_{4}$",
+    "$O_{2}$",
+    "Ar"
+   ],
+   "images": [],
+   "src": "KU-A (Khulna University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 342,
+   "id": "dcd31c7f-5038-4dab-b41f-f0a8f8ea1fbc",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ধারকের ক্ষেত্রে কোনটি সঠিক?",
+   "options": [
+    "$\\omega=\\frac{1}{2}VC^{2}$",
+    "$\\omega=\\frac{1}{2}CI^{2}$",
+    "$\\omega=\\frac{1}{2}V^{2}C$",
+    "$\\omega=\\frac{1}{2}\\frac{Q}{C}$"
+   ],
+   "images": [],
+   "src": "KU-A (Khulna University (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 343,
+   "id": "d5caf26f-0044-4c7f-8428-a21a9e445752",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "2,3 ও 6 $\\mu$ F ধারকত্বের তিনটি ধারককে শ্রেণিবদ্ধভাবে যুক্ত করে 10V ব্যাটারির সাথে সংযোগ দেয়া হলে বর্তনীতে চার্জের পরিমান কত হবে?",
+   "options": [
+    "$1\\times10^{-5}C$",
+    "$1.5\\times10^{-5}C$",
+    "$3.0\\times10^{-5}C$",
+    "$6.0\\times10^{-5}C$"
+   ],
+   "images": [],
+   "src": "ACAS (Agriculture Cluster Admission System) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 344,
+   "id": "e702940d-dda6-4e43-9923-0ede5360675e",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "$1C$ ও $2C$ এর দুটি চার্জ $2m$ ব্যবধানে রাখা আছে। $-1C$ এর একটি চার্জ তাদের মধ্যখানে রাখলে, মধ্যবিন্দুতে রক্ষিত চার্জের উপর লব্ধি বল কত হবে?",
+   "options": [
+    "$9\\times10^{9}N$",
+    "$10\\times10^{8}N$",
+    "$9\\times10^{8}N$",
+    "$7\\times10^{9}N$"
+   ],
+   "images": [],
+   "src": "SUST-A (Shahjalal University of Science & Technology (A Unit)) 24-25 [Admission Exam Question]"
+  },
+  {
+   "n": 345,
+   "id": "105f1977-32b6-4934-a916-94efc1ae4ac3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ইলেকট্রন ভোল্ট কীসের একক? ",
+   "options": [
+    "আধান",
+    "কাজ",
+    "প্রবাহ",
+    "প্রাবাল্য"
+   ],
+   "images": [],
+   "src": "RU-E (University of Rajshahi (E Unit)) 23-24 [Admission Exam Question]"
+  },
+  {
+   "n": 346,
+   "id": "f12c7c06-0e3a-455e-8416-a3b80781d8e3",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "ইলেকট্রন ভোল্ট কীসের একক? ",
+   "options": [
+    "চার্জ",
+    "প্রাবল্য",
+    "কাজ",
+    "প্রবাহ"
+   ],
+   "images": [],
+   "src": "CU-A (University of Chittagong (Unit A)) 23-24 [Admission Exam Question]; RU-E (University of Rajshahi (E Unit)) 23-24 [Admission Exam Question]"
+  },
+  {
+   "n": 347,
+   "id": "c68abbf8-33d7-4cd9-a7f3-6a8b300b40c9",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "একটি বর্তনীতে 5 µF এর দুইটি ধারক সমান্তরালে সংযোগ করে তার সাথে আরেকটি 5µF এর ধারক সিরিজে সংযোগ করা হলো, মোট ধারকত্ব কত? ",
+   "options": [
+    "3.33 µF",
+    "7.80 µF",
+    "8.43 µF",
+    "15 μF"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 23-24 [Admission Exam Question]"
+  },
+  {
+   "n": 348,
+   "id": "3c443466-9a86-4050-b070-5c51f50c1d52",
+   "type": "বহুনির্বাচনি প্রশ্ন",
+   "q": "দুটি ধারক শ্রেণি সমবায়ে যুক্ত করলে তুল্যধারকত্ব 2.4 µF হয়। একটি ধারকের ধারকত্ব 6 µF হলে অন্যটির ধারকত্ব কত হবে? ",
+   "options": [
+    "3µF",
+    "4 µF",
+    "2 µF",
+    "6 μF"
+   ],
+   "images": [],
+   "src": "JU-A (Jahangirnagar University (A Unit)) 23-24 [Admission Exam Question]"
+  }
+ ]
+}

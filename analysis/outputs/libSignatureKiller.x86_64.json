@@ -1,0 +1,1219 @@
+{
+  "elf": {
+    "file": "libSignatureKiller.so",
+    "path": "/root/dari/lib/x86_64/libSignatureKiller.so",
+    "size_bytes": 23056,
+    "sha256": "c216091d6dd468785d33fb68a55fd3d71cce6f3ddde5b45eda999cc298707ca9",
+    "elf_class": "ELF64",
+    "endianness": "little",
+    "os_abi": "ELFOSABI_SYSV",
+    "type": "ET_DYN",
+    "machine": "AMD x86-64",
+    "machine_raw": "EM_X86_64",
+    "entry_point": "0x1c70",
+    "phoff": 64,
+    "shoff": 21520,
+    "flags": "0x0"
+  },
+  "sections": [
+    {
+      "name": "",
+      "type": "SHT_NULL",
+      "addr": "0x0",
+      "offset": 0,
+      "size": 0,
+      "flags": 0,
+      "link": 0,
+      "info": 0,
+      "align": 0
+    },
+    {
+      "name": ".note.android.ident",
+      "type": "SHT_NOTE",
+      "addr": "0x270",
+      "offset": 624,
+      "size": 152,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 2
+    },
+    {
+      "name": ".note.gnu.build-id",
+      "type": "SHT_NOTE",
+      "addr": "0x308",
+      "offset": 776,
+      "size": 36,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".dynsym",
+      "type": "SHT_DYNSYM",
+      "addr": "0x330",
+      "offset": 816,
+      "size": 960,
+      "flags": 2,
+      "link": 8,
+      "info": 1,
+      "align": 8
+    },
+    {
+      "name": ".gnu.version",
+      "type": "SHT_GNU_versym",
+      "addr": "0x6f0",
+      "offset": 1776,
+      "size": 80,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 2
+    },
+    {
+      "name": ".gnu.version_r",
+      "type": "SHT_GNU_verneed",
+      "addr": "0x740",
+      "offset": 1856,
+      "size": 32,
+      "flags": 2,
+      "link": 8,
+      "info": 1,
+      "align": 4
+    },
+    {
+      "name": ".gnu.hash",
+      "type": "SHT_GNU_HASH",
+      "addr": "0x760",
+      "offset": 1888,
+      "size": 64,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".hash",
+      "type": "SHT_HASH",
+      "addr": "0x7a0",
+      "offset": 1952,
+      "size": 328,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".dynstr",
+      "type": "SHT_STRTAB",
+      "addr": "0x8e8",
+      "offset": 2280,
+      "size": 570,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    },
+    {
+      "name": ".rela.dyn",
+      "type": "SHT_RELA",
+      "addr": "0xb28",
+      "offset": 2856,
+      "size": 120,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".rela.plt",
+      "type": "SHT_RELA",
+      "addr": "0xba0",
+      "offset": 2976,
+      "size": 816,
+      "flags": 66,
+      "link": 3,
+      "info": 19,
+      "align": 8
+    },
+    {
+      "name": ".rodata",
+      "type": "SHT_PROGBITS",
+      "addr": "0xed0",
+      "offset": 3792,
+      "size": 1264,
+      "flags": 50,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".eh_frame_hdr",
+      "type": "SHT_PROGBITS",
+      "addr": "0x13c0",
+      "offset": 5056,
+      "size": 348,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".eh_frame",
+      "type": "SHT_PROGBITS",
+      "addr": "0x1520",
+      "offset": 5408,
+      "size": 1868,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".text",
+      "type": "SHT_PROGBITS",
+      "addr": "0x1c70",
+      "offset": 7280,
+      "size": 12472,
+      "flags": 6,
+      "link": 0,
+      "info": 0,
+      "align": 16
+    },
+    {
+      "name": ".plt",
+      "type": "SHT_PROGBITS",
+      "addr": "0x4d30",
+      "offset": 19760,
+      "size": 560,
+      "flags": 6,
+      "link": 0,
+      "info": 0,
+      "align": 16
+    },
+    {
+      "name": ".data.rel.ro",
+      "type": "SHT_PROGBITS",
+      "addr": "0x5f60",
+      "offset": 20320,
+      "size": 8,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".fini_array",
+      "type": "SHT_FINI_ARRAY",
+      "addr": "0x5f68",
+      "offset": 20328,
+      "size": 16,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".dynamic",
+      "type": "SHT_DYNAMIC",
+      "addr": "0x5f78",
+      "offset": 20344,
+      "size": 432,
+      "flags": 3,
+      "link": 8,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".got.plt",
+      "type": "SHT_PROGBITS",
+      "addr": "0x6128",
+      "offset": 20776,
+      "size": 296,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".data",
+      "type": "SHT_PROGBITS",
+      "addr": "0x7250",
+      "offset": 21072,
+      "size": 40,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".bss",
+      "type": "SHT_NOBITS",
+      "addr": "0x7280",
+      "offset": 21112,
+      "size": 368,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 16
+    },
+    {
+      "name": ".comment",
+      "type": "SHT_PROGBITS",
+      "addr": "0x0",
+      "offset": 21112,
+      "size": 177,
+      "flags": 48,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    },
+    {
+      "name": ".shstrtab",
+      "type": "SHT_STRTAB",
+      "addr": "0x0",
+      "offset": 21289,
+      "size": 225,
+      "flags": 0,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    }
+  ],
+  "segments": [
+    {
+      "type": "PT_PHDR",
+      "offset": 64,
+      "vaddr": "0x40",
+      "paddr": "0x40",
+      "filesz": 560,
+      "memsz": 560,
+      "flags": 4,
+      "align": 8
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 0,
+      "vaddr": "0x0",
+      "paddr": "0x0",
+      "filesz": 20320,
+      "memsz": 20320,
+      "flags": 5,
+      "align": 4096
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 20320,
+      "vaddr": "0x5f60",
+      "paddr": "0x5f60",
+      "filesz": 752,
+      "memsz": 752,
+      "flags": 6,
+      "align": 4096
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 21072,
+      "vaddr": "0x7250",
+      "paddr": "0x7250",
+      "filesz": 40,
+      "memsz": 416,
+      "flags": 6,
+      "align": 4096
+    },
+    {
+      "type": "PT_DYNAMIC",
+      "offset": 20344,
+      "vaddr": "0x5f78",
+      "paddr": "0x5f78",
+      "filesz": 432,
+      "memsz": 432,
+      "flags": 6,
+      "align": 8
+    },
+    {
+      "type": "PT_GNU_RELRO",
+      "offset": 20320,
+      "vaddr": "0x5f60",
+      "paddr": "0x5f60",
+      "filesz": 752,
+      "memsz": 4256,
+      "flags": 4,
+      "align": 1
+    },
+    {
+      "type": "PT_GNU_EH_FRAME",
+      "offset": 5056,
+      "vaddr": "0x13c0",
+      "paddr": "0x13c0",
+      "filesz": 348,
+      "memsz": 348,
+      "flags": 4,
+      "align": 4
+    },
+    {
+      "type": "PT_GNU_STACK",
+      "offset": 0,
+      "vaddr": "0x0",
+      "paddr": "0x0",
+      "filesz": 0,
+      "memsz": 0,
+      "flags": 6,
+      "align": 0
+    },
+    {
+      "type": "PT_NOTE",
+      "offset": 624,
+      "vaddr": "0x270",
+      "paddr": "0x270",
+      "filesz": 152,
+      "memsz": 152,
+      "flags": 4,
+      "align": 2
+    },
+    {
+      "type": "PT_NOTE",
+      "offset": 776,
+      "vaddr": "0x308",
+      "paddr": "0x308",
+      "filesz": 36,
+      "memsz": 36,
+      "flags": 4,
+      "align": 4
+    }
+  ],
+  "dynamic": {
+    "needed": [
+      "liblog.so",
+      "libm.so",
+      "libdl.so",
+      "libc.so"
+    ],
+    "soname": "libSignatureKiller.so",
+    "tags": [
+      {
+        "tag": "DT_NEEDED",
+        "value": 521
+      },
+      {
+        "tag": "DT_NEEDED",
+        "value": 531
+      },
+      {
+        "tag": "DT_NEEDED",
+        "value": 539
+      },
+      {
+        "tag": "DT_NEEDED",
+        "value": 508
+      },
+      {
+        "tag": "DT_SONAME",
+        "value": 548
+      },
+      {
+        "tag": "DT_FLAGS",
+        "value": 8
+      },
+      {
+        "tag": "DT_FLAGS_1",
+        "value": 1
+      },
+      {
+        "tag": "DT_RELA",
+        "value": 2856
+      },
+      {
+        "tag": "DT_RELASZ",
+        "value": 120
+      },
+      {
+        "tag": "DT_RELAENT",
+        "value": 24
+      },
+      {
+        "tag": "DT_RELACOUNT",
+        "value": 5
+      },
+      {
+        "tag": "DT_JMPREL",
+        "value": 2976
+      },
+      {
+        "tag": "DT_PLTRELSZ",
+        "value": 816
+      },
+      {
+        "tag": "DT_PLTGOT",
+        "value": 24872
+      },
+      {
+        "tag": "DT_PLTREL",
+        "value": 7
+      },
+      {
+        "tag": "DT_SYMTAB",
+        "value": 816
+      },
+      {
+        "tag": "DT_SYMENT",
+        "value": 24
+      },
+      {
+        "tag": "DT_STRTAB",
+        "value": 2280
+      },
+      {
+        "tag": "DT_STRSZ",
+        "value": 570
+      },
+      {
+        "tag": "DT_GNU_HASH",
+        "value": 1888
+      },
+      {
+        "tag": "DT_HASH",
+        "value": 1952
+      },
+      {
+        "tag": "DT_FINI_ARRAY",
+        "value": 24424
+      },
+      {
+        "tag": "DT_FINI_ARRAYSZ",
+        "value": 16
+      },
+      {
+        "tag": "DT_VERSYM",
+        "value": 1776
+      },
+      {
+        "tag": "DT_VERNEED",
+        "value": 1856
+      },
+      {
+        "tag": "DT_VERNEEDNUM",
+        "value": 1
+      },
+      {
+        "tag": "DT_NULL",
+        "value": 0
+      }
+    ],
+    "runpath": null
+  },
+  "symbols": {
+    "exported": [
+      {
+        "name": "Java_bin_mt_signature_KillerApplication_hookApkPath",
+        "value": "0x1cd0",
+        "size": 192,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_register",
+        "value": "0x1eb0",
+        "size": 5,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_refresh",
+        "value": "0x1ed0",
+        "size": 5,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_ignore",
+        "value": "0x1ec0",
+        "size": 5,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_clear",
+        "value": "0x1ee0",
+        "size": 7,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_enable_debug",
+        "value": "0x1ef0",
+        "size": 5,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "xhook_enable_sigsegv_protection",
+        "value": "0x1f00",
+        "size": 5,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      }
+    ],
+    "imported": [
+      {
+        "name": "__cxa_finalize",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__cxa_atexit",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strcmp",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__android_log_print",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "regcomp",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "malloc",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strdup",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_mutex_lock",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_mutex_unlock",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "free",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "sigemptyset",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "sigaction",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_create",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_cond_signal",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_join",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "regfree",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "siglongjmp",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_self",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_setname_np",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "pthread_cond_wait",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "memset",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "fopen",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "fgets",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "sscanf",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strlen",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "regexec",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strcpy",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "fclose",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "sigsetjmp",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strstr",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "mprotect",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__errno",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      }
+    ],
+    "exported_count": 7,
+    "imported_count": 32
+  },
+  "relocations": {
+    "count": 39,
+    "entries": [
+      {
+        "section": ".rela.dyn",
+        "offset": "0x5f60",
+        "type": 8,
+        "symbol": "",
+        "addend": 24416
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x5f68",
+        "type": 8,
+        "symbol": "",
+        "addend": 7312
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x5f70",
+        "type": 8,
+        "symbol": "",
+        "addend": 7280
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x7258",
+        "type": 8,
+        "symbol": "",
+        "addend": 29264
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x7268",
+        "type": 8,
+        "symbol": "",
+        "addend": 29280
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6140",
+        "type": 7,
+        "symbol": "__cxa_finalize",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6148",
+        "type": 7,
+        "symbol": "__cxa_atexit",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6150",
+        "type": 7,
+        "symbol": "xhook_register",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6158",
+        "type": 7,
+        "symbol": "xhook_refresh",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6160",
+        "type": 7,
+        "symbol": "strcmp",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6168",
+        "type": 7,
+        "symbol": "__android_log_print",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6170",
+        "type": 7,
+        "symbol": "regcomp",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6178",
+        "type": 7,
+        "symbol": "malloc",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6180",
+        "type": 7,
+        "symbol": "strdup",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6188",
+        "type": 7,
+        "symbol": "pthread_mutex_lock",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6190",
+        "type": 7,
+        "symbol": "pthread_mutex_unlock",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6198",
+        "type": 7,
+        "symbol": "free",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61a0",
+        "type": 7,
+        "symbol": "sigemptyset",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61a8",
+        "type": 7,
+        "symbol": "sigaction",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61b0",
+        "type": 7,
+        "symbol": "pthread_create",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61b8",
+        "type": 7,
+        "symbol": "pthread_cond_signal",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61c0",
+        "type": 7,
+        "symbol": "pthread_join",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61c8",
+        "type": 7,
+        "symbol": "regfree",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61d0",
+        "type": 7,
+        "symbol": "siglongjmp",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61d8",
+        "type": 7,
+        "symbol": "pthread_self",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61e0",
+        "type": 7,
+        "symbol": "pthread_setname_np",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61e8",
+        "type": 7,
+        "symbol": "pthread_cond_wait",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61f0",
+        "type": 7,
+        "symbol": "memset",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x61f8",
+        "type": 7,
+        "symbol": "fopen",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6200",
+        "type": 7,
+        "symbol": "fgets",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6208",
+        "type": 7,
+        "symbol": "sscanf",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6210",
+        "type": 7,
+        "symbol": "strlen",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6218",
+        "type": 7,
+        "symbol": "regexec",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6220",
+        "type": 7,
+        "symbol": "strcpy",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6228",
+        "type": 7,
+        "symbol": "fclose",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6230",
+        "type": 7,
+        "symbol": "sigsetjmp",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6238",
+        "type": 7,
+        "symbol": "strstr",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6240",
+        "type": 7,
+        "symbol": "mprotect",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x6248",
+        "type": 7,
+        "symbol": "__errno",
+        "addend": 0
+      }
+    ]
+  },
+  "notes": [
+    {
+      "owner": "Android",
+      "type": "NT_GNU_ABI_TAG",
+      "desc": "Container({'abi_os': 21, 'abi_major': 3420786, 'abi_minor': 0, 'abi_tiny': 0})"
+    },
+    {
+      "owner": "GNU",
+      "type": "NT_GNU_BUILD_ID",
+      "desc": "9af9171b01e4cb93e3c52201cd855992bbcb808c"
+    }
+  ],
+  "strings": {
+    "total": 245,
+    "urls": [
+      [
+        21131,
+        "Android (8075178, based on r437112b) clang version 14.0.1 (https://android.googlesource.com/toolchain/llvm-project 8671348b81b95fc603505dfc881b45103bee1731)"
+      ]
+    ],
+    "domains": [
+      [
+        2788,
+        "libc.so"
+      ],
+      [
+        2801,
+        "liblog.so"
+      ],
+      [
+        2811,
+        "libm.so"
+      ],
+      [
+        2819,
+        "libdl.so"
+      ],
+      [
+        2828,
+        "libSignatureKiller.so"
+      ],
+      [
+        4736,
+        "unexpected r_addend in android.rel section"
+      ]
+    ],
+    "paths": [
+      [
+        4548,
+        "/proc/self/maps"
+      ],
+      [
+        4798,
+        "fopen /proc/self/maps failed"
+      ]
+    ],
+    "secrets": [],
+    "google_keys": [],
+    "java_classes": [],
+    "jni_exports": [
+      [
+        2309,
+        "Java_bin_mt_signature_KillerApplication_hookApkPath"
+      ]
+    ],
+    "embedded_certs": [],
+    "flutter_indicators": []
+  },
+  "flutter": {
+    "is_flutter": false,
+    "snapshots": [],
+    "build_id": null,
+    "feature_string": null,
+    "notes": []
+  },
+  "disassembly": null
+}

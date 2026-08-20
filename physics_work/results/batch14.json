@@ -1,0 +1,147 @@
+{
+ "da2687ce-dc12-4a3d-845b-0343d21fbd12": {
+  "answer_text": "$14.4\\ \\mathrm{N}$",
+  "explanation_text": "প্রোটনের চার্জ $q = 1.6\\times10^{-19}\\ \\mathrm{C}$, দূরত্ব $r = 4\\times10^{-15}\\ \\mathrm{m}$।\nকুলম্বের সূত্র: $F = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}} = 9\\times10^{9} \\times \\frac{(1.6\\times10^{-19})(1.6\\times10^{-19})}{(4\\times10^{-15})^{2}}$\n$= 9\\times10^{9} \\times \\frac{2.56\\times10^{-38}}{1.6\\times10^{-29}} = 9\\times10^{9}\\times1.6\\times10^{-9} = 14.4\\ \\mathrm{N}$।\nব্যাখ্যা: দুটি প্রোটনের চার্জ $+1.6\\times10^{-19}\\ \\mathrm{C}$ ও প্রদত্ত দূরত্ব কুলম্বের সূত্রে বসিয়ে বিকর্ষণ বল $14.4\\ \\mathrm{N}$ পাওয়া যায়।",
+  "mcq_solution_index": 1
+ },
+ "cd7e337d-3274-4bc2-b50f-e8978f05cc0a": {
+  "answer_text": "i, iii",
+  "explanation_text": "তড়িৎক্ষেত্র নির্ণয় করা যায় কুলম্বের সূত্র ($E = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{r^{2}}$) থেকে এবং গাউসের সূত্র ($\\phi_{E} = \\oint \\vec{E}\\cdot d\\vec{A} = \\frac{q_{in}}{\\epsilon_{0}}$) থেকে। অ্যাম্পিয়ারের সূত্র ($\\oint \\vec{B}\\cdot d\\vec{l} = \\mu_{0}I$) চুম্বকক্ষেত্র নির্ণয়ে ব্যবহৃত হয়, তড়িৎক্ষেত্রের ক্ষেত্রে প্রযোজ্য নয়।\nব্যাখ্যা: (i) ও (iii) সঠিক; অ্যাম্পিয়ারের সূত্র চুম্বকক্ষেত্রের সাথে সম্পর্কিত।",
+  "mcq_solution_index": 1
+ },
+ "e8478464-1584-4d7f-9e01-d88b921a8a01": {
+  "answer_text": "$9\\ \\mathrm{kN}$",
+  "explanation_text": "$r = 1\\ \\mathrm{km} = 10^{3}\\ \\mathrm{m}$; $q_{1} = q_{2} = 1\\ \\mathrm{C}$।\n$F = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}} = 9\\times10^{9} \\times \\frac{1\\times1}{(10^{3})^{2}} = \\frac{9\\times10^{9}}{10^{6}} = 9\\times10^{3}\\ \\mathrm{N} = 9\\ \\mathrm{kN}$।\nব্যাখ্যা: বায়ুতে $k = 9\\times10^{9}\\ \\mathrm{N\\,m^{2}\\,C^{-2}}$ ধরে কুলম্বের সূত্র প্রয়োগে বল $9\\ \\mathrm{kN}$ হয়।",
+  "mcq_solution_index": 2
+ },
+ "11bedbd4-5012-4ba8-8581-7d442d37397c": {
+  "answer_text": "$9\\times10^{11}\\ \\mathrm{V}$",
+  "explanation_text": "গোলকের পৃষ্ঠে বিভব: $V = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{R} = 9\\times10^{9} \\times \\frac{10}{0.1}$\n$= 9\\times10^{9}\\times100 = 9\\times10^{11}\\ \\mathrm{V}$।\nব্যাখ্যা: চার্জিত পরিবাহী গোলকের পৃষ্ঠের বিভব $V = kQ/R$; $R = 10\\ \\mathrm{cm} = 0.1\\ \\mathrm{m}$ বসালে $9\\times10^{11}\\ \\mathrm{V}$ পাওয়া যায়।",
+  "mcq_solution_index": 0
+ },
+ "2d673d2f-bc81-4be5-b9d5-575710104036": {
+  "answer_text": "$2.12\\times10^{4}\\ \\mathrm{V}$",
+  "explanation_text": "সুষম তড়িৎক্ষেত্রে বিভব পার্থক্য $V = Ed$।\nপ্রশ্নে ব্যবধান $415.8\\ \\mathrm{cm}$ মুদ্রণ ত্রুটিযুক্ত; প্রদত্ত অপশন অনুযায়ী নির্ণেয় মানের জন্য ব্যবধান $15.8\\ \\mathrm{cm} = 0.158\\ \\mathrm{m}$ ধরা হয়।\n$V = Ed = 1.34\\times10^{5} \\times 0.158 = 2.117\\times10^{4} \\approx 2.12\\times10^{4}\\ \\mathrm{V}$।\nব্যাখ্যা: $V = Ed$ সূত্রে প্রাবল্য $E = 1.34\\times10^{5}\\ \\mathrm{N/C}$ ও ব্যবধান বসিয়ে বিভব পার্থক্য $2.12\\times10^{4}\\ \\mathrm{V}$।",
+  "mcq_solution_index": 0
+ },
+ "79d85e2d-f899-4615-92f8-00d266374de6": {
+  "answer_text": "$4.13\\times10^{-4}\\ \\mu\\mathrm{F}$",
+  "explanation_text": "বায়ু মাধ্যমে সমান্তরাল পাত ধারকের ধারকত্ব: $C = \\frac{\\epsilon_{0}A}{d} = \\frac{8.85\\times10^{-12}\\times1.4}{0.03}$\n$= 8.85\\times10^{-12}\\times46.67 = 4.13\\times10^{-10}\\ \\mathrm{F}$\n$= 4.13\\times10^{-10}\\times10^{6}\\ \\mu\\mathrm{F} = 4.13\\times10^{-4}\\ \\mu\\mathrm{F}$।\nব্যাখ্যা: $C = \\epsilon_{0}A/d$ সূত্রে $A = 1.4\\ \\mathrm{m^{2}}$, $d = 0.03\\ \\mathrm{m}$ বসালে $4.13\\times10^{-4}\\ \\mu\\mathrm{F}$ পাওয়া যায়।",
+  "mcq_solution_index": 0
+ },
+ "d132f415-3087-4009-9d42-e646ef760ea2": {
+  "answer_text": "শর্ট সার্কিট",
+  "explanation_text": "ধারকের ধারকীয় বিক্রিয়া $X_{C} = \\frac{1}{\\omega C} = \\frac{1}{2\\pi f C}$।\nখুব উচ্চ ফ্রিকোয়েন্সিতে $f \\to \\infty$ হওয়ায় $X_{C} \\to 0$; ফলে ধারক শর্ট সার্কিটের মতো আচরণ করে (বিপরীতে DC বা নিম্ন ফ্রিকোয়েন্সিতে ওপেন সার্কিটের মতো)।\nব্যাখ্যা: খুব উচ্চ ফ্রিকোয়েন্সিতে ধারকীয় বিক্রিয়া শূন্যের কাছাকাছি হওয়ায় ধারক শর্ট সার্কিটের মতো কাজ করে।",
+  "mcq_solution_index": 1
+ },
+ "6e3a720d-14aa-4e7b-9cf3-825342095e45": {
+  "answer_text": "শূন্য",
+  "explanation_text": "গাউসের সূত্র: $\\phi_{E} = \\frac{q_{net}}{\\epsilon_{0}}$।\nতড়িৎ দ্বিমেরুতে $+q$ ও $-q$ দুটি সমমানের চার্জ থাকে, তাই গাউসীয় তল দ্বারা আবদ্ধ মোট চার্জ $q_{net} = q - q = 0$।\nসুতরাং $\\phi_{E} = \\frac{0}{\\epsilon_{0}} = 0$।\nব্যাখ্যা: দ্বিমেরুর নিট চার্জ শূন্য হওয়ায় তল দিয়ে অতিক্রান্ত মোট তড়িৎ ফ্লাক্স শূন্য।",
+  "mcq_solution_index": 4
+ },
+ "a05d7ee6-c350-4fde-8338-d58ba217318e": {
+  "answer_text": "$E\\sim \\dfrac{1}{r^{3}},\\ V\\sim \\dfrac{1}{r^{2}}$",
+  "explanation_text": "তড়িৎ দ্বিমেরুর বিভব $V = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{p\\cos\\theta}{r^{2}}$ এবং প্রাবল্য $E = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{p\\sqrt{1+3\\cos^{2}\\theta}}{r^{3}}$।\nঅর্থাৎ $V \\propto \\frac{1}{r^{2}}$ এবং $E \\propto \\frac{1}{r^{3}}$।\nব্যাখ্যা: দ্বিমেরুর ক্ষেত্রে বিভব $1/r^{2}$ এবং প্রাবল্য $1/r^{3}$ অনুসারে পরিবর্তিত হয় (বিন্দু চার্জের মতো নয়)।",
+  "mcq_solution_index": 1
+ },
+ "9fd95a38-3544-4efe-a4ad-ee4eb474f808": {
+  "answer_text": "$8\\ \\mathrm{V}$",
+  "explanation_text": "প্রাথমিক সঞ্চিত শক্তি: $U_{1} = \\frac{1}{2}CV^{2} = \\frac{1}{2}\\times15\\times10^{-6}\\times(6)^{2} = 2.7\\times10^{-4}\\ \\mathrm{J}$।\nআরও $210\\ \\mu\\mathrm{J} = 2.1\\times10^{-4}\\ \\mathrm{J}$ শক্তি দিলে মোট শক্তি: $U_{2} = 2.7\\times10^{-4} + 2.1\\times10^{-4} = 4.8\\times10^{-4}\\ \\mathrm{J}$।\n$V_{2} = \\sqrt{\\frac{2U_{2}}{C}} = \\sqrt{\\frac{2\\times4.8\\times10^{-4}}{15\\times10^{-6}}} = \\sqrt{64} = 8\\ \\mathrm{V}$।\nব্যাখ্যা: $U = \\frac{1}{2}CV^{2}$ সূত্রে মোট সঞ্চিত শক্তি বসিয়ে নতুন বিভব $8\\ \\mathrm{V}$ পাওয়া যায়।",
+  "mcq_solution_index": 0
+ },
+ "5f6bd6aa-f0e4-49e3-9c24-d3e8a5aa8e57": {
+  "answer_text": "$E\\propto \\dfrac{1}{r^{2}}$",
+  "explanation_text": "$r > R$ হলে সুষমভাবে চার্জিত ফাঁপা গোলকের সমগ্র চার্জ $Q$ কেন্দ্রে অবস্থিত বিন্দু চার্জের মতো আচরণ করে।\nতাই $E = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{r^{2}}$, অর্থাৎ $E \\propto \\frac{1}{r^{2}}$।\nব্যাখ্যা: গোলকের বাইরে তড়িৎ প্রাবল্য বিন্দু চার্জের মতোই $1/r^{2}$ অনুপাতে হ্রাস পায়।",
+  "mcq_solution_index": 1
+ },
+ "88e5dda2-5e63-4c4f-863a-4e42875b14a5": {
+  "answer_text": "শূন্য",
+  "explanation_text": "পৃথিবী একটি বিশাল পরিবাহী বস্তু। বিভবের প্রমাণ মান হিসেবে পৃথিবীর বিভবকে শূন্য ধরা হয় এবং অন্যান্য বস্তুর বিভব এর সাপেক্ষে পরিমাপ করা হয়।\nব্যাখ্যা: সুবিধার জন্য পৃথিবীর বিভবকে সংজ্ঞাগতভাবে শূন্য ধরা হয়।",
+  "mcq_solution_index": 2
+ },
+ "15ad7296-3e36-4f55-aae8-a294283ae2cc": {
+  "answer_text": "$9\\ \\mathrm{kN}$",
+  "explanation_text": "$r = 1\\ \\mathrm{km} = 10^{3}\\ \\mathrm{m}$; $q_{1} = q_{2} = 1\\ \\mathrm{C}$।\n$F = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}} = 9\\times10^{9} \\times \\frac{1\\times1}{(10^{3})^{2}} = \\frac{9\\times10^{9}}{10^{6}} = 9\\times10^{3}\\ \\mathrm{N} = 9\\ \\mathrm{kN}$।\nব্যাখ্যা: বায়ুতে $k = 9\\times10^{9}\\ \\mathrm{N\\,m^{2}\\,C^{-2}}$ ধরে কুলম্বের সূত্র প্রয়োগে বল $9\\ \\mathrm{kN}$ হয়।",
+  "mcq_solution_index": 2
+ },
+ "203e72f5-c628-47a6-82fe-4ba0d2936138": {
+  "answer_text": "$1.76\\times10^{21}\\ \\mathrm{m/s^{2}}$",
+  "explanation_text": "ইলেকট্রনের চার্জ $e = 1.6\\times10^{-19}\\ \\mathrm{C}$, ভর $m = 9.1\\times10^{-31}\\ \\mathrm{kg}$, ক্ষেত্র $E = 10^{10}\\ \\mathrm{N/C}$।\n$F = eE = ma$ ⇒ $a = \\frac{eE}{m} = \\frac{1.6\\times10^{-19}\\times10^{10}}{9.1\\times10^{-31}} = \\frac{1.6\\times10^{-9}}{9.1\\times10^{-31}} = 1.76\\times10^{21}\\ \\mathrm{m/s^{2}}$।\nব্যাখ্যা: $a = eE/m$ সূত্রে ইলেকট্রনের চার্জ ও ভরের মান বসালে ত্বরণ $1.76\\times10^{21}\\ \\mathrm{m/s^{2}}$।",
+  "mcq_solution_index": 1
+ },
+ "f8eeaef7-06bf-4cc1-a6f4-68ffe3a779bf": {
+  "answer_text": "পৃষ্ঠের বিভবের সমান",
+  "explanation_text": "চার্জিত পরিবাহী গোলকের অভ্যন্তরে তড়িৎক্ষেত্র শূন্য ($E = 0$); তাই চার্জ সরাতে কোনো কাজ করতে হয় না এবং ভেতরের (কেন্দ্রসহ) প্রতিটি বিন্দুতে বিভব পৃষ্ঠের বিভবের সমান: $V = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{Q}{R}$ ($r \\le R$)।\nব্যাখ্যা: চার্জিত গোলকের কেন্দ্রের বিভব পৃষ্ঠের বিভবের সমান এবং এটি ধ্রুবক।",
+  "mcq_solution_index": 2
+ },
+ "f64e6ed8-1e2f-49ad-a0e6-2e7a3187a4fb": {
+  "answer_text": "$1.76\\times10^{15}\\ \\mathrm{m/s^{2}}$",
+  "explanation_text": "$a = \\frac{eE}{m} = \\frac{1.6\\times10^{-19}\\times10^{4}}{9.1\\times10^{-31}} = \\frac{1.6\\times10^{-15}}{9.1\\times10^{-31}} = 1.76\\times10^{15}\\ \\mathrm{m/s^{2}}$।\nব্যাখ্যা: $a = eE/m$ সূত্রে $E = 10^{4}\\ \\mathrm{V/m}$ বসালে ইলেকট্রনের ত্বরণ $1.76\\times10^{15}\\ \\mathrm{m/s^{2}}$ হয়।",
+  "mcq_solution_index": 1
+ },
+ "aa6ce872-de94-4830-9f8a-4d0f877f9a45": {
+  "answer_text": "$6.6\\times10^{-9}\\ \\mathrm{C}$",
+  "explanation_text": "প্রতিটি বলের ভর $m = 10^{-3}\\ \\mathrm{kg}$, সুতার দৈর্ঘ্য $L = 0.8\\ \\mathrm{m}$, বলদ্বয়ের মধ্যবর্তী দূরত্ব $r = 0.04\\ \\mathrm{m}$; সুতরাং প্রতিটি বল উল্লম্ব রেখা থেকে $x = 0.02\\ \\mathrm{m}$ সরে আছে।\n$\\sin\\theta = \\frac{x}{L} = \\frac{0.02}{0.8} = 0.025$ ⇒ $\\tan\\theta \\approx 0.025$।\nসাম্যাবস্থায় $T\\sin\\theta = F$ এবং $T\\cos\\theta = mg$ ⇒ $F = mg\\tan\\theta = 10^{-3}\\times9.8\\times0.025 = 2.45\\times10^{-4}\\ \\mathrm{N}$।\nকুলম্বের সূত্র: $F = \\frac{kq^{2}}{r^{2}}$ ⇒ $q^{2} = \\frac{Fr^{2}}{k} = \\frac{2.45\\times10^{-4}\\times(0.04)^{2}}{9\\times10^{9}} = 4.36\\times10^{-17}$\n⇒ $q = \\sqrt{4.36\\times10^{-17}} = 6.6\\times10^{-9}\\ \\mathrm{C}$।\nব্যাখ্যা: বিকর্ষণ বল $mg\\tan\\theta$-এর সাথে কুলম্ব বল সাম্যাবস্থায় রেখে প্রতি বলে চার্জ $6.6\\times10^{-9}\\ \\mathrm{C}$ পাওয়া যায়।",
+  "mcq_solution_index": 2
+ },
+ "a3470676-926e-4da6-b2bf-f1e942071a8f": {
+  "answer_text": "$18.4\\ \\mathrm{kN}$",
+  "explanation_text": "প্রতিটি চার্জ থেকে শীর্ষবিন্দুর দূরত্ব $r = 0.7\\ \\mathrm{m}$; প্রতিটি চার্জের জন্য $E = \\frac{kq}{r^{2}} = \\frac{9\\times10^{9}\\times1}{(0.7)^{2}} = \\frac{9\\times10^{9}}{0.49} = 1.837\\times10^{10}\\ \\mathrm{N/C}$।\nসমবাহু ত্রিভুজের শীর্ষে দুটি ক্ষেত্র ভেক্টরের মধ্যবর্তী কোণ $120^{\\circ}$; লম্ব উপাংশ দুটি ($E\\sin60^{\\circ}$) পরস্পর বাতিল হয়, অনুভূমিক উপাংশ যোগফল: $E_{net} = 2E\\cos60^{\\circ} = 2\\times1.837\\times10^{10}\\times0.5 = 1.837\\times10^{10}\\ \\mathrm{N/C} \\approx 18.4\\times10^{9}\\ \\mathrm{N/C}$।\n(অপশনের $18.4\\ \\mathrm{kN}$ বলতে $18.4\\times10^{9}\\ \\mathrm{N/C}$ বোঝানো হয়েছে।)\nব্যাখ্যা: সমবাহু ত্রিভুজের শীর্ষে $+1\\ \\mathrm{C}$ ও $-1\\ \\mathrm{C}$-এর ক্ষেত্রের উল্লম্ব উপাংশ বাতিল হয়ে অনুভূমিক লব্ধি $18.4\\times10^{9}\\ \\mathrm{N/C}$ হয়।",
+  "mcq_solution_index": 2
+ },
+ "970b77e0-7172-475c-9df4-1907f57e4113": {
+  "answer_text": "$11.375\\ \\mathrm{V}$",
+  "explanation_text": "সমত্বরণ গতিতে $s = \\frac{1}{2}at^{2}$ ⇒ $a = \\frac{2s}{t^{2}} = \\frac{2\\times0.1}{(10^{-7})^{2}} = 2\\times10^{13}\\ \\mathrm{m/s^{2}}$।\n(প্রশ্নের $10^{-1}\\ \\mathrm{s}$ মুদ্রণ ত্রুটি; প্রদত্ত অপশন অনুযায়ী নির্ণেয় মানে $t = 10^{-7}\\ \\mathrm{s}$।)\n$F = ma = eE$ ⇒ $E = \\frac{ma}{e} = \\frac{9.1\\times10^{-31}\\times2\\times10^{13}}{1.6\\times10^{-19}} = \\frac{1.82\\times10^{-17}}{1.6\\times10^{-19}} = 113.75\\ \\mathrm{V/m}$।\n$V = Ed = 113.75\\times0.1 = 11.375\\ \\mathrm{V}$।\nব্যাখ্যা: $s = \\frac{1}{2}at^{2}$ থেকে ত্বরণ, তারপর $E = ma/e$ ও $V = Ed$ থেকে বিভব পার্থক্য $11.375\\ \\mathrm{V}$ পাওয়া যায়।",
+  "mcq_solution_index": 3
+ },
+ "620d01e0-a4aa-486a-a881-7c583accef86": {
+  "answer_text": "$9\\ \\mu\\mathrm{F}$",
+  "explanation_text": "চিত্রে ধারক দুটি ($C_{1} = 6\\ \\mu\\mathrm{F}$, $C_{2} = 3\\ \\mu\\mathrm{F}$) সমান্তরাল সমবায়ে যুক্ত, তাই তুল্য ধারকত্ব: $C_{eq} = C_{1} + C_{2} = 6\\ \\mu\\mathrm{F} + 3\\ \\mu\\mathrm{F} = 9\\ \\mu\\mathrm{F}$।\n($V_{ab} = 18\\ \\mathrm{V}$ তুল্য ধারকত্ব নির্ণয়ে প্রয়োজন হয় না।)\nব্যাখ্যা: সমান্তরাল সমবায়ে তুল্য ধারকত্ব ধারকগুলোর মানের যোগফল, তাই $C_{eq} = 9\\ \\mu\\mathrm{F}$।",
+  "mcq_solution_index": 1
+ },
+ "0521c987-39b1-4338-a9e4-04d85116f355": {
+  "answer_text": "$Q/2$",
+  "explanation_text": "$q$ চার্জ সরানোর পর প্রথম বস্তুতে চার্জ থাকে $Q - q$ এবং দ্বিতীয় বস্তুতে $q$; $r = 1\\ \\mathrm{m}$।\n$F = \\frac{kq(Q-q)}{r^{2}} = kq(Q-q)$।\nসর্বোচ্চ বলের শর্ত: $\\frac{dF}{dq} = k(Q - 2q) = 0$ ⇒ $q = \\frac{Q}{2}$।\nব্যাখ্যা: $q(Q-q)$ গুণফল (অর্থাৎ বল) সর্বোচ্চ হয় $q = Q/2$ হলে।",
+  "mcq_solution_index": 2
+ },
+ "b69d3c06-0c6a-4bb9-8ed0-aa40b85d073a": {
+  "answer_text": "$2.8\\times10^{6}\\ \\mathrm{N\\,m^{2}/C}$",
+  "explanation_text": "চার্জিত জেনারেটরটি বক্তৃতা কক্ষের (বদ্ধ গাউসীয় তলের) অভ্যন্তরে থাকায় গাউসের সূত্র অনুযায়ী দেয়াল দিয়ে নিট তড়িৎ ফ্লাক্স: $\\phi_{E} = \\frac{Q}{\\epsilon_{0}} = \\frac{25\\times10^{-6}}{8.85\\times10^{-12}} = 2.8\\times10^{6}\\ \\mathrm{N\\,m^{2}/C}$।\nব্যাখ্যা: বদ্ধ তল দিয়ে ফ্লাক্স শুধু ভেতরের নিট চার্জের ওপর নির্ভর করে; নিট চার্জ $25\\ \\mu\\mathrm{C}$ হলে ফ্লাক্স $2.8\\times10^{6}\\ \\mathrm{N\\,m^{2}/C}$।",
+  "mcq_solution_index": 3
+ },
+ "3185ec66-268e-4c27-a704-7e731d3a8d0e": {
+  "answer_text": "$9\\times10^{9}\\ \\mathrm{N}$",
+  "explanation_text": "$F = \\frac{1}{4\\pi\\epsilon_{0}}\\frac{q_{1}q_{2}}{r^{2}} = 9\\times10^{9}\\times\\frac{1\\times1}{1^{2}} = 9\\times10^{9}\\ \\mathrm{N}$।\nব্যাখ্যা: $1\\ \\mathrm{C}$ চার্জ দুটি $1\\ \\mathrm{m}$ দূরত্বে থাকলে বল $9\\times10^{9}\\ \\mathrm{N}$, যা কুলম্বের ধ্রুবকের মানের সমান।",
+  "mcq_solution_index": 3
+ },
+ "3f47cc6d-318e-43b1-9fb7-76f5ea513dbc": {
+  "answer_text": "$2.64\\ \\mathrm{J}$",
+  "explanation_text": "$W = qV = 12\\times10^{-6}\\times220\\times10^{3} = 2.64\\ \\mathrm{J}$।\nব্যাখ্যা: $W = qV$ সূত্রে $q = 12\\ \\mu\\mathrm{C}$ ও $V = 220\\ \\mathrm{kV}$ বসালে কৃত কাজ $2.64\\ \\mathrm{J}$।",
+  "mcq_solution_index": 2
+ },
+ "2548f6c9-1503-40f4-af27-c4b8d746a436": {
+  "answer_text": "$6\\times10^{10}\\ \\mathrm{erg}$",
+  "explanation_text": "$W = qV = 12\\times500 = 6000\\ \\mathrm{J}$।\n$1\\ \\mathrm{J} = 10^{7}\\ \\mathrm{erg}$; সুতরাং $W = 6000\\times10^{7} = 6\\times10^{10}\\ \\mathrm{erg}$।\nব্যাখ্যা: $W = qV$ থেকে কৃত কাজ $6000\\ \\mathrm{J} = 6\\times10^{10}\\ \\mathrm{erg}$।",
+  "mcq_solution_index": 0
+ },
+ "36d5d2d1-680a-4b39-8ea8-ea289cbd69d7": {
+  "answer_text": "$6\\ \\mu\\mathrm{F}$",
+  "explanation_text": "শ্রেণি সমবায়ে: $\\frac{1}{C_{t}} = \\frac{1}{C_{1}} + \\frac{1}{C_{2}} + \\frac{1}{C_{3}}$\n$\\frac{1}{1} = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{C_{3}}$ ⇒ $1 = \\frac{5}{6} + \\frac{1}{C_{3}}$ ⇒ $\\frac{1}{C_{3}} = \\frac{1}{6}$\n⇒ $C_{3} = 6\\ \\mu\\mathrm{F}$।\nব্যাখ্যা: শ্রেণি সমবায়ের সূত্রে মান বসিয়ে তৃতীয় ধারকের মান $6\\ \\mu\\mathrm{F}$ পাওয়া যায়।",
+  "mcq_solution_index": 3
+ },
+ "a2dc22f3-3a49-4c94-a55f-623aa1e2349e": {
+  "answer_text": "$12\\ \\mu\\mathrm{F}$",
+  "explanation_text": "$5\\ \\mu\\mathrm{F}$ ও $20\\ \\mu\\mathrm{F}$ শ্রেণিতে: $\\frac{1}{C_{s}} = \\frac{1}{5} + \\frac{1}{20} = \\frac{5}{20} = \\frac{1}{4}$ ⇒ $C_{s} = 4\\ \\mu\\mathrm{F}$।\nএই তুল্য ধারকটি তৃতীয় ধারকের সাথে সমান্তরালে: $C_{t} = C_{s} + C_{3}$ ⇒ $16 = 4 + C_{3}$ ⇒ $C_{3} = 12\\ \\mu\\mathrm{F}$।\nব্যাখ্যা: প্রথমে শ্রেণি সমবায়ের তুল্য ধারকত্ব $4\\ \\mu\\mathrm{F}$, তারপর সমান্তরাল সমবায়ের সূত্রে তৃতীয় ধারক $12\\ \\mu\\mathrm{F}$।",
+  "mcq_solution_index": 1
+ },
+ "78edd766-1d8e-45f9-8d52-72cf88f01eba": {
+  "answer_text": "$3\\ \\mathrm{F},\\ 2\\ \\mathrm{F}$",
+  "explanation_text": "ধরি ধারক দুটির মান যথাক্রমে $C_{1}$, $C_{2}$।\nসমান্তরালে: $C_{1} + C_{2} = 5$ ... (1)\nশ্রেণিতে: $\\frac{C_{1}C_{2}}{C_{1}+C_{2}} = 1.2$ ⇒ $\\frac{C_{1}C_{2}}{5} = 1.2$ ⇒ $C_{1}C_{2} = 6$ ... (2)\n(1) ও (2) থেকে: $x^{2} - 5x + 6 = 0$ ⇒ $x = 2,\\ 3$।\nসুতরাং ধারক দুটির মান $2\\ \\mathrm{F}$ ও $3\\ \\mathrm{F}$।\nব্যাখ্যা: $C_{1}+C_{2}=5$ ও $C_{1}C_{2}=6$ সমাধান করলে ধারক দুটির মান $2\\ \\mathrm{F}$ ও $3\\ \\mathrm{F}$ পাওয়া যায়।",
+  "mcq_solution_index": 2
+ },
+ "7daea186-90c1-4c94-894e-b6a4d388d747": {
+  "answer_text": "$3\\times10^{-19}\\times3.2\\times10^{-9}$",
+  "explanation_text": "তড়িৎ দ্বিমেরুর ভ্রামক: $p = qd = 3.2\\times10^{-9}\\ \\mathrm{C} \\times 3\\times10^{-19}\\ \\mathrm{m}$, যেখানে $d$ চার্জদ্বয়ের মধ্যবর্তী দূরত্ব।\n$p = 3\\times10^{-19}\\times3.2\\times10^{-9} = 9.6\\times10^{-28}\\ \\mathrm{C\\,m}$।\nব্যাখ্যা: দ্বিমেরু ভ্রামক চার্জ ও চার্জদ্বয়ের মধ্যবর্তী দূরত্বের গুণফল $p = qd$।",
+  "mcq_solution_index": 0
+ }
+}

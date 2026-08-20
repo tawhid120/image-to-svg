@@ -1,0 +1,148 @@
+{
+ "ce308536-924e-4bff-840f-adb9107e6e1c": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\ni. $\\cot\\theta=x$ হলে $\\operatorname{cosec}\\theta=\\sqrt{1+\\cot^{2}\\theta}=\\sqrt{1+x^{2}}$ ($\\theta\\in(0,\\pi)$-এ sin>0), ∴ $R(x)=\\operatorname{cosec}^{-1}\\sqrt{1+x^{2}}$ ✓।\nii. $\\cot^{-1}x$ একটি বিপরীত ত্রিকোণমিতিক ফাংশন ✓।\niii. x<0-এর জন্য $\\cot^{-1}x\\in\\left(\\frac{\\pi}{2},\\pi\\right)$ — $(0,\\frac{\\pi}{2}]$ নয় ✗।\n∴ i ও ii।\n\nব্যাখ্যা: iii-এর ব্যাপ্তি ভুল; x<0-এ মুখ্যমান ২য় চতুর্ভাগে।\n"
+ },
+ "81e7f9a2-2669-4eed-b8bb-a91e684cbdfd": {
+  "mcq_solution_index": 1,
+  "answer_text": "i ও iii ",
+  "explanation_text": "\ni. $2\\tan^{-1}x=\\sin^{-1}\\frac{2x}{1+x^{2}}$ ✓ (প্রসিদ্ধ পরিচয়)।\nii. $2\\tan^{-1}x=\\tan^{-1}\\frac{2x}{1-x^{2}}$ — হরে $1-x^{2}$ হওয়া উচিত; $1+x^{2}$ ভুল ✗।\niii. $2\\tan^{-1}x=\\cos^{-1}\\frac{1-x^{2}}{1+x^{2}}$ ✓।\n∴ i ও iii।\n\nব্যাখ্যা: ii-তে হরে $1+x^{2}$ ভুল।\n"
+ },
+ "6945a276-2a9b-41e2-8a5f-a4a1435f6bf3": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\n$\\operatorname{cosec}^{-1}x$ ও $\\sec^{-1}x$ সংজ্ঞায়িত |x|≥1-এ; $\\operatorname{cosec}^{-1}x+\\sec^{-1}x=\\frac{\\pi}{2}$।\ni. x≤−1 ✓; ii. x≥1 ✓; iii. x=0-তে উভয়ই অসংজ্ঞায়িত ✗।\n∴ i ও ii।\n\nব্যাখ্যা: x=0 বৈধ নয়।\n"
+ },
+ "fc97ab6c-7e82-4f5f-9428-ab9a8b7da47a": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\tan ^{-1} y$",
+  "explanation_text": "\nচিত্রে (প্রদত্ত তথ্য অনুসারে) ত্রিভুজটির লম্ব = y ও ভূমি = 1 ধরা হলে:\n$\\tan\\alpha=\\frac{y}{1}=y$ ⇒ $\\alpha=\\tan^{-1}y$।\n\nব্যাখ্যা: $\\alpha=\\tan^{-1}y$ (চিত্র-নির্ভর; অপশন ৩)।\n"
+ },
+ "ab504980-fcec-4adc-bf55-082af4d2412f": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\tan ^{-1} \\frac{1}{y}$",
+  "explanation_text": "\nচিত্রের তথ্য অনুসারে সংশ্লিষ্ট কোণের লম্ব = 1 ও ভূমি = y ধরা হলে:\n$\\tan\\theta=\\frac{1}{y}$ ⇒ $\\theta=\\tan^{-1}\\frac{1}{y}$।\n\nব্যাখ্যা: $\\theta=\\tan^{-1}\\frac{1}{y}$ (চিত্র-নির্ভর; অপশন ১)।\n"
+ },
+ "2f62a81b-5eb8-44a4-b259-3f12784602c6": {
+  "mcq_solution_index": 0,
+  "answer_text": "$30^{\\circ}$",
+  "explanation_text": "\n$p\\left(\\frac{1}{\\sqrt{3}}\\right)=\\tan^{-1}\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}=30^{\\circ}$।\n\nব্যাখ্যা: $\\tan30^{\\circ}=\\frac{1}{\\sqrt{3}}$।\n"
+ },
+ "7c1fd9e0-8678-45f6-b9ae-f69a53382def": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)$",
+  "explanation_text": "\n$p(x)=\\tan^{-1}x$-এর রেঞ্জ (মুখ্যমান ব্যাপ্তি) $\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$ — খোলা ব্যবধান।\n\nব্যাখ্যা: tan⁻¹-এর রেঞ্জ।\n"
+ },
+ "93f68903-3e8e-4c7a-ab8f-da69d123dc06": {
+  "mcq_solution_index": 1,
+  "answer_text": "$1$",
+  "explanation_text": "\n$p\\sqrt{1-q^{2}}+q\\sqrt{1-p^{2}}=\\sin(\\sin^{-1}p+\\sin^{-1}q)$ [sin(α+β) সূত্র]\n$=\\sin\\frac{\\pi}{2}=1$।\n\nব্যাখ্যা: sin(α+β) প্রসার; মান 1।\n"
+ },
+ "8076be96-fb5d-46e1-8ad5-2b94f5cabd5a": {
+  "mcq_solution_index": 3,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\sin^{-1}p+\\sin^{-1}q=\\frac{\\pi}{2}$ ⇒ $q=\\sin\\left(\\frac{\\pi}{2}-\\sin^{-1}p\\right)=\\cos(\\sin^{-1}p)=\\sqrt{1-p^{2}}$।\n∴ $p^{2}+q^{2}=p^{2}+1-p^{2}=1$।\n\nব্যাখ্যা: $q=\\sqrt{1-p^{2}}$; $p^{2}+q^{2}=1$।\n"
+ },
+ "ef2af1b4-9604-42b0-a001-6b0fe5031487": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{3}$",
+  "explanation_text": "\n$\\cot\\theta=k$ ⇒ $\\theta=n\\pi+\\alpha$ যেখানে $\\cot\\alpha=k$।\n$k=\\frac{1}{\\sqrt{3}}$ ⇒ $\\cot\\alpha=\\frac{1}{\\sqrt{3}}$ ⇒ $\\alpha=\\frac{\\pi}{3}$।\n\nব্যাখ্যা: $\\cot\\frac{\\pi}{3}=\\frac{1}{\\sqrt{3}}$।\n"
+ },
+ "7bdbd686-fa63-432a-99dd-9cb8d647ca5f": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{5 \\pi}{4}$",
+  "explanation_text": "\n$\\cot\\theta=1$ ⇒ $\\theta=n\\pi+\\frac{\\pi}{4}$।\n$\\frac{\\pi}{4}<\\theta<2\\pi$-এ: $\\theta=\\frac{\\pi}{4}$ (বর্জিত), $\\frac{5\\pi}{4}$ ✓।\n∴ $\\theta=\\frac{5\\pi}{4}$।\n\nব্যাখ্যা: n=1-এ $\\frac{5\\pi}{4}$।\n"
+ },
+ "3256e4cd-89cd-4d12-8b7d-6f64a209c072": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\nচিত্র-নির্ভর প্রশ্ন — অপশনে লেখচিত্রের চিত্র text-এ নেই, তাই নির্দিষ্ট করা সম্ভব নয়।\nযদি লেখটি $(-\\frac{\\pi}{2},\\frac{\\pi}{2})$ রেঞ্জের বৃদ্ধিশীল বক্র হয় তবে $y=\\tan^{-1}x$; লেখটির লেখচিত্রের সাথে মিলিয়ে নিতে হবে।\n\nব্যাখ্যা: চিত্র ছাড়া নির্ধারণ সম্ভব নয়।\n"
+ },
+ "98480780-c0b5-41bb-982a-9b773998e1db": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\nচিত্র-নির্ভর প্রশ্ন — পূর্ববর্তী প্রশ্নের (৫৮২) লেখ অনুযায়ী মুখ্যমান জানা যায়; text-এ চিত্র নেই।\nলেখটি যদি sin⁻¹x-এর হয় তবে মুখ্যমান $\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]$; tan⁻¹x হলে $\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$।\n\nব্যাখ্যা: চিত্র ছাড়া নিশ্চিত নয়; ৫৮২-এর লেখ মিলিয়ে নিতে হবে।\n"
+ },
+ "75c3f129-41ff-454e-aaa1-a3078e140250": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{\\sqrt{1-x^{2}}}{x}$",
+  "explanation_text": "\nলম্ব = x, ভূমি = $\\sqrt{1-x^{2}}$:\n$\\cot\\theta=\\frac{\\text{ভূমি}}{\\text{লম্ব}}=\\frac{\\sqrt{1-x^{2}}}{x}$।\n\nব্যাখ্যা: cot = ভূমি/লম্ব।\n"
+ },
+ "0e2fe138-d8f3-4e35-85f0-02c922a39b20": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{1}{\\sqrt{1-x^{2}}}$",
+  "explanation_text": "\nঅতিভুজ $=\\sqrt{x^{2}+1-x^{2}}=1$:\n$\\sec\\theta=\\frac{\\text{অতিভুজ}}{\\text{ভূমি}}=\\frac{1}{\\sqrt{1-x^{2}}}$।\n\nব্যাখ্যা: sec = অতিভুজ/ভূমি।\n"
+ },
+ "3bd7dc11-74c2-4247-be17-55101dcf1142": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{3}$",
+  "explanation_text": "\n$p=\\tan^{-1}x$; $x=\\sqrt{3}$ ⇒ $p=\\tan^{-1}\\sqrt{3}=\\frac{\\pi}{3}$।\n\nব্যাখ্যা: $\\tan\\frac{\\pi}{3}=\\sqrt{3}$।\n"
+ },
+ "6be8408d-908d-41a8-be58-3660a5760870": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\cos ^{-1} \\frac{1-x^{2}}{1+x^{2}}$",
+  "explanation_text": "\n$p=\\tan^{-1}x$ ⇒ $2p=2\\tan^{-1}x=\\cos^{-1}\\frac{1-x^{2}}{1+x^{2}}$ (প্রসিদ্ধ পরিচয়; x≥0-এ)।\nঅপশন ২-এর সাথে মিলে যায়।\n\nব্যাখ্যা: $\\cos2\\theta=\\frac{1-\\tan^{2}\\theta}{1+\\tan^{2}\\theta}$।\n"
+ },
+ "6af71581-f108-40eb-bb7e-efe166628165": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\tan ^{-1} \\frac{2 \\sqrt[]{11}}{\\sqrt{5}}$",
+  "explanation_text": "\n$R=\\cos^{-1}\\frac{\\sqrt{5}}{7}$ ⇒ $\\cos R=\\frac{\\sqrt{5}}{7}$, $\\sin R=\\sqrt{1-\\frac{5}{49}}=\\sqrt{\\frac{44}{49}}=\\frac{2\\sqrt{11}}{7}$।\n$\\tan R=\\frac{2\\sqrt{11}/7}{\\sqrt{5}/7}=\\frac{2\\sqrt{11}}{\\sqrt{5}}$ ⇒ $R=\\tan^{-1}\\frac{2\\sqrt{11}}{\\sqrt{5}}$।\n\nব্যাখ্যা: ত্রিভুজ থেকে tan; অপশন ২।\n"
+ },
+ "e92be379-5ce8-4e79-b06d-c3ab23309a0e": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\pi+\\tan ^{-1}(-3.35)$",
+  "explanation_text": "\n$P=\\sin^{-1}\\frac{1}{\\sqrt{3}}$: $\\tan P=\\frac{1/\\sqrt{3}}{\\sqrt{2/3}}=\\frac{1}{\\sqrt{2}}\\approx0.7071$।\n$R=\\cos^{-1}\\frac{\\sqrt{5}}{7}$: $\\tan R=\\frac{2\\sqrt{11}}{\\sqrt{5}}\\approx2.9664$ (৫৮৮ থেকে)।\n$\\tan(P+R)=\\frac{\\tan P+\\tan R}{1-\\tan P\\tan R}=\\frac{0.7071+2.9664}{1-(0.7071)(2.9664)}=\\frac{3.6735}{1-2.0976}\\approx-3.35$।\nযেহেতু $P+R\\approx35.3^{\\circ}+71.4^{\\circ}=106.7^{\\circ}$ (২য় চতুর্ভাগ), $P+R=\\pi+\\tan^{-1}(-3.35)$।\n\nব্যাখ্যা: tan(P+R) ≈ −3.35; কোণ ২য় চতুর্ভাগে।\n"
+ },
+ "d275a65c-f5c4-4bba-9d82-916de2f82930": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\nচিত্র-নির্ভর প্রশ্ন — BC বাহুর দৈর্ঘ্যের সম্পর্কটি চিত্রে দেখানো রাশিমালার উপর নির্ভর করে; text-এ চিত্র নেই।\nসাধারণত এ ধরনের চিত্রে $r=p\\cos\\theta+q\\sin\\theta$ সম্পর্কটি ব্যবহৃত হয়, তবে চিত্র ছাড়া নিশ্চিত নয়।\n\nব্যাখ্যা: চিত্র ছাড়া নির্ধারণ সম্ভব নয়।\n"
+ },
+ "b0708fce-df83-40c2-94b1-e0fac0be8d62": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\nচিত্র-নির্ভর প্রশ্ন — ৫৯০-এর চিত্রের সম্পর্ক ছাড়া $\\frac{pq}{r^{2}}=\\frac{\\sqrt{3}}{4}$ থেকে θ নির্ণয় সম্ভব নয়; text-এ চিত্র নেই।\n(যদি $r=p\\cos\\theta+q\\sin\\theta$ ও সংশ্লিষ্ট সূত্র থেকে গেলে i/ii/iii যাচাই করা যেত।)\n\nব্যাখ্যা: চিত্র ছাড়া নিশ্চিত নয়।\n"
+ },
+ "5f4f4024-106d-423e-ae1c-72b4eb83dcc0": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{3 \\pi}{4}$",
+  "explanation_text": "\n$\\tan(\\tan^{-1}7+\\tan^{-1}\\frac{4}{3})=\\frac{7+\\frac{4}{3}}{1-7\\cdot\\frac{4}{3}}=\\frac{25/3}{1-28/3}=\\frac{25/3}{-25/3}=-1$।\n$\\tan^{-1}7\\approx81.9^{\\circ}$, $\\tan^{-1}\\frac{4}{3}\\approx53.1^{\\circ}$; সমষ্টি ≈ 135° = $\\frac{3\\pi}{4}$ (২য় চতুর্ভাগ, tan=−1)।\n\nব্যাখ্যা: সমষ্টি $\\frac{3\\pi}{4}$।\n"
+ },
+ "533a0686-2ba4-4791-9eae-8ea4b708a195": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\tan ^{-1}(2 x)$",
+  "explanation_text": "\n$\\sin^{-1}\\frac{2x}{\\sqrt{1+4x^{2}}}=\\sin^{-1}\\frac{2x}{\\sqrt{1+(2x)^{2}}}=\\tan^{-1}(2x)$\n(যেহেতু $\\sin(\\tan^{-1}t)=\\frac{t}{\\sqrt{1+t^{2}}}$, t=2x)।\n\nব্যাখ্যা: $\\sin^{-1}\\frac{2x}{\\sqrt{1+4x^{2}}}=\\tan^{-1}(2x)$।\n"
+ },
+ "42a93e90-479c-42a6-a42d-b5f80a6da2e5": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{1}{\\sqrt{3}}$",
+  "explanation_text": "\n$\\cos^{-1}\\frac{1}{2}=\\frac{\\pi}{3}$; $\\cot\\frac{\\pi}{3}=\\frac{1}{\\sqrt{3}}$।\n\nব্যাখ্যা: $\\cot\\frac{\\pi}{3}=\\frac{1}{\\sqrt{3}}$।\n"
+ },
+ "ed5cfb0d-1dcb-4088-b36c-673b0520213d": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{3}{4}$",
+  "explanation_text": "\n$\\alpha=\\cos^{-1}\\frac{3}{4}$ ⇒ $\\tan\\alpha=\\frac{\\sqrt{7}/4}{3/4}=\\frac{\\sqrt{7}}{3}$।\n$\\cot^{-1}(\\tan\\alpha)=\\cot^{-1}\\frac{\\sqrt{7}}{3}$; $\\tan\\beta=\\frac{3}{\\sqrt{7}}$ ⇒ $\\sin\\beta=\\frac{3}{\\sqrt{9+7}}=\\frac{3}{4}$।\n∴ মান $\\frac{3}{4}$।\n\nব্যাখ্যা: ধাপে ধাপে সরলীকরণ; $\\frac{3}{4}$।\n"
+ },
+ "b8d51ada-9ac7-4ffe-b81f-9106f0ce430a": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$",
+  "explanation_text": "\n$\\tan x$ কঠোরভাবে এক এক (one-to-one) খোলা ব্যবধান $\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$-এ (সেখানে এর বিপরীত $\\tan^{-1}x$ সংজ্ঞায়িত)।\n\nব্যাখ্যা: tan-এর এক-একতার ব্যবধান।\n"
+ },
+ "c44aaeb8-c7af-4221-99ae-497222c5d40c": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\mathrm{n} \\pi}{7}$",
+  "explanation_text": "\n$\\tan4\\theta+\\tan3\\theta=0$ ⇒ $\\tan4\\theta=-\\tan3\\theta=\\tan(-3\\theta)$\n⇒ $4\\theta=n\\pi-3\\theta$ ⇒ $7\\theta=n\\pi$ ⇒ $\\theta=\\frac{n\\pi}{7}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\theta=\\frac{n\\pi}{7}$।\n"
+ },
+ "49fa9020-214e-4b21-b11b-3e21ab798dd7": {
+  "mcq_solution_index": 2,
+  "answer_text": "$-\\frac{7 \\pi}{12}$",
+  "explanation_text": "\n$\\sqrt{3}\\sin\\theta+\\cos\\theta=2\\sin\\left(\\theta+\\frac{\\pi}{6}\\right)=\\sqrt{2}$ ⇒ $\\sin\\left(\\theta+\\frac{\\pi}{6}\\right)=\\frac{\\sqrt{2}}{2}$।\nসমাধান: $\\theta+\\frac{\\pi}{6}=n\\pi+(-1)^{n}\\frac{\\pi}{4}$ ⇒ $\\theta=n\\pi+(-1)^{n}\\frac{\\pi}{4}-\\frac{\\pi}{6}$।\nn=0: $\\frac{\\pi}{12}$ ✓; n=1: $\\frac{7\\pi}{12}$ ✓; n=−1: $-\\frac{17\\pi}{12}$ ✓ (যাচাই: $\\sqrt{3}\\sin(-255^{\\circ})+\\cos(-255^{\\circ})=1.673-0.259=1.414=\\sqrt{2}$)।\n$-\\frac{7\\pi}{12}$-এ: $\\sqrt{3}\\sin(-105^{\\circ})+\\cos(-105^{\\circ})=-1.673-0.259\\neq\\sqrt{2}$ ✗ — সমীকরণ সিদ্ধ হয় না (অবান্তর)।\n\nব্যাখ্যা: $-\\frac{7\\pi}{12}$ মূল সমীকরণ সিদ্ধ করে না।\n"
+ },
+ "7a4420d9-eacf-472c-9509-61e0a1feb91b": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{3}{4}$",
+  "explanation_text": "\n$\\theta=\\sin^{-1}\\frac{3}{5}$ ⇒ $\\sin\\theta=\\frac{3}{5}$, $\\cos\\theta=\\frac{4}{5}$ ⇒ $\\tan\\theta=\\frac{3}{4}$।\n\nব্যাখ্যা: 3-4-5 ত্রিভুজ; $\\tan\\theta=\\frac{3}{4}$।\n"
+ },
+ "ec159f83-8d5c-4f76-844b-652bf29d3793": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{1}{3}$",
+  "explanation_text": "\n$\\frac{1}{2}\\cos^{-1}\\frac{4}{5}=\\theta$ ধরা হলে $\\cos2\\theta=\\frac{4}{5}$ ⇒ $\\cos\\theta=\\sqrt{\\frac{1+4/5}{2}}=\\sqrt{\\frac{9}{10}}=\\frac{3}{\\sqrt{10}}$, $\\tan\\theta=\\frac{1}{3}$।\nসমীকরণ: $\\theta+\\cot^{-1}x=\\frac{\\pi}{2}$ ⇒ $\\cot^{-1}x=\\frac{\\pi}{2}-\\theta$ ⇒ $x=\\cot\\left(\\frac{\\pi}{2}-\\theta\\right)=\\tan\\theta=\\frac{1}{3}$।\n\nব্যাখ্যা: $x=\\frac{1}{3}$।\n"
+ }
+}

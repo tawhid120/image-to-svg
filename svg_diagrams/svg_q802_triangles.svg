@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 220" width="100%" height="220">
+  <rect width="100%" height="100%" fill="#ffffff" rx="12"/>
+  <polygon points="30,170 160,170 160,40" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="145,170 145,155 160,155" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+  <path d="M 65,170 A 35,35 0 0,0 58,145" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <text x="165" y="35" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">C</text>
+  <text x="170" y="180" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">B</text>
+  <text x="15" y="180" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">A</text>
+  <text x="85" y="95" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="600" fill="#0f172a">r</text>
+  <text x="95" y="190" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="600" fill="#0f172a">x</text>
+  <polygon points="220,170 350,170 350,40" fill="none" stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="335,170 335,155 350,155" fill="none" stroke="#0f172a" stroke-width="1.5"/>
+  <path d="M 255,170 A 35,35 0 0,0 248,145" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <text x="355" y="35" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">P</text>
+  <text x="360" y="180" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">R</text>
+  <text x="205" y="180" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="700" fill="#0f172a">Q</text>
+  <text x="275" y="95" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="600" fill="#0f172a">r</text>
+  <text x="365" y="110" font-family="'Hind Siliguri', sans-serif" font-size="15" font-weight="600" fill="#0f172a">y</text>
+</svg>

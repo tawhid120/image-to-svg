@@ -1,0 +1,152 @@
+{
+ "41b19713-0c06-4dec-ad16-e575449f13f3": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\mathrm{n} \\pi \\pm \\frac{\\pi}{6}$",
+  "explanation_text": "\n$\\tan2\\theta\\tan\\theta=1$ ⇒ $\\tan2\\theta=\\frac{1}{\\tan\\theta}=\\cot\\theta=\\tan\\left(\\frac{\\pi}{2}-\\theta\\right)$\n⇒ $2\\theta=n\\pi+\\frac{\\pi}{2}-\\theta$ ⇒ $3\\theta=n\\pi+\\frac{\\pi}{2}$ ⇒ $\\theta=\\frac{(2n+1)\\pi}{6}$।\nসংকট বিন্দু বাদ দিলে দাঁড়ায় $\\theta=n\\pi\\pm\\frac{\\pi}{6}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan A=\\tan B\\iff A=n\\pi+B$; সিংগুলারিটি ($\\theta=\\frac{\\pi}{2}$ ইত্যাদি) বাদে $(2n+1)\\frac{\\pi}{6}$-এর বৈধ মানগুলোই $n\\pi\\pm\\frac{\\pi}{6}$ সেট।\n"
+ },
+ "7f3776a9-fd13-40c1-a542-1d639ad1b9a9": {
+  "mcq_solution_index": 1,
+  "answer_text": "$x+5$",
+  "explanation_text": "\n$\\sec^{2}(\\tan^{-1}2)=1+\\tan^{2}(\\tan^{-1}2)=1+2^{2}=5$।\nআবার $\\sin\\cot^{-1}\\tan\\cos^{-1}x$-এ, $\\alpha=\\cos^{-1}x$ ধরলে $\\tan\\alpha=\\frac{\\sqrt{1-x^{2}}}{x}$; $\\sin\\cot^{-1}t=\\frac{1}{\\sqrt{1+t^{2}}}$-তে $t=\\tan\\alpha$ বসালে মান $=\\frac{1}{\\sec\\alpha}=\\cos\\alpha=x$।\n∴ সম্পূর্ণ রাশি $=5+x$।\n\nব্যাখ্যা: হরটি $\\cos^{-1}x$-এর কোণের cosine-এ ফেরত যায়।\n"
+ },
+ "75f7c206-bbca-46a4-9db2-30c040d0f61c": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{2}$",
+  "explanation_text": "\n$\\cos^{-1}\\left(-\\frac{1}{2}\\right)=\\frac{2\\pi}{3}$ এবং $\\tan^{-1}\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}$।\nসুতরাং $\\sin\\left(\\frac{2\\pi}{3}+\\frac{\\pi}{6}\\right)=\\sin\\frac{5\\pi}{6}=\\frac{1}{2}$।\n\nব্যাখ্যা: $\\sin\\frac{5\\pi}{6}=\\sin\\frac{\\pi}{6}=\\frac{1}{2}$।\n"
+ },
+ "27f9f73f-a9ad-4b7e-bf6f-a5bf379e6b47": {
+  "mcq_solution_index": 1,
+  "answer_text": "$1$",
+  "explanation_text": "\n$x=\\sin(\\cos^{-1}y)=\\sqrt{1-y^{2}}$ ⇒ $x^{2}=1-y^{2}$ ⇒ $x^{2}+y^{2}=1$।\n\nব্যাখ্যা: $\\sin(\\cos^{-1}y)=\\sqrt{1-y^{2}}$।\n"
+ },
+ "540d3870-18be-4488-b0a7-82e252b78d3d": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\mathrm{n} \\pi+\\frac{\\pi}{4}$",
+  "explanation_text": "\n$2\\tan^{-1}(\\cos x)=\\tan^{-1}\\left(\\frac{2\\cos x}{1-\\cos^{2}x}\\right)=\\tan^{-1}\\frac{2\\cos x}{\\sin^{2}x}$।\nদেওয়া আছে $=\\tan^{-1}(2\\operatorname{cosec}x)=\\tan^{-1}\\frac{2}{\\sin x}$।\n∴ $\\frac{2\\cos x}{\\sin^{2}x}=\\frac{2}{\\sin x}$ ⇒ $\\cos x=\\sin x$ ⇒ $\\tan x=1=\\tan\\frac{\\pi}{4}$\n⇒ $x=n\\pi+\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $2\\tan^{-1}t=\\tan^{-1}\\frac{2t}{1-t^{2}}$ (বৈধ রেঞ্জে); তারপর $\\tan x=1$।\n"
+ },
+ "c079410b-e64f-44e1-8d71-c9301672ceaf": {
+  "mcq_solution_index": 1,
+  "answer_text": "$60^{\\circ}$",
+  "explanation_text": "\n$\\cos\\theta+\\sqrt{3}\\sin\\theta=2\\cos\\left(\\theta-\\frac{\\pi}{3}\\right)=2$ ⇒ $\\cos(\\theta-60^{\\circ})=1$\n⇒ $\\theta-60^{\\circ}=0^{\\circ}$ ⇒ $\\theta=60^{\\circ}$ ($0^{\\circ}<\\theta<360^{\\circ}$-তে)।\n\nব্যাখ্যা: $R\\cos(\\theta-\\alpha)$ পদ্ধতিতে $R=2$, $\\alpha=60^{\\circ}$।\n"
+ },
+ "d598cffb-dd53-45d9-a835-aaa7f8156f30": {
+  "mcq_solution_index": 3,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\sin^{-1}x+\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $y=\\sqrt{1-x^{2}}$ ⇒ $x^{2}+y^{2}=1$।\n\nব্যাখ্যা: পূরক কোণ উপপাদ্য; $x^{2}+y^{2}=1$।\n"
+ },
+ "dc3f39a7-e763-4b8c-b91a-ab2155bd53cc": {
+  "mcq_solution_index": 1,
+  "answer_text": "$n \\pi \\pm \\frac{\\pi}{6}$",
+  "explanation_text": "\n$\\tan2x\\tan x=1$ ⇒ $\\tan2x=\\cot x=\\tan\\left(\\frac{\\pi}{2}-x\\right)$\n⇒ $2x=n\\pi+\\frac{\\pi}{2}-x$ ⇒ $x=\\frac{(2n+1)\\pi}{6}$ ⇒ সিংগুলারিটি বাদে $x=n\\pi\\pm\\frac{\\pi}{6}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan A=\\tan B$ পদ্ধতি — ২৪১-এর পুনরাবৃত্তি।\n"
+ },
+ "279884c5-0d4d-4856-ac88-e172155e4773": {
+  "mcq_solution_index": 2,
+  "answer_text": "$2 \\mathrm{n} \\pi+\\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\cos\\theta+\\sin\\theta=\\sqrt{2}\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)=\\sqrt{2}$ ⇒ $\\sin\\left(\\theta+\\frac{\\pi}{4}\\right)=1$\n⇒ $\\theta+\\frac{\\pi}{4}=2n\\pi+\\frac{\\pi}{2}$ ⇒ $\\theta=2n\\pi+\\frac{\\pi}{4}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos\\theta+\\sin\\theta=\\sqrt{2}\\sin(\\theta+\\frac{\\pi}{4})$; $\\sin x=1\\Rightarrow x=2n\\pi+\\frac{\\pi}{2}$।\n"
+ },
+ "d67f831a-83a5-4ee2-a0eb-35eb19b627c1": {
+  "mcq_solution_index": 3,
+  "answer_text": "$1$",
+  "explanation_text": "\n$\\sin^{-1}x+\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $\\sin^{-1}y=\\frac{\\pi}{2}-\\sin^{-1}x=\\cos^{-1}x$\n⇒ $y^{2}=1-x^{2}$, অর্থাৎ $x^{2}+y^{2}=1$, $x=\\sqrt{1-y^{2}}$।\n∴ $x\\sqrt{1-y^{2}}+y\\sqrt{1-x^{2}}=x\\cdot x+y\\cdot y=x^{2}+y^{2}=1$।\n\nব্যাখ্যা: $\\cos(\\sin^{-1}x)=\\sqrt{1-x^{2}}$; হিসাবটি $1$-এ মিলে যায়।\n"
+ },
+ "5670af6c-915d-44f6-b1d3-79638ec11547": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{5}{4}$",
+  "explanation_text": "\n$\\cos^{-1}x-\\cos^{-1}y=\\frac{\\pi}{3}$ ⇒ $\\left(\\frac{\\pi}{2}-\\sin^{-1}x\\right)-\\left(\\frac{\\pi}{2}-\\sin^{-1}y\\right)=\\frac{\\pi}{3}$\n⇒ $\\sin^{-1}y-\\sin^{-1}x=\\frac{\\pi}{3}$।\n১ম সমীকরণের সাথে যোগ করে: $2\\sin^{-1}y=\\pi$ ⇒ $\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $y=1$।\nতখন $\\sin^{-1}x=\\frac{\\pi}{2}-\\frac{\\pi}{3}=\\frac{\\pi}{6}$ ⇒ $x=\\frac{1}{2}$।\n∴ $x^{2}+y^{2}=\\frac{1}{4}+1=\\frac{5}{4}$।\n\nব্যাখ্যা: $\\cos^{-1}t=\\frac{\\pi}{2}-\\sin^{-1}t$ ব্যবহার; দুই সমীকরণ যোগে $y=1$, $x=\\frac{1}{2}$।\n"
+ },
+ "dda946ab-9131-40e1-bdcc-19350feee879": {
+  "mcq_solution_index": 1,
+  "answer_text": "$-\\sqrt{1 - x^2}$",
+  "explanation_text": "\n$\\cos\\left(\\frac{\\pi}{2}+\\cos^{-1}x\\right)=-\\sin(\\cos^{-1}x)=-\\sqrt{1-x^{2}}$।\n\nব্যাখ্যা: $\\cos(\\frac{\\pi}{2}+A)=-\\sin A$, $\\sin(\\cos^{-1}x)=\\sqrt{1-x^{2}}$।\n"
+ },
+ "64437492-4818-40cd-8c31-a269487b00f5": {
+  "mcq_solution_index": 3,
+  "answer_text": "1",
+  "explanation_text": "\n$\\sin^{-1}\\left(-\\frac{1}{2}\\right)=-\\frac{\\pi}{6}$।\n∴ $\\sin\\left(\\frac{\\pi}{3}-\\left(-\\frac{\\pi}{6}\\right)\\right)=\\sin\\left(\\frac{\\pi}{3}+\\frac{\\pi}{6}\\right)=\\sin\\frac{\\pi}{2}=1$।\n\nব্যাখ্যা: $\\sin^{-1}(-a)=-\\sin^{-1}a$ বিদ্যমান; $\\frac{\\pi}{3}+\\frac{\\pi}{6}=\\frac{\\pi}{2}$।\n"
+ },
+ "d4462c26-6df0-450e-aee1-6beeb55ccac8": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\pm \\frac{\\sqrt{5}}{3}$",
+  "explanation_text": "\nLHS: $\\alpha=\\sin^{-1}\\sqrt{1-x^{2}}$ ⇒ $\\sin\\alpha=\\sqrt{1-x^{2}}$ ⇒ $\\cos\\alpha=|x|$ ⇒ $\\tan\\alpha=\\frac{\\sqrt{1-x^{2}}}{x}$ (x>0 ধরে)।\nRHS: $\\cos\\beta=\\frac{1}{\\sqrt{5}}$ ⇒ $\\sin\\beta=\\frac{2}{\\sqrt{5}}$।\n∴ $\\frac{\\sqrt{1-x^{2}}}{x}=\\frac{2}{\\sqrt{5}}$ ⇒ $5(1-x^{2})=4x^{2}$ ⇒ $9x^{2}=5$ ⇒ $x=\\pm\\frac{\\sqrt{5}}{3}$।\n\nব্যাখ্যা: দুই দিকের কোণ মিলিয়ে; $x^{2}=\\frac{5}{9}$। উপযুক্ত ডোমেইনে $\\pm$ দুটোই সম্ভব।\n"
+ },
+ "9614a159-dff2-4d6d-ade2-3e09e2615df4": {
+  "mcq_solution_index": 3,
+  "answer_text": "$2 \\sqrt{2}$",
+  "explanation_text": "\n$\\sec^{-1}3=\\tan^{-1}x$ ⇒ $\\sec\\alpha=3$ ⇒ $\\tan^{2}\\alpha=9-1=8$ ⇒ $\\tan\\alpha=2\\sqrt{2}$ ⇒ $x=2\\sqrt{2}$।\n\nব্যাখ্যা: ৩-অতিভুজ, ১-সন্নিহিত ত্রিভুজ থেকে বিপরীত বাহু $\\sqrt{8}=2\\sqrt{2}$।\n"
+ },
+ "7e810a10-b4ac-459b-92be-e9e74dd5764e": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\pi$",
+  "explanation_text": "\n$\\tan^{-1}2+\\tan^{-1}3=\\pi+\\tan^{-1}\\frac{5}{1-6}=\\pi+\\tan^{-1}(-1)=\\pi-\\frac{\\pi}{4}=\\frac{3\\pi}{4}$।\n∴ $\\tan^{-1}1+\\tan^{-1}2+\\tan^{-1}3=\\frac{\\pi}{4}+\\frac{3\\pi}{4}=\\pi$।\n\nব্যাখ্যা: $xy=6>1$-এ $\\pi$ যোগের নিয়ম; মোট $\\pi$।\n"
+ },
+ "ab1a7927-0765-4546-b65a-4186d3fc9b05": {
+  "mcq_solution_index": 0,
+  "answer_text": "$n\\pi$",
+  "explanation_text": "\n$\\sin2\\theta+3\\sin\\theta=0$ ⇒ $2\\sin\\theta\\cos\\theta+3\\sin\\theta=0$ ⇒ $\\sin\\theta(2\\cos\\theta+3)=0$।\nযেহেতু $2\\cos\\theta+3\\neq0$ (সর্বোচ্চ $2-3=-1$), তাই $\\sin\\theta=0$ ⇒ $\\theta=n\\pi$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\cos\\theta\\ge-1$ বলে দ্বিতীয় উৎপাদক শূন্য হতে পারে না।\n"
+ },
+ "4ce1c233-013e-4a0e-86e2-209586290c89": {
+  "mcq_solution_index": 0,
+  "answer_text": "16/25",
+  "explanation_text": "\n$\\cos^{2}\\left(\\sin^{-1}\\frac{3}{5}\\right)=1-\\sin^{2}\\left(\\sin^{-1}\\frac{3}{5}\\right)=1-\\left(\\frac{3}{5}\\right)^{2}=\\frac{16}{25}$।\n\nব্যাখ্যা: $\\cos^{2}A=1-\\sin^{2}A$।\n"
+ },
+ "6d2820aa-0c0e-48eb-b4b9-b6523f781631": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{5\\pi}{6}$",
+  "explanation_text": "\n$2(\\cos^{2}\\theta-\\sin^{2}\\theta)=2\\cos2\\theta=1$ ⇒ $\\cos2\\theta=\\frac{1}{2}$।\nসাধারণ সমাধান: $2\\theta=2n\\pi\\pm\\frac{\\pi}{3}$ ⇒ $\\theta=n\\pi\\pm\\frac{\\pi}{6}$।\nপ্রদত্ত অপশনগুলোর মধ্যে $\\frac{5\\pi}{6}=1\\cdot\\pi-\\frac{\\pi}{6}$ একটি সমাধান।\n\nব্যাখ্যা: n=1, ঋণাত্মক চিহ্নে $\\theta=\\frac{5\\pi}{6}$; অপশনে দেওয়া নির্দিষ্ট মান।\n"
+ },
+ "327d2df5-42a9-496e-8dc1-8dcbe9dd7c43": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{5\\pi}{12}$",
+  "explanation_text": "\n$\\tan^{-1}1=\\frac{\\pi}{4}$, $\\sin^{-1}\\frac{1}{2}=\\frac{\\pi}{6}$।\n∴ $=\\frac{\\pi}{4}+\\frac{\\pi}{6}=\\frac{3\\pi+2\\pi}{12}=\\frac{5\\pi}{12}$।\n\nব্যাখ্যা: দুই কোণের সরল যোগ।\n"
+ },
+ "5b0ee67a-a659-4cf8-8044-ae73595e9014": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{1}{\\sqrt{2}}$",
+  "explanation_text": "\n$\\sin^{-1}x=\\cos^{-1}x$ এবং $\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}$ ⇒ $2\\sin^{-1}x=\\frac{\\pi}{2}$ ⇒ $\\sin^{-1}x=\\frac{\\pi}{4}$ ⇒ $x=\\sin\\frac{\\pi}{4}=\\frac{1}{\\sqrt{2}}$।\n\nব্যাখ্যা: পূরক কোণ identity প্রয়োগ।\n"
+ },
+ "1045f717-2730-4b08-9445-6918861b7351": {
+  "mcq_solution_index": 3,
+  "answer_text": "1",
+  "explanation_text": "\n$x=\\frac{\\sqrt{3}}{2}$ হলে $\\sin^{-1}x=\\frac{\\pi}{3}$।\n∴ $3\\sin^{-1}x=\\pi=2\\sin^{-1}y$ ⇒ $\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $y=\\sin\\frac{\\pi}{2}=1$।\n\nব্যাখ্যা: $\\sin^{-1}\\frac{\\sqrt{3}}{2}=\\frac{\\pi}{3}$; $\\sin^{-1}1=\\frac{\\pi}{2}$।\n"
+ },
+ "6f1ae80a-9135-437f-b8df-e7f45eaa6b05": {
+  "mcq_solution_index": 4,
+  "answer_text": "3",
+  "explanation_text": "\n$x=\\tan\\theta$ ধরলে $n\\tan^{-1}x=n\\theta$ এবং $\\tan(n\\theta)=\\frac{nx-x^{3}}{1-nx^{2}}$ (তিনগুণ কোণের সূত্রের সাধারণ রূপ)।\nn=3 বসালে: $\\tan3\\theta=\\frac{3x-x^{3}}{1-3x^{2}}$ — প্রদত্ত রূপের সঙ্গে মিলে যায়।\n∴ $n=3$।\n\nব্যাখ্যা: $\\tan3\\theta=\\frac{3t-t^{3}}{1-3t^{2}}$ — অফিসিয়াল সূত্র; তাই n=3।\n"
+ },
+ "f69d8a25-232f-4cf2-a1d5-6b39162193c8": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{\\sqrt{3}}$",
+  "explanation_text": "\n$\\sin^{-1}\\frac{1}{2}=\\frac{\\pi}{6}$; ∴ $\\tan\\left(\\sin^{-1}\\frac{1}{2}\\right)=\\tan\\frac{\\pi}{6}=\\frac{1}{\\sqrt{3}}$।\n\nব্যাখ্যা: $\\tan\\frac{\\pi}{6}=\\frac{1}{\\sqrt{3}}$।\n"
+ },
+ "fd958dd1-418b-4dda-a5f2-d51ee23df296": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sec^{-1}\\frac{25}{24}=\\cos^{-1}\\frac{24}{25}$ (যেহেতু $\\cos=\\frac{1}{\\sec}$)।\n∴ $\\cos^{-1}\\frac{24}{25}+\\sin^{-1}\\frac{24}{25}=\\frac{\\pi}{2}$ (পূরক কোণ identity)।\n\nব্যাখ্যা: $\\cos^{-1}t+\\sin^{-1}t=\\frac{\\pi}{2}$।\n"
+ },
+ "28c78b89-1f01-44d3-b184-428954a3598d": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\sqrt{3},-\\frac{1}{\\sqrt{3}}$",
+  "explanation_text": "\n$\\tan^{-1}\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}$; $t=\\frac{x-1}{x+1}$ ধরে $2\\tan^{-1}t=\\tan^{-1}\\frac{2t}{1-t^{2}}$।\n∴ $\\frac{2t}{1-t^{2}}=\\frac{1}{\\sqrt{3}}$ ⇒ $t^{2}+2\\sqrt{3}t-1=0$ ⇒ $t=-\\sqrt{3}\\pm2$।\nক্ষেত্র ১: $\\frac{x-1}{x+1}=2-\\sqrt{3}$ ⇒ $x=\\sqrt{3}$।\nক্ষেত্র ২: $\\frac{x-1}{x+1}=-2-\\sqrt{3}$ ⇒ $x=-\\frac{1}{\\sqrt{3}}$।\n∴ $x=\\sqrt{3},-\\frac{1}{\\sqrt{3}}$।\n\nব্যাখ্যা: দ্বিঘাত সমাধান; দুই ক্ষেত্রে x-এর মান আলাদা করে বের করা।\n"
+ },
+ "fac3f6ea-7ca4-4415-b7b2-6d629adeda55": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\beta=\\cos^{-1}\\frac{2}{\\sqrt{13}}$ ⇒ $\\tan\\beta=\\frac{3}{2}$। তাই রাশি $=\\tan^{-1}\\frac{2}{3}+\\tan^{-1}\\frac{3}{2}$।\nযেহেতু $\\frac{2}{3}\\cdot\\frac{3}{2}=1$, $\\tan^{-1}a+\\tan^{-1}\\frac{1}{a}=\\frac{\\pi}{2}$ ⇒ মান $\\frac{\\pi}{2}$।\n\nব্যাখ্যা: পরস্পর reciprocal কোণ; যোগফল $\\frac{\\pi}{2}$।\n"
+ },
+ "80fc3d8a-a701-4d5c-a861-8d009c587418": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{3\\pi}{4}$",
+  "explanation_text": "\n$\\cot^{-1}\\frac{1}{3}=\\tan^{-1}3$। ∴ রাশি $=\\tan^{-1}2+\\tan^{-1}3$।\n$xy=6>1$ বলে $=\\pi+\\tan^{-1}\\frac{2+3}{1-2\\cdot3}=\\pi+\\tan^{-1}(-1)=\\pi-\\frac{\\pi}{4}=\\frac{3\\pi}{4}$।\n\nব্যাখ্যা: $\\cot^{-1}\\frac{1}{3}$ কোণের tan = 3; $xy>1$ হলে $\\pi$ যোগ।\n"
+ },
+ "42b2e88c-ae56-4345-8ded-d2cb58615290": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{\\sqrt{3}}$",
+  "explanation_text": "\n$\\sin^{-1}\\frac{1}{2}=\\frac{\\pi}{6}$; ∴ $\\tan\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{\\sqrt{3}}$।\n\nব্যাখ্যা: $\\tan\\frac{\\pi}{6}=\\frac{1}{\\sqrt{3}}$ — ২৬৪-এর পুনরাবৃত্তি।\n"
+ },
+ "f9d8d6f8-28dc-49f0-947c-dd1c533a2c89": {
+  "mcq_solution_index": 0,
+  "answer_text": "$x^{2}+y^{2}=1$",
+  "explanation_text": "\n$\\sin^{-1}x+\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $\\sin^{-1}y=\\cos^{-1}x$ ⇒ $y=\\sqrt{1-x^{2}}$ ⇒ $x^{2}+y^{2}=1$।\n\nব্যাখ্যা: পূরক কোণ; $x^{2}+y^{2}=1$।\n"
+ }
+}

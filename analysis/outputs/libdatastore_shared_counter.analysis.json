@@ -1,0 +1,880 @@
+{
+  "elf": {
+    "file": "libdatastore_shared_counter.so",
+    "path": "/root/dari/lib/arm64-v8a/libdatastore_shared_counter.so",
+    "size_bytes": 7112,
+    "sha256": "d3e48717c9aa147e0ab21063ba0e8e0211cabf8bf40b222640829519edbf58e1",
+    "elf_class": "ELF64",
+    "endianness": "little",
+    "os_abi": "ELFOSABI_SYSV",
+    "type": "ET_DYN",
+    "machine": "ARM AArch64",
+    "machine_raw": "EM_AARCH64",
+    "entry_point": "0x0",
+    "phoff": 64,
+    "shoff": 5576,
+    "flags": "0x0"
+  },
+  "sections": [
+    {
+      "name": "",
+      "type": "SHT_NULL",
+      "addr": "0x0",
+      "offset": 0,
+      "size": 0,
+      "flags": 0,
+      "link": 0,
+      "info": 0,
+      "align": 0
+    },
+    {
+      "name": ".note.android.ident",
+      "type": "SHT_NOTE",
+      "addr": "0x238",
+      "offset": 568,
+      "size": 152,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".note.gnu.build-id",
+      "type": "SHT_NOTE",
+      "addr": "0x2d0",
+      "offset": 720,
+      "size": 36,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".dynsym",
+      "type": "SHT_DYNSYM",
+      "addr": "0x2f8",
+      "offset": 760,
+      "size": 480,
+      "flags": 2,
+      "link": 8,
+      "info": 1,
+      "align": 8
+    },
+    {
+      "name": ".gnu.version",
+      "type": "SHT_GNU_versym",
+      "addr": "0x4d8",
+      "offset": 1240,
+      "size": 40,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 2
+    },
+    {
+      "name": ".gnu.version_r",
+      "type": "SHT_GNU_verneed",
+      "addr": "0x500",
+      "offset": 1280,
+      "size": 32,
+      "flags": 2,
+      "link": 8,
+      "info": 1,
+      "align": 4
+    },
+    {
+      "name": ".gnu.hash",
+      "type": "SHT_GNU_HASH",
+      "addr": "0x520",
+      "offset": 1312,
+      "size": 76,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".hash",
+      "type": "SHT_HASH",
+      "addr": "0x56c",
+      "offset": 1388,
+      "size": 168,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".dynstr",
+      "type": "SHT_STRTAB",
+      "addr": "0x614",
+      "offset": 1556,
+      "size": 699,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    },
+    {
+      "name": ".rela.dyn",
+      "type": "SHT_RELA",
+      "addr": "0x8d0",
+      "offset": 2256,
+      "size": 96,
+      "flags": 2,
+      "link": 3,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".rela.plt",
+      "type": "SHT_RELA",
+      "addr": "0x930",
+      "offset": 2352,
+      "size": 336,
+      "flags": 66,
+      "link": 3,
+      "info": 20,
+      "align": 8
+    },
+    {
+      "name": ".rodata",
+      "type": "SHT_PROGBITS",
+      "addr": "0xa80",
+      "offset": 2688,
+      "size": 39,
+      "flags": 50,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    },
+    {
+      "name": ".eh_frame_hdr",
+      "type": "SHT_PROGBITS",
+      "addr": "0xaa8",
+      "offset": 2728,
+      "size": 140,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".eh_frame",
+      "type": "SHT_PROGBITS",
+      "addr": "0xb38",
+      "offset": 2872,
+      "size": 492,
+      "flags": 2,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".text",
+      "type": "SHT_PROGBITS",
+      "addr": "0xd30",
+      "offset": 3376,
+      "size": 908,
+      "flags": 6,
+      "link": 0,
+      "info": 0,
+      "align": 16
+    },
+    {
+      "name": ".plt",
+      "type": "SHT_PROGBITS",
+      "addr": "0x10c0",
+      "offset": 4288,
+      "size": 256,
+      "flags": 6,
+      "link": 0,
+      "info": 0,
+      "align": 16
+    },
+    {
+      "name": ".data.rel.ro",
+      "type": "SHT_PROGBITS",
+      "addr": "0x51c0",
+      "offset": 4544,
+      "size": 8,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".fini_array",
+      "type": "SHT_FINI_ARRAY",
+      "addr": "0x51c8",
+      "offset": 4552,
+      "size": 16,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".init_array",
+      "type": "SHT_INIT_ARRAY",
+      "addr": "0x51d8",
+      "offset": 4568,
+      "size": 8,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".dynamic",
+      "type": "SHT_DYNAMIC",
+      "addr": "0x51e0",
+      "offset": 4576,
+      "size": 448,
+      "flags": 3,
+      "link": 8,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".got.plt",
+      "type": "SHT_PROGBITS",
+      "addr": "0x53a0",
+      "offset": 5024,
+      "size": 136,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 8
+    },
+    {
+      "name": ".bss",
+      "type": "SHT_NOBITS",
+      "addr": "0x9428",
+      "offset": 5160,
+      "size": 1,
+      "flags": 3,
+      "link": 0,
+      "info": 0,
+      "align": 4
+    },
+    {
+      "name": ".comment",
+      "type": "SHT_PROGBITS",
+      "addr": "0x0",
+      "offset": 5160,
+      "size": 178,
+      "flags": 48,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    },
+    {
+      "name": ".shstrtab",
+      "type": "SHT_STRTAB",
+      "addr": "0x0",
+      "offset": 5338,
+      "size": 231,
+      "flags": 0,
+      "link": 0,
+      "info": 0,
+      "align": 1
+    }
+  ],
+  "segments": [
+    {
+      "type": "PT_PHDR",
+      "offset": 64,
+      "vaddr": "0x40",
+      "paddr": "0x40",
+      "filesz": 504,
+      "memsz": 504,
+      "flags": 4,
+      "align": 8
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 0,
+      "vaddr": "0x0",
+      "paddr": "0x0",
+      "filesz": 4544,
+      "memsz": 4544,
+      "flags": 5,
+      "align": 16384
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 4544,
+      "vaddr": "0x51c0",
+      "paddr": "0x51c0",
+      "filesz": 616,
+      "memsz": 616,
+      "flags": 6,
+      "align": 16384
+    },
+    {
+      "type": "PT_LOAD",
+      "offset": 5160,
+      "vaddr": "0x9428",
+      "paddr": "0x9428",
+      "filesz": 0,
+      "memsz": 1,
+      "flags": 6,
+      "align": 16384
+    },
+    {
+      "type": "PT_DYNAMIC",
+      "offset": 4576,
+      "vaddr": "0x51e0",
+      "paddr": "0x51e0",
+      "filesz": 448,
+      "memsz": 448,
+      "flags": 6,
+      "align": 8
+    },
+    {
+      "type": "PT_GNU_RELRO",
+      "offset": 4544,
+      "vaddr": "0x51c0",
+      "paddr": "0x51c0",
+      "filesz": 616,
+      "memsz": 3648,
+      "flags": 4,
+      "align": 1
+    },
+    {
+      "type": "PT_GNU_EH_FRAME",
+      "offset": 2728,
+      "vaddr": "0xaa8",
+      "paddr": "0xaa8",
+      "filesz": 140,
+      "memsz": 140,
+      "flags": 4,
+      "align": 4
+    },
+    {
+      "type": "PT_GNU_STACK",
+      "offset": 0,
+      "vaddr": "0x0",
+      "paddr": "0x0",
+      "filesz": 0,
+      "memsz": 0,
+      "flags": 6,
+      "align": 0
+    },
+    {
+      "type": "PT_NOTE",
+      "offset": 568,
+      "vaddr": "0x238",
+      "paddr": "0x238",
+      "filesz": 188,
+      "memsz": 188,
+      "flags": 4,
+      "align": 4
+    }
+  ],
+  "dynamic": {
+    "needed": [
+      "libm.so",
+      "libdl.so",
+      "libc.so"
+    ],
+    "soname": "libdatastore_shared_counter.so",
+    "tags": [
+      {
+        "tag": "DT_NEEDED",
+        "value": 651
+      },
+      {
+        "tag": "DT_NEEDED",
+        "value": 659
+      },
+      {
+        "tag": "DT_NEEDED",
+        "value": 638
+      },
+      {
+        "tag": "DT_SONAME",
+        "value": 668
+      },
+      {
+        "tag": "DT_FLAGS",
+        "value": 8
+      },
+      {
+        "tag": "DT_FLAGS_1",
+        "value": 1
+      },
+      {
+        "tag": "DT_RELA",
+        "value": 2256
+      },
+      {
+        "tag": "DT_RELASZ",
+        "value": 96
+      },
+      {
+        "tag": "DT_RELAENT",
+        "value": 24
+      },
+      {
+        "tag": "DT_RELACOUNT",
+        "value": 4
+      },
+      {
+        "tag": "DT_JMPREL",
+        "value": 2352
+      },
+      {
+        "tag": "DT_PLTRELSZ",
+        "value": 336
+      },
+      {
+        "tag": "DT_PLTGOT",
+        "value": 21408
+      },
+      {
+        "tag": "DT_PLTREL",
+        "value": 7
+      },
+      {
+        "tag": "DT_SYMTAB",
+        "value": 760
+      },
+      {
+        "tag": "DT_SYMENT",
+        "value": 24
+      },
+      {
+        "tag": "DT_STRTAB",
+        "value": 1556
+      },
+      {
+        "tag": "DT_STRSZ",
+        "value": 699
+      },
+      {
+        "tag": "DT_GNU_HASH",
+        "value": 1312
+      },
+      {
+        "tag": "DT_HASH",
+        "value": 1388
+      },
+      {
+        "tag": "DT_INIT_ARRAY",
+        "value": 20952
+      },
+      {
+        "tag": "DT_INIT_ARRAYSZ",
+        "value": 8
+      },
+      {
+        "tag": "DT_FINI_ARRAY",
+        "value": 20936
+      },
+      {
+        "tag": "DT_FINI_ARRAYSZ",
+        "value": 16
+      },
+      {
+        "tag": "DT_VERSYM",
+        "value": 1240
+      },
+      {
+        "tag": "DT_VERNEED",
+        "value": 1280
+      },
+      {
+        "tag": "DT_VERNEEDNUM",
+        "value": 1
+      },
+      {
+        "tag": "DT_NULL",
+        "value": 0
+      }
+    ],
+    "runpath": null
+  },
+  "symbols": {
+    "exported": [
+      {
+        "name": "_Z16ThrowIoExceptionP7_JNIEnvPKc",
+        "value": "0xd80",
+        "size": 92,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile",
+        "value": "0xddc",
+        "size": 120,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "_ZN9datastore27IncrementAndGetCounterValueEPNSt6__ndk16atomicIjEE",
+        "value": "0xfc8",
+        "size": 32,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "_ZN9datastore12TruncateFileEi",
+        "value": "0xf44",
+        "size": 36,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter",
+        "value": "0xe54",
+        "size": 192,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "_ZN9datastore19CreateSharedCounterEiPPv",
+        "value": "0xf68",
+        "size": 88,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "Java_androidx_datastore_core_NativeSharedCounter_nativeGetCounterValue",
+        "value": "0xf14",
+        "size": 24,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "_ZN9datastore15GetCounterValueEPNSt6__ndk16atomicIjEE",
+        "value": "0xfc0",
+        "size": 8,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      },
+      {
+        "name": "Java_androidx_datastore_core_NativeSharedCounter_nativeIncrementAndGetCounterValue",
+        "value": "0xf2c",
+        "size": 24,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": 14
+      }
+    ],
+    "imported": [
+      {
+        "name": "__cxa_finalize",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__cxa_atexit",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strerror",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__stack_chk_fail",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "ftruncate",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__errno",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "mmap",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "getauxval",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "__system_property_get",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      },
+      {
+        "name": "strncmp",
+        "value": "0x0",
+        "size": 0,
+        "type": "STT_FUNC",
+        "bind": "STB_GLOBAL",
+        "vis": "STV_DEFAULT",
+        "ndx": "SHN_UNDEF"
+      }
+    ],
+    "exported_count": 9,
+    "imported_count": 10
+  },
+  "relocations": {
+    "count": 18,
+    "entries": [
+      {
+        "section": ".rela.dyn",
+        "offset": "0x51c0",
+        "type": 1027,
+        "symbol": "",
+        "addend": 20928
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x51c8",
+        "type": 1027,
+        "symbol": "",
+        "addend": 3400
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x51d0",
+        "type": 1027,
+        "symbol": "",
+        "addend": 3376
+      },
+      {
+        "section": ".rela.dyn",
+        "offset": "0x51d8",
+        "type": 1027,
+        "symbol": "",
+        "addend": 4128
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53b8",
+        "type": 1026,
+        "symbol": "__cxa_finalize",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53c0",
+        "type": 1026,
+        "symbol": "__cxa_atexit",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53c8",
+        "type": 1026,
+        "symbol": "_ZN9datastore12TruncateFileEi",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53d0",
+        "type": 1026,
+        "symbol": "strerror",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53d8",
+        "type": 1026,
+        "symbol": "_ZN9datastore19CreateSharedCounterEiPPv",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53e0",
+        "type": 1026,
+        "symbol": "__stack_chk_fail",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53e8",
+        "type": 1026,
+        "symbol": "_ZN9datastore15GetCounterValueEPNSt6__ndk16atomicIjEE",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53f0",
+        "type": 1026,
+        "symbol": "_ZN9datastore27IncrementAndGetCounterValueEPNSt6__ndk16atomicIjEE",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x53f8",
+        "type": 1026,
+        "symbol": "ftruncate",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x5400",
+        "type": 1026,
+        "symbol": "__errno",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x5408",
+        "type": 1026,
+        "symbol": "mmap",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x5410",
+        "type": 1026,
+        "symbol": "getauxval",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x5418",
+        "type": 1026,
+        "symbol": "__system_property_get",
+        "addend": 0
+      },
+      {
+        "section": ".rela.plt",
+        "offset": "0x5420",
+        "type": 1026,
+        "symbol": "strncmp",
+        "addend": 0
+      }
+    ]
+  },
+  "notes": [
+    {
+      "owner": "Android",
+      "type": "NT_GNU_ABI_TAG",
+      "desc": "Container({'abi_os': 21, 'abi_major': 1664430706, 'abi_minor': 0, 'abi_tiny': 0})"
+    },
+    {
+      "owner": "GNU",
+      "type": "NT_GNU_BUILD_ID",
+      "desc": "17db37bd6770ac00dd2d1d2828839fd23a7959a3"
+    }
+  ],
+  "strings": {
+    "total": 53,
+    "urls": [
+      [
+        5179,
+        "Android (9352603, based on r450784d1) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)"
+      ]
+    ],
+    "domains": [
+      [
+        2194,
+        "libc.so"
+      ],
+      [
+        2207,
+        "libm.so"
+      ],
+      [
+        2215,
+        "libdl.so"
+      ],
+      [
+        2719,
+        "ro.arch"
+      ]
+    ],
+    "paths": [],
+    "secrets": [],
+    "google_keys": [],
+    "java_classes": [],
+    "jni_exports": [
+      [
+        1618,
+        "Java_androidx_datastore_core_NativeSharedCounter_nativeTruncateFile"
+      ],
+      [
+        1725,
+        "Java_androidx_datastore_core_NativeSharedCounter_nativeCreateSharedCounter"
+      ],
+      [
+        1857,
+        "Java_androidx_datastore_core_NativeSharedCounter_nativeGetCounterValue"
+      ],
+      [
+        1982,
+        "Java_androidx_datastore_core_NativeSharedCounter_nativeIncrementAndGetCounterValue"
+      ]
+    ],
+    "embedded_certs": [],
+    "flutter_indicators": []
+  },
+  "flutter": {
+    "is_flutter": false,
+    "snapshots": [],
+    "build_id": null,
+    "feature_string": null,
+    "notes": []
+  },
+  "disassembly": null
+}

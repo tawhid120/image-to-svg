@@ -1,0 +1,150 @@
+{
+ "cc96f162-e0b4-477a-8159-c490a352cab4": {
+  "mcq_solution_index": 2,
+  "answer_text": "$(4 n-1) \\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sin\\theta=-1=\\sin\\left(-\\frac{\\pi}{2}\\right)$ ⇒ $\\theta=n\\pi+(-1)^{n}\\left(-\\frac{\\pi}{2}\\right)$; জোড়বিজোড় মিলিয়ে $\\theta=2n\\pi-\\frac{\\pi}{2}=\\frac{(4n-1)\\pi}{2}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\sin\\theta=-1$ ⇒ $\\theta=(4n-1)\\frac{\\pi}{2}$।\n"
+ },
+ "893fceb5-f725-47f9-b573-404d51a03169": {
+  "mcq_solution_index": 1,
+  "answer_text": "$(0, \\pi)$",
+  "explanation_text": "\n$y=\\cot^{-1}x$-এর রেঞ্জ $(0,\\pi)$ (মুখ্যমান ব্যাপ্তি)।\n\nব্যাখ্যা: cot⁻¹-এর মুখ্যমান খোলা ব্যবধান $(0,\\pi)$।\n"
+ },
+ "0a6abeab-0dd3-4e42-959a-30d8c5b77547": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\operatorname{cosec}^{-1} x$",
+  "explanation_text": "\n$\\sec^{-1}x+\\operatorname{cosec}^{-1}x=\\frac{\\pi}{2}$ (পূরক কোণ identity)।\n\nব্যাখ্যা: শূন্যস্থানে $\\operatorname{cosec}^{-1}x$।\n"
+ },
+ "e2209568-2e3c-40a6-9884-89a7d2f2d8c7": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{2 \\pi}{3}$",
+  "explanation_text": "\n$\\cos^{-1}\\left(-\\frac{1}{2}\\right)=\\frac{2\\pi}{3}$ ($\\cos\\frac{2\\pi}{3}=-\\frac{1}{2}$; মুখ্যমান $[0,\\pi]$-এ)।\n\nব্যাখ্যা: $\\cos\\frac{2\\pi}{3}=-\\frac{1}{2}$।\n"
+ },
+ "63d66740-bd7c-4224-a865-78d16a330d95": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{-\\pi}{2}<x<\\frac{\\pi}{2}$",
+  "explanation_text": "\n$y=\\tan^{-1}x$-এর মুখ্যমানের সীমা $-\\frac{\\pi}{2}<y<\\frac{\\pi}{2}$।\n\nব্যাখ্যা: tan⁻¹-এর মুখ্যমান খোলা ব্যবধান $\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$।\n"
+ },
+ "4289b4b6-6130-401d-a3c4-743804320145": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\nএটি লেখচিত্র-নির্ভর প্রশ্ন — অপশনে চিত্র ছাপানো হয়নি (text-এ শূন্য)।\nসঠিক লেখ: $y=\\cot^{-1}x$ একটি কঠোর হ্রাসমান বক্ররেখা, $x\\to-\\infty$-এ $y\\to\\pi$, $x\\to+\\infty$-এ $y\\to0$, যা $(0,\\frac{\\pi}{2})$ বিন্দুগামী।\n\nব্যাখ্যা: চিত্র দেখে মিলাতে হবে; হ্রাসমান ও $(0,\\pi)$-রেঞ্জ লেখটি সঠিক।\n"
+ },
+ "0471a46c-c317-49fe-a0dc-5a3b9f000065": {
+  "mcq_solution_index": 3,
+  "answer_text": "$1$",
+  "explanation_text": "\n$x=\\frac{\\sqrt{3}}{2}$ ⇒ $\\sin^{-1}x=\\frac{\\pi}{3}$; $3\\sin^{-1}x=\\pi=2\\sin^{-1}y$ ⇒ $\\sin^{-1}y=\\frac{\\pi}{2}$ ⇒ $y=1$।\n\nব্যাখ্যা: ২৬২-এর পুনরাবৃত্তি।\n"
+ },
+ "1873fdc9-5896-4151-a38a-e64477bdd536": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\n$\\sin^{-1}\\left(\\cos\\tan^{-1}x\\right)=\\frac{\\pi}{2}-\\tan^{-1}x$ (যেহেতু $\\cos\\alpha=\\sin\\left(\\frac{\\pi}{2}-\\alpha\\right)$)।\n∴ $\\frac{\\pi}{2}-\\tan^{-1}x=\\tan^{-1}\\frac{5}{2}$ ⇒ $\\tan^{-1}x=\\frac{\\pi}{2}-\\tan^{-1}\\frac{5}{2}$ ⇒ $x=\\cot\\left(\\tan^{-1}\\frac{5}{2}\\right)=\\frac{2}{5}$।\nঅপশনে $\\frac{2}{5}$ নেই — অপশন ত্রুটিপূর্ণ (যাচাই: $\\sin^{-1}(\\cos\\tan^{-1}\\frac{2}{5})\\approx68.2^{\\circ}=\\tan^{-1}\\frac{5}{2}$ ✓)।\n\nব্যাখ্যা: প্রকৃত উত্তর $x=\\frac{2}{5}$; প্রদত্ত অপশনে অনুপস্থিত।\n"
+ },
+ "2c143845-76d4-4e3b-b33d-f56edec916dc": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\tan x$",
+  "explanation_text": "\n$2\\tan^{2}x-y\\tan x+1=0$ — এখানে x-এর পরিবর্তে $\\tan x$-কে চলরাশি (variable) ধরে দ্বিঘাত সমীকরণ; y একটি পরামিতি।\n∴ সংশ্লিষ্ট চলরাশি $\\tan x$।\n\nব্যাখ্যা: সমীকরণটি $\\tan x$-এর সাপেক্ষে দ্বিঘাত।\n"
+ },
+ "97dfede0-6ab6-4b4f-80e0-da0f4bcde0e4": {
+  "mcq_solution_index": 1,
+  "answer_text": "$300^{\\circ}$",
+  "explanation_text": "\n$\\sin\\theta=-\\frac{\\sqrt{3}}{2}$ ⇒ $\\theta=240^{\\circ}$ (৩য় চতুর্ভাগ) বা $300^{\\circ}$ (৪র্থ চতুর্ভাগ)।\n৪র্থ চতুর্ভাগের সমাধান $=300^{\\circ}$।\n\nব্যাখ্যা: $\\sin300^{\\circ}=-\\frac{\\sqrt{3}}{2}$; ৪র্থ চতুর্ভাগ।\n"
+ },
+ "ac547b25-2cb9-4bcb-9065-c44231695cce": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sin x+\\sin2x+\\sin3x=0$-তে x=$\\frac{\\pi}{2}$ বসালে:\n$\\sin\\frac{\\pi}{2}+\\sin\\pi+\\sin\\frac{3\\pi}{2}=1+0-1=0$ ✓।\n\nব্যাখ্যা: অপশন যাচাই; $\\frac{\\pi}{2}$ সিদ্ধ করে।\n"
+ },
+ "77a60b29-d76f-4190-ac0d-3be241522127": {
+  "mcq_solution_index": 1,
+  "answer_text": "$60^{\\circ}$",
+  "explanation_text": "\n$\\sqrt{3}\\tan^{2}\\theta+\\sqrt{3}=4\\tan\\theta$ ⇒ $\\sqrt{3}t^{2}-4t+\\sqrt{3}=0$ (t=tanθ)\n⇒ $(\\sqrt{3}t-1)(t-\\sqrt{3})=0$ ⇒ $t=\\frac{1}{\\sqrt{3}}$ বা $\\sqrt{3}$ ⇒ $\\theta=30^{\\circ},60^{\\circ}$।\n$[0,360^{\\circ}]$-এ অপশনে আছে $60^{\\circ}$।\n\nব্যাখ্যা: উৎপাদকে বিশ্লেষণ; $\\tan60^{\\circ}=\\sqrt{3}$।\n"
+ },
+ "010dd0aa-6c3e-46c0-a560-5f98f2344f34": {
+  "mcq_solution_index": 1,
+  "answer_text": "$2$",
+  "explanation_text": "\nn=2 বসালে: $2\\tan^{-1}x=\\sin^{-1}\\frac{2x}{1+x^{2}}$ — প্রসিদ্ধ পরিচয় (উপযুক্ত ব্যাপ্তিতে) ✓।\nঅন্য n-এর জন্য পরিচয়টি খাটে না (n=3: $\\sin^{-1}\\frac{3x}{1+x^{3}}\\neq3\\tan^{-1}x$)।\n∴ $n=2$।\n\nব্যাখ্যা: $\\sin2\\theta=\\frac{2\\tan\\theta}{1+\\tan^{2}\\theta}$-র উল্টো; n=2।\n"
+ },
+ "14a5499f-6a8c-42ea-986a-ad2e8b4777b6": {
+  "mcq_solution_index": 2,
+  "answer_text": "$3$",
+  "explanation_text": "\nm=3 বসালে: $3\\cos^{-1}x=\\cos^{-1}(4x^{3}-3x)$ — ত্রিগুণ কোণের সূত্র $\\cos3\\theta=4\\cos^{3}\\theta-3\\cos\\theta$-র উল্টো ✓।\nRHS: $(m+1)x^{m}-mx=4x^{3}-3x$ — m=3-এ মিলে যায়।\n\nব্যাখ্যা: $\\cos3\\theta$ পরিচয়; m=3।\n"
+ },
+ "e61b4eed-f6fc-439b-aa59-fbdba0ca8c27": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\operatorname{cosec}^{-1}t+\\sec^{-1}t=\\frac{\\pi}{2}$ (|t|≥1)।\n∴ $\\operatorname{cosec}^{-1}\\left(-\\frac{3}{2}\\right)+\\sec^{-1}\\left(-\\frac{3}{2}\\right)=\\frac{\\pi}{2}$।\n\nব্যাখ্যা: পূরক কোণ identity; ঋণাত্মক আর্গুমেন্টেও প্রযোজ্য।\n"
+ },
+ "8fec1613-62c1-4a94-9a9d-3ca6390e3981": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\sqrt{\\frac{3}{7}}$",
+  "explanation_text": "\n$\\cos\\left(\\tan^{-1}\\frac{2}{\\sqrt{3}}\\right)=\\frac{1}{\\sqrt{1+\\left(\\frac{2}{\\sqrt{3}}\\right)^{2}}}=\\frac{1}{\\sqrt{1+\\frac{4}{3}}}=\\frac{1}{\\sqrt{7/3}}=\\sqrt{\\frac{3}{7}}$।\n\nব্যাখ্যা: $\\cos(\\tan^{-1}t)=\\frac{1}{\\sqrt{1+t^{2}}}$।\n"
+ },
+ "a78a1611-3c3a-477e-b1ca-23d7dc5d50ab": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\sin ^{-1} \\frac{\\sqrt{x^{2}-1}}{\\sqrt{2 x^{2}-1}}$",
+  "explanation_text": "\n$\\theta=\\cot^{-1}\\frac{x}{\\sqrt{x^{2}-1}}$ ⇒ $\\cot\\theta=\\frac{x}{\\sqrt{x^{2}-1}}$ ⇒ $\\tan\\theta=\\frac{\\sqrt{x^{2}-1}}{x}$।\nঅতিভুজ $=\\sqrt{(x^{2}-1)+x^{2}}=\\sqrt{2x^{2}-1}$ ⇒ $\\sin\\theta=\\frac{\\sqrt{x^{2}-1}}{\\sqrt{2x^{2}-1}}$।\n∴ $\\theta=\\sin^{-1}\\frac{\\sqrt{x^{2}-1}}{\\sqrt{2x^{2}-1}}$।\n\nব্যাখ্যা: ডানকোণী ত্রিভুজ; $\\sin\\theta=\\frac{\\sqrt{x^{2}-1}}{\\sqrt{2x^{2}-1}}$।\n"
+ },
+ "0ae4f1b2-eec2-4e2b-9ae9-3cb2a68891b9": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{\\pi}{2}<y \\leq \\pi$",
+  "explanation_text": "\n$y=\\sec^{-1}x$-এর মুখ্যমান: x≥1 হলে $0\\leq y\\leq\\frac{\\pi}{2}$; x≤−1 হলে $\\frac{\\pi}{2}<y\\leq\\pi$।\n∴ x<0-এর জন্য মুখ্যমান $\\frac{\\pi}{2}<y\\leq\\pi$।\n\nব্যাখ্যা: দ্বিতীয় চতুর্ভাগে $\\sec^{-1}$-এর মান; $\\frac{\\pi}{2}<y\\leq\\pi$।\n"
+ },
+ "6a49a2d3-9187-4ff2-8248-f6767bc7f0a5": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\left(\\frac{-\\pi}{2}, \\frac{\\pi}{2}\\right)$",
+  "explanation_text": "\n$y=\\tan^{-1}x$-এর রেঞ্জ $\\left(-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right)$।\n\nব্যাখ্যা: tan⁻¹-এর মুখ্যমান রেঞ্জ।\n"
+ },
+ "c5aeb5fc-afd4-43f6-8105-7e6fcde059a8": {
+  "mcq_solution_index": 3,
+  "answer_text": "$25$",
+  "explanation_text": "\n$\\sec^{2}(\\tan^{-1}4)=1+16=17$; $\\tan^{2}(\\sec^{-1}3)=9-1=8$; যোগফল $=25$।\n\nব্যাখ্যা: ৫১৭-এর পুনরাবৃত্তি; মান ২৫।\n"
+ },
+ "7ac7cb33-35b4-4008-850d-aaefbb77f605": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{16}{25}$",
+  "explanation_text": "\n$\\alpha=\\sin^{-1}\\frac{4}{5}$ (sin=4/5, cos=3/5); $\\beta=\\sin^{-1}\\frac{3}{5}$ (sin=3/5, cos=4/5)।\n$\\sin(\\alpha+\\beta)=\\frac{4}{5}\\cdot\\frac{4}{5}+\\frac{3}{5}\\cdot\\frac{3}{5}=\\frac{16+9}{25}=1$; $\\cos(\\alpha+\\beta)=0$ ⇒ $\\alpha+\\beta=\\frac{\\pi}{2}$।\n∴ $\\sin^{-1}\\left(A+\\frac{9}{25}\\right)=\\frac{\\pi}{2}$ ⇒ $A+\\frac{9}{25}=1$ ⇒ $A=\\frac{16}{25}$।\n\nব্যাখ্যা: sin(α+β) সূত্র; $A=\\frac{16}{25}$।\n"
+ },
+ "4dc39fc3-0b55-431d-aa67-847b2f428b34": {
+  "mcq_solution_index": 2,
+  "answer_text": "$x$",
+  "explanation_text": "\n$2\\sin^{3}x=\\cos x+\\sin x$-এ চলরাশি হলো $x$ (ত্রিকোণমিতিক কোণ)।\n\nব্যাখ্যা: সমীকরণের অজানা চলরাশি $x$।\n"
+ },
+ "988f7990-5363-4c4d-8140-44d51d6a6780": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{2 \\pi}{3}$",
+  "explanation_text": "\nx=$\\frac{2\\pi}{3}$ যাচাই: $\\cos\\frac{4\\pi}{3}=-\\frac{1}{2}$, $\\cos\\frac{8\\pi}{3}=-\\frac{1}{2}$, $\\cos\\frac{16\\pi}{3}=-\\frac{1}{2}$।\nযোগফল $=-\\frac{3}{2}$ ✓ ($0<x<\\pi$-এর মধ্যে)।\n\nব্যাখ্যা: অপশন যাচাই; $\\frac{2\\pi}{3}$ সিদ্ধ করে।\n"
+ },
+ "ec97f5d5-50f5-4752-abfb-155c8b8725eb": {
+  "mcq_solution_index": 0,
+  "answer_text": "$30^{\\circ}$",
+  "explanation_text": "\nx=30° যাচাই: $\\sin30^{\\circ}\\cdot\\sin60^{\\circ}\\cdot\\sin90^{\\circ}=\\frac{1}{2}\\cdot\\frac{\\sqrt{3}}{2}\\cdot1=\\frac{\\sqrt{3}}{4}$ ✓।\n\nব্যাখ্যা: অপশন যাচাই; $30^{\\circ}$।\n"
+ },
+ "85cd9c92-5d90-42ea-b3bc-7b513e7b5f4e": {
+  "mcq_solution_index": 0,
+  "answer_text": "$120^{\\circ}$",
+  "explanation_text": "\nx=120° যাচাই: $4\\cos^{3}120^{\\circ}-3\\sin^{2}120^{\\circ}-5\\cos120^{\\circ}$\n$=4\\left(-\\frac{1}{8}\\right)-3\\cdot\\frac{3}{4}-5\\left(-\\frac{1}{2}\\right)=-\\frac{1}{2}-\\frac{9}{4}+\\frac{5}{2}=-\\frac{1}{4}$ ✓।\n\nব্যাখ্যা: অপশন যাচাই; $120^{\\circ}$ সিদ্ধ করে।\n"
+ },
+ "cb585092-6bfa-4ff4-8b6c-baf245541a00": {
+  "mcq_solution_index": 2,
+  "answer_text": "i ও iii  ",
+  "explanation_text": "\n$1-\\sin2\\theta=0$ ⇒ $\\sin2\\theta=1$ ⇒ $2\\theta=2n\\pi+\\frac{\\pi}{2}$ ⇒ $\\theta=n\\pi+\\frac{\\pi}{4}=\\frac{(4n+1)\\pi}{4}$।\ni. $\\theta=\\frac{13\\pi}{4}$: $13\\pi/4=3\\pi+\\frac{\\pi}{4}$ ✓ (n=3)।\nii. সাধারণ সমাধান $\\frac{(4n+1)\\pi}{4}$ — $\\frac{(4n+1)\\pi}{2}$ নয় ✗।\niii. $0\\leq\\theta\\leq2\\pi$: $\\theta=\\frac{\\pi}{4},\\frac{5\\pi}{4}$ — ২টি ✓।\n∴ i ও iii সঠিক।\n\nব্যাখ্যা: ii ভুল; সঠিক সাধারণ সমাধান $(4n+1)\\frac{\\pi}{4}$।\n"
+ },
+ "7e897050-a60c-4f9f-8435-ec5049497cf3": {
+  "mcq_solution_index": 3,
+  "answer_text": "i, ii ও iii  ",
+  "explanation_text": "\nচিত্রটি $\\cos^{-1}x$-এর লেখ (সাধারণত): i. লেখ ১ম ও ২য় চতুর্ভাগে থাকে ✓ (y∈[0,π])। ii. মুখ্যমান $[0,\\pi]$ ✓। iii. ডোমেন $[-1,1]$ ✓।\n∴ i, ii ও iii — সব সঠিক।\n\nব্যাখ্যা: cos⁻¹-এর ডোমেন, রেঞ্জ ও চতুর্ভাগ — তিনটিই সত্য।\n"
+ },
+ "84d62368-678b-4ade-995e-e071a7406496": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\n$x=\\frac{1}{\\sqrt{3}}\\in[-1,1]$: i. $\\sin^{-1}x$ সংজ্ঞায়িত ✓; ii. $\\cos^{-1}x$ সংজ্ঞায়িত ✓; iii. $\\tan^{-1}x$ সব বাস্তব x-এ সংজ্ঞায়িত — \"অসংজ্ঞায়িত\" ✗।\n∴ i ও ii।\n\nব্যাখ্যা: tan⁻¹ সর্বত্র সংজ্ঞায়িত; iii মিথ্যা।\n"
+ },
+ "7246c6a9-3f88-48de-bcd8-f99e2c6498bd": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\nঅবান্তর মূল (extraneous root): i. মূল সমীকরণকে সিদ্ধ করে না ✓; ii. উভয় পাশে বর্গ করলে পাওয়া যায় ✓; iii. বর্গমূল করলে নয় — বর্গ করলেই অবান্তর মূল আসে ✗।\n∴ i ও ii।\n\nব্যাখ্যা: বর্গকরণের ফলে অবান্তর মূল; iii ভুল।\n"
+ },
+ "f1d9f835-103c-4161-9ddb-01e72fe4ab4c": {
+  "mcq_solution_index": 0,
+  "answer_text": "i ও ii ",
+  "explanation_text": "\ni. x=π: $\\cos\\pi+\\sin\\pi=-1+0=-1$ ✓। ii. x=$\\frac{\\pi}{4}$: $\\frac{\\sqrt{2}}{2}+\\frac{\\sqrt{2}}{2}=\\sqrt{2}$ ✓। iii. x=$\\frac{\\pi}{3}$: $\\cos60^{\\circ}-\\sin60^{\\circ}=\\frac{1}{2}-\\frac{\\sqrt{3}}{2}\\neq1$ ✗।\n∴ i ও ii সঠিক।\n\nব্যাখ্যা: iii যাচাইয়ে ব্যর্থ; i, ii সত্য।\n"
+ }
+}

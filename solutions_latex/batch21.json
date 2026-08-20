@@ -1,0 +1,151 @@
+{
+ "5e1ca6cc-2df2-419f-9f2e-ebf0b963e460": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{1}{2}$",
+  "explanation_text": "\n$\\cos^{-1}\\left(-\\frac{1}{2}\\right)=\\frac{2\\pi}{3}$, $\\tan^{-1}\\frac{1}{\\sqrt{3}}=\\frac{\\pi}{6}$।\n∴ $\\sin\\left(\\frac{2\\pi}{3}+\\frac{\\pi}{6}\\right)=\\sin\\frac{5\\pi}{6}=\\frac{1}{2}$।\n\nব্যাখ্যা: $\\sin\\frac{5\\pi}{6}=\\frac{1}{2}$।\n"
+ },
+ "cef9e7e3-90c6-4bb1-9ccd-6b5953fa7d05": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\mathrm{n} \\pi+\\alpha$",
+  "explanation_text": "\n$\\cot x\\cdot\\tan\\alpha=1$ ⇒ $\\cot x=\\frac{1}{\\tan\\alpha}=\\cot\\alpha$ ⇒ $x=n\\pi+\\alpha$।\n\nব্যাখ্যা: $\\cot x=\\cot\\alpha$ ⇒ $x=n\\pi+\\alpha$।\n"
+ },
+ "87750e1e-d8dd-46d4-ae7f-08ebc4b43e44": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\sqrt{2}$",
+  "explanation_text": "\n$\\tan^{-1}(\\sin\\tan^{-1}x)$-এ α=tan⁻¹x: $\\sin\\alpha=\\frac{x}{\\sqrt{1+x^{2}}}$।\nRHS: $\\cos^{-1}\\sqrt{\\frac{3}{5}}=\\varphi$ ⇒ $\\tan\\varphi=\\frac{\\sqrt{2/5}}{\\sqrt{3/5}}=\\sqrt{\\frac{2}{3}}$।\n∴ $\\frac{x}{\\sqrt{1+x^{2}}}=\\sqrt{\\frac{2}{3}}$ ⇒ $\\frac{x^{2}}{1+x^{2}}=\\frac{2}{3}$ ⇒ $3x^{2}=2+2x^{2}$ ⇒ $x^{2}=2$ ⇒ $x=\\sqrt{2}$।\n\nব্যাখ্যা: x²=2; $\\sqrt{2}$।\n"
+ },
+ "9696741b-3455-49a2-b7ae-8ac2aec26728": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{7}{25}$",
+  "explanation_text": "\n$\\theta=\\cos^{-1}\\frac{4}{5}$ ⇒ $\\cos\\theta=\\frac{4}{5}$, $\\sin\\theta=\\frac{3}{5}$, $\\cot\\theta=\\frac{4}{3}$।\n$\\frac{\\cot^{2}\\theta-1}{\\cot^{2}\\theta+1}=\\frac{16/9-1}{16/9+1}=\\frac{7/9}{25/9}=\\frac{7}{25}$।\n\nব্যাখ্যা: cot²θ = 16/9; মান 7/25।\n"
+ },
+ "81680eb9-b34f-4753-8f02-d0fe78f6209f": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\tan ^{-1} x=\\cot ^{-1} \\frac{1}{x}$",
+  "explanation_text": "\nবিপরীত ত্রিকোণমিতিক ফাংশন (inverse trigonometric function) হলো $\\tan^{-1}x=\\cot^{-1}\\frac{1}{x}$ — এতে বিপরীত বৃত্তীয় ফাংশন জড়িত।\nঅন্য অপশনগুলো: দ্বিঘাত সমীকরণ, লগ-সূচক সম্পর্ক, ত্রিকোণমিতিক অভেদ — ফাংশন-সমীকরণ নয়।\n\nব্যাখ্যা: অপশন ৩-তে বিপরীত ত্রিকোণমিতিক সম্পর্ক।\n"
+ },
+ "6e9a7ce1-ca73-4e5e-adbb-3c36c95524cf": {
+  "mcq_solution_index": 0,
+  "answer_text": "$0 \\leq \\tan ^{-1}(x)<\\frac{\\pi}{2}$",
+  "explanation_text": "\n$x=\\tan y$, x≥0 ⇒ $y=\\tan^{-1}x\\in\\left[0,\\frac{\\pi}{2}\\right)$ (x=0 হলে y=0 সহ)।\n∴ মুখ্যমান $0\\leq\\tan^{-1}x<\\frac{\\pi}{2}$।\n\nব্যাখ্যা: x≥0-এ tan⁻¹x ১ম চতুর্ভাগে; $[0,\\frac{\\pi}{2})$।\n"
+ },
+ "ef34858b-8d5b-490f-ad5d-faaaa96bd559": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\tan ^{-1} \\frac{1}{x}$",
+  "explanation_text": "\n$\\cot^{-1}x=\\tan^{-1}\\frac{1}{x}$ (x>0-এর জন্য; পূরক সম্পর্ক)।\n\nব্যাখ্যা: $\\cot\\theta=\\frac{1}{\\tan\\theta}$।\n"
+ },
+ "200c7439-2bb4-4885-9a4f-a00cde189db7": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}$ (|x|≤1)।\n\nব্যাখ্যা: পূরক কোণ identity।\n"
+ },
+ "33e5418d-bc0d-4567-9f18-3496fedc41d8": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\tan ^{-1} \\frac{x+y+z-x y z}{1-x y-y z-z x}$",
+  "explanation_text": "\nতিন কোণের সমষ্টির সূত্র: $\\tan(A+B+C)=\\frac{x+y+z-xyz}{1-xy-yz-zx}$ যেখানে A=tan⁻¹x ইত্যাদি।\n∴ $\\tan^{-1}x+\\tan^{-1}y+\\tan^{-1}z=\\tan^{-1}\\frac{x+y+z-xyz}{1-xy-yz-zx}$।\n\nব্যাখ্যা: tan(A+B+C) প্রসার।\n"
+ },
+ "63334ab0-015d-422e-acdf-90e07048c315": {
+  "mcq_solution_index": 2,
+  "answer_text": "$(-\\infty, \\infty)$",
+  "explanation_text": "\n$y=\\cot^{-1}x$-এর ডোমেন $(-\\infty,\\infty)$ (সব বাস্তব x)।\n\nব্যাখ্যা: cot⁻¹-এর ডোমেন।\n"
+ },
+ "21a14cfb-5f89-428b-bacf-e7ab26eee602": {
+  "mcq_solution_index": 2,
+  "answer_text": "$x$",
+  "explanation_text": "\n$\\alpha=\\cos^{-1}x$ ⇒ $\\tan\\alpha=\\frac{\\sqrt{1-x^{2}}}{x}$।\n$\\beta=\\cot^{-1}\\left(\\frac{\\sqrt{1-x^{2}}}{x}\\right)$ ⇒ $\\tan\\beta=\\frac{x}{\\sqrt{1-x^{2}}}$ ⇒ $\\sin\\beta=\\frac{x}{\\sqrt{x^{2}+1-x^{2}}}=x$।\n∴ মান x।\n\nব্যাখ্যা: ধাপে ধাপে; ফল x।\n"
+ },
+ "3d59e48d-9807-469d-8ea0-4c4d4cbee959": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{\\pi}{2}$",
+  "explanation_text": "\n$\\sec^{-1}2+\\operatorname{cosec}^{-1}2=\\frac{\\pi}{2}$ (পূরক কোণ identity)।\n\nব্যাখ্যা: পূরক identity।\n"
+ },
+ "de3f3a81-80cf-48fa-a540-64322ba7ab8d": {
+  "mcq_solution_index": 0,
+  "answer_text": "$-2 x$",
+  "explanation_text": "\n$\\sin^{-1}(-\\cos x)=\\sin^{-1}(\\sin(x-\\frac{\\pi}{2}))=x-\\frac{\\pi}{2}$ (উপযুক্ত ব্যাপ্তিতে);\n$\\sin^{-1}(\\cos3x)=\\sin^{-1}(\\sin(\\frac{\\pi}{2}-3x))=\\frac{\\pi}{2}-3x$।\nসমষ্টি $=x-\\frac{\\pi}{2}+\\frac{\\pi}{2}-3x=-2x$।\n\nব্যাখ্যা: $\\sin(x-\\frac{\\pi}{2})=-\\cos x$; ফল −2x।\n"
+ },
+ "03b0897f-c8e8-4ebc-8a1b-02cbb982fe2a": {
+  "mcq_solution_index": 2,
+  "answer_text": "$x=n \\pi \\pm \\frac{\\pi}{4}$",
+  "explanation_text": "\n$\\tan^{2}x+\\sec^{2}x=3$ ⇒ $\\tan^{2}x+1+\\tan^{2}x=3$ ⇒ $2\\tan^{2}x=2$ ⇒ $\\tan^{2}x=1$ ⇒ $\\tan x=\\pm1$।\n∴ $x=n\\pi\\pm\\frac{\\pi}{4}$।\n\nব্যাখ্যা: $\\sec^{2}x=1+\\tan^{2}x$; $x=n\\pi\\pm\\frac{\\pi}{4}$।\n"
+ },
+ "aa630dce-6a64-493e-8d92-cce8f6a97c36": {
+  "mcq_solution_index": 1,
+  "answer_text": "$\\theta=\\frac{(2 n+1) \\pi}{2}$",
+  "explanation_text": "\n$\\cot\\theta=0$ ⇒ $\\cos\\theta=0$ ⇒ $\\theta=\\frac{(2n+1)\\pi}{2}$।\n\nব্যাখ্যা: $\\cos\\frac{(2n+1)\\pi}{2}=0$।\n"
+ },
+ "f3caedea-1d9a-4296-be20-ede463926857": {
+  "mcq_solution_index": 2,
+  "answer_text": "$45^{\\circ}$",
+  "explanation_text": "\n$\\cos\\theta-\\sin\\theta=0$ ⇒ $\\tan\\theta=1$; $0^{\\circ}<\\theta<90^{\\circ}$ ⇒ $\\theta=45^{\\circ}$।\n\nব্যাখ্যা: $\\tan45^{\\circ}=1$।\n"
+ },
+ "112979a3-c58d-44ef-9258-101f6a337359": {
+  "mcq_solution_index": 2,
+  "answer_text": "$2 n \\pi \\pm \\frac{2 \\pi}{3}$",
+  "explanation_text": "\n$2\\cos x+1=0$ ⇒ $\\cos x=-\\frac{1}{2}$ ⇒ $x=2n\\pi\\pm\\frac{2\\pi}{3}$।\n\nব্যাখ্যা: $\\cos\\frac{2\\pi}{3}=-\\frac{1}{2}$।\n"
+ },
+ "bf6f8b92-8b12-48ff-a6a7-8cd619bb0d5e": {
+  "mcq_solution_index": -1,
+  "explanation_text": "\n$\\sin^{-1}\\left(-\\frac{\\sqrt{3}}{2}\\right)$-এর মুখ্যমান $-\\frac{\\pi}{3}$ (শুধু ii সত্য)।\ni. $\\frac{4\\pi}{3}$ মুখ্যমান নয় (মুখ্যমান $[-\\frac{\\pi}{2},\\frac{\\pi}{2}]$-এ); 4π/3 শুধু $\\sin\\theta=-\\frac{\\sqrt{3}}{2}$ সমীকরণের একটি মান (তৃতীয় চতুর্ভাগে)।\niii. মুখ্যমান −π/3 চতুর্থ চতুর্ভাগে — \"তৃতীয় চতুষ্কোণে\" মিথ্যা।\n∴ শুধু ii সঠিক; প্রদত্ত কোনো অপশন (জোড়া) পুরোপুরি মেলে না — প্রশ্নটি অস্পষ্ট।\n\nব্যাখ্যা: মুখ্যমান −π/3; 4π/3 মুখ্যমান নয়; তৃতীয় চতুষ্কোণ মিথ্যা।\n"
+ },
+ "7e703621-1353-46fb-be9a-a73e637e5bc8": {
+  "mcq_solution_index": 3,
+  "answer_text": "i, ii ও iii  ",
+  "explanation_text": "\ni. $\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}$ (|x|≤1) ✓।\nii. $\\tan^{-1}x+\\cot^{-1}x=\\frac{\\pi}{2}$ (x≥0) ✓।\niii. $\\operatorname{cosec}^{-1}x+\\sec^{-1}x=\\frac{\\pi}{2}$ (|x|≥1) ✓।\n∴ i, ii ও iii — সব সঠিক।\n\nব্যাখ্যা: তিনটি পূরক কোণ identity-ই সত্য।\n"
+ },
+ "91161f9e-8e00-4ea7-8550-1f9ddac04e1b": {
+  "mcq_solution_index": 3,
+  "answer_text": "i, ii ও iii  ",
+  "explanation_text": "\nθ=sin⁻¹x ধরি ($\\sin\\theta=x$):\ni. $\\sec\\theta=\\frac{1}{\\cos\\theta}=\\frac{1}{\\sqrt{1-x^{2}}}$ ⇒ $\\sec^{-1}\\frac{1}{\\sqrt{1-x^{2}}}$ ✓।\nii. $\\cos\\theta=\\sqrt{1-x^{2}}$ ⇒ $\\cos^{-1}\\sqrt{1-x^{2}}$ ✓।\niii. $\\cot\\theta=\\frac{\\cos\\theta}{\\sin\\theta}=\\frac{\\sqrt{1-x^{2}}}{x}$ ⇒ $\\cot^{-1}\\frac{\\sqrt{1-x^{2}}}{x}$ ✓।\n∴ সব সঠিক।\n\nব্যাখ্যা: θ-এর ত্রিভুজ থেকে তিনটি সম্পর্কই সত্য।\n"
+ },
+ "dd6b88d7-bf55-47d7-bd37-f54e3c8fdc76": {
+  "mcq_solution_index": 3,
+  "answer_text": "i, ii ও iii  ",
+  "explanation_text": "\ni. $y=\\cos^{-1}x$ একটি বিপরীত ত্রিকোণমিতিক ফাংশন ✓; ii. ডোমেন $[-1,1]$ ✓; iii. রেঞ্জ $[0,\\pi]$ ✓।\n∴ i, ii ও iii।\n\nব্যাখ্যা: cos⁻¹-এর ডোমেন-রেঞ্জ; সব সত্য।\n"
+ },
+ "c1b6fc8d-8a04-4d23-a50f-06c85d514e85": {
+  "mcq_solution_index": 1,
+  "answer_text": "$y=\\cos ^{-1} x$",
+  "explanation_text": "\nপরবর্তী প্রশ্নের (৬২৩) অপশন অনুযায়ী (মুখ্যমান $[0,\\pi]$ অপশনে আছে) লেখচিত্রটি $y=\\cos^{-1}x$-এর — হ্রাসমান বক্র, $(-1,\\pi)$ থেকে $(1,0)$ পর্যন্ত।\n(চিত্র text-এ নেই; রেঞ্জ অপশনগুলো থেকে অনুমিত — ৬২৩-তে শুধু $[0,\\pi]$ মিলছে।)\n\nব্যাখ্যা: রেঞ্জ থেকে cos⁻¹x-এর লেখ শনাক্তকরণ।\n"
+ },
+ "bc84d60f-c24b-4159-9b39-b164b7ba60c2": {
+  "mcq_solution_index": 3,
+  "answer_text": "$[0, \\pi]$",
+  "explanation_text": "\nযদি লেখচিত্রটি $y=\\cos^{-1}x$-এর হয় তবে y-এর মুখ্যমান (রেঞ্জ) $[0,\\pi]$ — অপশন ৪-এর সাথে মিলে যায়।\n(অন্যান্য অপশন: $(0,\\frac{\\pi}{2})$, $[0,\\frac{\\pi}{2}]$, $(0,\\pi)$ — cos⁻¹-এর রেঞ্জ $[0,\\pi]$।)\n\nব্যাখ্যা: cos⁻¹x-এর রেঞ্জ $[0,\\pi]$।\n"
+ },
+ "af0df72c-3ee3-455e-905a-bcb9216756ab": {
+  "mcq_solution_index": 2,
+  "answer_text": "$xy$",
+  "explanation_text": "\n$\\cos^{-1}x+\\cos^{-1}y=\\cos^{-1}\\left(xy-\\sqrt{1-x^{2}}\\sqrt{1-y^{2}}\\right)$।\n$x^{2}+y^{2}=1$ ⇒ $\\sqrt{1-x^{2}}=y$, $\\sqrt{1-y^{2}}=x$ (x,y≥0) ⇒ গুণফল $=xy$।\n∴ $\\cos^{-1}(xy-xy)=\\cos^{-1}0$ — তাই $A=xy$।\n\nব্যাখ্যা: $A=xy$।\n"
+ },
+ "bf907e0e-e378-4719-8414-c69cd22de74c": {
+  "mcq_solution_index": 2,
+  "answer_text": "$\\frac{\\sqrt{30}}{6}$",
+  "explanation_text": "\n$A=\\sqrt{1-x^{2}}\\sqrt{1-y^{2}}$ (৬২৪ থেকে), x=$\\frac{1}{3}$, y=$\\frac{1}{4}$:\n$A=\\sqrt{1-\\frac{1}{9}}\\sqrt{1-\\frac{1}{16}}=\\sqrt{\\frac{8}{9}}\\sqrt{\\frac{15}{16}}=\\frac{2\\sqrt{2}}{3}\\cdot\\frac{\\sqrt{15}}{4}=\\frac{2\\sqrt{30}}{12}=\\frac{\\sqrt{30}}{6}$।\n\nব্যাখ্যা: $A=\\frac{\\sqrt{30}}{6}$।\n"
+ },
+ "d68f004b-bb6b-42f2-a0d0-a4566d85196f": {
+  "mcq_solution_index": 3,
+  "answer_text": "$\\frac{1}{3} \\mathrm{n} \\pi+(-1)^{\\mathrm{n}} \\frac{\\pi}{18}$",
+  "explanation_text": "\n$p(x)=\\sin3x=\\frac{1}{2}$ ⇒ $3x=n\\pi+(-1)^{n}\\frac{\\pi}{6}$ ⇒ $x=\\frac{n\\pi}{3}+(-1)^{n}\\frac{\\pi}{18}$।\n\nব্যাখ্যা: সাধারণ সমাধান; $\\frac{n\\pi}{3}+(-1)^{n}\\frac{\\pi}{18}$।\n"
+ },
+ "319c12e8-6761-4b7c-9b52-c4569c446312": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{-\\pi}{2}$",
+  "explanation_text": "\n$p\\left(\\frac{1}{3}x\\right)=\\sin\\left(3\\cdot\\frac{x}{3}\\right)=\\sin x=-1$ ⇒ $x=2n\\pi-\\frac{\\pi}{2}$।\nপ্রদত্ত অপশনে $-\\frac{\\pi}{2}$ (n=0) ✓।\n\nব্যাখ্যা: sinx=−1; $x=-\\frac{\\pi}{2}+2n\\pi$।\n"
+ },
+ "7fdbf2f8-d631-41b9-9024-49e90b68851c": {
+  "mcq_solution_index": 0,
+  "answer_text": "$\\frac{3}{5}$",
+  "explanation_text": "\n৩য় ফাংশন $\\tan^{-1}\\frac{1}{3}=\\frac{1}{2}\\sin^{-1}x$ ধরা হলে:\n$\\sin^{-1}x=2\\tan^{-1}\\frac{1}{3}$ ⇒ $x=\\sin\\left(2\\tan^{-1}\\frac{1}{3}\\right)=\\frac{2\\cdot\\frac{1}{3}}{1+\\frac{1}{9}}=\\frac{2/3}{10/9}=\\frac{3}{5}$।\n\nব্যাখ্যা: $\\sin2\\theta=\\frac{2t}{1+t^{2}}$; $x=\\frac{3}{5}$।\n"
+ },
+ "e52d182c-4ced-428a-8bb4-d8073d7ebf07": {
+  "mcq_solution_index": 0,
+  "answer_text": "১ম ফাংশন",
+  "explanation_text": "\n১ম = $\\cos^{-1}\\frac{1}{\\sqrt{5}}=\\tan^{-1}2$; ২য় = $\\frac{1}{2}\\sin^{-1}\\frac{3}{5}=\\tan^{-1}\\frac{1}{3}$; ৩য় = $\\tan^{-1}\\frac{1}{3}$।\n১ম − ২য় + ৩য় = $\\tan^{-1}2-\\tan^{-1}\\frac{1}{3}+\\tan^{-1}\\frac{1}{3}=\\tan^{-1}2$ = ১ম ফাংশন।\n\nব্যাখ্যা: ২য় ও ৩য় বাতিল; ফল ১ম ফাংশন।\n"
+ },
+ "4574d43d-1523-45e8-b424-d33ba8809275": {
+  "mcq_solution_index": 0,
+  "answer_text": "$x=n \\pi+\\frac{\\pi}{3}$",
+  "explanation_text": "\n$\\tan x=\\sqrt{3}$ ⇒ $x=n\\pi+\\frac{\\pi}{3}$, $n\\in\\mathbb{Z}$।\n\nব্যাখ্যা: $\\tan\\frac{\\pi}{3}=\\sqrt{3}$; সাধারণ সমাধান $n\\pi+\\frac{\\pi}{3}$।\n"
+ }
+}
