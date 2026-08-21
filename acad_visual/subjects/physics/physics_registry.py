@@ -7741,13 +7741,11 @@ class PhysicsRegistry:
                 Segment(id="pl3", start=(pl_x1, bx_T + 53.0), end=(pl_x2, bx_T + 53.0), stroke_width=3.5, color="#111111"),
                 Segment(id="pl4", start=(pl_x1, pl4_y),        end=(pl_x2, pl4_y),        stroke_width=3.5, color="#111111"),
 
-                # ── 3 vertical tick marks ABOVE the bottom (4th) plate ──
-                # Left tick: at left end of plate
-                Segment(id="tick_l",  start=(pl_x1,  pl4_y - tick_h), end=(pl_x1,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
-                # Middle tick: at midpoint of plate
-                Segment(id="tick_m",  start=(pl_xm,  pl4_y - tick_h), end=(pl_xm,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
-                # Right tick: at right end of plate
-                Segment(id="tick_r",  start=(pl_x2,  pl4_y - tick_h), end=(pl_x2,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
+                # ── Dotted vertical lines + labels ABOVE the bottom (4th) plate ──
+                # Left dotted line: at left end of plate, going up with 'a' label
+                Segment(id="dot_l", start=(pl_x1, pl4_y - 2.0), end=(pl_x1, pl4_y - 14.0), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DOTTED),
+                # Right dotted line: at right end of plate, going up with 'b' label
+                Segment(id="dot_r", start=(pl_x2, pl4_y - 2.0), end=(pl_x2, pl4_y - 14.0), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DOTTED),
 
                 # ── Circuit wiring ──
                 Segment(id="wr_d",    start=(wx, wy),             end=(wx, bat_y),           stroke_width=1.8, color="#111111"),
@@ -7761,10 +7759,18 @@ class PhysicsRegistry:
                 Segment(id="bat_c", start=(bat_x - 2.0,  bat_y - 12.0), end=(bat_x - 2.0,  bat_y + 12.0), stroke_width=3.0, color="#111111"),
                 Segment(id="bat_d", start=(bat_x + 8.0,  bat_y - 8.0),  end=(bat_x + 8.0,  bat_y + 8.0),  stroke_width=1.8, color="#111111"),
             ]
+            # Center dot above the bottom plate
+            circles = [
+                Circle(id="dot_mid", center=(pl_xm, pl4_y - 8.0), radius=2.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
             labels = [
                 MathLabel(id="lbl_v", text="V = 10 V", x=bat_x - 7.0, y=bat_y + 30.0, font_size=15.0, font_weight="bold", anchor="middle"),
+                # 'a' label above left dotted line
+                MathLabel(id="lbl_a", text="a", x=pl_x1, y=pl4_y - 20.0, font_size=14.0, font_style="italic"),
+                # 'b' label above right dotted line
+                MathLabel(id="lbl_b", text="b", x=pl_x2, y=pl4_y - 20.0, font_size=14.0, font_style="italic"),
             ]
-            return VisualIR(title="Academic Visual Diagram", width=340.0, height=230.0, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Academic Visual Diagram", width=340.0, height=230.0, coordinate_frame=cf, segments=segments, circles=circles, labels=labels, background_color="#ffffff")
 
 
         # 74. 2ae71196: (ক) parallel plates X, Y with battery E; (খ) parallel plates with suspended charged ball
