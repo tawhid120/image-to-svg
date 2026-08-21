@@ -6559,46 +6559,68 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # f9e511e4: Three Charges A, B, C with Electric Field Lines
         # ----------------------------------------------------
+        # f9e511e4: Three Charges A, B, C with Electric Field Lines
+        # ----------------------------------------------------
         if "f9e511e4" in stem:
-            w, h = 400.0, 340.0
+            w, h = 420.0, 360.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA, rA = 200.0, 80.0, 18.0
-            xB, yB, rB = 100.0, 220.0, 18.0
-            xC, yC, rC = 300.0, 220.0, 18.0
+            xA, yA, rA = 210.0, 80.0, 18.0
+            xB, yB, rB = 120.0, 230.0, 18.0
+            xC, yC, rC = 300.0, 230.0, 18.0
 
             circles = [
                 Circle(id="sph_a", center=(xA, yA), radius=rA, stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
                 Circle(id="sph_b", center=(xB, yB), radius=rB, stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
                 Circle(id="sph_c", center=(xC, yC), radius=rC, stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
             ]
+
             bezier_paths = [
-                # Curves A to B
-                BezierPath(id="ab_1", path_d=f"M {xA - 12},{yA + 12} C {xA - 60},{yA + 40} {xB + 10},{yB - 60} {xB + 12},{yB - 12}", stroke_width=2.0, stroke_color="#111111"),
-                BezierPath(id="ab_2", path_d=f"M {xA - 5},{yA + 16} C {xA - 30},{yA + 90} {xB + 40},{yB - 20} {xB + 16},{yB - 5}", stroke_width=2.0, stroke_color="#111111"),
-                # Curves A to C
-                BezierPath(id="ac_1", path_d=f"M {xA + 12},{yA + 12} C {xA + 60},{yA + 40} {xC - 10},{yB - 60} {xC - 12},{yB - 12}", stroke_width=2.0, stroke_color="#111111"),
-                BezierPath(id="ac_2", path_d=f"M {xA + 5},{yA + 16} C {xA + 30},{yA + 90} {xC - 40},{yB - 20} {xC - 16},{yB - 5}", stroke_width=2.0, stroke_color="#111111"),
+                # 3 Curved field lines from A to B
+                BezierPath(id="ab_outer", path_d=f"M {xA - 14.0} {yA - 6.0} C {xA - 90.0} {yA + 20.0} {xB - 35.0} {yB - 80.0} {xB - 14.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="ab_mid", path_d=f"M {xA - 10.0} {yA + 12.0} C {xA - 55.0} {yA + 55.0} {xB + 5.0} {yB - 65.0} {xB + 4.0} {yB - 17.0}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="ab_inner", path_d=f"M {xA - 3.0} {yA + 17.0} C {xA - 25.0} {yA + 80.0} {xB + 40.0} {yB - 35.0} {xB + 16.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
+
+                # Mid-curve arrowheads from A to B (pointing downwards along the trajectories)
+                BezierPath(id="arr_ab_out", path_d="M 125.0 135.0 L 129.0 122.0 L 121.0 126.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+                BezierPath(id="arr_ab_mid", path_d="M 152.0 148.0 L 157.0 135.0 L 149.0 138.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+                BezierPath(id="arr_ab_inn", path_d="M 175.0 170.0 L 182.0 158.0 L 173.0 160.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+
+                # 3 Curved field lines from A to C
+                BezierPath(id="ac_outer", path_d=f"M {xA + 14.0} {yA - 6.0} C {xA + 90.0} {yA + 20.0} {xC + 35.0} {yB - 80.0} {xC + 14.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="ac_mid", path_d=f"M {xA + 10.0} {yA + 12.0} C {xA + 55.0} {yA + 55.0} {xC - 5.0} {yB - 65.0} {xC - 4.0} {yB - 17.0}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="ac_inner", path_d=f"M {xA + 3.0} {yA + 17.0} C {xA + 25.0} {yA + 80.0} {xC - 40.0} {yB - 35.0} {xC - 16.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
+
+                # Mid-curve arrowheads from A to C (pointing downwards along the trajectories)
+                BezierPath(id="arr_ac_out", path_d="M 295.0 135.0 L 299.0 126.0 L 291.0 122.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+                BezierPath(id="arr_ac_mid", path_d="M 268.0 148.0 L 271.0 138.0 L 263.0 135.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+                BezierPath(id="arr_ac_inn", path_d="M 245.0 170.0 L 247.0 160.0 L 238.0 158.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
             ]
+
             segments = [
-                # Outward field from A
-                Segment(id="fa_top", start=(xA, yA - rA), end=(xA, yA - rA - 40.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fa_tl", start=(xA - 14.0, yA - 14.0), end=(xA - 45.0, yA - 35.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fa_tr", start=(xA + 14.0, yA - 14.0), end=(xA + 45.0, yA - 35.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                # Inward field to B
-                Segment(id="fb_bl", start=(xB - 35.0, yB + 45.0), end=(xB - 14.0, yB + 14.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fb_b", start=(xB, yB + 55.0), end=(xB, yB + rB), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fb_br", start=(xB + 35.0, yB + 45.0), end=(xB + 14.0, yB + 14.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                # Inward field to C
-                Segment(id="fc_bl", start=(xC - 35.0, yC + 45.0), end=(xC - 14.0, yC + 14.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fc_b", start=(xC, yC + 55.0), end=(xC, yC + rC), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fc_br", start=(xC + 35.0, yC + 45.0), end=(xC + 14.0, yC + 14.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Outward field lines from A (Pointing Up and Outwards)
+                Segment(id="fa_top", start=(xA, yA - rA), end=(xA, yA - rA - 42.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fa_tl", start=(xA - 13.0, yA - 13.0), end=(xA - 48.0, yA - 38.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fa_tr", start=(xA + 13.0, yA - 13.0), end=(xA + 48.0, yA - 38.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fa_l", start=(xA - rA, yA), end=(xA - rA - 35.0, yA - 10.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fa_r", start=(xA + rA, yA), end=(xA + rA + 35.0, yA - 10.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+
+                # Outward/downward diverging field lines from B
+                Segment(id="fb_l", start=(xB - 14.0, yB + 6.0), end=(xB - 45.0, yB + 40.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fb_b", start=(xB - 3.0, yB + rB), end=(xB - 15.0, yB + rB + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fb_r", start=(xB + 10.0, yB + rB - 2.0), end=(xB + 22.0, yB + rB + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+
+                # Outward/downward diverging field lines from C
+                Segment(id="fc_l", start=(xC - 10.0, yC + rC - 2.0), end=(xC - 22.0, yC + rC + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_b", start=(xC + 3.0, yC + rC), end=(xC + 15.0, yC + rC + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_r", start=(xC + 14.0, yC + 6.0), end=(xC + 45.0, yC + 40.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_far_r", start=(xC + rC, yC - 4.0), end=(xC + rC + 40.0, yC - 25.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
                 MathLabel(id="lbl_a", text="A", x=xA, y=yA, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_b", text="B", x=xB, y=yB, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_c", text="C", x=xC, y=yC, font_size=18.0, font_weight="bold"),
             ]
-            return VisualIR(title="Three Charges with Field Lines", width=w, height=h, coordinate_frame=cf, circles=circles, bezier_paths=bezier_paths, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Three Charges with Electric Field Lines", width=w, height=h, coordinate_frame=cf, circles=circles, bezier_paths=bezier_paths, segments=segments, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # fcb482ab: Triangle ABC with Base Point D and Charges
