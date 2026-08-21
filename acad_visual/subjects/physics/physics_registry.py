@@ -7256,52 +7256,91 @@ class PhysicsRegistry:
             return VisualIR(
                 width=w, height=h,
                 segments=[
-                    # Panel 1 (left)
-                    Segment(id="p1_w_l", start=(25, 70), end=(45, 70), stroke_width=2),
-                    Segment(id="p1_w_ld", start=(25, 70), end=(25, 130), stroke_width=2),
-                    Segment(id="p1_w_lb", start=(25, 130), end=(70, 130), stroke_width=2),
-                    Segment(id="p1_w_r", start=(95, 70), end=(115, 70), stroke_width=2),
-                    Segment(id="p1_w_rd", start=(115, 70), end=(115, 130), stroke_width=2),
-                    Segment(id="p1_w_rb", start=(115, 130), end=(80, 130), stroke_width=2),
-                    # Battery 1
-                    Segment(id="p1_bat_l", start=(70, 123), end=(70, 137), stroke_width=3),
-                    Segment(id="p1_bat_r", start=(78, 126), end=(78, 134), stroke_width=2),
-                    # Plates 1
-                    Segment(id="p1_pl", start=(45, 25), end=(45, 110), stroke_width=3),
-                    Segment(id="p1_pm", start=(70, 25), end=(70, 110), stroke_width=2),
-                    Segment(id="p1_pr", start=(95, 25), end=(95, 110), stroke_width=3),
+                    # --- PANEL 1 (চিত্র-১) ---
+                    # Left, Middle, Right vertical plate boundaries
+                    Segment(id="p1_pl", start=(60, 30), end=(60, 140), stroke_width=3.5),
+                    Segment(id="p1_pm", start=(95, 30), end=(95, 140), stroke_width=2.2),
+                    Segment(id="p1_pr", start=(130, 30), end=(130, 140), stroke_width=3.5),
+                    # Hatching lines in K1 (left slab)
+                    Segment(id="p1_h1_1", start=(60, 55), end=(85, 30), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h1_2", start=(60, 80), end=(95, 45), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h1_3", start=(60, 105), end=(95, 70), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h1_4", start=(60, 130), end=(95, 95), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h1_5", start=(75, 140), end=(95, 120), stroke_width=1.2, color="#555555"),
+                    # Hatching lines in K2 (right slab)
+                    Segment(id="p1_h2_1", start=(95, 55), end=(120, 30), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h2_2", start=(95, 80), end=(130, 45), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h2_3", start=(95, 105), end=(130, 70), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h2_4", start=(95, 130), end=(130, 95), stroke_width=1.2, color="#555555"),
+                    Segment(id="p1_h2_5", start=(110, 140), end=(130, 120), stroke_width=1.2, color="#555555"),
+                    # Dimension arrows d/2 and d/2
+                    Segment(id="p1_dim1", start=(60, 155), end=(95, 155), stroke_width=1.6, arrows=ArrowType.BOTH),
+                    Segment(id="p1_dim2", start=(95, 155), end=(130, 155), stroke_width=1.6, arrows=ArrowType.BOTH),
+                    # Wires and battery
+                    Segment(id="p1_wl", start=(60, 85), end=(30, 85), stroke_width=2.2),
+                    Segment(id="p1_wld", start=(30, 85), end=(30, 205), stroke_width=2.2),
+                    Segment(id="p1_wlb", start=(30, 205), end=(88, 205), stroke_width=2.2),
+                    Segment(id="p1_wr", start=(130, 85), end=(160, 85), stroke_width=2.2),
+                    Segment(id="p1_wrd", start=(160, 85), end=(160, 205), stroke_width=2.2),
+                    Segment(id="p1_wrb", start=(160, 205), end=(102, 205), stroke_width=2.2),
+                    Segment(id="p1_bat_l", start=(88, 192), end=(88, 218), stroke_width=3.2),
+                    Segment(id="p1_bat_r", start=(102, 197), end=(102, 213), stroke_width=2.0),
 
-                    # Panel 2 (middle)
-                    Segment(id="p2_w_l", start=(160, 70), end=(185, 70), stroke_width=2),
-                    Segment(id="p2_w_ld", start=(160, 70), end=(160, 145), stroke_width=2),
-                    Segment(id="p2_w_lb", start=(160, 145), end=(210, 145), stroke_width=2),
-                    Segment(id="p2_w_r", start=(225, 70), end=(250, 70), stroke_width=2),
-                    Segment(id="p2_w_rd", start=(250, 70), end=(250, 145), stroke_width=2),
-                    Segment(id="p2_w_rb", start=(250, 145), end=(220, 145), stroke_width=2),
-                    # Battery 2
-                    Segment(id="p2_bat_l", start=(210, 138), end=(210, 152), stroke_width=3),
-                    Segment(id="p2_bat_r", start=(218, 141), end=(218, 149), stroke_width=2),
-                    # Plates 2
-                    Segment(id="p2_pl", start=(185, 30), end=(185, 120), stroke_width=3),
-                    Segment(id="p2_pr", start=(225, 30), end=(225, 120), stroke_width=3),
-                    Segment(id="p2_pm_h", start=(185, 75), end=(225, 75), stroke_width=2, stroke_style=StrokeStyle.DASHED),
+                    # --- PANEL 2 (চিত্র-২) ---
+                    # Left, Right plate boundaries
+                    Segment(id="p2_pl", start=(235, 30), end=(235, 140), stroke_width=3.5),
+                    Segment(id="p2_pr", start=(305, 30), end=(305, 140), stroke_width=3.5),
+                    # Center horizontal dashed split
+                    Segment(id="p2_pm_h", start=(235, 85), end=(305, 85), stroke_width=2.0, stroke_style=StrokeStyle.DASHED),
+                    # Hatching lines in K1 (top half)
+                    Segment(id="p2_h1_1", start=(235, 55), end=(260, 30), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h1_2", start=(235, 80), end=(285, 30), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h1_3", start=(250, 85), end=(305, 30), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h1_4", start=(275, 85), end=(305, 55), stroke_width=1.2, color="#555555"),
+                    # Hatching lines in K2 (bottom half)
+                    Segment(id="p2_h2_1", start=(235, 110), end=(260, 85), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h2_2", start=(235, 135), end=(285, 85), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h2_3", start=(250, 140), end=(305, 85), stroke_width=1.2, color="#555555"),
+                    Segment(id="p2_h2_4", start=(275, 140), end=(305, 110), stroke_width=1.2, color="#555555"),
+                    # Left vertical dimension arrows A/2 and A/2
+                    Segment(id="p2_vdim1", start=(215, 30), end=(215, 85), stroke_width=1.6, arrows=ArrowType.BOTH),
+                    Segment(id="p2_vdim2", start=(215, 85), end=(215, 140), stroke_width=1.6, arrows=ArrowType.BOTH),
+                    # Bottom horizontal dimension d
+                    Segment(id="p2_hdim", start=(235, 155), end=(305, 155), stroke_width=1.6, arrows=ArrowType.BOTH),
+                    # Wires and battery
+                    Segment(id="p2_wl", start=(235, 85), end=(185, 85), stroke_width=2.2),
+                    Segment(id="p2_wld", start=(185, 85), end=(185, 205), stroke_width=2.2),
+                    Segment(id="p2_wlb", start=(185, 205), end=(263, 205), stroke_width=2.2),
+                    Segment(id="p2_wr", start=(305, 85), end=(335, 85), stroke_width=2.2),
+                    Segment(id="p2_wrd", start=(335, 85), end=(335, 205), stroke_width=2.2),
+                    Segment(id="p2_wrb", start=(335, 205), end=(277, 205), stroke_width=2.2),
+                    Segment(id="p2_bat_l", start=(263, 192), end=(263, 218), stroke_width=3.2),
+                    Segment(id="p2_bat_r", start=(277, 197), end=(277, 213), stroke_width=2.0),
                 ],
                 labels=[
-                    MathLabel(id="p1_lbl_a", text="A", x=35, y=30, font_size=13, font_weight="bold"),
-                    MathLabel(id="p1_lbl_k1", text="K₁", x=57, y=65, font_size=12, font_weight="bold"),
-                    MathLabel(id="p1_lbl_k2", text="K₂", x=82, y=65, font_size=12, font_weight="bold"),
-                    MathLabel(id="p1_lbl_v", text="20 V", x=75, y=152, font_size=13, font_weight="bold"),
-                    MathLabel(id="p1_lbl_cap", text="চিত্র-১", x=75, y=170, font_size=14, font_weight="bold"),
+                    # Panel 1 labels
+                    MathLabel(id="p1_lbl_a", text="A", x=50, y=25, font_size=16, font_weight="bold"),
+                    MathLabel(id="p1_lbl_k1", text="K₁", x=77.5, y=85, font_size=15, font_weight="bold"),
+                    MathLabel(id="p1_lbl_k2", text="K₂", x=112.5, y=85, font_size=15, font_weight="bold"),
+                    MathLabel(id="p1_lbl_d1", text="d/2", x=77.5, y=175, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_d2", text="d/2", x=112.5, y=175, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_v", text="20 V", x=95, y=230, font_size=15, font_weight="bold"),
+                    MathLabel(id="p1_lbl_cap", text="চিত্র-১", x=95, y=255, font_size=16, font_weight="bold"),
 
-                    MathLabel(id="p2_lbl_k1", text="K₁", x=205, y=52, font_size=12, font_weight="bold"),
-                    MathLabel(id="p2_lbl_k2", text="K₂", x=205, y=98, font_size=12, font_weight="bold"),
-                    MathLabel(id="p2_lbl_v", text="20 V", x=215, y=165, font_size=13, font_weight="bold"),
-                    MathLabel(id="p2_lbl_cap", text="চিত্র-২", x=215, y=182, font_size=14, font_weight="bold"),
+                    # Panel 2 labels
+                    MathLabel(id="p2_lbl_a1", text="A/2", x=195, y=57, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_a2", text="A/2", x=195, y=112, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_k1", text="K₁", x=270, y=57, font_size=15, font_weight="bold"),
+                    MathLabel(id="p2_lbl_k2", text="K₂", x=270, y=112, font_size=15, font_weight="bold"),
+                    MathLabel(id="p2_lbl_d", text="d", x=270, y=175, font_size=14, font_weight="bold"),
+                    MathLabel(id="p2_lbl_v", text="20 V", x=270, y=230, font_size=15, font_weight="bold"),
+                    MathLabel(id="p2_lbl_cap", text="চিত্র-২", x=270, y=255, font_size=16, font_weight="bold"),
 
-                    MathLabel(id="lbl_leg1", text="A = 1.5 m²", x=310, y=45, font_size=13, font_weight="bold"),
-                    MathLabel(id="lbl_leg2", text="d = 0.02 m", x=310, y=68, font_size=13, font_weight="bold"),
-                    MathLabel(id="lbl_leg3", text="K₁ = 2", x=300, y=90, font_size=13, font_weight="bold"),
-                    MathLabel(id="lbl_leg4", text="K₂ = 5", x=300, y=112, font_size=13, font_weight="bold"),
+                    # Right Legend
+                    MathLabel(id="lbl_leg1", text="A = 1.5 m²", x=405, y=55, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_leg2", text="d = 0.02 m", x=405, y=85, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_leg3", text="K₁ = 2", x=395, y=115, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_leg4", text="K₂ = 5", x=395, y=145, font_size=15, font_weight="bold"),
                 ]
             )
 
