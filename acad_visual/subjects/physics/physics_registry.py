@@ -5385,85 +5385,135 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # b86ae48c: Two-Mesh Circuit with Voltmeter V
         # ----------------------------------------------------
+        # b86ae48c: Two-Mesh Circuit with Voltmeter V
+        # ----------------------------------------------------
         if "b86ae48c" in stem:
-            w, h = 480.0, 320.0
+            w, h = 480.0, 280.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
 
             def make_resistor_h(prefix, x0, x1, y):
-                dx = (x1 - x0) / 6.0
-                pts = [(x0, y), (x0 + dx, y - 7.0), (x0 + 2*dx, y + 7.0), (x0 + 3*dx, y - 7.0), (x0 + 4*dx, y + 7.0), (x0 + 5*dx, y - 7.0), (x1, y)]
+                min_x, max_x = min(x0, x1), max(x0, x1)
+                dx = (max_x - min_x) / 6.0
+                pts = [
+                    (min_x, y),
+                    (min_x + dx * 0.5, y - 6.5),
+                    (min_x + dx * 1.5, y + 6.5),
+                    (min_x + dx * 2.5, y - 6.5),
+                    (min_x + dx * 3.5, y + 6.5),
+                    (min_x + dx * 4.5, y - 6.5),
+                    (min_x + dx * 5.5, y + 6.5),
+                    (max_x, y)
+                ]
                 segs = []
-                for i in range(len(pts)-1):
+                for i in range(len(pts) - 1):
                     segs.append(Segment(id=f"{prefix}_{i}", start=pts[i], end=pts[i+1], stroke_width=2.2, color="#111111"))
                 return segs
 
             def make_resistor_v(prefix, y0, y1, x):
-                dy = (y1 - y0) / 6.0
-                pts = [(x, y0), (x - 7.0, y0 + dy), (x + 7.0, y0 + 2*dy), (x - 7.0, y0 + 3*dy), (x + 7.0, y0 + 4*dy), (x - 7.0, y0 + 5*dy), (x, y1)]
+                min_y, max_y = min(y0, y1), max(y0, y1)
+                dy = (max_y - min_y) / 6.0
+                pts = [
+                    (x, min_y),
+                    (x - 6.5, min_y + dy * 0.5),
+                    (x + 6.5, min_y + dy * 1.5),
+                    (x - 6.5, min_y + dy * 2.5),
+                    (x + 6.5, min_y + dy * 3.5),
+                    (x - 6.5, min_y + dy * 4.5),
+                    (x + 6.5, min_y + dy * 5.5),
+                    (x, max_y)
+                ]
                 segs = []
-                for i in range(len(pts)-1):
+                for i in range(len(pts) - 1):
                     segs.append(Segment(id=f"{prefix}_{i}", start=pts[i], end=pts[i+1], stroke_width=2.2, color="#111111"))
                 return segs
 
             circles = [
                 Circle(id="pt_a", center=(70.0, 60.0), radius=4.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                Circle(id="pt_b", center=(350.0, 210.0), radius=4.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                Circle(id="vm", center=(160.0, 270.0), radius=14.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="pt_b", center=(340.0, 180.0), radius=4.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="vm", center=(185.0, 240.0), radius=14.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
             ]
+
+            bezier_paths = [
+                # Loop current 1: Clockwise circular arc with arrowhead around I1
+                BezierPath(id="arc_i1", path_d="M 136.0 106.0 A 15.0 15.0 0 1 1 138.0 134.0", stroke_color="#111111", stroke_width=2.0),
+                BezierPath(id="arr_i1", path_d="M 138.0 134.0 L 148.0 130.0 L 142.0 138.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+
+                # Loop current 2: Clockwise circular arc with arrowhead around I2
+                BezierPath(id="arc_i2", path_d="M 378.0 106.0 A 15.0 15.0 0 1 1 380.0 134.0", stroke_color="#111111", stroke_width=2.0),
+                BezierPath(id="arr_i2", path_d="M 380.0 134.0 L 390.0 130.0 L 384.0 138.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+            ]
+
             segments = [
                 # Left Mesh: Loop 1
                 Segment(id="l1_b", start=(70.0, 60.0), end=(70.0, 115.0), stroke_width=2.2, color="#111111"),
                 Segment(id="l1_bp", start=(58.0, 115.0), end=(82.0, 115.0), stroke_width=3.0, color="#111111"),
                 Segment(id="l1_bn", start=(63.0, 125.0), end=(77.0, 125.0), stroke_width=4.5, color="#111111"),
                 Segment(id="l1_b2", start=(70.0, 125.0), end=(70.0, 180.0), stroke_width=2.2, color="#111111"),
-                Segment(id="l1_top_w", start=(70.0, 60.0), end=(100.0, 60.0), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_l1_t", 100.0, 150.0, 60.0),
-                Segment(id="l1_top_w2", start=(150.0, 60.0), end=(170.0, 60.0), stroke_width=2.2, color="#111111"),
+
+                Segment(id="l1_top_w", start=(70.0, 60.0), end=(95.0, 60.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_l1_t", 95.0, 145.0, 60.0),
+                Segment(id="l1_top_w2", start=(145.0, 60.0), end=(170.0, 60.0), stroke_width=2.2, color="#111111"),
                 Segment(id="l1_r", start=(170.0, 60.0), end=(170.0, 180.0), stroke_width=2.2, color="#111111"),
-                Segment(id="l1_bot_w", start=(70.0, 180.0), end=(100.0, 180.0), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_l1_b", 100.0, 150.0, 180.0),
-                Segment(id="l1_bot_w2", start=(150.0, 180.0), end=(170.0, 180.0), stroke_width=2.2, color="#111111"),
-                # Coupling between loops
-                Segment(id="c_w1", start=(170.0, 180.0), end=(220.0, 180.0), stroke_width=2.2, color="#111111"),
-                Segment(id="c_bp", start=(220.0, 168.0), end=(220.0, 192.0), stroke_width=3.0, color="#111111"),
-                Segment(id="c_bn", start=(228.0, 173.0), end=(228.0, 187.0), stroke_width=4.5, color="#111111"),
-                Segment(id="c_w2", start=(228.0, 180.0), end=(280.0, 180.0), stroke_width=2.2, color="#111111"),
-                Segment(id="c_up", start=(280.0, 180.0), end=(280.0, 150.0), stroke_width=2.2, color="#111111"),
-                *make_resistor_v("r_c", 150.0, 90.0, 280.0),
-                Segment(id="c_top", start=(280.0, 90.0), end=(350.0, 90.0), stroke_width=2.2, color="#111111"),
+
+                Segment(id="l1_bot_w", start=(70.0, 180.0), end=(95.0, 180.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_l1_b", 95.0, 145.0, 180.0),
+                Segment(id="l1_bot_w2", start=(145.0, 180.0), end=(170.0, 180.0), stroke_width=2.2, color="#111111"),
+
+                # Coupling branch with 5V battery
+                Segment(id="c_w1", start=(170.0, 180.0), end=(215.0, 180.0), stroke_width=2.2, color="#111111"),
+                Segment(id="c_bp", start=(215.0, 168.0), end=(215.0, 192.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c_bn", start=(223.0, 173.0), end=(223.0, 187.0), stroke_width=4.5, color="#111111"),
+                Segment(id="c_w2", start=(223.0, 180.0), end=(270.0, 180.0), stroke_width=2.2, color="#111111"),
+
+                # Vertical 10 ohm resistor between y=180 and y=60
+                Segment(id="c_up1", start=(270.0, 180.0), end=(270.0, 145.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_v("r_c", 95.0, 145.0, 270.0),
+                Segment(id="c_up2", start=(270.0, 95.0), end=(270.0, 60.0), stroke_width=2.2, color="#111111"),
+
                 # Right Mesh: Loop 2
-                *make_resistor_v("r_l2_m", 90.0, 180.0, 350.0),
-                Segment(id="l2_down", start=(350.0, 180.0), end=(350.0, 210.0), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_l2_t", 350.0, 410.0, 90.0),
-                Segment(id="l2_tr", start=(410.0, 90.0), end=(450.0, 90.0), stroke_width=2.2, color="#111111"),
-                Segment(id="l2_r1", start=(450.0, 90.0), end=(450.0, 140.0), stroke_width=2.2, color="#111111"),
-                Segment(id="l2_bp", start=(438.0, 140.0), end=(462.0, 140.0), stroke_width=3.0, color="#111111"),
-                Segment(id="l2_bn", start=(443.0, 150.0), end=(457.0, 150.0), stroke_width=4.5, color="#111111"),
-                Segment(id="l2_r2", start=(450.0, 150.0), end=(450.0, 210.0), stroke_width=2.2, color="#111111"),
-                Segment(id="l2_bot", start=(450.0, 210.0), end=(350.0, 210.0), stroke_width=2.2, color="#111111"),
-                # Voltmeter loop from a to b
+                # Top horizontal wire from 270 across 340 to 420
+                Segment(id="l2_top1", start=(270.0, 60.0), end=(340.0, 60.0), stroke_width=2.2, color="#111111"),
+                Segment(id="l2_top2", start=(340.0, 60.0), end=(360.0, 60.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_l2_t", 360.0, 410.0, 60.0),
+                Segment(id="l2_top3", start=(410.0, 60.0), end=(430.0, 60.0), stroke_width=2.2, color="#111111"),
+
+                # Vertical 4 ohm resistor from (340, 60) down to node b at (340, 180)
+                Segment(id="l2_m1", start=(340.0, 60.0), end=(340.0, 95.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_v("r_l2_m", 95.0, 145.0, 340.0),
+                Segment(id="l2_m2", start=(340.0, 145.0), end=(340.0, 180.0), stroke_width=2.2, color="#111111"),
+
+                # Right 30V battery branch
+                Segment(id="l2_r1", start=(430.0, 60.0), end=(430.0, 115.0), stroke_width=2.2, color="#111111"),
+                Segment(id="l2_bp", start=(418.0, 115.0), end=(442.0, 115.0), stroke_width=3.0, color="#111111"),
+                Segment(id="l2_bn", start=(423.0, 125.0), end=(437.0, 125.0), stroke_width=4.5, color="#111111"),
+                Segment(id="l2_r2", start=(430.0, 125.0), end=(430.0, 180.0), stroke_width=2.2, color="#111111"),
+
+                # Bottom wire from (430, 180) to node b (340, 180)
+                Segment(id="l2_bot", start=(430.0, 180.0), end=(340.0, 180.0), stroke_width=2.2, color="#111111"),
+
+                # Voltmeter loop from a (70, 60) to b (340, 180)
                 Segment(id="vm_l1", start=(70.0, 60.0), end=(30.0, 60.0), stroke_width=2.2, color="#111111"),
-                Segment(id="vm_l2", start=(30.0, 60.0), end=(30.0, 270.0), stroke_width=2.2, color="#111111"),
-                Segment(id="vm_l3", start=(30.0, 270.0), end=(146.0, 270.0), stroke_width=2.2, color="#111111"),
-                Segment(id="vm_r1", start=(174.0, 270.0), end=(350.0, 270.0), stroke_width=2.2, color="#111111"),
-                Segment(id="vm_r2", start=(350.0, 270.0), end=(350.0, 210.0), stroke_width=2.2, color="#111111"),
+                Segment(id="vm_l2", start=(30.0, 60.0), end=(30.0, 240.0), stroke_width=2.2, color="#111111"),
+                Segment(id="vm_l3", start=(30.0, 240.0), end=(171.0, 240.0), stroke_width=2.2, color="#111111"),
+                Segment(id="vm_r1", start=(199.0, 240.0), end=(340.0, 240.0), stroke_width=2.2, color="#111111"),
+                Segment(id="vm_r2", start=(340.0, 240.0), end=(340.0, 180.0), stroke_width=2.2, color="#111111"),
             ]
             labels = [
                 MathLabel(id="lbl_a", text="a", x=70.0, y=45.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="b", x=362.0, y=225.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_v1", text="20\text{V}", x=95.0, y=120.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r1_t", text="5\Omega", x=125.0, y=42.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r1_b", text="5\Omega", x=125.0, y=200.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_i1", text="I_1", x=145.0, y=120.0, font_size=17.0, font_weight="bold"),
-                MathLabel(id="lbl_v_mid", text="5\text{V}", x=224.0, y=155.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_mid", text="10\Omega", x=250.0, y=120.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r2_m", text="4\Omega", x=325.0, y=140.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r2_t", text="5\Omega", x=380.0, y=72.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_i2", text="I_2", x=385.0, y=125.0, font_size=17.0, font_weight="bold"),
-                MathLabel(id="lbl_v2", text="30\text{V}", x=415.0, y=175.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_vm", text="V", x=160.0, y=270.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="b", x=352.0, y=192.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_v1", text="20 V", x=95.0, y=120.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r1_t", text="5 Ω", x=120.0, y=42.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r1_b", text="5 Ω", x=120.0, y=200.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_i1", text="I_1", x=148.0, y=120.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_v_mid", text="5 V", x=219.0, y=155.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_mid", text="10 Ω", x=240.0, y=120.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r2_m", text="4 Ω", x=318.0, y=120.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r2_t", text="5 Ω", x=385.0, y=42.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_i2", text="I_2", x=390.0, y=120.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_v2", text="30 V", x=395.0, y=155.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_vm", text="V", x=185.0, y=240.0, font_size=18.0, font_weight="bold"),
             ]
-            return VisualIR(title="Two-Mesh Circuit with Voltmeter", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Two-Mesh Circuit with Voltmeter", width=w, height=h, coordinate_frame=cf, circles=circles, bezier_paths=bezier_paths, segments=segments, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # bcde92c6: Series-Parallel Capacitors with V=100 volts
