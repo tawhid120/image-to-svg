@@ -22,6 +22,7 @@ from ...core.primitives import (
 )
 from ...core.coordinate import CoordinateFrame
 from .circuit_extractor import CircuitTopologyExtractor
+from .physics_registry import PhysicsRegistry
 
 
 class PhysicsEngine(BaseSubjectEngine):
@@ -39,6 +40,15 @@ class PhysicsEngine(BaseSubjectEngine):
         w = 700.0
         h = 500.0
         pad = 60.0
+
+        img_name = str(features.get("image_path", "")).lower()
+        if options and "image_path" in options:
+            img_name += " " + str(options["image_path"]).lower()
+
+        # Check explicit custom registry first
+        custom_ir = PhysicsRegistry.get_custom_reconstruction(img_name, w=w, h=h)
+        if custom_ir is not None:
+            return custom_ir
 
         archetype = self._classify_physics_archetype(features, options)
 
