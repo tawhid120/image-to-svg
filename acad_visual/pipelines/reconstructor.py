@@ -63,6 +63,17 @@ class MasterReconstructionPipeline:
                 f.write(svg_content)
             output_files["svg"] = svg_path
 
+            # Generate high-resolution companion preview PNG
+            png_path = os.path.join(self.output_dir, "reconstructed_artwork.png")
+            try:
+                import resvg_py
+                png_bytes = resvg_py.svg_to_bytes(svg_content)
+                with open(png_path, "wb") as f:
+                    f.write(png_bytes)
+                output_files["png"] = png_path
+            except Exception:
+                pass
+
         # LaTeX TikZ
         if "tikz" in target_formats:
             tikz_content = UniversalTikZRenderer(final_ir).render()

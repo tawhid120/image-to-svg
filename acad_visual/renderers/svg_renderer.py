@@ -24,6 +24,45 @@ class UniversalSVGRenderer:
         self.ir = ir
 
     def _format_math_text(self, text: str) -> str:
+        # 1. Map common LaTeX Greek symbols and operators to clean unicode glyphs
+        latex_map = {
+            r"\alpha": "α",
+            r"\beta": "β",
+            r"\gamma": "γ",
+            r"\delta": "δ",
+            r"\theta": "θ",
+            r"\lambda": "λ",
+            r"\mu": "μ",
+            r"\pi": "π",
+            r"\rho": "ρ",
+            r"\sigma": "σ",
+            r"\phi": "φ",
+            r"\omega": "ω",
+            r"\Delta": "Δ",
+            r"\Theta": "Θ",
+            r"\Lambda": "Λ",
+            r"\Sigma": "Σ",
+            r"\Omega": "Ω",
+            r"\pm": "±",
+            r"\mp": "∓",
+            r"\times": "×",
+            r"\div": "÷",
+            r"\le": "≤",
+            r"\ge": "≥",
+            r"\neq": "≠",
+            r"\approx": "≈",
+            r"\infty": "∞",
+            r"\perp": "⊥",
+            r"\angle": "∠",
+            r"\degree": "°",
+        }
+        for cmd, glyph in latex_map.items():
+            text = text.replace(cmd, glyph)
+
+        # Map \sqrt{X} to √X
+        text = re.sub(r'\\sqrt\{([^}]+)\}', r'√\1', text)
+        text = re.sub(r'\\sqrt', r'√', text)
+
         escaped = html.escape(text)
         def replace_sup(m):
             c = m.group(1) or m.group(2)
