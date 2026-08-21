@@ -4844,6 +4844,11 @@ class PhysicsRegistry:
                     segs.append(Segment(id=f"{prefix}_{i}", start=pts[i], end=pts[i+1], stroke_width=2.2, color="#111111"))
                 return segs
 
+            circles = [
+                # Junction nodes
+                Circle(id="j_top", center=(x_m, y_top_node), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+
             segments = [
                 # Central vertical capacitor C=4uF between junctions
                 Segment(id="cv1", start=(x_m, y_top_node), end=(x_m, 195.0), stroke_width=2.2, color="#111111"),
@@ -4851,21 +4856,25 @@ class PhysicsRegistry:
                 Segment(id="c_p2", start=(x_m - 16.0, 205.0), end=(x_m + 16.0, 205.0), stroke_width=3.0, color="#111111"),
                 Segment(id="cv2", start=(x_m, 205.0), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111"),
 
-                # Top branch: 3A current downward through 3 ohm resistor
-                Segment(id="in_top", start=(x_m, 35.0), end=(x_m, 65.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                *make_resistor_v("r_top", 65.0, 140.0, x_m),
+                # Top branch: wire from (x_m, 20) through 3 ohm resistor to top node
+                Segment(id="wire_top", start=(x_m, 20.0), end=(x_m, 60.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_v("r_top", 60.0, 140.0, x_m),
+                # Standalone downward current arrow (3A)
+                Segment(id="arr_top", start=(x_m - 14.0, 20.0), end=(x_m - 14.0, 58.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
 
-                # Bottom branch: 1A current upward through 3 ohm resistor
-                Segment(id="in_bot", start=(x_m, 405.0), end=(x_m, 365.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                *make_resistor_v("r_bot", 260.0, 365.0, x_m),
+                # Bottom branch: wire from bottom node through 3 ohm resistor to (x_m, 420)
+                *make_resistor_v("r_bot", 260.0, 360.0, x_m),
+                Segment(id="wire_bot", start=(x_m, 360.0), end=(x_m, 420.0), stroke_width=2.2, color="#111111"),
+                # Standalone upward current arrow (1A)
+                Segment(id="arr_bot", start=(x_m - 14.0, 420.0), end=(x_m - 14.0, 382.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
 
-                # Top-left branch: Battery 4V + 3 ohm resistor
+                # Top-left branch: Battery 4V + 3 ohm resistor with arrow entering top junction
                 Segment(id="tl_w0", start=(40.0, y_top_node), end=(60.0, y_top_node), stroke_width=2.2, color="#111111"),
                 Segment(id="tl_bp", start=(60.0, y_top_node - 14.0), end=(60.0, y_top_node + 14.0), stroke_width=2.8, color="#111111"),
                 Segment(id="tl_bn", start=(68.0, y_top_node - 8.0), end=(68.0, y_top_node + 8.0), stroke_width=4.5, color="#111111"),
                 Segment(id="tl_w1", start=(68.0, y_top_node), end=(95.0, y_top_node), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_tl", 95.0, 160.0, y_top_node),
-                Segment(id="tl_arr", start=(160.0, y_top_node), end=(x_m, y_top_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                *make_resistor_h("r_tl", 95.0, 155.0, y_top_node),
+                Segment(id="tl_arr", start=(155.0, y_top_node), end=(x_m, y_top_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
 
                 # Bottom-left branch: Battery 3V + 3 ohm resistor
                 Segment(id="bl_w0", start=(40.0, y_bot_node), end=(60.0, y_bot_node), stroke_width=2.2, color="#111111"),
@@ -4873,7 +4882,7 @@ class PhysicsRegistry:
                 Segment(id="bl_bn", start=(68.0, y_bot_node - 8.0), end=(68.0, y_bot_node + 8.0), stroke_width=4.5, color="#111111"),
                 Segment(id="bl_w1", start=(68.0, y_bot_node), end=(95.0, y_bot_node), stroke_width=2.2, color="#111111"),
                 *make_resistor_h("r_bl", 95.0, 160.0, y_bot_node),
-                Segment(id="bl_arr", start=(160.0, y_bot_node), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                Segment(id="bl_w2", start=(160.0, y_bot_node), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111"),
 
                 # Right top branch: 5 ohm resistor
                 Segment(id="tr_w0", start=(x_m, y_top_node), end=(215.0, y_top_node), stroke_width=2.2, color="#111111"),
