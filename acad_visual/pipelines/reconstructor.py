@@ -15,6 +15,7 @@ from ..renderers.svg_renderer import UniversalSVGRenderer
 from ..renderers.tikz_renderer import UniversalTikZRenderer
 from ..renderers.matplotlib_renderer import UniversalMatplotlibRenderer
 from ..evaluation.qa_loop import QALoopController
+from ..evaluation.refine_svg_loop import RefineSVGEngine
 
 
 class MasterReconstructionPipeline:
@@ -48,9 +49,14 @@ class MasterReconstructionPipeline:
         engine = get_engine(subject)
         raw_ir = engine.reconstruct_from_features(features, options)
 
-        # 4. Closed-Loop QA Audit & Refinement
-        qa_result = QALoopController.audit_and_refine(raw_ir)
-        final_ir = qa_result["refined_ir"]
+        # 4. RefineSVG: Compare with Original Image -> Diff-Map -> Auto Refinement Loop
+        refine_result = RefineSVGEngine.refine_visual_ir(
+            original_image_path=image_path,
+            initial_ir=raw_ir,
+            output_dir=self.output_dir,
+            max_iterations=3
+        )
+        final_ir = refine_result["refined_ir"]
 
         # 5. Render Multi-Target Outputs
         output_files = {}
@@ -102,8 +108,11 @@ class MasterReconstructionPipeline:
             "success": True,
             "subject": subject,
             "title": final_ir.title,
-            "qa_passed": qa_result["passed"],
-            "qa_iterations": qa_result["iterations"],
+            "qa_passed": refine_result["passed"],
+            "qa_iterations": refine_result["iterations"],
+            "initial_iou": refine_result.get("initial_iou", 1.0),
+            "final_iou": refine_result.get("final_iou", 1.0),
+            "diff_map": refine_result.get("diff_map_path"),
             "output_files": output_files,
             "visual_ir": final_ir,
         }
