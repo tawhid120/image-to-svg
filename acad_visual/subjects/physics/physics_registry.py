@@ -2565,11 +2565,13 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 52c1983f: Spheres A and B with drop stem to C
         # ----------------------------------------------------
+        # 52c1983f: Spheres A and B with drop stem to C
+        # ----------------------------------------------------
         if "52c1983f" in stem:
-            w, h = 500.0, 360.0
+            w, h = 520.0, 360.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA, rA = 90.0, 140.0, 42.0
-            xB, yB, rB = 330.0, 140.0, 65.0
+            xA, yA, rA = 95.0, 135.0, 42.0
+            xB, yB, rB = 320.0, 135.0, 65.0
             xD, yD = xB, yB + rB
             xC, yC = xB, 320.0
 
@@ -2578,32 +2580,60 @@ class PhysicsRegistry:
                 Circle(id="sph_b", center=(xB, yB), radius=rB, stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
             ]
             segments = [
-                # Internal radius r1
+                # Internal radius r1 of sphere A
                 Segment(id="rad1_v", start=(xA, yA), end=(xA, yA - rA), stroke_width=2.0, color="#111111"),
                 Segment(id="rad1_h", start=(xA, yA), end=(xA + rA, yA), stroke_width=2.0, color="#111111"),
-                # Horizontal connecting line
+                # Horizontal connecting line from Sphere A to Sphere B
                 Segment(id="conn_h", start=(xA + rA, yA), end=(xB, yB), stroke_width=2.2, color="#111111"),
-                # Internal radius r2
-                Segment(id="rad2", start=(xB, yB), end=(xB + rB*0.707, yB - rB*0.707), stroke_width=2.0, color="#111111"),
+                # Internal radius r2 of sphere B
+                Segment(id="rad2", start=(xB, yB), end=(xB + rB * 0.707, yB - rB * 0.707), stroke_width=2.0, color="#111111"),
                 # Vertical stem from B through D down to C
                 Segment(id="v_stem", start=(xB, yB), end=(xC, yC), stroke_width=2.2, color="#111111"),
-                # Dimension 4m
-                Segment(id="dim_4m", start=(xB + 110.0, yB), end=(xB + 110.0, yC), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                # Dimension 4m with ticks and bidirectional arrow
+                Segment(id="dim_4m", start=(xB + 105.0, yB), end=(xB + 105.0, yC), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                Segment(id="tick_top", start=(xB + 95.0, yB), end=(xB + 115.0, yB), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_bot", start=(xB + 95.0, yC), end=(xB + 115.0, yC), stroke_width=1.5, color="#111111"),
             ]
             right_angles = [
-                RightAngleMarker(id="ra", vertex=(xB, yB), arm1_pt=(xA, yA), arm2_pt=(xC, yC), size=18.0, color="#111111", stroke_width=1.8)
+                # Right angle at A
+                RightAngleMarker(id="ra_a", vertex=(xA, yA), arm1_pt=(xA + rA, yA), arm2_pt=(xA, yA - rA), size=14.0, color="#111111", stroke_width=1.6),
+                # Right angle at B
+                RightAngleMarker(id="ra_b", vertex=(xB, yB), arm1_pt=(xA, yA), arm2_pt=(xC, yC), size=18.0, color="#111111", stroke_width=1.8),
             ]
+
+            # 8 Positive (+) charges around Sphere A
             labels = [
-                MathLabel(id="lbl_q1", text="Q_1", x=xA - 25.0, y=yA - 48.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA + 6.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_q1", text="Q_1", x=xA - 14.0, y=yA - 60.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA + 10.0, font_size=20.0, font_weight="bold"),
                 MathLabel(id="lbl_r1", text="r_1", x=xA + 16.0, y=yA - 16.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_q2", text="Q_2", x=xB + 40.0, y=yB - 65.0, font_size=18.0, font_weight="bold"),
+
+                # Plus charges around Sphere A
+                MathLabel(id="chg_a_top", text="+", x=xA, y=yA - rA - 12.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_tr", text="+", x=xA + 36.0, y=yA - 36.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_tl", text="+", x=xA - 36.0, y=yA - 36.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_l", text="+", x=xA - rA - 12.0, y=yA, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_bl", text="+", x=xA - 36.0, y=yA + 36.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_bot", text="+", x=xA, y=yA + rA + 12.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_br", text="+", x=xA + 36.0, y=yA + 36.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="chg_a_r", text="+", x=xA + rA + 16.0, y=yA - 16.0, font_size=20.0, font_weight="bold"),
+
+                # Sphere B labels
+                MathLabel(id="lbl_q2", text="Q_2", x=xB + 35.0, y=yB - 70.0, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_b", text="B", x=xB + 18.0, y=yB + 6.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_r2", text="r_2", x=xB + 30.0, y=yB - 18.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r2", text="r_2", x=xB + 32.0, y=yB - 18.0, font_size=16.0, font_weight="bold"),
                 MathLabel(id="lbl_d", text="D", x=xD + 16.0, y=yD, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_c", text="C", x=xC + 16.0, y=yC, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_deg", text="90^\\circ", x=xB - 45.0, y=yB + 16.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_dim", text="4 m", x=xB + 130.0, y=(yB + yC)/2.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_deg", text="90^\\circ", x=xB - 45.0, y=yB + 18.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_dim", text="4 m", x=xB + 125.0, y=(yB + yC) / 2.0, font_size=17.0, font_weight="bold"),
+
+                # Minus charges around Sphere B
+                MathLabel(id="chg_b_top", text="−", x=xB, y=yB - rB - 14.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_tr", text="−", x=xB + 56.0, y=yB - 56.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_tl", text="−", x=xB - 56.0, y=yB - 56.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_l", text="−", x=xB - rB - 14.0, y=yB - 10.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_bl", text="−", x=xB - 56.0, y=yB + 50.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_br", text="−", x=xB + 56.0, y=yB + 50.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="chg_b_r", text="−", x=xB + rB + 14.0, y=yB, font_size=22.0, font_weight="bold"),
             ]
             return VisualIR(title="Charged Spheres with Right-Angle Drop Stem", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, right_angles=right_angles, labels=labels, background_color="#ffffff")
 
