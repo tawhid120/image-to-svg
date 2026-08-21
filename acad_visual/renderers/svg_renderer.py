@@ -93,12 +93,92 @@ class UniversalSVGRenderer:
         notch_y = base_y + uy * (size * 0.25)
         return f"M {tip[0]:.2f} {tip[1]:.2f} L {p1[0]:.2f} {p1[1]:.2f} L {notch_x:.2f} {notch_y:.2f} L {p2[0]:.2f} {p2[1]:.2f} Z"
 
+    def _compute_tight_bounding_box(self) -> Tuple[float, float, float, float]:
+        min_x, max_x = float('inf'), float('-inf')
+        min_y, max_y = float('inf'), float('-inf')
+
+        def expand(x: float, y: float, r: float = 0.0):
+            nonlocal min_x, max_x, min_y, max_y
+            if math.isnan(x) or math.isnan(y) or math.isinf(x) or math.isinf(y):
+                return
+            min_x = min(min_x, x - r)
+            max_x = max(max_x, x + r)
+            min_y = min(min_y, y - r)
+            max_y = max(max_y, y + r)
+
+        # 1. Points
+        for pt in self.ir.points:
+            if pt.visible:
+                expand(pt.x, pt.y, pt.radius + 2.0)
+
+        # 2. Segments
+        for seg in self.ir.segments:
+            expand(seg.start[0], seg.start[1], seg.stroke_width / 2.0)
+            expand(seg.end[0], seg.end[1], seg.stroke_width / 2.0)
+
+        # 3. Circles
+        for circ in self.ir.circles:
+            expand(circ.center[0], circ.center[1], circ.radius + circ.stroke_width)
+
+        # 4. Polygons
+        for poly in self.ir.polygons:
+            for vx, vy in poly.vertices:
+                expand(vx, vy, poly.stroke_width / 2.0)
+
+        # 5. Bezier paths
+        for bp in self.ir.bezier_paths:
+            coords = re.findall(r'[-+]?(?:\d*\.\d+|\d+)', bp.path_d)
+            for i in range(0, len(coords) - 1, 2):
+                try:
+                    expand(float(coords[i]), float(coords[i+1]), bp.stroke_width / 2.0)
+                except ValueError:
+                    pass
+
+        # 6. Organic shapes
+        for org in self.ir.organic_shapes:
+            for bx, by in org.boundary_points:
+                expand(bx, by, org.stroke_width / 2.0)
+
+        # 7. Labels
+        for lbl in self.ir.labels:
+            text_len = len(lbl.text)
+            approx_w = text_len * lbl.font_size * 0.38
+            approx_h = lbl.font_size * 0.65
+            expand(lbl.x - approx_w, lbl.y - approx_h)
+            expand(lbl.x + approx_w, lbl.y + approx_h)
+
+        # 8. Callouts
+        for cl in self.ir.callouts:
+            expand(cl.target_point[0], cl.target_point[1], 4.0)
+            expand(cl.label_point[0], cl.label_point[1], 15.0)
+
+        # 9. Markers (right angles, arc angles)
+        for ra in self.ir.right_angles:
+            expand(ra.vertex[0], ra.vertex[1], ra.size)
+        for aa in self.ir.arc_angles:
+            expand(aa.vertex[0], aa.vertex[1], aa.radius)
+
+        # If no elements or invalid, fallback to self.ir.width, self.ir.height
+        if math.isinf(min_x) or math.isinf(max_x) or min_x >= max_x or min_y >= max_y:
+            return 0.0, 0.0, self.ir.width, self.ir.height
+
+        # Add margin padding around content
+        pad = 20.0
+        bx = min_x - pad
+        by = min_y - pad
+        bw = (max_x - min_x) + 2 * pad
+        bh = (max_y - min_y) + 2 * pad
+
+        bw = max(bw, 40.0)
+        bh = max(bh, 40.0)
+
+        return bx, by, bw, bh
+
     def render(self) -> str:
-        w = self.ir.width
-        h = self.ir.height
+        bx, by, bw, bh = self._compute_tight_bounding_box()
 
         parts = [
-            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">',
+            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{bx:.2f} {by:.2f} {bw:.2f} {bh:.2f}" width="{bw:.2f}" height="{bh:.2f}">',
             """  <defs>
     <filter id="label-bg" x="-20%" y="-20%" width="140%" height="140%">
       <feFlood flood-color="#ffffff" flood-opacity="0.95" result="bg" />
@@ -128,7 +208,7 @@ class UniversalSVGRenderer:
 
         # Crisp Pure White Background
         bg_col = self.ir.background_color if self.ir.background_color else "#ffffff"
-        parts.append(f'  <rect width="{w}" height="{h}" fill="{bg_col}" />')
+        parts.append(f'  <rect x="{bx:.2f}" y="{by:.2f}" width="{bw:.2f}" height="{bh:.2f}" fill="{bg_col}" />')
 
         # 1. Render Organic Shapes (Biology / Anatomy / Geography)
         for org in sorted(self.ir.organic_shapes, key=lambda s: s.layer_order):
