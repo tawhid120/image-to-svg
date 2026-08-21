@@ -104,3 +104,58 @@ class AnalyticalGeometrySolver:
             "end_pt": p_end,
             "span_deg": math.degrees(abs(diff))
         }
+
+    @staticmethod
+    def snap_to_orthogonal_axis(
+        start: Tuple[float, float],
+        end: Tuple[float, float],
+        angle_tolerance_deg: float = 12.0
+    ) -> Tuple[Tuple[float, float], Tuple[float, float]]:
+        """
+        De-skews camera-tilted lines by snapping them to exact horizontal, vertical,
+        or 45-degree diagonal axes if they fall within tolerance.
+        """
+        x1, y1 = start
+        x2, y2 = end
+        dx = x2 - x1
+        dy = y2 - y1
+        length = math.hypot(dx, dy)
+        if length < 1e-6:
+            return start, end
+
+        angle_deg = math.degrees(math.atan2(dy, dx)) % 360.0
+
+        # Check horizontal (0 deg or 180 deg)
+        if angle_deg <= angle_tolerance_deg or angle_deg >= 360.0 - angle_tolerance_deg:
+            return (x1, y1), (x1 + length, y1)
+        if abs(angle_deg - 180.0) <= angle_tolerance_deg:
+            return (x1, y1), (x1 - length, y1)
+
+        # Check vertical (90 deg or 270 deg)
+        if abs(angle_deg - 90.0) <= angle_tolerance_deg:
+            return (x1, y1), (x1, y1 + length)
+        if abs(angle_deg - 270.0) <= angle_tolerance_deg:
+            return (x1, y1), (x1, y1 - length)
+
+        return start, end
+
+    @staticmethod
+    def align_collinear_points(
+        origin: Tuple[float, float],
+        points: List[Tuple[float, float]],
+        axis_direction: str = "horizontal"
+    ) -> List[Tuple[float, float]]:
+        """
+        Projects a sequence of points onto a single unified linear axis (horizontal or vertical),
+        eliminating photograph tilt and scanner skew.
+        """
+        ox, oy = origin
+        aligned = []
+        for px, py in points:
+            if axis_direction == "horizontal":
+                aligned.append((px, oy))
+            elif axis_direction == "vertical":
+                aligned.append((ox, py))
+            else:
+                aligned.append((px, py))
+        return aligned

@@ -1508,35 +1508,43 @@ class PhysicsRegistry:
 
         # ----------------------------------------------------
         # 27fc0004: Sphere center O, radius 0.5m, internal A (0.3m), external B (0.5m)
+        # 27fc0004: Sphere center O, radius 0.5m, internal A (0.3m), external B (0.5m)
         # ----------------------------------------------------
         if "27fc0004" in stem:
             w, h = 420.0, 340.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xO, yO, rS = 140.0, 160.0, 110.0
-            xA = xO + 65.0
-            xB = xO + rS + 90.0
+            xO, yO, rS = 140.0, 160.0, 100.0
+            xA = xO + 60.0
+            xSurf = xO + rS
+            xB = xSurf + 75.0
 
             circles = [
-                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
-                Circle(id="pt_o", center=(xO, yO), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                Circle(id="pt_a", center=(xA, yO), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                Circle(id="pt_b", center=(xB, yO + 15.0), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="none"),
+                Circle(id="pt_o", center=(xO, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_a", center=(xA, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_b", center=(xB, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
             ]
             segments = [
-                # Internal OA arrow
-                Segment(id="d_oa", start=(xO, yO), end=(xA, yO), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                # External Surface-to-B arrow
-                Segment(id="d_sb", start=(xO + rS, yO + 5.0), end=(xB, yO + 15.0), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                # Downward radius arrow
-                Segment(id="d_rad", start=(xO, yO), end=(xO, yO + rS), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # Collinear horizontal ray connecting O through A, Sphere Surface to B
+                Segment(id="h_ray", start=(xO, yO), end=(xB, yO), stroke_width=2.2, color="#111111"),
+                # Bidirectional dimension arrow for OA (0.3m) with vertical tick marks
+                Segment(id="dim_oa", start=(xO, yO - 18.0), end=(xA, yO - 18.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
+                Segment(id="tick_o", start=(xO, yO - 25.0), end=(xO, yO), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_a", start=(xA, yO - 25.0), end=(xA, yO), stroke_width=1.5, color="#111111"),
+                # Bidirectional dimension arrow for Surface-to-B (0.5m) with vertical tick marks
+                Segment(id="dim_sb", start=(xSurf, yO - 18.0), end=(xB, yO - 18.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
+                Segment(id="tick_surf", start=(xSurf, yO - 25.0), end=(xSurf, yO), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_b", start=(xB, yO - 25.0), end=(xB, yO), stroke_width=1.5, color="#111111"),
+                # Downward radius arrow (0.5m)
+                Segment(id="d_rad", start=(xO, yO), end=(xO, yO + rS), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
-                MathLabel(id="lbl_o", text="O", x=xO - 20.0, y=yO - 4.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_a", text="A", x=xA, y=yO + 25.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 40.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_d1", text="0.3 m", x=(xO + xA)/2.0, y=yO - 18.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_d2", text="0.5 m", x=(xO + rS + xB)/2.0, y=yO - 8.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_rad", text="0.5 m", x=xO - 15.0, y=yO + rS/2.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_o", text="O", x=xO - 16.0, y=yO - 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA, y=yO + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="0.3 m", x=(xO + xA) / 2.0, y=yO - 28.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_d2", text="0.5 m", x=(xSurf + xB) / 2.0, y=yO - 28.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_rad", text="0.5 m", x=xO - 28.0, y=yO + rS / 2.0, font_size=15.0, font_weight="bold"),
             ]
             return VisualIR(title="Charged Sphere Internal External Potential", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
 
