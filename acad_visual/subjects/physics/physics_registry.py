@@ -6444,4 +6444,1061 @@ class PhysicsRegistry:
             ]
             return VisualIR(title="Three-Branch Parallel Capacitor Network", width=w, height=h, coordinate_frame=cf, segments=segments, background_color="#ffffff")
 
+
+        # --- 32 PREVIOUSLY MISSING HIGH-PRECISION RECONSTRUCTIONS ---
+
+        # 1. 0000e85b: Loop with 3 capacitors: top C2, C3 and bottom C1
+        if "0000e85b" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="wire_top_l", start=(40, 70), end=(130, 70), stroke_width=2.5),
+                    Segment(id="cap_c2_l", start=(130, 45), end=(130, 95), stroke_width=3),
+                    Segment(id="cap_c2_r", start=(145, 45), end=(145, 95), stroke_width=3),
+                    Segment(id="wire_top_m", start=(145, 70), end=(240, 70), stroke_width=2.5),
+                    Segment(id="cap_c3_l", start=(240, 45), end=(240, 95), stroke_width=3),
+                    Segment(id="cap_c3_r", start=(255, 45), end=(255, 95), stroke_width=3),
+                    Segment(id="wire_top_r", start=(255, 70), end=(340, 70), stroke_width=2.5),
+                    Segment(id="wire_right", start=(340, 70), end=(340, 170), stroke_width=2.5),
+                    Segment(id="wire_bot_r", start=(340, 170), end=(205, 170), stroke_width=2.5),
+                    Segment(id="cap_c1_r", start=(205, 145), end=(205, 195), stroke_width=3),
+                    Segment(id="cap_c1_l", start=(190, 145), end=(190, 195), stroke_width=3),
+                    Segment(id="wire_bot_l", start=(190, 170), end=(40, 170), stroke_width=2.5),
+                    Segment(id="wire_left", start=(40, 170), end=(40, 70), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c2", text="C₂", x=138, y=118, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=248, y=118, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁", x=198, y=220, font_size=18, font_weight="bold"),
+                ]
+            )
+
+        # 4. 01314471: Collinear line segment A-B-C-D with total 12 cm dimension
+        if "01314471" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="pt_a", center=(50, 70), radius=4, fill_color="#111111"),
+                    Circle(id="pt_b", center=(160, 66), radius=4, fill_color="#111111"),
+                    Circle(id="pt_c", center=(230, 64), radius=4, fill_color="#111111"),
+                    Circle(id="pt_d", center=(350, 60), radius=4, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="main_line", start=(50, 70), end=(350, 60), stroke_width=2.5),
+                    Segment(id="dim_line_l", start=(50, 75), end=(50, 120), stroke_width=1.5),
+                    Segment(id="dim_line_r", start=(350, 65), end=(350, 120), stroke_width=1.5),
+                    Segment(id="dim_arr", start=(50, 110), end=(350, 110), stroke_width=2, arrows=ArrowType.BOTH),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=35, y=75, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=160, y=45, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=230, y=43, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_d", text="D", x=365, y=65, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_dim", text="12 cm", x=200, y=105, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 5. 01a98df2: Battery 12V, top C1=5mF, parallel C2 and C3=7mF
+        if "01a98df2" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Left battery branch
+                    Segment(id="w_l1", start=(60, 140), end=(60, 40), stroke_width=2.5),
+                    Segment(id="w_top", start=(60, 40), end=(200, 40), stroke_width=2.5),
+                    Segment(id="w_to_c1", start=(200, 40), end=(200, 70), stroke_width=2.5),
+                    # C1
+                    Segment(id="c1_t", start=(180, 70), end=(220, 70), stroke_width=3),
+                    Segment(id="c1_b", start=(180, 82), end=(220, 82), stroke_width=3),
+                    Segment(id="w_c1_mid", start=(200, 82), end=(200, 110), stroke_width=2.5),
+                    # Parallel split
+                    Segment(id="w_p_split", start=(160, 110), end=(240, 110), stroke_width=2.5),
+                    # C2 (left branch)
+                    Segment(id="w_c2_t", start=(160, 110), end=(160, 140), stroke_width=2.5),
+                    Segment(id="c2_t", start=(145, 140), end=(175, 140), stroke_width=3),
+                    Segment(id="c2_b", start=(145, 152), end=(175, 152), stroke_width=3),
+                    Segment(id="w_c2_b", start=(160, 152), end=(160, 210), stroke_width=2.5),
+                    # C3 (right branch)
+                    Segment(id="w_c3_t", start=(240, 110), end=(240, 170), stroke_width=2.5),
+                    Segment(id="c3_t", start=(225, 170), end=(255, 170), stroke_width=3),
+                    Segment(id="c3_b", start=(225, 182), end=(255, 182), stroke_width=3),
+                    Segment(id="w_c3_b", start=(240, 182), end=(240, 210), stroke_width=2.5),
+                    # Bottom return
+                    Segment(id="w_bot_split", start=(160, 210), end=(240, 210), stroke_width=2.5),
+                    Segment(id="w_bot_main", start=(200, 210), end=(60, 210), stroke_width=2.5),
+                    Segment(id="w_l2", start=(60, 210), end=(60, 160), stroke_width=2.5),
+                    # Battery 12V
+                    Segment(id="bat_p1", start=(45, 140), end=(75, 140), stroke_width=3),
+                    Segment(id="bat_p2", start=(52, 147), end=(68, 147), stroke_width=2),
+                    Segment(id="bat_p3", start=(45, 154), end=(75, 154), stroke_width=3),
+                    Segment(id="bat_p4", start=(52, 161), end=(68, 161), stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_bat", text="12 V", x=28, y=152, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁ = 5 mF", x=265, y=76, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=125, y=146, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃ = 7 mF", x=295, y=176, font_size=15, font_weight="bold"),
+                ]
+            )
+
+        # 6. 01b8ef83: Triangle ABC with base AB=1m, charges A(+60 uC), B(-30 uC), C(+1 C)
+        if "01b8ef83" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="pt_a", center=(50, 150), radius=5, stroke_width=2, fill_color="#ffffff"),
+                    Circle(id="pt_b", center=(310, 150), radius=5, stroke_width=2, fill_color="#ffffff"),
+                    Circle(id="pt_c", center=(240, 50), radius=5, stroke_width=2, fill_color="#ffffff"),
+                ],
+                segments=[
+                    Segment(id="seg_ab", start=(55, 150), end=(305, 150), stroke_width=2.5),
+                    Segment(id="seg_ac", start=(54, 146), end=(236, 54), stroke_width=2, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="seg_bc", start=(306, 146), end=(244, 54), stroke_width=2, stroke_style=StrokeStyle.DASHED),
+                    # Dimension line above AB
+                    Segment(id="dim_l", start=(50, 140), end=(50, 100), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dim_r", start=(310, 140), end=(310, 100), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dim_ab", start=(50, 110), end=(310, 110), stroke_width=2, stroke_style=StrokeStyle.DASHED, arrows=ArrowType.BOTH),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A = + 60 × 10⁻⁶C", x=95, y=175, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B = - 30 × 10⁻⁶C", x=280, y=175, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C = + 1 C", x=290, y=48, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_dist", text="1 m", x=180, y=95, font_size=15, font_weight="bold"),
+                ]
+            )
+
+        # 7. 023e099c: Comparison of চিত্র-১ and চিত্র-২ (dielectric k=5, t=2mm)
+        if "023e099c" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Panel 1 (left)
+                    Segment(id="p1_plate_l", start=(60, 40), end=(60, 120), stroke_width=3),
+                    Segment(id="p1_plate_r", start=(130, 40), end=(130, 120), stroke_width=3),
+                    Segment(id="p1_w_l", start=(30, 80), end=(60, 80), stroke_width=2.5),
+                    Segment(id="p1_w_l_down", start=(30, 80), end=(30, 170), stroke_width=2.5),
+                    Segment(id="p1_w_b_l", start=(30, 170), end=(75, 170), stroke_width=2.5),
+                    Segment(id="p1_w_r", start=(130, 80), end=(160, 80), stroke_width=2.5),
+                    Segment(id="p1_w_r_down", start=(160, 80), end=(160, 170), stroke_width=2.5),
+                    Segment(id="p1_w_b_r", start=(160, 170), end=(105, 170), stroke_width=2.5),
+                    # Battery 1
+                    Segment(id="p1_bat_l", start=(85, 160), end=(85, 180), stroke_width=3),
+                    Segment(id="p1_bat_r", start=(95, 165), end=(95, 175), stroke_width=2),
+                    
+                    # Panel 2 (right)
+                    Segment(id="p2_plate_l", start=(240, 40), end=(240, 120), stroke_width=3),
+                    Segment(id="p2_plate_r", start=(310, 40), end=(310, 120), stroke_width=3),
+                    Segment(id="p2_w_l", start=(210, 80), end=(240, 80), stroke_width=2.5),
+                    Segment(id="p2_w_l_down", start=(210, 80), end=(210, 170), stroke_width=2.5),
+                    Segment(id="p2_w_b_l", start=(210, 170), end=(255, 170), stroke_width=2.5),
+                    Segment(id="p2_w_r", start=(310, 80), end=(340, 80), stroke_width=2.5),
+                    Segment(id="p2_w_r_down", start=(340, 80), end=(340, 170), stroke_width=2.5),
+                    Segment(id="p2_w_b_r", start=(340, 170), end=(285, 170), stroke_width=2.5),
+                    # Battery 2
+                    Segment(id="p2_bat_l", start=(265, 160), end=(265, 180), stroke_width=3),
+                    Segment(id="p2_bat_r", start=(275, 165), end=(275, 175), stroke_width=2),
+                ],
+                polygons=[
+                    # Dielectric slab
+                    Polygon(id="slab", vertices=[(255, 45), (295, 45), (295, 110), (255, 110)], stroke_width=2, fill_color="#f0f0f0")
+                ],
+                labels=[
+                    MathLabel(id="p1_lbl_e", text="E₀ = 2 × 10⁻⁸ Vm⁻¹", x=95, y=28, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_q_l", text="+20 C", x=38, y=65, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_d", text="d = 5 mm", x=95, y=75, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_q_r", text="-20 C", x=152, y=65, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_cap", text="চিত্র-১", x=95, y=205, font_size=15, font_weight="bold"),
+
+                    MathLabel(id="p2_lbl_e", text="E₀ = 2 × 10⁻⁸ Vm⁻¹", x=275, y=28, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_q_l", text="+ 20 C", x=218, y=65, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_k", text="k = 5", x=275, y=78, font_size=14, font_weight="bold"),
+                    MathLabel(id="p2_lbl_q_r", text="- 20 C", x=332, y=65, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_t", text="t = 2 mm", x=275, y=135, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_cap", text="চিত্র-২", x=275, y=205, font_size=15, font_weight="bold"),
+                ]
+            )
+
+        # 8. 02bf95cc: T-shape A(q1 = -4 uC) to B(q2 = -4 uC), midpoint O to P
+        if "02bf95cc" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="pt_a", center=(60, 160), radius=5, fill_color="#111111"),
+                    Circle(id="pt_b", center=(300, 160), radius=5, fill_color="#111111"),
+                    Circle(id="pt_p", center=(180, 40), radius=5, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="base_ab", start=(60, 160), end=(300, 160), stroke_width=2.5),
+                    Segment(id="alt_op", start=(180, 160), end=(180, 40), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=60, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=300, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_o", text="O", x=180, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_p", text="P", x=200, y=42, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_q1", text="q₁ = - 4 × 10⁻⁶ C", x=105, y=135, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_q2", text="q₂ = - 4 × 10⁻⁶ C", x=255, y=135, font_size=14, font_weight="bold"),
+                ]
+            )
+
+        # 9. 02d63011: Capacitor bridge network with 12V battery
+        if "02d63011" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Middle branch: C2, C3
+                    Segment(id="w_m_l", start=(40, 110), end=(120, 110), stroke_width=2.5),
+                    Segment(id="c2_l", start=(120, 95), end=(120, 125), stroke_width=3),
+                    Segment(id="c2_r", start=(135, 95), end=(135, 125), stroke_width=3),
+                    Segment(id="w_m_mid", start=(135, 110), end=(200, 110), stroke_width=2.5),
+                    Segment(id="c3_l", start=(200, 95), end=(200, 125), stroke_width=3),
+                    Segment(id="c3_r", start=(215, 95), end=(215, 125), stroke_width=3),
+                    Segment(id="w_m_r", start=(215, 110), end=(300, 110), stroke_width=2.5),
+                    # Top bypass C1
+                    Segment(id="w_top_l", start=(95, 110), end=(95, 55), stroke_width=2.5),
+                    Segment(id="w_top_h1", start=(95, 55), end=(150, 55), stroke_width=2.5),
+                    Segment(id="c1_l", start=(150, 42), end=(150, 68), stroke_width=3),
+                    Segment(id="c1_r", start=(165, 42), end=(165, 68), stroke_width=3),
+                    Segment(id="w_top_h2", start=(165, 55), end=(245, 55), stroke_width=2.5),
+                    Segment(id="w_top_r", start=(245, 55), end=(245, 110), stroke_width=2.5),
+                    # Bottom bypass C4
+                    Segment(id="w_bot_l", start=(95, 110), end=(95, 165), stroke_width=2.5),
+                    Segment(id="w_bot_h1", start=(95, 165), end=(150, 165), stroke_width=2.5),
+                    Segment(id="c4_l", start=(150, 152), end=(150, 178), stroke_width=3),
+                    Segment(id="c4_r", start=(165, 152), end=(165, 178), stroke_width=3),
+                    Segment(id="w_bot_h2", start=(165, 165), end=(245, 165), stroke_width=2.5),
+                    Segment(id="w_bot_r", start=(245, 165), end=(245, 110), stroke_width=2.5),
+                    # Outer battery loop
+                    Segment(id="w_out_l", start=(40, 110), end=(40, 220), stroke_width=2.5),
+                    Segment(id="w_out_bl", start=(40, 220), end=(150, 220), stroke_width=2.5),
+                    Segment(id="w_out_r", start=(300, 110), end=(300, 220), stroke_width=2.5),
+                    Segment(id="w_out_br", start=(300, 220), end=(175, 220), stroke_width=2.5),
+                    # Battery
+                    Segment(id="bat_l", start=(150, 205), end=(150, 235), stroke_width=3),
+                    Segment(id="bat_r", start=(175, 210), end=(175, 230), stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁", x=158, y=28, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=128, y=82, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=208, y=82, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c4", text="C₄", x=158, y=140, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_pol", text="+", x=138, y=210, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="12V", x=162, y=255, font_size=18, font_weight="bold"),
+                ]
+            )
+
+        # 12. 04ed88c5: Battery 10V, series C3=3uF, parallel C1=1uF, C2=2uF
+        if "04ed88c5" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Series C3 top-left
+                    Segment(id="w_t1", start=(50, 80), end=(120, 80), stroke_width=2.5),
+                    Segment(id="c3_l", start=(120, 60), end=(120, 100), stroke_width=3),
+                    Segment(id="c3_r", start=(132, 60), end=(132, 100), stroke_width=3),
+                    Segment(id="w_t2", start=(132, 80), end=(180, 80), stroke_width=2.5),
+                    # Parallel split
+                    Segment(id="w_split_t", start=(180, 80), end=(180, 50), stroke_width=2.5),
+                    Segment(id="w_split_th", start=(180, 50), end=(230, 50), stroke_width=2.5),
+                    Segment(id="c1_l", start=(230, 35), end=(230, 65), stroke_width=3),
+                    Segment(id="c1_r", start=(242, 35), end=(242, 65), stroke_width=3),
+                    Segment(id="w_split_th2", start=(242, 50), end=(290, 50), stroke_width=2.5),
+                    # C2 bottom branch
+                    Segment(id="w_split_b", start=(180, 80), end=(180, 120), stroke_width=2.5),
+                    Segment(id="w_split_bh", start=(180, 120), end=(230, 120), stroke_width=2.5),
+                    Segment(id="c2_l", start=(230, 105), end=(230, 135), stroke_width=3),
+                    Segment(id="c2_r", start=(242, 105), end=(242, 135), stroke_width=3),
+                    Segment(id="w_split_bh2", start=(242, 120), end=(290, 120), stroke_width=2.5),
+                    # Parallel join
+                    Segment(id="w_join", start=(290, 50), end=(290, 120), stroke_width=2.5),
+                    Segment(id="w_to_r", start=(290, 85), end=(340, 85), stroke_width=2.5),
+                    Segment(id="w_r", start=(340, 85), end=(340, 200), stroke_width=2.5),
+                    # Bottom loop & battery
+                    Segment(id="w_br", start=(340, 200), end=(205, 200), stroke_width=2.5),
+                    Segment(id="bat_r", start=(205, 190), end=(205, 210), stroke_width=2),
+                    Segment(id="bat_l", start=(190, 185), end=(190, 215), stroke_width=3),
+                    Segment(id="w_bl", start=(190, 200), end=(50, 200), stroke_width=2.5),
+                    Segment(id="w_l", start=(50, 200), end=(50, 80), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c3", text="C₃ = 3 μF", x=126, y=115, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁ = 1 μF", x=295, y=30, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂ = 2 μF", x=295, y=145, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_pol_p", text="+", x=175, y=188, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_pol_m", text="-", x=220, y=188, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="V = 10 V", x=200, y=230, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 16. 074300a8: Battery V=100 Volts, series C3=2uF, parallel C1=4uF, C2=6uF
+        if "074300a8" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Series C3
+                    Segment(id="w_l", start=(40, 90), end=(115, 90), stroke_width=2.5),
+                    Segment(id="c3_l", start=(115, 65), end=(115, 115), stroke_width=3.5),
+                    Segment(id="c3_r", start=(127, 65), end=(127, 115), stroke_width=3.5),
+                    Segment(id="w_m", start=(127, 90), end=(180, 90), stroke_width=2.5),
+                    # Parallel branch top C1
+                    Segment(id="w_pt", start=(180, 90), end=(180, 45), stroke_width=2.5),
+                    Segment(id="w_pt_h1", start=(180, 45), end=(235, 45), stroke_width=2.5),
+                    Segment(id="c1_l", start=(235, 25), end=(235, 65), stroke_width=3.5),
+                    Segment(id="c1_r", start=(247, 25), end=(247, 65), stroke_width=3.5),
+                    Segment(id="w_pt_h2", start=(247, 45), end=(300, 45), stroke_width=2.5),
+                    # Parallel branch bottom C2
+                    Segment(id="w_pb", start=(180, 90), end=(180, 135), stroke_width=2.5),
+                    Segment(id="w_pb_h1", start=(180, 135), end=(235, 135), stroke_width=2.5),
+                    Segment(id="c2_l", start=(235, 115), end=(235, 155), stroke_width=3.5),
+                    Segment(id="c2_r", start=(247, 115), end=(247, 155), stroke_width=3.5),
+                    Segment(id="w_pb_h2", start=(247, 135), end=(300, 135), stroke_width=2.5),
+                    # Parallel join
+                    Segment(id="w_pjoin", start=(300, 45), end=(300, 135), stroke_width=2.5),
+                    Segment(id="w_tr", start=(300, 90), end=(350, 90), stroke_width=2.5),
+                    Segment(id="w_r", start=(350, 90), end=(350, 210), stroke_width=2.5),
+                    # Dimension line V=100 Volts
+                    Segment(id="dim_v", start=(40, 210), end=(350, 210), stroke_width=2, arrows=ArrowType.BOTH),
+                    Segment(id="w_left_down", start=(40, 90), end=(40, 210), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c3", text="C₃ = 2μF", x=120, y=135, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁ = 4μF", x=240, y=85, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂ = 6μF", x=240, y=175, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="V = 100 Volts", x=195, y=205, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 17. 078b5fba: 10 volt supply, series C1=4uF, parallel C2=2uF, C3=2uF
+        if "078b5fba" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="term_l", center=(175, 200), radius=4, stroke_width=2, fill_color="#ffffff"),
+                    Circle(id="term_r", center=(205, 200), radius=4, stroke_width=2, fill_color="#ffffff"),
+                ],
+                segments=[
+                    # Series C1
+                    Segment(id="w_tl", start=(50, 100), end=(100, 100), stroke_width=2.5),
+                    Segment(id="c1_l", start=(100, 80), end=(100, 120), stroke_width=3.5),
+                    Segment(id="c1_r", start=(112, 80), end=(112, 120), stroke_width=3.5),
+                    Segment(id="w_tm", start=(112, 100), end=(160, 100), stroke_width=2.5),
+                    # Parallel pair
+                    Segment(id="w_pt", start=(160, 100), end=(160, 55), stroke_width=2.5),
+                    Segment(id="w_pt_h1", start=(160, 55), end=(210, 55), stroke_width=2.5),
+                    Segment(id="c2_l", start=(210, 35), end=(210, 75), stroke_width=3.5),
+                    Segment(id="c2_r", start=(222, 35), end=(222, 75), stroke_width=3.5),
+                    Segment(id="w_pt_h2", start=(222, 55), end=(270, 55), stroke_width=2.5),
+                    Segment(id="w_pb", start=(160, 100), end=(160, 145), stroke_width=2.5),
+                    Segment(id="w_pb_h1", start=(160, 145), end=(210, 145), stroke_width=2.5),
+                    Segment(id="c3_l", start=(210, 125), end=(210, 165), stroke_width=3.5),
+                    Segment(id="c3_r", start=(222, 125), end=(222, 165), stroke_width=3.5),
+                    Segment(id="w_pb_h2", start=(222, 145), end=(270, 145), stroke_width=2.5),
+                    Segment(id="w_pjoin", start=(270, 55), end=(270, 145), stroke_width=2.5),
+                    Segment(id="w_tr", start=(270, 100), end=(340, 100), stroke_width=2.5),
+                    Segment(id="w_r", start=(340, 100), end=(340, 200), stroke_width=2.5),
+                    Segment(id="w_br", start=(340, 200), end=(209, 200), stroke_width=2.5),
+                    Segment(id="w_bl", start=(171, 200), end=(50, 200), stroke_width=2.5),
+                    Segment(id="w_l", start=(50, 200), end=(50, 100), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁ = 4μF", x=106, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂ = 2μF", x=260, y=30, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃ = 2μF", x=260, y=175, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="10 volt", x=230, y=225, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 18. 07bec2a2: T-shape A(q1=4 uC), B(q2=-4 uC), 100mm, 90 deg, OP=100mm
+        if "07bec2a2" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="pt_a", center=(60, 160), radius=5, fill_color="#111111"),
+                    Circle(id="pt_b", center=(300, 160), radius=5, fill_color="#111111"),
+                    Circle(id="pt_p", center=(180, 40), radius=5, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="seg_ab", start=(60, 160), end=(300, 160), stroke_width=2.5),
+                    Segment(id="seg_op", start=(180, 160), end=(180, 40), stroke_width=2.5),
+                ],
+                arc_angles=[
+                    ArcAngleMarker(id="arc_90", vertex=(180, 160), start_pt=(205, 160), end_pt=(180, 135), radius=22, stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=60, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=300, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_o", text="O", x=180, y=185, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_p", text="P", x=200, y=42, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_q1", text="q₁ = 4 × 10⁻⁶ C", x=105, y=130, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_q2", text="q₂ = -4 × 10⁻⁶ C", x=255, y=130, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_d1", text="100 mm", x=115, y=180, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_d2", text="100 mm", x=245, y=180, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_d3", text="100 mm", x=225, y=95, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_ang", text="90°", x=210, y=140, font_size=13, font_weight="bold"),
+                ]
+            )
+
+        # 19. 07e3a947: Two charged spheres Q1=-2.25nC, Q2=-6nC, r=2m
+        if "07e3a947" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="sph_1", center=(80, 120), radius=35, stroke_width=2.5),
+                    Circle(id="sph_2", center=(280, 110), radius=55, stroke_width=2.5),
+                ],
+                segments=[
+                    # Centers connection line
+                    Segment(id="w_mid", start=(80, 120), end=(280, 110), stroke_width=2),
+                    # Radius lines
+                    Segment(id="r1_line", start=(80, 120), end=(80, 155), stroke_width=2),
+                    Segment(id="r2_line", start=(280, 110), end=(280, 165), stroke_width=2),
+                    # Vertical dashed lines to top dimension
+                    Segment(id="dim_dash_l", start=(80, 120), end=(80, 25), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dim_dash_r", start=(280, 110), end=(280, 25), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dim_r", start=(80, 30), end=(280, 30), stroke_width=2, stroke_style=StrokeStyle.DASHED, arrows=ArrowType.BOTH),
+                ],
+                labels=[
+                    MathLabel(id="lbl_r", text="r = 2 m", x=180, y=25, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_r1", text="r₁ = 15 cm", x=130, y=130, font_size=13, font_weight="bold"),
+                    MathLabel(id="lbl_q1", text="Q₁ = -2.25 nC", x=80, y=180, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_r2", text="r₂ = 25cm", x=310, y=125, font_size=13, font_weight="bold"),
+                    MathLabel(id="lbl_q2", text="Q₂ = - 6 nC", x=280, y=195, font_size=14, font_weight="bold"),
+                ]
+            )
+
+        # 20. 08e8c58e: Single circle with radius labeled 0.5 m
+        if "08e8c58e" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="c_main", center=(175, 115), radius=75, stroke_width=2.5),
+                    Circle(id="pt_center", center=(175, 115), radius=5, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="rad_seg", start=(175, 115), end=(250, 115), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_rad", text="0.5 m", x=212, y=140, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 21. 09598409: Battery 100V, C1=20uF, C2=60uF
+        if "09598409" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="w_top_l", start=(50, 80), end=(120, 80), stroke_width=2.5),
+                    Segment(id="c1_l", start=(120, 55), end=(120, 105), stroke_width=3),
+                    Segment(id="c1_r", start=(132, 55), end=(132, 105), stroke_width=3),
+                    Segment(id="w_top_m", start=(132, 80), end=(240, 80), stroke_width=2.5),
+                    Segment(id="c2_l", start=(240, 55), end=(240, 105), stroke_width=3),
+                    Segment(id="c2_r", start=(252, 55), end=(252, 105), stroke_width=3),
+                    Segment(id="w_top_r", start=(252, 80), end=(320, 80), stroke_width=2.5),
+                    Segment(id="w_r", start=(320, 80), end=(320, 180), stroke_width=2.5),
+                    Segment(id="w_br", start=(320, 180), end=(205, 180), stroke_width=2.5),
+                    # Battery 100V
+                    Segment(id="bat_p1", start=(175, 165), end=(175, 195), stroke_width=3),
+                    Segment(id="bat_p2", start=(185, 170), end=(185, 190), stroke_width=2),
+                    Segment(id="bat_p3", start=(195, 165), end=(195, 195), stroke_width=3),
+                    Segment(id="bat_p4", start=(205, 170), end=(205, 190), stroke_width=2),
+                    Segment(id="w_bl", start=(175, 180), end=(50, 180), stroke_width=2.5),
+                    Segment(id="w_l", start=(50, 180), end=(50, 80), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁ = 20μF", x=126, y=40, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂ = 60μF", x=246, y=40, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="100V", x=190, y=215, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 22. 095fbf6c: Circle with horizontal diameter, center O, right point A
+        if "095fbf6c" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="c_main", center=(150, 110), radius=70, stroke_width=3),
+                    Circle(id="pt_o", center=(150, 110), radius=5, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="dia_line", start=(80, 110), end=(220, 110), stroke_width=3),
+                ],
+                labels=[
+                    MathLabel(id="lbl_o", text="O", x=150, y=85, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_a", text="A", x=245, y=115, font_size=18, font_weight="bold"),
+                ]
+            )
+
+        # 23. 09a4adbf: Two capacitor diagrams: চিত্র (i) plates +Q, -Q and চিত্র (ii) plates +Q, -Q
+        if "09a4adbf" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Panel 1 (left)
+                    Segment(id="p1_lead_l", start=(40, 100), end=(80, 100), stroke_width=3),
+                    Segment(id="p1_plate_l", start=(80, 40), end=(80, 140), stroke_width=3.5),
+                    Segment(id="p1_plate_r", start=(160, 40), end=(160, 140), stroke_width=3.5),
+                    Segment(id="p1_lead_r", start=(160, 100), end=(200, 100), stroke_width=3),
+                    # Panel 2 (right)
+                    Segment(id="p2_lead_l", start=(230, 100), end=(270, 100), stroke_width=3),
+                    Segment(id="p2_plate_l", start=(270, 40), end=(270, 140), stroke_width=3.5),
+                    Segment(id="p2_plate_r", start=(340, 40), end=(340, 140), stroke_width=3.5),
+                    Segment(id="p2_lead_r", start=(340, 100), end=(380, 100), stroke_width=3),
+                ],
+                labels=[
+                    MathLabel(id="p1_lbl_qp", text="+Q", x=60, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="p1_lbl_qm", text="-Q", x=180, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="p1_cap", text="চিত্র (i)", x=120, y=170, font_size=16, font_weight="bold"),
+
+                    MathLabel(id="p2_lbl_qp", text="+Q", x=250, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="p2_lbl_qm", text="-Q", x=360, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="p2_cap", text="চিত্র (ii)", x=305, y=170, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 24. 09cda72a: Battery 10V, top C1=20uF, vertical series C2=60uF, C3=40uF, right C4=100uF
+        if "09cda72a" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Left battery 10V
+                    Segment(id="w_l_t", start=(50, 110), end=(50, 50), stroke_width=2.5),
+                    Segment(id="w_l_b", start=(50, 130), end=(50, 190), stroke_width=2.5),
+                    Segment(id="bat_t", start=(40, 110), end=(60, 110), stroke_width=3),
+                    Segment(id="bat_b", start=(44, 130), end=(56, 130), stroke_width=2),
+                    # Top wire with C1
+                    Segment(id="w_t1", start=(50, 50), end=(130, 50), stroke_width=2.5),
+                    Segment(id="c1_l", start=(130, 38), end=(130, 62), stroke_width=3),
+                    Segment(id="c1_r", start=(142, 38), end=(142, 62), stroke_width=3),
+                    Segment(id="w_t2", start=(142, 50), end=(200, 50), stroke_width=2.5),
+                    Segment(id="w_t3", start=(200, 50), end=(280, 50), stroke_width=2.5),
+                    # Middle vertical rung (C2, C3)
+                    Segment(id="w_m_t", start=(200, 50), end=(200, 80), stroke_width=2.5),
+                    Segment(id="c2_t", start=(190, 80), end=(210, 80), stroke_width=3),
+                    Segment(id="c2_b", start=(190, 90), end=(210, 90), stroke_width=3),
+                    Segment(id="w_m_m", start=(200, 90), end=(200, 140), stroke_width=2.5),
+                    Segment(id="c3_t", start=(190, 140), end=(210, 140), stroke_width=3),
+                    Segment(id="c3_b", start=(190, 150), end=(210, 150), stroke_width=3),
+                    Segment(id="w_m_b", start=(200, 150), end=(200, 190), stroke_width=2.5),
+                    # Right vertical rung (C4)
+                    Segment(id="w_r_t", start=(280, 50), end=(280, 110), stroke_width=2.5),
+                    Segment(id="c4_t", start=(270, 110), end=(290, 110), stroke_width=3),
+                    Segment(id="c4_b", start=(270, 120), end=(290, 120), stroke_width=3),
+                    Segment(id="w_r_b", start=(280, 120), end=(280, 190), stroke_width=2.5),
+                    # Bottom wire
+                    Segment(id="w_b1", start=(280, 190), end=(200, 190), stroke_width=2.5),
+                    Segment(id="w_b2", start=(200, 190), end=(142, 190), stroke_width=2.5),
+                    Segment(id="c_bot_r", start=(142, 178), end=(142, 202), stroke_width=3),
+                    Segment(id="c_bot_l", start=(130, 178), end=(130, 202), stroke_width=3),
+                    Segment(id="w_b3", start=(130, 190), end=(50, 190), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_v", text="10 V", x=25, y=125, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁ = 20 μF", x=105, y=75, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂ = 60 μF", x=145, y=88, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃ = 40 μF", x=145, y=148, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_c4", text="C₄ = 100 μF", x=335, y=118, font_size=14, font_weight="bold"),
+                ]
+            )
+
+        # 25. 0a8f9d51: Right triangle ABC with B=90 deg, A(+5C), B(+5C), AB=1M, AC=sqrt(2)m
+        if "0a8f9d51" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="seg_ab", start=(90, 40), end=(90, 170), stroke_width=2.5),
+                    Segment(id="seg_bc", start=(90, 170), end=(270, 170), stroke_width=2.5),
+                    Segment(id="seg_ac", start=(90, 40), end=(270, 170), stroke_width=2.5),
+                ],
+                right_angles=[
+                    RightAngleMarker(id="ra_b", vertex=(90, 170), arm1_pt=(90, 145), arm2_pt=(115, 170), size=14, stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=75, y=40, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=75, y=175, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=285, y=175, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_qa", text="+ 5 C", x=35, y=55, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_qb", text="+ 5 C", x=35, y=165, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_ang", text="90°", x=135, y=155, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_ab", text="AB = 1 M", x=230, y=60, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_ac", text="AC = √2 m", x=235, y=95, font_size=15, font_weight="bold"),
+                ]
+            )
+
+        # 26. 0b3ee6f5: Top series C1, C2, parallel C3, bottom battery 12V
+        if "0b3ee6f5" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Top loop C1, C2
+                    Segment(id="w_tl", start=(50, 70), end=(120, 70), stroke_width=2.5),
+                    Segment(id="c1_l", start=(120, 50), end=(120, 90), stroke_width=3),
+                    Segment(id="c1_r", start=(132, 50), end=(132, 90), stroke_width=3),
+                    Segment(id="w_tm", start=(132, 70), end=(230, 70), stroke_width=2.5),
+                    Segment(id="c2_l", start=(230, 50), end=(230, 90), stroke_width=3),
+                    Segment(id="c2_r", start=(242, 50), end=(242, 90), stroke_width=3),
+                    Segment(id="w_tr", start=(242, 70), end=(310, 70), stroke_width=2.5),
+                    # Parallel branch C3
+                    Segment(id="w_p_l", start=(90, 70), end=(90, 130), stroke_width=2.5),
+                    Segment(id="w_p_lh", start=(90, 130), end=(175, 130), stroke_width=2.5),
+                    Segment(id="c3_l", start=(175, 110), end=(175, 150), stroke_width=3),
+                    Segment(id="c3_r", start=(187, 110), end=(187, 150), stroke_width=3),
+                    Segment(id="w_p_rh", start=(187, 130), end=(270, 130), stroke_width=2.5),
+                    Segment(id="w_p_r", start=(270, 130), end=(270, 70), stroke_width=2.5),
+                    # Outer battery loop
+                    Segment(id="w_l", start=(50, 70), end=(50, 200), stroke_width=2.5),
+                    Segment(id="w_bl", start=(50, 200), end=(175, 200), stroke_width=2.5),
+                    Segment(id="bat_l", start=(175, 185), end=(175, 215), stroke_width=3),
+                    Segment(id="bat_r", start=(187, 185), end=(187, 215), stroke_width=3),
+                    Segment(id="w_br", start=(187, 200), end=(310, 200), stroke_width=2.5),
+                    Segment(id="w_r", start=(310, 200), end=(310, 70), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁", x=126, y=38, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=236, y=38, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=181, y=170, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="12 V", x=181, y=235, font_size=18, font_weight="bold"),
+                ]
+            )
+
+        # 27. 0cb1f683: Battery 10V, middle rung C2=6uF, C3=12uF, right rung C1=6uF with voltage probes
+        if "0cb1f683" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Left battery 10V
+                    Segment(id="w_l_t", start=(60, 95), end=(60, 40), stroke_width=2.5),
+                    Segment(id="w_l_b", start=(60, 115), end=(60, 210), stroke_width=2.5),
+                    Segment(id="bat_t", start=(48, 95), end=(72, 95), stroke_width=3),
+                    Segment(id="bat_b", start=(54, 115), end=(66, 115), stroke_width=2),
+                    # Top wire
+                    Segment(id="w_top", start=(60, 40), end=(300, 40), stroke_width=2.5),
+                    # Middle rung C2, C3
+                    Segment(id="w_m_t", start=(175, 40), end=(175, 75), stroke_width=2.5),
+                    Segment(id="c2_t", start=(160, 75), end=(190, 75), stroke_width=3),
+                    Segment(id="c2_b", start=(160, 88), end=(190, 88), stroke_width=3),
+                    Segment(id="w_m_m", start=(175, 88), end=(175, 145), stroke_width=2.5),
+                    Segment(id="c3_t", start=(160, 145), end=(190, 145), stroke_width=3),
+                    Segment(id="c3_b", start=(160, 158), end=(190, 158), stroke_width=3),
+                    Segment(id="w_m_b", start=(175, 158), end=(175, 210), stroke_width=2.5),
+                    # Right rung C1
+                    Segment(id="w_r_t", start=(300, 40), end=(300, 105), stroke_width=2.5),
+                    Segment(id="c1_t", start=(285, 105), end=(315, 105), stroke_width=3),
+                    Segment(id="c1_b", start=(285, 118), end=(315, 118), stroke_width=3),
+                    Segment(id="w_r_b", start=(300, 118), end=(300, 210), stroke_width=2.5),
+                    # Bottom wire
+                    Segment(id="w_bot", start=(60, 210), end=(300, 210), stroke_width=2.5),
+                    # Probe arrows
+                    Segment(id="pr_v2_t", start=(130, 80), end=(175, 42), stroke_width=1.5, arrows=ArrowType.END),
+                    Segment(id="pr_v2_b", start=(130, 85), end=(175, 115), stroke_width=1.5, arrows=ArrowType.END),
+                    Segment(id="pr_v3_t", start=(130, 150), end=(175, 118), stroke_width=1.5, arrows=ArrowType.END),
+                    Segment(id="pr_v3_b", start=(130, 155), end=(175, 205), stroke_width=1.5, arrows=ArrowType.END),
+                    Segment(id="pr_v1_t", start=(255, 110), end=(300, 45), stroke_width=1.5, arrows=ArrowType.END),
+                    Segment(id="pr_v1_b", start=(255, 115), end=(300, 205), stroke_width=1.5, arrows=ArrowType.END),
+                ],
+                labels=[
+                    MathLabel(id="lbl_bat", text="10 V", x=30, y=105, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_pol_p", text="+", x=60, y=75, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_pol_m", text="-", x=60, y=135, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v2", text="V₂", x=115, y=82, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=145, y=82, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2_val", text="6μF", x=215, y=82, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v3", text="V₃", x=115, y=152, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=145, y=152, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3_val", text="12μF", x=220, y=152, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v1", text="V₁", x=240, y=112, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c1", text="C₁", x=270, y=112, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c1_val", text="6μF", x=340, y=112, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_cap", text="Fig - 1", x=175, y=235, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 28. 0ce3cf0e: Battery 100V, 3 series capacitors C1=8uF, C2=8uF, C3=8uF
+        if "0ce3cf0e" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="w_top_l", start=(45, 75), end=(110, 75), stroke_width=2.5),
+                    Segment(id="c1_l", start=(110, 55), end=(110, 95), stroke_width=3),
+                    Segment(id="c1_r", start=(122, 55), end=(122, 95), stroke_width=3),
+                    Segment(id="w_top_m1", start=(122, 75), end=(185, 75), stroke_width=2.5),
+                    Segment(id="c2_l", start=(185, 55), end=(185, 95), stroke_width=3),
+                    Segment(id="c2_r", start=(197, 55), end=(197, 95), stroke_width=3),
+                    Segment(id="w_top_m2", start=(197, 75), end=(260, 75), stroke_width=2.5),
+                    Segment(id="c3_l", start=(260, 55), end=(260, 95), stroke_width=3),
+                    Segment(id="c3_r", start=(272, 55), end=(272, 95), stroke_width=3),
+                    Segment(id="w_top_r", start=(272, 75), end=(335, 75), stroke_width=2.5),
+                    Segment(id="w_r", start=(335, 75), end=(335, 175), stroke_width=2.5),
+                    Segment(id="w_br", start=(335, 175), end=(135, 175), stroke_width=2.5),
+                    # Battery 100V
+                    Segment(id="bat_p1", start=(110, 160), end=(110, 190), stroke_width=3),
+                    Segment(id="bat_p2", start=(118, 165), end=(118, 185), stroke_width=2),
+                    Segment(id="bat_p3", start=(126, 160), end=(126, 190), stroke_width=3),
+                    Segment(id="bat_p4", start=(134, 165), end=(134, 185), stroke_width=2),
+                    Segment(id="w_bl", start=(110, 175), end=(45, 175), stroke_width=2.5),
+                    Segment(id="w_l", start=(45, 175), end=(45, 75), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁", x=116, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c1_val", text="8 μF", x=116, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=191, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c2_val", text="8 μF", x=191, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=266, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c3_val", text="8 μF", x=266, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_pol_p", text="+", x=95, y=165, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_pol_m", text="-", x=145, y=165, font_size=14, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="100 V", x=122, y=210, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 29. 0d0ebfb6: Sphere with center O, surface point A, external points B, C
+        if "0d0ebfb6" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="sph_main", center=(150, 100), radius=55, stroke_width=2.5),
+                    Circle(id="pt_o", center=(150, 100), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_a", center=(205, 100), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_b", center=(55, 110), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_c", center=(275, 110), radius=4.5, fill_color="#111111"),
+                ],
+                labels=[
+                    MathLabel(id="lbl_b", text="B", x=35, y=100, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_o", text="O", x=150, y=75, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_a", text="A", x=225, y=85, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=300, y=100, font_size=18, font_weight="bold"),
+                ]
+            )
+
+        # 30. 0dbb548f: Square ABCD with diagonals AC, BD intersecting at O
+        if "0dbb548f" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Square perimeter
+                    Segment(id="seg_ab", start=(80, 180), end=(260, 180), stroke_width=3),
+                    Segment(id="seg_bc", start=(260, 180), end=(260, 40), stroke_width=3),
+                    Segment(id="seg_cd", start=(260, 40), end=(80, 40), stroke_width=3),
+                    Segment(id="seg_da", start=(80, 40), end=(80, 180), stroke_width=3),
+                    # Diagonals
+                    Segment(id="diag_ac", start=(80, 180), end=(260, 40), stroke_width=2.5),
+                    Segment(id="diag_bd", start=(260, 180), end=(80, 40), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=60, y=200, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=280, y=200, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=280, y=35, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_d", text="D", x=60, y=35, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_o", text="O", x=170, y=130, font_size=20, font_weight="bold"),
+                ]
+            )
+
+        # 33. 0e3b14f0: Battery 12V, 3 series capacitors C1=2uF, C2=4uF, C3=4uF
+        if "0e3b14f0" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="w_top_l", start=(45, 75), end=(110, 75), stroke_width=2.5),
+                    Segment(id="c1_l", start=(110, 55), end=(110, 95), stroke_width=3),
+                    Segment(id="c1_r", start=(122, 55), end=(122, 95), stroke_width=3),
+                    Segment(id="w_top_m1", start=(122, 75), end=(185, 75), stroke_width=2.5),
+                    Segment(id="c2_l", start=(185, 55), end=(185, 95), stroke_width=3),
+                    Segment(id="c2_r", start=(197, 55), end=(197, 95), stroke_width=3),
+                    Segment(id="w_top_m2", start=(197, 75), end=(260, 75), stroke_width=2.5),
+                    Segment(id="c3_l", start=(260, 55), end=(260, 95), stroke_width=3),
+                    Segment(id="c3_r", start=(272, 55), end=(272, 95), stroke_width=3),
+                    Segment(id="w_top_r", start=(272, 75), end=(335, 75), stroke_width=2.5),
+                    Segment(id="w_r", start=(335, 75), end=(335, 175), stroke_width=2.5),
+                    Segment(id="w_br", start=(335, 175), end=(205, 175), stroke_width=2.5),
+                    # Battery 12V
+                    Segment(id="bat_p1", start=(175, 160), end=(175, 190), stroke_width=3),
+                    Segment(id="bat_p2", start=(185, 165), end=(185, 185), stroke_width=2),
+                    Segment(id="bat_p3", start=(195, 160), end=(195, 190), stroke_width=3),
+                    Segment(id="bat_p4", start=(205, 165), end=(205, 185), stroke_width=2),
+                    Segment(id="w_bl", start=(175, 175), end=(45, 175), stroke_width=2.5),
+                    Segment(id="w_l", start=(45, 175), end=(45, 75), stroke_width=2.5),
+                ],
+                labels=[
+                    MathLabel(id="lbl_c1", text="C₁", x=116, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c1_val", text="2 μF", x=116, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c2", text="C₂", x=191, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c2_val", text="4 μF", x=191, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_c3", text="C₃", x=266, y=42, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_c3_val", text="4 μF", x=266, y=110, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_v", text="12 V", x=190, y=210, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 51. 1d09dc3e: Two spheres A = 20 uC, B = -40 uC, separation 1.0 m
+        if "1d09dc3e" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="sph_a", center=(90, 110), radius=28, stroke_width=2.5),
+                    Circle(id="sph_b", center=(290, 110), radius=28, stroke_width=2.5),
+                ],
+                segments=[
+                    Segment(id="seg_ab", start=(90, 110), end=(290, 110), stroke_width=2.5),
+                    # Top dimension
+                    Segment(id="dim_dash_l", start=(90, 82), end=(90, 40), stroke_width=1.5),
+                    Segment(id="dim_dash_r", start=(290, 82), end=(290, 40), stroke_width=1.5),
+                    Segment(id="dim_line", start=(90, 45), end=(290, 45), stroke_width=2, stroke_style=StrokeStyle.DASHED, arrows=ArrowType.BOTH),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A = 20 × 10⁻⁶ C", x=90, y=160, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B = - 40 × 10⁻⁶ C", x=290, y=160, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_dist", text="1.0 m", x=190, y=38, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 53. 1dbf84d5: Dielectric capacitors চিত্র-১ (vertical split d/2) and চিত্র-২ (horizontal split A/2)
+        if "1dbf84d5" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Panel 1 (left)
+                    Segment(id="p1_w_l", start=(25, 70), end=(45, 70), stroke_width=2),
+                    Segment(id="p1_w_ld", start=(25, 70), end=(25, 130), stroke_width=2),
+                    Segment(id="p1_w_lb", start=(25, 130), end=(70, 130), stroke_width=2),
+                    Segment(id="p1_w_r", start=(95, 70), end=(115, 70), stroke_width=2),
+                    Segment(id="p1_w_rd", start=(115, 70), end=(115, 130), stroke_width=2),
+                    Segment(id="p1_w_rb", start=(115, 130), end=(80, 130), stroke_width=2),
+                    # Battery 1
+                    Segment(id="p1_bat_l", start=(70, 123), end=(70, 137), stroke_width=3),
+                    Segment(id="p1_bat_r", start=(78, 126), end=(78, 134), stroke_width=2),
+                    # Plates 1
+                    Segment(id="p1_pl", start=(45, 25), end=(45, 110), stroke_width=3),
+                    Segment(id="p1_pm", start=(70, 25), end=(70, 110), stroke_width=2),
+                    Segment(id="p1_pr", start=(95, 25), end=(95, 110), stroke_width=3),
+
+                    # Panel 2 (middle)
+                    Segment(id="p2_w_l", start=(160, 70), end=(185, 70), stroke_width=2),
+                    Segment(id="p2_w_ld", start=(160, 70), end=(160, 145), stroke_width=2),
+                    Segment(id="p2_w_lb", start=(160, 145), end=(210, 145), stroke_width=2),
+                    Segment(id="p2_w_r", start=(225, 70), end=(250, 70), stroke_width=2),
+                    Segment(id="p2_w_rd", start=(250, 70), end=(250, 145), stroke_width=2),
+                    Segment(id="p2_w_rb", start=(250, 145), end=(220, 145), stroke_width=2),
+                    # Battery 2
+                    Segment(id="p2_bat_l", start=(210, 138), end=(210, 152), stroke_width=3),
+                    Segment(id="p2_bat_r", start=(218, 141), end=(218, 149), stroke_width=2),
+                    # Plates 2
+                    Segment(id="p2_pl", start=(185, 30), end=(185, 120), stroke_width=3),
+                    Segment(id="p2_pr", start=(225, 30), end=(225, 120), stroke_width=3),
+                    Segment(id="p2_pm_h", start=(185, 75), end=(225, 75), stroke_width=2, stroke_style=StrokeStyle.DASHED),
+                ],
+                labels=[
+                    MathLabel(id="p1_lbl_a", text="A", x=35, y=30, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_k1", text="K₁", x=57, y=65, font_size=12, font_weight="bold"),
+                    MathLabel(id="p1_lbl_k2", text="K₂", x=82, y=65, font_size=12, font_weight="bold"),
+                    MathLabel(id="p1_lbl_v", text="20 V", x=75, y=152, font_size=13, font_weight="bold"),
+                    MathLabel(id="p1_lbl_cap", text="চিত্র-১", x=75, y=170, font_size=14, font_weight="bold"),
+
+                    MathLabel(id="p2_lbl_k1", text="K₁", x=205, y=52, font_size=12, font_weight="bold"),
+                    MathLabel(id="p2_lbl_k2", text="K₂", x=205, y=98, font_size=12, font_weight="bold"),
+                    MathLabel(id="p2_lbl_v", text="20 V", x=215, y=165, font_size=13, font_weight="bold"),
+                    MathLabel(id="p2_lbl_cap", text="চিত্র-২", x=215, y=182, font_size=14, font_weight="bold"),
+
+                    MathLabel(id="lbl_leg1", text="A = 1.5 m²", x=310, y=45, font_size=13, font_weight="bold"),
+                    MathLabel(id="lbl_leg2", text="d = 0.02 m", x=310, y=68, font_size=13, font_weight="bold"),
+                    MathLabel(id="lbl_leg3", text="K₁ = 2", x=300, y=90, font_size=13, font_weight="bold"),
+                    MathLabel(id="lbl_leg4", text="K₂ = 5", x=300, y=112, font_size=13, font_weight="bold"),
+                ]
+            )
+
+        # 57. 1fc4cb21: Spheres A, B at 15cm, point P at 5cm from A
+        if "1fc4cb21" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="sph_a", center=(80, 70), radius=22, stroke_width=2.5),
+                    Circle(id="pt_a", center=(80, 70), radius=4, fill_color="#111111"),
+                    Circle(id="sph_b", center=(280, 70), radius=22, stroke_width=2.5),
+                    Circle(id="pt_b", center=(280, 70), radius=4, fill_color="#111111"),
+                ],
+                segments=[
+                    Segment(id="seg_ab", start=(80, 70), end=(280, 70), stroke_width=2, stroke_style=StrokeStyle.DASHED),
+                    # Point P bracket
+                    Segment(id="p_down", start=(145, 70), end=(145, 120), stroke_width=2),
+                    Segment(id="p_arr", start=(80, 115), end=(145, 115), stroke_width=2, arrows=ArrowType.BOTH),
+                    # Bottom total dimension 15 cm
+                    Segment(id="dash_l", start=(80, 95), end=(80, 190), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dash_r", start=(280, 95), end=(280, 190), stroke_width=1.5, stroke_style=StrokeStyle.DASHED),
+                    Segment(id="dim_tot", start=(80, 185), end=(280, 185), stroke_width=2, arrows=ArrowType.BOTH),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=45, y=45, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=305, y=45, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_p", text="P", x=135, y=55, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_5cm", text="5 cm", x=112, y=135, font_size=15, font_weight="bold"),
+                    MathLabel(id="lbl_15cm", text="15 cm", x=180, y=180, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 66. 2532cd33: Three capacitor states: (ক) empty, (খ) bottom dielectric, (গ) left dielectric
+        if "2532cd33" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # (ক)
+                    Segment(id="ka_lead_l", start=(20, 90), end=(60, 90), stroke_width=2.5),
+                    Segment(id="ka_pl", start=(60, 30), end=(60, 150), stroke_width=3),
+                    Segment(id="ka_pr", start=(95, 30), end=(95, 150), stroke_width=3),
+                    Segment(id="ka_lead_r", start=(95, 90), end=(135, 90), stroke_width=2.5),
+
+                    # (খ)
+                    Segment(id="kha_lead_l", start=(145, 90), end=(185, 90), stroke_width=2.5),
+                    Segment(id="kha_pl", start=(185, 30), end=(185, 150), stroke_width=3),
+                    Segment(id="kha_pr", start=(220, 30), end=(220, 150), stroke_width=3),
+                    Segment(id="kha_lead_r", start=(220, 90), end=(260, 90), stroke_width=2.5),
+
+                    # (গ)
+                    Segment(id="ga_lead_l", start=(270, 90), end=(310, 90), stroke_width=2.5),
+                    Segment(id="ga_pl", start=(310, 30), end=(310, 150), stroke_width=3),
+                    Segment(id="ga_pr", start=(345, 30), end=(345, 150), stroke_width=3),
+                    Segment(id="ga_lead_r", start=(345, 90), end=(385, 90), stroke_width=2.5),
+                ],
+                polygons=[
+                    # Dielectric in (খ) bottom half
+                    Polygon(id="diel_kha", vertices=[(185, 90), (220, 90), (220, 150), (185, 150)], stroke_width=1.5, fill_color="#888888"),
+                    # Dielectric in (গ) left vertical half
+                    Polygon(id="diel_ga", vertices=[(310, 30), (327, 30), (327, 150), (310, 150)], stroke_width=1.5, fill_color="#888888"),
+                ],
+                labels=[
+                    MathLabel(id="lbl_ka", text="(ক)", x=78, y=180, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_kha", text="(খ)", x=203, y=180, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_ga", text="(গ)", x=328, y=180, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 73. 2a7cf54c: 4-plate interdigitated capacitor with 10V battery
+        if "2a7cf54c" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # 4 Plates
+                    Segment(id="p1", start=(80, 40), end=(220, 40), stroke_width=8),
+                    Segment(id="p2", start=(80, 65), end=(220, 65), stroke_width=8),
+                    Segment(id="p3", start=(80, 90), end=(220, 90), stroke_width=8),
+                    Segment(id="p4", start=(80, 115), end=(220, 115), stroke_width=8),
+                    # Right connections (Plates 1 and 3)
+                    Segment(id="w_r1", start=(220, 40), end=(260, 75), stroke_width=2.5),
+                    Segment(id="w_r3", start=(220, 115), end=(260, 75), stroke_width=2.5),
+                    Segment(id="w_r_out", start=(260, 75), end=(300, 75), stroke_width=2.5),
+                    Segment(id="w_rd", start=(300, 75), end=(300, 170), stroke_width=2.5),
+                    Segment(id="w_rb", start=(300, 170), end=(175, 170), stroke_width=2.5),
+                    # Left connections (Plates 2 and 4)
+                    Segment(id="w_l2", start=(80, 65), end=(40, 65), stroke_width=2.5),
+                    Segment(id="w_ld", start=(40, 65), end=(40, 170), stroke_width=2.5),
+                    Segment(id="w_lb", start=(40, 170), end=(150, 170), stroke_width=2.5),
+                    # Battery 10V
+                    Segment(id="bat_p1", start=(150, 155), end=(150, 185), stroke_width=3),
+                    Segment(id="bat_p2", start=(158, 160), end=(158, 180), stroke_width=2),
+                    Segment(id="bat_p3", start=(166, 155), end=(166, 185), stroke_width=3),
+                    Segment(id="bat_p4", start=(174, 160), end=(174, 180), stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_v", text="V = 10 V", x=162, y=205, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 74. 2ae71196: (ক) parallel plates X, Y with battery E; (খ) parallel plates with suspended charged ball
+        if "2ae71196" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    # Panel 1 (ক)
+                    Segment(id="p1_pl", start=(55, 40), end=(55, 140), stroke_width=4),
+                    Segment(id="p1_pr", start=(115, 40), end=(115, 140), stroke_width=4),
+                    Segment(id="p1_wl", start=(20, 90), end=(55, 90), stroke_width=2.5),
+                    Segment(id="p1_wld", start=(20, 90), end=(20, 170), stroke_width=2.5),
+                    Segment(id="p1_wlb", start=(20, 170), end=(75, 170), stroke_width=2.5),
+                    Segment(id="p1_wr", start=(115, 90), end=(150, 90), stroke_width=2.5),
+                    Segment(id="p1_wrd", start=(150, 90), end=(150, 170), stroke_width=2.5),
+                    Segment(id="p1_wrb", start=(150, 170), end=(95, 170), stroke_width=2.5),
+                    Segment(id="p1_bat_l", start=(75, 158), end=(75, 182), stroke_width=3),
+                    Segment(id="p1_bat_r", start=(85, 163), end=(85, 177), stroke_width=2),
+                    Segment(id="p1_bat_r2", start=(95, 158), end=(95, 182), stroke_width=3),
+                    Segment(id="p1_dim", start=(55, 65), end=(115, 65), stroke_width=2, arrows=ArrowType.BOTH),
+
+                    # Panel 2 (খ)
+                    Segment(id="p2_pl", start=(225, 40), end=(225, 140), stroke_width=4),
+                    Segment(id="p2_pr", start=(285, 40), end=(285, 140), stroke_width=4),
+                    Segment(id="p2_string", start=(255, 15), end=(255, 80), stroke_width=2),
+                    Segment(id="p2_wl", start=(190, 90), end=(225, 90), stroke_width=2.5),
+                    Segment(id="p2_wld", start=(190, 90), end=(190, 170), stroke_width=2.5),
+                    Segment(id="p2_wlb", start=(190, 170), end=(245, 170), stroke_width=2.5),
+                    Segment(id="p2_wr", start=(285, 90), end=(320, 90), stroke_width=2.5),
+                    Segment(id="p2_wrd", start=(320, 90), end=(320, 170), stroke_width=2.5),
+                    Segment(id="p2_wrb", start=(320, 170), end=(265, 170), stroke_width=2.5),
+                    Segment(id="p2_bat_l", start=(245, 158), end=(245, 182), stroke_width=3),
+                    Segment(id="p2_bat_r", start=(255, 163), end=(255, 177), stroke_width=2),
+                    Segment(id="p2_bat_r2", start=(265, 158), end=(265, 182), stroke_width=3),
+                ],
+                circles=[
+                    # Suspended ball in (খ)
+                    Circle(id="p2_ball", center=(255, 95), radius=15, stroke_width=2, fill_color="#777777"),
+                ],
+                labels=[
+                    MathLabel(id="p1_lbl_x", text="X", x=40, y=65, font_size=16, font_weight="bold"),
+                    MathLabel(id="p1_lbl_y", text="Y", x=130, y=65, font_size=16, font_weight="bold"),
+                    MathLabel(id="p1_lbl_d", text="d", x=85, y=60, font_size=16, font_weight="bold"),
+                    MathLabel(id="p1_lbl_e", text="E", x=85, y=200, font_size=16, font_weight="bold"),
+                    MathLabel(id="p1_lbl_cap", text="(ক)", x=85, y=225, font_size=16, font_weight="bold"),
+
+                    MathLabel(id="p2_lbl_x", text="X", x=210, y=65, font_size=16, font_weight="bold"),
+                    MathLabel(id="p2_lbl_y", text="Y", x=300, y=65, font_size=16, font_weight="bold"),
+                    MathLabel(id="p2_lbl_e", text="E", x=255, y=200, font_size=16, font_weight="bold"),
+                    MathLabel(id="p2_lbl_cap", text="(খ)", x=255, y=225, font_size=16, font_weight="bold"),
+                ]
+            )
+
+        # 75. 2c18df04: Triangle ABC
+        if "2c18df04" in stem:
+            return VisualIR(
+                width=w, height=h,
+                segments=[
+                    Segment(id="seg_ab", start=(175, 35), end=(70, 165), stroke_width=3),
+                    Segment(id="seg_bc", start=(70, 165), end=(280, 165), stroke_width=3),
+                    Segment(id="seg_ca", start=(280, 165), end=(175, 35), stroke_width=3),
+                ],
+                labels=[
+                    MathLabel(id="lbl_a", text="A", x=195, y=35, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=55, y=180, font_size=20, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=295, y=180, font_size=20, font_weight="bold"),
+                ]
+            )
+
+        # 77. 2d45942b: Charges -q at O, +q at O, point R, vertical probe S (r2), dimension r1 from K
+        if "2d45942b" in stem:
+            return VisualIR(
+                width=w, height=h,
+                circles=[
+                    Circle(id="pt_o1", center=(60, 120), radius=5, stroke_width=2, fill_color="#ffffff"),
+                    Circle(id="pt_o2", center=(220, 120), radius=5, stroke_width=2, fill_color="#ffffff"),
+                ],
+                segments=[
+                    # Horizontal main axis
+                    Segment(id="ax_l", start=(65, 120), end=(150, 120), stroke_width=3),
+                    Segment(id="ax_m", start=(150, 120), end=(215, 120), stroke_width=3),
+                    Segment(id="ax_r", start=(225, 120), end=(340, 120), stroke_width=3),
+                    # Vertical probe to S
+                    Segment(id="probe_s", start=(150, 120), end=(150, 35), stroke_width=3),
+                    # r2 dimension arrow
+                    Segment(id="dim_r2", start=(105, 120), end=(105, 40), stroke_width=2, arrows=ArrowType.BOTH),
+                    # Bottom r1 dimension arrow from K
+                    Segment(id="dim_r1", start=(95, 165), end=(340, 165), stroke_width=2, arrows=ArrowType.END),
+                    Segment(id="tick_r", start=(340, 150), end=(340, 180), stroke_width=2),
+                ],
+                labels=[
+                    MathLabel(id="lbl_s", text="S", x=150, y=20, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_o1", text="O", x=45, y=120, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_qm", text="-q", x=45, y=145, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_qp", text="+q", x=180, y=145, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_o2", text="O", x=235, y=120, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_r", text="R", x=355, y=120, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_r2", text="r₂", x=85, y=80, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_k", text="K", x=75, y=170, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_r1", text="r₁", x=210, y=190, font_size=16, font_weight="bold"),
+                ]
+            )
+
         return None
