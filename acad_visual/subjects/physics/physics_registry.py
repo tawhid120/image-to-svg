@@ -5607,28 +5607,31 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # c22bf0ed: 3D Cartesian Axes with ZX Plane Patch
         # ----------------------------------------------------
+        # c22bf0ed: 3D Cartesian Axes with ZX Plane Patch
+        # ----------------------------------------------------
         if "c22bf0ed" in stem:
-            w, h = 360.0, 320.0
+            w, h = 360.0, 300.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xO, yO = 180.0, 200.0
+            xO, yO = 180.0, 180.0
 
             polygons = [
-                Polygon(id="zx_patch", vertices=[(xO, yO), (xO + 70.0, yO), (xO + 45.0, yO + 40.0), (xO - 25.0, yO + 40.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#e8e8e8", fill_opacity=0.6)
+                # ZX plane surface patch
+                Polygon(id="zx_patch", vertices=[(xO, yO), (xO + 65.0, yO), (xO + 30.0, yO + 35.0), (xO - 35.0, yO + 35.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#f2f2f2", fill_opacity=0.5)
             ]
             segments = [
                 # Axis Y (up)
-                Segment(id="axis_y", start=(xO, yO), end=(xO, 80.0), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
+                Segment(id="axis_y", start=(xO, yO), end=(xO, 70.0), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
                 # Axis X (right)
-                Segment(id="axis_x", start=(xO, yO), end=(300.0, yO), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
+                Segment(id="axis_x", start=(xO, yO), end=(280.0, yO), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
                 # Axis Z (down-left)
-                Segment(id="axis_z", start=(xO, yO), end=(100.0, 280.0), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
+                Segment(id="axis_z", start=(xO, yO), end=(115.0, 245.0), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
-                MathLabel(id="lbl_formula", text="\vec{E} = (2\hat{i} + 5\hat{j} + 6\hat{k})\text{ NC}^{-1}", x=180.0, y=40.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_y", text="Y", x=xO + 18.0, y=85.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_x", text="X", x=315.0, y=yO + 4.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_z", text="Z", x=90.0, y=295.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_zx", text="ZX", x=xO + 25.0, y=yO + 22.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_formula", text=r"\vec{E} = (2\hat{i} + 5\hat{j} + 6\hat{k})\text{ NC}^{-1}", x=180.0, y=35.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_y", text="Y", x=xO + 18.0, y=75.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_x", text="X", x=295.0, y=yO + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_z", text="Z", x=105.0, y=260.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_zx", text="ZX", x=xO + 15.0, y=yO + 18.0, font_size=17.0, font_weight="bold"),
             ]
             return VisualIR(title="3D Cartesian Axes with ZX Plane Patch", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
 
