@@ -5945,56 +5945,66 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # da8c83e7: Dual Spherical Shells Comparison (Before & After Connection)
         # ----------------------------------------------------
+        # da8c83e7: Dual Spherical Shells Comparison (Before & After Connection)
+        # ----------------------------------------------------
         if "da8c83e7" in stem:
             w, h = 480.0, 220.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
 
-            # Left: Before
-            x1_a, x1_b, y1 = 80.0, 165.0, 85.0
-            # Right: After
+            # Left: Before connection
+            x1_a, x1_b, y1 = 80.0, 170.0, 85.0
+            # Right: After connection
             x2_a, x2_b, y2 = 285.0, 400.0, 85.0
-            r_a, r_b = 32.0, 28.0
+            r_a, r_b = 36.0, 32.0
+            thick_a, thick_b = 10.0, 9.0
 
             circles = [
-                # Shell 1 A
-                Circle(id="s1_a_out", center=(x1_a, y1), radius=r_a, stroke_width=2.5, stroke_color="#111111", fill_color="#dddddd"),
-                Circle(id="s1_a_in", center=(x1_a, y1), radius=r_a - 6.0, stroke_width=1.5, stroke_color="#111111", fill_color="#ffffff"),
-                Circle(id="s1_a_c", center=(x1_a, y1), radius=3.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                # Shell 1 B
-                Circle(id="s1_b_out", center=(x1_b, y1), radius=r_b, stroke_width=2.5, stroke_color="#111111", fill_color="#dddddd"),
-                Circle(id="s1_b_in", center=(x1_b, y1), radius=r_b - 6.0, stroke_width=1.5, stroke_color="#111111", fill_color="#ffffff"),
-                Circle(id="s1_b_c", center=(x1_b, y1), radius=3.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                # Shell 2 A
-                Circle(id="s2_a_out", center=(x2_a, y2), radius=r_a, stroke_width=2.5, stroke_color="#111111", fill_color="#dddddd"),
-                Circle(id="s2_a_in", center=(x2_a, y2), radius=r_a - 6.0, stroke_width=1.5, stroke_color="#111111", fill_color="#ffffff"),
-                Circle(id="s2_a_c", center=(x2_a, y2), radius=3.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
-                # Shell 2 B
-                Circle(id="s2_b_out", center=(x2_b, y2), radius=r_b, stroke_width=2.5, stroke_color="#111111", fill_color="#dddddd"),
-                Circle(id="s2_b_in", center=(x2_b, y2), radius=r_b - 6.0, stroke_width=1.5, stroke_color="#111111", fill_color="#ffffff"),
-                Circle(id="s2_b_c", center=(x2_b, y2), radius=3.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                # Pair 1 (Before): Shell A (Thick Shaded Ring)
+                Circle(id="s1_a_out", center=(x1_a, y1), radius=r_a, stroke_width=2.5, stroke_color="#111111", fill_color="#444444"),
+                Circle(id="s1_a_in", center=(x1_a, y1), radius=r_a - thick_a, stroke_width=1.8, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="s1_a_c", center=(x1_a, y1), radius=3.2, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+
+                # Pair 1 (Before): Shell B (Thick Shaded Ring)
+                Circle(id="s1_b_out", center=(x1_b, y1), radius=r_b, stroke_width=2.5, stroke_color="#111111", fill_color="#444444"),
+                Circle(id="s1_b_in", center=(x1_b, y1), radius=r_b - thick_b, stroke_width=1.8, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="s1_b_c", center=(x1_b, y1), radius=3.2, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+
+                # Pair 2 (After): Shell A (Thick Shaded Ring)
+                Circle(id="s2_a_out", center=(x2_a, y2), radius=r_a, stroke_width=2.5, stroke_color="#111111", fill_color="#444444"),
+                Circle(id="s2_a_in", center=(x2_a, y2), radius=r_a - thick_a, stroke_width=1.8, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="s2_a_c", center=(x2_a, y2), radius=3.2, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+
+                # Pair 2 (After): Shell B (Thick Shaded Ring)
+                Circle(id="s2_b_out", center=(x2_b, y2), radius=r_b, stroke_width=2.5, stroke_color="#111111", fill_color="#444444"),
+                Circle(id="s2_b_in", center=(x2_b, y2), radius=r_b - thick_b, stroke_width=1.8, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="s2_b_c", center=(x2_b, y2), radius=3.2, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
             ]
+
+            bezier_paths = [
+                # Wavy / Coiled connecting wire between Shell 2A and 2B
+                BezierPath(id="wavy_wire", path_d=f"M {x2_a + r_a:.1f} {y2:.1f} C 325.0 78.0 333.0 92.0 337.0 85.0 C 341.0 78.0 349.0 92.0 353.0 85.0 C 357.0 78.0 364.0 92.0 {x2_b - r_b:.1f} {y2:.1f}", stroke_width=2.2, stroke_color="#111111"),
+            ]
+
             segments = [
-                # Radius arrows
-                Segment(id="r1_a", start=(x1_a, y1), end=(x1_a, y1 - r_a), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                Segment(id="r1_b", start=(x1_b, y1), end=(x1_b, y1 - r_b), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                Segment(id="r2_a", start=(x2_a, y2), end=(x2_a, y2 - r_a), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                Segment(id="r2_b", start=(x2_b, y2), end=(x2_b, y2 - r_b), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                # Resistor / curly connection between 2A and 2B
-                Segment(id="conn", start=(x2_a + r_a, y2), end=(x2_b - r_b, y2), stroke_width=2.0, color="#111111"),
+                # Radius arrows pointing up to outer shells
+                Segment(id="r1_a", start=(x1_a, y1), end=(x1_a, y1 - r_a + 2.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="r1_b", start=(x1_b, y1), end=(x1_b, y1 - r_b + 2.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="r2_a", start=(x2_a, y2), end=(x2_a, y2 - r_a + 2.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="r2_b", start=(x2_b, y2), end=(x2_b, y2 - r_b + 2.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
-                MathLabel(id="lbl_1a", text="A", x=x1_a, y=y1 - r_a - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_1b", text="B", x=x1_b, y=y1 - r_b - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_2a", text="A", x=x2_a, y=y2 - r_a - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_2b", text="B", x=x2_b, y=y2 - r_b - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_r1_a", text="r_1", x=x1_a + 12.0, y=y1 - 15.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_r1_b", text="r_2", x=x1_b + 12.0, y=y1 - 15.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_r2_a", text="r_1", x=x2_a + 12.0, y=y2 - 15.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_r2_b", text="r_2", x=x2_b + 12.0, y=y2 - 15.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_1a", text="A", x=x1_a, y=y1 - r_a - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_1b", text="B", x=x1_b, y=y1 - r_b - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_2a", text="A", x=x2_a, y=y2 - r_a - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_2b", text="B", x=x2_b, y=y2 - r_b - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r1_a", text="r_1", x=x1_a + 12.0, y=y1 - 15.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r1_b", text="r_2", x=x1_b + 12.0, y=y1 - 15.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r2_a", text="r_1", x=x2_a + 12.0, y=y2 - 15.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r2_b", text="r_2", x=x2_b + 12.0, y=y2 - 15.0, font_size=16.0, font_weight="bold"),
                 MathLabel(id="lbl_before", text="সংযোগের পূর্বে", x=(x1_a + x1_b)/2.0, y=175.0, font_size=18.0, font_weight="bold", math_mode=False),
                 MathLabel(id="lbl_after", text="সংযোগের পর", x=(x2_a + x2_b)/2.0, y=175.0, font_size=18.0, font_weight="bold", math_mode=False),
             ]
-            return VisualIR(title="Dual Spherical Shells Comparison", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Dual Spherical Shells Comparison", width=w, height=h, coordinate_frame=cf, circles=circles, bezier_paths=bezier_paths, segments=segments, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # ddfd5136: Vertical Line of Charges (+6 uC and -4 uC)
