@@ -24,37 +24,45 @@ class UniversalSVGRenderer:
         self.ir = ir
 
     def _format_math_text(self, text: str) -> str:
-        # 1. Strip basic LaTeX text wrappers (\text{}, \mathrm{}, \mathbf{}, etc.)
-        text = re.sub(r'\\(?:text|mathrm|mathbf|mathit|textbf|textit|operatorname)\{([^}]*)\}', r'\1', text)
+        # 0. Unescape Python string literals / control characters (e.g. \a, \b, \f, \v, \t)
+        text = text.replace('\x07', '\\a').replace('\x08', '\\b').replace('\x0c', '\\f').replace('\x0b', '\\v').replace('\t', '\\t')
+        text = re.sub(r'\r(?=ho|ight)', r'\\r', text)
+        text = re.sub(r'\n(?=eq|abla)', r'\\n', text)
 
-        # 2. Fractions
-        text = re.sub(r'\\frac\{([^}]*)\}\{([^}]*)\}', r'\1/\2', text)
+        # 1. Strip basic LaTeX text wrappers (\text{}, text{}, ext{}, \mathrm{}, etc.)
+        text = re.sub(r'(?:\\?text|(?<![a-zA-Z])ext|\\?mathrm|\\?mathbf|\\?mathit|\\?textbf|\\?textit|\\?operatorname)\s*\{([^}]*)\}', r' \1', text)
 
-        # 3. Square roots
-        text = re.sub(r'\\sqrt\{([^}]*)\}', r'√\1', text)
-        text = re.sub(r'\\sqrt', r'√', text)
+        # 2. Fix broken 'imes' -> 'times'
+        text = re.sub(r'(?<![a-zA-Z])(?:\\?times|(?<![a-zA-Z])imes)(?![a-zA-Z])', '×', text)
 
-        # 4. Vectors and unit vectors
-        text = re.sub(r'\\hat\{i\}', 'î', text)
-        text = re.sub(r'\\hat\{j\}', 'ĵ', text)
-        text = re.sub(r'\\hat\{k\}', 'k̂', text)
-        text = re.sub(r'\\hat\{([^}])\}', r'\1̂', text)
-        text = re.sub(r'\\vec\{([^}])\}', r'\1⃗', text)
-        text = re.sub(r'\\overline\{([^}]*)\}', r'\1', text)
+        # 3. Fractions
+        text = re.sub(r'\\?frac\{([^}]*)\}\{([^}]*)\}', r'\1/\2', text)
 
-        # 5. Degrees, primes, angles, operations
-        text = re.sub(r'\^\{\\circ\}|\^\\circ|\\circ|\\degree', '°', text)
-        text = re.sub(r'\^\{\\prime\}|\^\\prime|\\prime', '′', text)
-        text = re.sub(r'\\angle', '∠', text)
-        text = re.sub(r'\\parallel', '∥', text)
-        text = re.sub(r'\\perp', '⊥', text)
-        text = re.sub(r'\\cdot', '·', text)
+        # 4. Square roots
+        text = re.sub(r'\\?sqrt\{([^}]*)\}', r'√\1', text)
+        text = re.sub(r'\\?sqrt', r'√', text)
 
-        # 6. Delimiters and spacing
-        text = re.sub(r'\\left|\\right', '', text)
-        text = re.sub(r'\\[,;! ]|\\quad|\\qquad', ' ', text)
+        # 5. Vectors and unit vectors
+        text = re.sub(r'\\?hat\{i\}', 'î', text)
+        text = re.sub(r'\\?hat\{j\}', 'ĵ', text)
+        text = re.sub(r'\\?hat\{k\}', 'k̂', text)
+        text = re.sub(r'\\?hat\{([^}])\}', r'\1̂', text)
+        text = re.sub(r'\\?vec\{([^}])\}', r'\1⃗', text)
+        text = re.sub(r'\\?overline\{([^}]*)\}', r'\1', text)
 
-        # 7. Common Greek & Math symbols
+        # 6. Degrees, primes, angles, operations
+        text = re.sub(r'\^\{\\?circ\}|\^\\?circ|\\?circ|\\?degree', '°', text)
+        text = re.sub(r'\^\{\\?prime\}|\^\\?prime|\\?prime', '′', text)
+        text = re.sub(r'\\?angle', '∠', text)
+        text = re.sub(r'\\?parallel', '∥', text)
+        text = re.sub(r'\\?perp', '⊥', text)
+        text = re.sub(r'\\?cdot', '·', text)
+
+        # 7. Delimiters and spacing
+        text = re.sub(r'\\?left|\\?right', '', text)
+        text = re.sub(r'\\[,;! ]|\\?quad|\\?qquad', ' ', text)
+
+        # 8. Common Greek & Math symbols
         latex_map = {
             r'\alpha': 'α', r'\beta': 'β', r'\gamma': 'γ', r'\delta': 'δ',
             r'\epsilon': 'ε', r'\eta': 'η', r'\theta': 'θ', r'\lambda': 'λ',
@@ -73,7 +81,7 @@ class UniversalSVGRenderer:
         text = re.sub(r'\\([a-zA-Z])', r'\1', text)
         text = re.sub(r'\\', '', text)
 
-        # 8. Unicode Superscripts and Subscripts
+        # 9. Unicode Superscripts and Subscripts
         sub_map = str.maketrans('0123456789+-=()aeoxhklmnpst', '₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₕₖₗₘₙₚₛₜ')
         sup_map = str.maketrans('0123456789+-=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ')
 
@@ -85,11 +93,15 @@ class UniversalSVGRenderer:
             content = m.group(1) or m.group(2)
             return content.translate(sup_map)
 
-        # Replace subscripts: _{...} or _X
         text = re.sub(r'\_\{([^}]+)\}|\_([0-9a-zA-Z\+\-]+)', to_sub, text)
-        # Replace superscripts: ^{...} or ^X
         text = re.sub(r'\^\{([^}]+)\}|\^([0-9a-zA-Z\+\-°′]+)', to_sup, text)
 
+        # 10. Clean up stray braces around units like { C}, { mm}, { m}
+        text = re.sub(r'\{\s*([a-zA-ZμΩ°\d\.\s\+\-]+)\s*\}', r' \1', text)
+        text = text.replace('{', '').replace('}', '')
+
+        # Clean double spaces
+        text = re.sub(r'\s+', ' ', text).strip()
         return html.escape(text)
 
     @staticmethod
