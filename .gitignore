@@ -57,6 +57,7 @@ acad_output/
 *.webp
 models/
 legacy_archive/
+physics_reconstructed_svgs/
 image_to_svg_project/
 downloaded_diagrams/
 analysis/
