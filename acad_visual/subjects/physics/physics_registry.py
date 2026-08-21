@@ -2107,31 +2107,44 @@ class PhysicsRegistry:
         # 3e36c3b8: Hand Holding Charged Sphere above Negative Plate
         # ----------------------------------------------------
         if "3e36c3b8" in stem:
+            from ...anatomy.organic_tracer import OrganicVectorTracer
             w, h = 420.0, 300.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
 
+            cx, cy, r = 180.0, 75.0, 45.0
+            hand_beziers = OrganicVectorTracer.synthesize_hand_holding_sphere(
+                sphere_center=(cx, cy),
+                sphere_radius=r,
+                id_prefix="hand"
+            )
+
             circles = [
-                Circle(id="sph", center=(170.0, 75.0), radius=45.0, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="sph", center=(cx, cy), radius=r, stroke_width=2.2, stroke_color="#111111", fill_color="none"),
             ]
             polygons = [
                 # Bottom plate
                 Polygon(id="plate", vertices=[(40.0, 220.0), (380.0, 225.0), (380.0, 275.0), (45.0, 270.0)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
             ]
             segments = [
-                # Hand outline approximation
-                Segment(id="h1", start=(100.0, 80.0), end=(130.0, 160.0), stroke_width=2.0, color="#111111"),
-                Segment(id="h2", start=(130.0, 160.0), end=(180.0, 150.0), stroke_width=2.0, color="#111111"),
-                Segment(id="h3", start=(180.0, 150.0), end=(280.0, 195.0), stroke_width=2.0, color="#111111"),
-                Segment(id="h4", start=(220.0, 85.0), end=(330.0, 140.0), stroke_width=2.0, color="#111111"),
                 # Dashed minus line inside plate
                 Segment(id="minus_line", start=(60.0, 248.0), end=(360.0, 250.0), stroke_width=2.5, color="#111111", stroke_style=StrokeStyle.DASHED),
             ]
             labels = [
-                MathLabel(id="lbl_q0", text="q_0", x=180.0, y=75.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_a", text="A", x=80.0, y=95.0, font_size=22.0, font_weight="bold"),
-                MathLabel(id="lbl_p", text="P", x=180.0, y=190.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_q0", text="q₀", x=cx + 12.0, y=cy - 2.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=cx - 88.0, y=cy + 5.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_p", text="P", x=cx - 10.0, y=cy + 105.0, font_size=20.0, font_weight="bold"),
             ]
-            return VisualIR(title="Hand-Held Sphere Electrostatic Induction", width=w, height=h, coordinate_frame=cf, circles=circles, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(
+                title="Hand-Held Sphere Electrostatic Induction",
+                width=w, height=h,
+                coordinate_frame=cf,
+                circles=circles,
+                polygons=polygons,
+                bezier_paths=hand_beziers,
+                segments=segments,
+                labels=labels,
+                background_color="#ffffff"
+            )
 
         # ----------------------------------------------------
         # 3faff89f: Triangle ABC with node charges q1, q2
