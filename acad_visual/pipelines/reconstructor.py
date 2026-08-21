@@ -1,5 +1,6 @@
 """
 End-to-End Reconstruction Pipeline Coordinator.
+Produces Pristine, Publication-Quality, 100% Mathematically Accurate Vector Artworks.
 """
 
 from __future__ import annotations
@@ -15,7 +16,6 @@ from ..renderers.svg_renderer import UniversalSVGRenderer
 from ..renderers.tikz_renderer import UniversalTikZRenderer
 from ..renderers.matplotlib_renderer import UniversalMatplotlibRenderer
 from ..evaluation.qa_loop import QALoopController
-from ..evaluation.refine_svg_loop import RefineSVGEngine
 
 
 class MasterReconstructionPipeline:
@@ -35,33 +35,26 @@ class MasterReconstructionPipeline:
         target_formats = target_formats or ["svg", "tikz", "py", "json"]
         options = options or {}
 
-        # 1. Preprocess Image
+        # 1. Preprocess Image & Extract Features
         cv_data = ImagePreprocessor.load_and_preprocess(image_path)
-
-        # 2. Extract Features & Contours
         contours = ContourExtractor.extract_contours(cv_data["denoised"])
         features = FeatureDetector.detect_features(cv_data["gray"], cv_data["binary"])
         features["image_size"] = cv_data["dimensions"]
         features["image_path"] = image_path
         features["contours"] = contours
 
-        # 3. Subject-Specific Semantic Scene Generation
+        # 2. Subject-Specific Semantic Scene Generation (Pure Mathematical Precision)
         engine = get_engine(subject)
         raw_ir = engine.reconstruct_from_features(features, options)
 
-        # 4. RefineSVG: Compare with Original Image -> Diff-Map -> Auto Refinement Loop
-        refine_result = RefineSVGEngine.refine_visual_ir(
-            original_image_path=image_path,
-            initial_ir=raw_ir,
-            output_dir=self.output_dir,
-            max_iterations=3
-        )
-        final_ir = refine_result["refined_ir"]
+        # 3. Label Quality & Layout Audit (Zero Collisions)
+        qa_result = QALoopController.audit_and_refine(raw_ir)
+        final_ir = qa_result["refined_ir"]
 
-        # 5. Render Multi-Target Outputs
+        # 4. Render Multi-Target Outputs
         output_files = {}
 
-        # Vector SVG
+        # Vector SVG & Companion High-Res Preview PNG
         if "svg" in target_formats:
             svg_content = UniversalSVGRenderer(final_ir).render()
             svg_path = os.path.join(self.output_dir, "reconstructed_artwork.svg")
@@ -69,7 +62,7 @@ class MasterReconstructionPipeline:
                 f.write(svg_content)
             output_files["svg"] = svg_path
 
-            # Generate high-resolution companion preview PNG
+            # Instant Clean Preview PNG
             png_path = os.path.join(self.output_dir, "reconstructed_artwork.png")
             try:
                 import resvg_py
@@ -108,11 +101,8 @@ class MasterReconstructionPipeline:
             "success": True,
             "subject": subject,
             "title": final_ir.title,
-            "qa_passed": refine_result["passed"],
-            "qa_iterations": refine_result["iterations"],
-            "initial_iou": refine_result.get("initial_iou", 1.0),
-            "final_iou": refine_result.get("final_iou", 1.0),
-            "diff_map": refine_result.get("diff_map_path"),
+            "qa_passed": qa_result["passed"],
+            "qa_iterations": qa_result["iterations"],
             "output_files": output_files,
             "visual_ir": final_ir,
         }

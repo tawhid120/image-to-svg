@@ -123,8 +123,9 @@ class UniversalSVGRenderer:
   </style>"""
         ]
 
-        if self.ir.background_color:
-            parts.append(f'  <rect width="{w}" height="{h}" fill="{self.ir.background_color}" />')
+        # Crisp Pure White Background
+        bg_col = self.ir.background_color if self.ir.background_color else "#ffffff"
+        parts.append(f'  <rect width="{w}" height="{h}" fill="{bg_col}" />')
 
         # 1. Render Organic Shapes (Biology / Anatomy / Geography)
         for org in sorted(self.ir.organic_shapes, key=lambda s: s.layer_order):
