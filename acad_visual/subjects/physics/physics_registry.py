@@ -7710,36 +7710,58 @@ class PhysicsRegistry:
                 ]
             )
 
-        # 73. 2a7cf54c: 4-plate interdigitated capacitor with 10V battery
+        # 73. 2a7cf54c: Parallel plate capacitor (4 plates in box) + wedge + battery 10V
         if "2a7cf54c" in stem:
-            return VisualIR(
-                width=w, height=h,
-                segments=[
-                    # 4 Plates
-                    Segment(id="p1", start=(80, 40), end=(220, 40), stroke_width=8),
-                    Segment(id="p2", start=(80, 65), end=(220, 65), stroke_width=8),
-                    Segment(id="p3", start=(80, 90), end=(220, 90), stroke_width=8),
-                    Segment(id="p4", start=(80, 115), end=(220, 115), stroke_width=8),
-                    # Right connections (Plates 1 and 3)
-                    Segment(id="w_r1", start=(220, 40), end=(260, 75), stroke_width=2.5),
-                    Segment(id="w_r3", start=(220, 115), end=(260, 75), stroke_width=2.5),
-                    Segment(id="w_r_out", start=(260, 75), end=(300, 75), stroke_width=2.5),
-                    Segment(id="w_rd", start=(300, 75), end=(300, 170), stroke_width=2.5),
-                    Segment(id="w_rb", start=(300, 170), end=(175, 170), stroke_width=2.5),
-                    # Left connections (Plates 2 and 4)
-                    Segment(id="w_l2", start=(80, 65), end=(40, 65), stroke_width=2.5),
-                    Segment(id="w_ld", start=(40, 65), end=(40, 170), stroke_width=2.5),
-                    Segment(id="w_lb", start=(40, 170), end=(150, 170), stroke_width=2.5),
-                    # Battery 10V
-                    Segment(id="bat_p1", start=(150, 155), end=(150, 185), stroke_width=3),
-                    Segment(id="bat_p2", start=(158, 160), end=(158, 180), stroke_width=2),
-                    Segment(id="bat_p3", start=(166, 155), end=(166, 185), stroke_width=3),
-                    Segment(id="bat_p4", start=(174, 160), end=(174, 180), stroke_width=2),
-                ],
-                labels=[
-                    MathLabel(id="lbl_v", text="V = 10 V", x=162, y=205, font_size=16, font_weight="bold"),
-                ]
-            )
+            # Layout analysis from original scan:
+            # - Rectangle/box on the left containing 4 horizontal parallel lines (plates)
+            # - Right side of the box has a wedge/pointed shape (rhombus right side converging)
+            # - Bottom wire goes through a battery then back left
+            # - V = 10V label below battery
+            bx_L, bx_R = 55.0, 220.0    # Box left/right x
+            bx_T, bx_B = 40.0, 130.0    # Box top/bottom y
+            wx = 255.0                    # Wedge tip x
+            wy = (bx_T + bx_B) / 2.0    # Wedge tip y (vertical midpoint)
+            bat_x = 165.0                # Battery center x
+            bat_y = 175.0                # Battery y
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, 340.0), y_range=(0, 230.0), invert_y=True)
+            segments = [
+                # ── Rectangular box outline ──
+                Segment(id="box_t",  start=(bx_L, bx_T), end=(bx_R, bx_T), stroke_width=1.8, color="#111111"),
+                Segment(id="box_b",  start=(bx_L, bx_B), end=(bx_R, bx_B), stroke_width=1.8, color="#111111"),
+                Segment(id="box_l",  start=(bx_L, bx_T), end=(bx_L, bx_B), stroke_width=1.8, color="#111111"),
+
+                # ── Wedge: right side of box converges to a point ──
+                # Top-right corner → tip
+                Segment(id="wedge_t", start=(bx_R, bx_T), end=(wx, wy), stroke_width=1.8, color="#111111"),
+                # Bottom-right corner → tip
+                Segment(id="wedge_b", start=(bx_R, bx_B), end=(wx, wy), stroke_width=1.8, color="#111111"),
+
+                # ── 4 horizontal capacitor plates inside the box ──
+                Segment(id="pl1", start=(bx_L + 8.0, bx_T + 15.0), end=(bx_R - 5.0, bx_T + 15.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl2", start=(bx_L + 8.0, bx_T + 34.0), end=(bx_R - 5.0, bx_T + 34.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl3", start=(bx_L + 8.0, bx_T + 53.0), end=(bx_R - 5.0, bx_T + 53.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl4", start=(bx_L + 8.0, bx_T + 72.0), end=(bx_R - 5.0, bx_T + 72.0), stroke_width=3.5, color="#111111"),
+
+                # ── Circuit wiring ──
+                # Right wire: from wedge tip down to bottom rail
+                Segment(id="wr_d", start=(wx, wy), end=(wx, bat_y), stroke_width=1.8, color="#111111"),
+                # Bottom rail right→left via battery
+                Segment(id="w_bot_r", start=(wx, bat_y), end=(bat_x + 28.0, bat_y), stroke_width=1.8, color="#111111"),
+                Segment(id="w_bot_l", start=(bat_x - 28.0, bat_y), end=(bx_L, bat_y), stroke_width=1.8, color="#111111"),
+                # Left wire: from bottom rail up to box left
+                Segment(id="wl_u", start=(bx_L, bat_y), end=(bx_L, bx_B), stroke_width=1.8, color="#111111"),
+
+                # ── Battery (4-line symbol: |||| style) ──
+                Segment(id="bat_a", start=(bat_x - 22.0, bat_y - 12.0), end=(bat_x - 22.0, bat_y + 12.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bat_b", start=(bat_x - 12.0, bat_y - 8.0),  end=(bat_x - 12.0, bat_y + 8.0),  stroke_width=1.8, color="#111111"),
+                Segment(id="bat_c", start=(bat_x - 2.0,  bat_y - 12.0), end=(bat_x - 2.0,  bat_y + 12.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bat_d", start=(bat_x + 8.0,  bat_y - 8.0),  end=(bat_x + 8.0,  bat_y + 8.0),  stroke_width=1.8, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_v", text="V = 10 V", x=bat_x - 7.0, y=bat_y + 30.0, font_size=15.0, font_weight="bold", anchor="middle"),
+            ]
+            return VisualIR(title="Academic Visual Diagram", width=340.0, height=230.0, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
 
         # 74. 2ae71196: (ক) parallel plates X, Y with battery E; (খ) parallel plates with suspended charged ball
         if "2ae71196" in stem:
