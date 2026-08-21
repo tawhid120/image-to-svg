@@ -24,7 +24,12 @@ class UniversalSVGRenderer:
         self.ir = ir
 
     def _format_math_text(self, text: str) -> str:
-        # 1. Map common LaTeX Greek symbols and operators to clean unicode glyphs
+        # 1. Clean LaTeX degrees, primes and angles before anything else
+        text = re.sub(r'\^\{\\circ\}|\^\\circ|\\circ|\\degree', '°', text)
+        text = re.sub(r'\^\{\\prime\}|\^\\prime|\\prime', '′', text)
+        text = re.sub(r'\\angle', '∠', text)
+
+        # 2. Map common LaTeX Greek symbols and operators to clean unicode glyphs
         latex_map = {
             r"\alpha": "α",
             r"\beta": "β",
@@ -53,8 +58,6 @@ class UniversalSVGRenderer:
             r"\approx": "≈",
             r"\infty": "∞",
             r"\perp": "⊥",
-            r"\angle": "∠",
-            r"\degree": "°",
         }
         for cmd, glyph in latex_map.items():
             text = text.replace(cmd, glyph)
@@ -67,7 +70,7 @@ class UniversalSVGRenderer:
         def replace_sup(m):
             c = m.group(1) or m.group(2)
             return f'<tspan baseline-shift="super" font-size="70%">{c}</tspan>'
-        formatted = re.sub(r'\^\{([^}]+)\}|\^([0-9a-zA-Z\+\-]+)', replace_sup, escaped)
+        formatted = re.sub(r'\^\{([^}]+)\}|\^([0-9a-zA-Z\+\-°′]+)', replace_sup, escaped)
         def replace_sub(m):
             c = m.group(1) or m.group(2)
             return f'<tspan baseline-shift="sub" font-size="70%">{c}</tspan>'
