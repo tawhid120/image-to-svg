@@ -298,7 +298,17 @@ class UniversalSVGRenderer:
                 tangent_end = (pn[0] - pn_prev[0], pn[1] - pn_prev[1])
                 parts.append(f'  <path d="{self._create_arrowhead_path(pn, tangent_end)}" fill="{conic.color}" />')
 
-        # 5. Render Segments
+        # 5. Render Circles / Spheres
+        for circ in self.ir.circles:
+            cx, cy = circ.center
+            fill = circ.fill_color if circ.fill_color else "none"
+            dash = ' stroke-dasharray="6,4"' if circ.stroke_style == StrokeStyle.DASHED else ""
+            parts.append(
+                f'  <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{circ.radius:.2f}" fill="{fill}" '
+                f'stroke="{circ.stroke_color}" stroke-width="{circ.stroke_width}"{dash} class="vector-stroke" />'
+            )
+
+        # 6. Render Segments
         for seg in self.ir.segments:
             x1, y1 = seg.start
             x2, y2 = seg.end
@@ -312,26 +322,16 @@ class UniversalSVGRenderer:
             if seg.arrows in [ArrowType.BOTH, ArrowType.END]:
                 parts.append(f'  <path d="{self._create_arrowhead_path((x2, y2), (x2 - x1, y2 - y1))}" fill="{seg.color}" />')
 
-        # 6. Render Right Angles
+        # 7. Render Right Angles
         for ra in self.ir.right_angles:
             pts = AnalyticalGeometrySolver.compute_right_angle_box(ra.vertex, ra.arm1_pt, ra.arm2_pt, ra.size)
             path_d = f"M {pts[0][0]:.2f} {pts[0][1]:.2f} L {pts[1][0]:.2f} {pts[1][1]:.2f} L {pts[2][0]:.2f} {pts[2][1]:.2f}"
             parts.append(f'  <path d="{path_d}" fill="none" stroke="{ra.color}" stroke-width="{ra.stroke_width}" class="vector-stroke" />')
 
-        # 7. Render Arc Angles
+        # 8. Render Arc Angles
         for aa in self.ir.arc_angles:
             arc_data = AnalyticalGeometrySolver.compute_arc_angle(aa.vertex, aa.start_pt, aa.end_pt, aa.radius)
             parts.append(f'  <path d="{arc_data["path_d"]}" fill="none" stroke="{aa.color}" stroke-width="{aa.stroke_width}" class="vector-stroke" />')
-
-        # 8. Render Circles / Spheres
-        for circ in self.ir.circles:
-            cx, cy = circ.center
-            fill = circ.fill_color if circ.fill_color else "none"
-            dash = ' stroke-dasharray="6,4"' if circ.stroke_style == StrokeStyle.DASHED else ""
-            parts.append(
-                f'  <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{circ.radius:.2f}" fill="{fill}" '
-                f'stroke="{circ.stroke_color}" stroke-width="{circ.stroke_width}"{dash} class="vector-stroke" />'
-            )
 
         # 9. Render Points
         for pt in self.ir.points:

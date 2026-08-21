@@ -1352,41 +1352,41 @@ class PhysicsRegistry:
             w, h = 480.0, 300.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
             xO, yO, rS = 130.0, 140.0, 80.0
-            xA = xO + 60.0
-            xB = xO + rS + 80.0
-            xM = xB + 80.0
+            xA = xO + rS
+            xB = xA + 80.0
+            xM = xB + 70.0
 
             circles = [
-                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="none"),
                 Circle(id="pt_o", center=(xO, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
                 Circle(id="pt_a", center=(xA, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
                 Circle(id="pt_b", center=(xB, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
                 Circle(id="pt_m", center=(xM, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
             ]
             segments = [
-                # Horizontal ray
-                Segment(id="ray", start=(xO, yO), end=(xM, yO), stroke_width=2.0, color="#111111"),
-                # Vertical radius
+                # Horizontal ray from center O through A, B to M
+                Segment(id="ray", start=(xO, yO), end=(xM, yO), stroke_width=2.2, color="#111111"),
+                # Vertical radius from O down to bottom sphere surface with arrow
                 Segment(id="rad_v", start=(xO, yO), end=(xO, yO + rS), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                # Dimension 3cm
-                Segment(id="dim_3", start=(xO, yO - 20.0), end=(xA, yO - 20.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
-                # Dimension 9cm
-                Segment(id="dim_9", start=(xO + rS, yO - 20.0), end=(xB, yO - 20.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
-                # Dimension markers
-                Segment(id="m_o", start=(xO, yO - 30.0), end=(xO, yO), stroke_width=1.5, color="#111111"),
-                Segment(id="m_b", start=(xB, yO - 30.0), end=(xB, yO), stroke_width=1.5, color="#111111"),
+                # Dimension 3cm (O to A) with bidirectional arrows
+                Segment(id="dim_3", start=(xO, yO - 20.0), end=(xA, yO - 20.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
+                # Dimension 9cm (A to B) with bidirectional arrows
+                Segment(id="dim_9", start=(xA, yO - 20.0), end=(xB, yO - 20.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
+                # Dimension tick markers
+                Segment(id="m_o", start=(xO, yO - 28.0), end=(xO, yO), stroke_width=1.5, color="#111111"),
+                Segment(id="m_b", start=(xB, yO - 28.0), end=(xB, yO), stroke_width=1.5, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_q", text=r"+2 \times 10^{-10}\text{ C}", x=xO, y=yO - rS - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_p", text="P", x=xO - rS - 18.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_o", text="O", x=xO - 18.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_a", text="A", x=xA + 12.0, y=yO + 18.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 20.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_m", text="M", x=xM + 14.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_d1", text="3cm", x=(xO + xA)/2.0, y=yO - 28.0, font_size=14.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_d2", text="9 cm", x=(xO + rS + xB)/2.0, y=yO - 28.0, font_size=14.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_r", text="r = 4 cm", x=xO + 38.0, y=yO + rS/2.0 + 10.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_fig", text="চিত্র-১", x=xO, y=yO + rS + 35.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_q", text="+2 × 10⁻¹⁰ C", x=xO, y=yO - rS - 18.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_p", text="P", x=xO - rS - 14.0, y=yO + 4.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO - 14.0, y=yO + 4.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 8.0, y=yO + 18.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 18.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_m", text="M", x=xM + 14.0, y=yO + 4.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="3cm", x=(xO + xA) / 2.0, y=yO - 28.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_d2", text="9 cm", x=(xA + xB) / 2.0, y=yO - 28.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_r", text="r = 4 cm", x=xO + 38.0, y=yO + rS / 2.0 + 8.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_fig", text="চিত্র-১", x=xO, y=yO + rS + 30.0, font_size=17.0, font_weight="bold"),
             ]
             return VisualIR(title="Charged Sphere Radial Potential Profile", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
 
