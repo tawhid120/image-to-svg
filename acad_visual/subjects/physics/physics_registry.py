@@ -1101,54 +1101,83 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 28670943: Electric Dipole Broadside-On Field Parallelogram
         # ----------------------------------------------------
+        # 28670943: Electric Dipole Broadside-On Field Parallelogram
+        # ----------------------------------------------------
         if "28670943" in stem:
-            w, h = 460.0, 380.0
+            w, h = 480.0, 380.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA = 60.0, 320.0
-            xB, yB = 400.0, 320.0
-            xO, yO = 230.0, 320.0
-            xP, yP = 230.0, 110.0
-            xR, yR = 130.0, 110.0
-            xM, yM = 180.0, 50.0
-            xN, yN = 180.0, 170.0
+
+            # Dipole base vertices (symmetric about xO=240)
+            xA, yA = 90.0, 290.0
+            xB, yB = 390.0, 290.0
+            xO, yO = 240.0, 290.0
+            xP, yP = 240.0, 115.0
+
+            # Unit vectors from P
+            # Vector along BP extended (up-left): (-150, -175) -> unit: (-0.6508, -0.7593)
+            # Vector along PA (down-left): (-150, +175) -> unit: (-0.6508, +0.7593)
+            arm_len = 75.0
+            ux, uy = -0.6508, -0.7593
+            xM, yM = xP + arm_len * ux, yP + arm_len * uy
+            xN, yN = xP + arm_len * ux, yP - arm_len * uy
+            xR, yR = xP + 2.0 * arm_len * ux, yP  # Exact horizontal resultant
 
             segments = [
-                # Base line
-                Segment(id="base", start=(xA, yA), end=(xB, yB), stroke_width=2.2, color="#111111"),
-                # Triangle legs
-                Segment(id="leg_a", start=(xA, yA), end=(xM - 20.0, yM - 20.0), stroke_width=2.2, color="#111111"),
+                # Base dipole line AB
+                Segment(id="base", start=(xA, yA), end=(xB, yB), stroke_width=2.5, color="#111111"),
+                # Triangle leg AP
+                Segment(id="leg_a", start=(xA, yA), end=(xP, yP), stroke_width=2.2, color="#111111"),
+                # Triangle leg BP and its extension to M (and beyond)
                 Segment(id="leg_b", start=(xB, yB), end=(xP, yP), stroke_width=2.2, color="#111111"),
-                # Bisector OP
-                Segment(id="op", start=(xO, yA + 20.0), end=(xP, yP), stroke_width=2.0, color="#111111"),
-                # Resultant parallelogram at P
-                Segment(id="p_r", start=(xP, yP), end=(xR, yR), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                Segment(id="p_m", start=(xP, yP), end=(xM, yM), stroke_width=2.0, color="#111111"),
-                Segment(id="m_r", start=(xM, yM), end=(xR, yR), stroke_width=2.0, color="#111111"),
-                Segment(id="p_n", start=(xP, yP), end=(xN, yN), stroke_width=2.0, color="#111111"),
-                Segment(id="n_r", start=(xN, yN), end=(xR, yR), stroke_width=2.0, color="#111111"),
-                # Incoming arrow to R
-                Segment(id="arr_in", start=(xR - 60.0, yR), end=(xR, yR), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                # Dimension l, l
-                Segment(id="dim_l1", start=(xA, yA + 25.0), end=(xO, yA + 25.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
-                Segment(id="dim_l2", start=(xO, yA + 25.0), end=(xB, yA + 25.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+                Segment(id="ext_m", start=(xP, yP), end=(xM + 25.0 * ux, yM + 25.0 * uy), stroke_width=2.2, color="#111111"),
+                # Vertical bisector OP
+                Segment(id="op", start=(xO, yO), end=(xP, yP), stroke_width=2.0, color="#111111"),
+
+                # Parallelogram sides
+                Segment(id="p_m", start=(xP, yP), end=(xM, yM), stroke_width=2.2, color="#111111"),
+                Segment(id="m_r", start=(xM, yM), end=(xR, yR), stroke_width=1.8, color="#111111"),
+                Segment(id="p_n", start=(xP, yP), end=(xN, yN), stroke_width=2.2, color="#111111"),
+                Segment(id="n_r", start=(xN, yN), end=(xR, yR), stroke_width=1.8, color="#111111"),
+
+                # Resultant vector PR (pointing horizontally left)
+                Segment(id="p_r", start=(xP, yP), end=(xR, yR), stroke_width=2.5, color="#111111", arrows=ArrowType.END),
+                # Incoming guide arrow from the left to R
+                Segment(id="arr_in", start=(xR - 45.0, yR), end=(xR, yR), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+
+                # Bottom dimension lines l and l with ticks and bidirectional arrows
+                Segment(id="tick_a", start=(xA, yA + 15.0), end=(xA, yA + 40.0), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_o", start=(xO, yA + 15.0), end=(xO, yA + 40.0), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_b", start=(xB, yA + 15.0), end=(xB, yA + 40.0), stroke_width=1.5, color="#111111"),
+                Segment(id="dim_l1", start=(xA, yA + 28.0), end=(xO, yA + 28.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
+                Segment(id="dim_l2", start=(xO, yA + 28.0), end=(xB, yA + 28.0), stroke_width=1.6, color="#111111", arrows=ArrowType.BOTH),
             ]
+
+            arc_angles = [
+                # Top theta angle between resultant PR and arm PM
+                ArcAngleMarker(id="arc_top", vertex=(xP, yP), start_pt=(xR, yR), end_pt=(xM, yM), radius=28.0, color="#111111"),
+                # Bottom theta angle between resultant PR and arm PN
+                ArcAngleMarker(id="arc_bot", vertex=(xP, yP), start_pt=(xN, yN), end_pt=(xR, yR), radius=28.0, color="#111111"),
+            ]
+
             labels = [
-                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB + 15.0, y=yA - 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_qa", text="-q", x=xA - 20.0, y=yA + 10.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_qb", text="+q", x=xB + 20.0, y=yA + 10.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_o", text="O", x=xO - 15.0, y=yA - 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 14.0, y=yA - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qa", text="-q", x=xA - 14.0, y=yA + 12.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 14.0, y=yA - 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qb", text="+q", x=xB + 14.0, y=yA + 12.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO - 14.0, y=yA - 10.0, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_p", text="P", x=xP + 16.0, y=yP - 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_r", text="R", x=xR - 16.0, y=yR + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_m", text="M", x=xM - 8.0, y=yM - 12.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r", text="R", x=xR - 16.0, y=yR + 14.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_m", text="M", x=xM - 8.0, y=yM - 14.0, font_size=18.0, font_weight="bold"),
                 MathLabel(id="lbl_n", text="N", x=xN - 8.0, y=yN + 18.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_th1", text="\\theta", x=xP - 45.0, y=yP - 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_th2", text="\\theta", x=xP - 45.0, y=yP + 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_dist_r", text="r", x=xO + 12.0, y=(yA + yP)/2.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_l1", text="l", x=(xA + xO)/2.0, y=yA + 20.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_l2", text="l", x=(xO + xB)/2.0, y=yA + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_e1", text="E", x=(xP + xM) / 2.0 + 12.0, y=(yP + yM) / 2.0 - 10.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_e2", text="E", x=(xP + xN) / 2.0 + 12.0, y=(yP + yN) / 2.0 + 12.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_th1", text="θ", x=xP - 42.0, y=yP - 15.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_th2", text="θ", x=xP - 42.0, y=yP + 15.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_r", text="r", x=xO + 14.0, y=(yO + yP) / 2.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_l1", text="l", x=(xA + xO) / 2.0, y=yA + 38.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_l2", text="l", x=(xO + xB) / 2.0, y=yA + 38.0, font_size=17.0, font_weight="bold"),
             ]
-            return VisualIR(title="Electric Dipole Broadside Field", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Electric Dipole Broadside Field", width=w, height=h, coordinate_frame=cf, segments=segments, arc_angles=arc_angles, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # 28c59301: Square 4m x 4m with +2C and +4C charges
