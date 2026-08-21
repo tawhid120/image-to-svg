@@ -1284,42 +1284,65 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 22ba4041: Spheres A(+) and B(-) with drop stem to C
         # ----------------------------------------------------
+        # 22ba4041: Spheres A(+) and B(-) with drop stem to C
+        # ----------------------------------------------------
         if "22ba4041" in stem:
             w, h = 520.0, 360.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA, rA = 100.0, 140.0, 42.0
-            xB, yB, rB = 340.0, 140.0, 56.0
-            xC, yC = 340.0, 330.0
+            xA, yA, rA = 110.0, 130.0, 42.0
+            xB, yB, rB = 340.0, 130.0, 56.0
+            xC, yC = 340.0, 310.0
 
             circles = [
                 Circle(id="cA", center=(xA, yA), radius=rA, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
                 Circle(id="cB", center=(xB, yB), radius=rB, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="pt_a", center=(xA, yA), radius=3.0, stroke_width=1.0, fill_color="#111111"),
+                Circle(id="pt_b", center=(xB, yB), radius=3.0, stroke_width=1.0, fill_color="#111111"),
+                Circle(id="pt_d", center=(xB, yB + rB), radius=3.0, stroke_width=1.0, fill_color="#111111"),
+                Circle(id="pt_c", center=(xC, yC), radius=3.0, stroke_width=1.0, fill_color="#111111"),
             ]
             segments = [
-                # Horizontal axis
-                Segment(id="h_ax", start=(xA, yA), end=(xB, yB), stroke_width=2.0, color="#111111"),
-                # Vertical stem from B down to C
-                Segment(id="v_stem", start=(xB, yB), end=(xC, yC), stroke_width=2.0, color="#111111"),
-                # Dashed bottom guide
-                Segment(id="d_bot", start=(xC, yC), end=(xC + 50.0, yC), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DASHED),
+                # Horizontal connecting line between spheres
+                Segment(id="h_ax", start=(xA + rA, yA), end=(xB - rB, yB), stroke_width=2.2, color="#111111"),
+                # Vertical stem from B down through D to C
+                Segment(id="v_stem", start=(xB, yB), end=(xC, yC), stroke_width=2.2, color="#111111"),
+                # Dashed bottom guide from C to the right
+                Segment(id="d_bot", start=(xC, yC), end=(xC + 55.0, yC), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DASHED),
                 # Dimension vertical 6sqrt(3)m
-                Segment(id="dim_v", start=(xB + 75.0, yB), end=(xB + 75.0, yC), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                # Internal radius lines
-                Segment(id="rad_a", start=(xA, yA), end=(xA, yA - rA), stroke_width=1.8, color="#111111"),
-                Segment(id="rad_b", start=(xB, yB), end=(xB + rB*0.866, yB - rB*0.5), stroke_width=1.8, color="#111111"),
+                Segment(id="dim_v", start=(xB + 55.0, yB), end=(xB + 55.0, yC), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                # Internal radius lines for Sphere A
+                Segment(id="rad_a_up", start=(xA, yA), end=(xA, yA - rA), stroke_width=1.8, color="#111111"),
+                Segment(id="rad_a_rt", start=(xA, yA), end=(xA + rA, yA), stroke_width=1.8, color="#111111"),
+                # Internal radius line for Sphere B (up-right)
+                Segment(id="rad_b", start=(xB, yB), end=(xB + rB * 0.819, yB - rB * 0.573), stroke_width=1.8, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_q1", text="Q_1 = 2 \\times 10^{-9}\\text{ C}", x=xA, y=yA - 65.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_q2", text="Q_2 = -3 \\times 10^{-9}\\text{ C}", x=xB, y=yB - 80.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA + 16.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB + 15.0, y=yB + 16.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_d_pt", text="D", x=xB + 15.0, y=yB + rB + 15.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_c", text="C", x=xC - 18.0, y=yC + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_r1", text="r_1 = 1\\text{ m}", x=xA + 32.0, y=yA - 10.0, font_size=14.0, font_weight="bold"),
-                MathLabel(id="lbl_r2", text="r_2 = 2\\text{ m}", x=xB - 15.0, y=yB - 25.0, font_size=14.0, font_weight="bold"),
-                MathLabel(id="lbl_dist_h", text=r"6\sqrt{3}\text{ m}", x=(xA+rA + xB-rB)/2.0, y=yA - 14.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_dist_v", text=r"6\sqrt{3}\text{ m}", x=xB + 115.0, y=(yB + yC)/2.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_q1", text="Q₁ = 2 × 10⁻⁹ C", x=xA, y=yA - 68.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_q2", text="Q₂ = -3 × 10⁻⁹ C", x=xB, y=yB - 82.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 14.0, y=yA + 14.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 14.0, y=yB + 14.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_d_pt", text="D", x=xB + 15.0, y=yB + rB + 10.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC - 16.0, y=yC + 4.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_r1", text="r₁ = 1 m", x=xA + 25.0, y=yA - 12.0, font_size=13.0, font_weight="bold"),
+                MathLabel(id="lbl_r2", text="r₂ = 2 m", x=xB - 10.0, y=yB - 26.0, font_size=13.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_h", text="6√3 m", x=(xA + rA + xB - rB) / 2.0, y=yA - 14.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_v", text="6√3 m", x=xB + 85.0, y=(yB + yC) / 2.0, font_size=15.0, font_weight="bold"),
             ]
+
+            # Positive charges around sphere A
+            for i, angle_deg in enumerate([0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]):
+                rad = math.radians(angle_deg)
+                qx = xA + (rA + 12.0) * math.cos(rad)
+                qy = yA + (rA + 12.0) * math.sin(rad)
+                labels.append(MathLabel(id=f"chg_a_{i}", text="+", x=qx, y=qy, font_size=14.0, font_weight="bold"))
+
+            # Negative charges around sphere B
+            for i, angle_deg in enumerate([0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330]):
+                rad = math.radians(angle_deg)
+                qx = xB + (rB + 12.0) * math.cos(rad)
+                qy = yB + (rB + 12.0) * math.sin(rad)
+                labels.append(MathLabel(id=f"chg_b_{i}", text="−", x=qx, y=qy, font_size=14.0, font_weight="bold"))
+
             return VisualIR(title="Dual Charged Spheres with Orthogonal Target", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
