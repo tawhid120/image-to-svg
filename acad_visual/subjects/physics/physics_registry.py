@@ -4798,81 +4798,120 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 9b5bba9e: Multi-Mesh Circuit with Capacitor and Resistors
         # ----------------------------------------------------
+        # 9b5bba9e: Multi-Mesh Circuit with Capacitor and Resistors
+        # ----------------------------------------------------
         if "9b5bba9e" in stem:
-            w, h = 460.0, 420.0
+            w, h = 480.0, 440.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
             x_m = 190.0
+            x_r = 300.0
             y_top_node = 140.0
             y_bot_node = 260.0
 
             def make_resistor_h(prefix, x0, x1, y):
-                dx = (x1 - x0) / 6.0
-                pts = [(x0, y), (x0 + dx, y - 8.0), (x0 + 2*dx, y + 8.0), (x0 + 3*dx, y - 8.0), (x0 + 4*dx, y + 8.0), (x0 + 5*dx, y - 8.0), (x1, y)]
+                min_x, max_x = min(x0, x1), max(x0, x1)
+                dx = (max_x - min_x) / 6.0
+                pts = [
+                    (min_x, y),
+                    (min_x + dx * 0.5, y - 7.0),
+                    (min_x + dx * 1.5, y + 7.0),
+                    (min_x + dx * 2.5, y - 7.0),
+                    (min_x + dx * 3.5, y + 7.0),
+                    (min_x + dx * 4.5, y - 7.0),
+                    (min_x + dx * 5.5, y + 7.0),
+                    (max_x, y)
+                ]
                 segs = []
-                for i in range(len(pts)-1):
+                for i in range(len(pts) - 1):
                     segs.append(Segment(id=f"{prefix}_{i}", start=pts[i], end=pts[i+1], stroke_width=2.2, color="#111111"))
                 return segs
 
             def make_resistor_v(prefix, y0, y1, x):
-                dy = (y1 - y0) / 6.0
-                pts = [(x, y0), (x - 8.0, y0 + dy), (x + 8.0, y0 + 2*dy), (x - 8.0, y0 + 3*dy), (x + 8.0, y0 + 4*dy), (x - 8.0, y0 + 5*dy), (x, y1)]
+                min_y, max_y = min(y0, y1), max(y0, y1)
+                dy = (max_y - min_y) / 6.0
+                pts = [
+                    (x, min_y),
+                    (x - 7.0, min_y + dy * 0.5),
+                    (x + 7.0, min_y + dy * 1.5),
+                    (x - 7.0, min_y + dy * 2.5),
+                    (x + 7.0, min_y + dy * 3.5),
+                    (x - 7.0, min_y + dy * 4.5),
+                    (x + 7.0, min_y + dy * 5.5),
+                    (x, max_y)
+                ]
                 segs = []
-                for i in range(len(pts)-1):
+                for i in range(len(pts) - 1):
                     segs.append(Segment(id=f"{prefix}_{i}", start=pts[i], end=pts[i+1], stroke_width=2.2, color="#111111"))
                 return segs
 
             segments = [
-                # Central vertical capacitor C=4uF
-                Segment(id="cv1", start=(x_m, y_top_node), end=(x_m, 190.0), stroke_width=2.2, color="#111111"),
-                Segment(id="cv2", start=(x_m, 210.0), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111"),
-                Segment(id="c_p1", start=(x_m - 14.0, 190.0), end=(x_m + 14.0, 190.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c_p2", start=(x_m - 14.0, 210.0), end=(x_m + 14.0, 210.0), stroke_width=2.8, color="#111111"),
-                # Top branch: 3A current and 3 ohm resistor
-                Segment(id="in_top", start=(x_m, 30.0), end=(x_m, 60.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                *make_resistor_v("r_top", 60.0, 140.0, x_m),
-                # Bottom branch: 1A current and 3 ohm resistor
-                Segment(id="in_bot", start=(x_m, 400.0), end=(x_m, 360.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                *make_resistor_v("r_bot", 360.0, 260.0, x_m),
-                # Top-left branch: Battery 4V + 3 ohm resistor (current 2A)
-                Segment(id="tl_b1", start=(50.0, y_top_node), end=(65.0, y_top_node), stroke_width=2.2, color="#111111"),
-                Segment(id="tl_bp", start=(65.0, y_top_node - 12.0), end=(65.0, y_top_node + 12.0), stroke_width=2.8, color="#111111"),
-                Segment(id="tl_bn", start=(73.0, y_top_node - 7.0), end=(73.0, y_top_node + 7.0), stroke_width=4.0, color="#111111"),
-                Segment(id="tl_w1", start=(73.0, y_top_node), end=(95.0, y_top_node), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_tl", 95.0, 165.0, y_top_node),
-                Segment(id="tl_arr", start=(165.0, y_top_node), end=(x_m, y_top_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                # Bottom-left branch: Battery 3V + 3 ohm resistor (current 2A leftward)
-                Segment(id="bl_b1", start=(50.0, y_bot_node), end=(65.0, y_bot_node), stroke_width=2.2, color="#111111"),
-                Segment(id="bl_bp", start=(65.0, y_bot_node - 12.0), end=(65.0, y_bot_node + 12.0), stroke_width=2.8, color="#111111"),
-                Segment(id="bl_bn", start=(73.0, y_bot_node - 7.0), end=(73.0, y_bot_node + 7.0), stroke_width=4.0, color="#111111"),
-                Segment(id="bl_w1", start=(73.0, y_bot_node), end=(95.0, y_bot_node), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_bl", 95.0, 165.0, y_bot_node),
-                Segment(id="bl_arr", start=(x_m, y_bot_node), end=(165.0, y_bot_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
-                # Right mesh
-                *make_resistor_h("r_tr", x_m, 290.0, y_top_node),
-                Segment(id="tr_c", start=(290.0, y_top_node), end=(300.0, y_top_node), stroke_width=2.2, color="#111111"),
-                Segment(id="tr_d", start=(300.0, y_top_node), end=(300.0, 160.0), stroke_width=2.2, color="#111111"),
-                *make_resistor_v("r_mr", 160.0, 240.0, 300.0),
-                Segment(id="mr_d", start=(300.0, 240.0), end=(300.0, y_bot_node), stroke_width=2.2, color="#111111"),
-                *make_resistor_h("r_br", 300.0, x_m, y_bot_node),
-                *make_resistor_h("r_far_r", 300.0, 400.0, y_bot_node),
+                # Central vertical capacitor C=4uF between junctions
+                Segment(id="cv1", start=(x_m, y_top_node), end=(x_m, 195.0), stroke_width=2.2, color="#111111"),
+                Segment(id="c_p1", start=(x_m - 16.0, 195.0), end=(x_m + 16.0, 195.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c_p2", start=(x_m - 16.0, 205.0), end=(x_m + 16.0, 205.0), stroke_width=3.0, color="#111111"),
+                Segment(id="cv2", start=(x_m, 205.0), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111"),
+
+                # Top branch: 3A current downward through 3 ohm resistor
+                Segment(id="in_top", start=(x_m, 35.0), end=(x_m, 65.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                *make_resistor_v("r_top", 65.0, 140.0, x_m),
+
+                # Bottom branch: 1A current upward through 3 ohm resistor
+                Segment(id="in_bot", start=(x_m, 405.0), end=(x_m, 365.0), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                *make_resistor_v("r_bot", 260.0, 365.0, x_m),
+
+                # Top-left branch: Battery 4V + 3 ohm resistor
+                Segment(id="tl_w0", start=(40.0, y_top_node), end=(60.0, y_top_node), stroke_width=2.2, color="#111111"),
+                Segment(id="tl_bp", start=(60.0, y_top_node - 14.0), end=(60.0, y_top_node + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="tl_bn", start=(68.0, y_top_node - 8.0), end=(68.0, y_top_node + 8.0), stroke_width=4.5, color="#111111"),
+                Segment(id="tl_w1", start=(68.0, y_top_node), end=(95.0, y_top_node), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_tl", 95.0, 160.0, y_top_node),
+                Segment(id="tl_arr", start=(160.0, y_top_node), end=(x_m, y_top_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+
+                # Bottom-left branch: Battery 3V + 3 ohm resistor
+                Segment(id="bl_w0", start=(40.0, y_bot_node), end=(60.0, y_bot_node), stroke_width=2.2, color="#111111"),
+                Segment(id="bl_bp", start=(60.0, y_bot_node - 14.0), end=(60.0, y_bot_node + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="bl_bn", start=(68.0, y_bot_node - 8.0), end=(68.0, y_bot_node + 8.0), stroke_width=4.5, color="#111111"),
+                Segment(id="bl_w1", start=(68.0, y_bot_node), end=(95.0, y_bot_node), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_bl", 95.0, 160.0, y_bot_node),
+                Segment(id="bl_arr", start=(160.0, y_bot_node), end=(x_m, y_bot_node), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+
+                # Right top branch: 5 ohm resistor
+                Segment(id="tr_w0", start=(x_m, y_top_node), end=(215.0, y_top_node), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_tr", 215.0, 275.0, y_top_node),
+                Segment(id="tr_w1", start=(275.0, y_top_node), end=(x_r, y_top_node), stroke_width=2.2, color="#111111"),
+
+                # Right vertical branch: 1 ohm resistor
+                Segment(id="mr_w0", start=(x_r, y_top_node), end=(x_r, 170.0), stroke_width=2.2, color="#111111"),
+                *make_resistor_v("r_mr", 170.0, 230.0, x_r),
+                Segment(id="mr_w1", start=(x_r, 230.0), end=(x_r, y_bot_node), stroke_width=2.2, color="#111111"),
+
+                # Right bottom branch: 3 ohm resistor
+                Segment(id="br_w0", start=(x_m, y_bot_node), end=(215.0, y_bot_node), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_br", 215.0, 275.0, y_bot_node),
+                Segment(id="br_w1", start=(275.0, y_bot_node), end=(x_r, y_bot_node), stroke_width=2.2, color="#111111"),
+
+                # Far-right branch: 4 ohm resistor with open right end
+                Segment(id="far_w0", start=(x_r, y_bot_node), end=(325.0, y_bot_node), stroke_width=2.2, color="#111111"),
+                *make_resistor_h("r_far", 325.0, 395.0, y_bot_node),
+                Segment(id="far_w1", start=(395.0, y_bot_node), end=(420.0, y_bot_node), stroke_width=2.2, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_3a", text="3\text{A}", x=x_m + 25.0, y=35.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_top", text="3\Omega", x=x_m + 28.0, y=95.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_tl_v", text="4\text{V}", x=65.0, y=y_top_node - 20.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_tl_i", text="2\text{A}", x=65.0, y=y_top_node + 24.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_tl_r", text="3\Omega", x=130.0, y=y_top_node - 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_c", text="C", x=x_m - 20.0, y=190.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_c_val", text="4\mu\text{F}", x=x_m + 35.0, y=200.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_bl_v", text="3\text{V}", x=65.0, y=y_bot_node - 20.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_bl_i", text="2\text{A}", x=65.0, y=y_bot_node + 24.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_bl_r", text="3\Omega", x=130.0, y=y_bot_node - 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_1a", text="1\text{A}", x=x_m + 25.0, y=390.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_bot", text="3\Omega", x=x_m + 28.0, y=310.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_tr", text="5\Omega", x=245.0, y=y_top_node - 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_mr", text="1\Omega", x=328.0, y=200.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_br", text="3\Omega", x=245.0, y=y_bot_node - 18.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_r_far", text="4\Omega", x=350.0, y=y_bot_node + 24.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_3a", text="3 A", x=x_m + 25.0, y=40.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_top", text="3 Ω", x=x_m + 26.0, y=102.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_tl_v", text="4 V", x=64.0, y=y_top_node - 20.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_tl_i", text="2 A", x=64.0, y=y_top_node + 22.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_tl_r", text="3 Ω", x=127.0, y=y_top_node - 16.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=x_m - 20.0, y=200.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c_val", text="4 μF", x=x_m + 32.0, y=200.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_bl_v", text="3 V", x=64.0, y=y_bot_node - 20.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_bl_i", text="2 A", x=64.0, y=y_bot_node + 22.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_bl_r", text="3 Ω", x=127.0, y=y_bot_node - 16.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_1a", text="1 A", x=x_m + 25.0, y=395.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_bot", text="3 Ω", x=x_m + 26.0, y=312.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_tr", text="5 Ω", x=245.0, y=y_top_node - 16.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_mr", text="1 Ω", x=x_r + 24.0, y=200.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_br", text="3 Ω", x=245.0, y=y_bot_node - 16.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_r_far", text="4 Ω", x=360.0, y=y_bot_node + 22.0, font_size=16.0, font_weight="bold"),
             ]
             return VisualIR(title="Multi-Mesh Circuit with Capacitor", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 
