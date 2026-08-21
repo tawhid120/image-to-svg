@@ -1,4 +1,4 @@
-# Python
+# Python standard
 __pycache__/
 *.py[cod]
 *$py.class
@@ -49,20 +49,16 @@ coverage.xml
 *.log
 .pytest_cache/
 
-# Local experiment outputs & scratch
+# Local outputs & binary artifacts
 acad_output/
-*.tmp
-bio_artwork.png
-chem_artwork.png
-phys_artwork.png
-reconstructed_artwork.png
-rvr_difference_map.png
-perfect_100.png
-perfect_preview.png
-reconstructed_diagram.png
-test_perfect_render.png
-test_preview.png
-arrow_preview.png
+*.png
+*.jpg
+*.jpeg
+*.webp
+models/
+image_to_svg_project/
+downloaded_diagrams/
+analysis/
 
 # Android APK / Build artifacts
 AndroidManifest.xml
@@ -78,27 +74,19 @@ stamp-cert-sha256
 *.dex
 *.bin
 
-# Miscellaneous data folders
-analysis/
-clean_png_diagrams/
-diagrams_fresh/
-downloaded_diagrams_physics/
-solutions_latex/
-svg_diagrams/
+# Ignore root scratch files and non-package scripts
+/*.py
+!/setup.py
+/*.json
+/*.json.bak
+/*.txt
+!/requirements.txt
+/*.html
+/*.js
 katex_dist/
 kotlin/
-pure_vector_diagrams/
-reconstructed_output/
-recreated_diagrams/
+math_recon/
 physics_work/
-
-# Ignore non-project root files
-*.json
-*.json.bak
-*.txt
-!requirements.txt
-*.html
-*.js
-*.py
-!setup.py
-!pyproject.toml
+reconstructed_output/
+solutions_latex/
+svg_diagrams/
