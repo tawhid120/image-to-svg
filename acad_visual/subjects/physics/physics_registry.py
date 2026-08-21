@@ -1212,32 +1212,41 @@ class PhysicsRegistry:
         # 2ffa08f9: Deflection Plates P (+400V), Q (-400V) & Electron Beam
         # ----------------------------------------------------
         if "2ffa08f9" in stem:
-            w, h = 480.0, 260.0
+            w, h = 430.0, 270.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            yP, yQ = 80.0, 180.0
-            x_start, x_end = 170.0, 420.0
+            # Plate coordinates — P (top), Q (bottom), horizontal
+            yP, yQ = 85.0, 185.0          # y for each plate
+            x_L, x_R = 155.0, 380.0      # left/right ends of plates
+            x_stem = (x_L + x_R) / 2.0   # stem x — centre of plates
 
             segments = [
-                # Plate P & Q
-                Segment(id="plt_p", start=(x_start, yP), end=(x_end, yP), stroke_width=2.5, color="#111111"),
-                Segment(id="plt_q", start=(x_start, yQ), end=(x_end, yQ), stroke_width=2.5, color="#111111"),
-                # Potential stems
-                Segment(id="stem_p", start=(300.0, yP), end=(300.0, yP - 40.0), stroke_width=2.0, color="#111111"),
-                Segment(id="stem_q", start=(300.0, yQ), end=(300.0, yQ + 40.0), stroke_width=2.0, color="#111111"),
-                # Distance dimension
-                Segment(id="dim_d", start=(x_end + 15.0, yP), end=(x_end + 15.0, yQ), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
-                # Electron beam
-                Segment(id="e_beam", start=(30.0, 130.0), end=(150.0, 130.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Plate P (top, horizontal thick line)
+                Segment(id="plt_p", start=(x_L, yP), end=(x_R, yP), stroke_width=3.0, color="#111111"),
+                # Plate Q (bottom, horizontal thick line)
+                Segment(id="plt_q", start=(x_L, yQ), end=(x_R, yQ), stroke_width=3.0, color="#111111"),
+                # +400V vertical stem — centre of P plate going UP
+                Segment(id="stem_p", start=(x_stem, yP), end=(x_stem, yP - 45.0), stroke_width=2.0, color="#111111"),
+                # -400V vertical stem — centre of Q plate going DOWN
+                Segment(id="stem_q", start=(x_stem, yQ), end=(x_stem, yQ + 45.0), stroke_width=2.0, color="#111111"),
+                # 20 mm dimension: double-headed arrow on the right side
+                Segment(id="dim_top", start=(x_R + 20.0, yP), end=(x_R + 20.0, yQ), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                # Electron beam arrow: from left entering between plates
+                Segment(id="e_beam", start=(30.0, (yP + yQ) / 2.0), end=(x_L - 10.0, (yP + yQ) / 2.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
-                MathLabel(id="lbl_p", text="P", x=x_start - 16.0, y=yP + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_q", text="Q", x=x_start - 16.0, y=yQ + 4.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_vp", text="+400V", x=330.0, y=yP - 45.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_vq", text="-400V", x=330.0, y=yQ + 55.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_gap", text="20 mm", x=x_end + 45.0, y=(yP + yQ)/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_e", text="ইলেকট্রন", x=90.0, y=155.0, font_size=16.0, font_weight="bold", math_mode=False),
+                # P & Q plate labels on the left
+                MathLabel(id="lbl_p", text="P", x=x_L - 16.0, y=yP, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_q", text="Q", x=x_L - 16.0, y=yQ, font_size=18.0, font_weight="bold"),
+                # Voltage labels above/below stems
+                MathLabel(id="lbl_vp", text="+400V", x=x_stem, y=yP - 58.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_vq", text="-400V", x=x_stem, y=yQ + 62.0, font_size=16.0, font_weight="bold", math_mode=False),
+                # 20 mm label — to the right of the dimension arrow
+                MathLabel(id="lbl_gap", text="20 mm", x=x_R + 55.0, y=(yP + yQ) / 2.0, font_size=16.0, font_weight="bold", math_mode=False),
+                # ইলেকট্রন label — below the electron beam arrow
+                MathLabel(id="lbl_e", text="ইলেকট্রন", x=80.0, y=(yP + yQ) / 2.0 + 18.0, font_size=16.0, font_weight="bold", math_mode=False),
             ]
             return VisualIR(title="Electron Beam Deflection Plates", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
 
         # ----------------------------------------------------
         # 21a01538: Parallel plate capacitor with "বায়ু", 2 cm, 5 V battery
