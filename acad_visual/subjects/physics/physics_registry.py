@@ -4097,47 +4097,56 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 7fcdd369: Oval Parallel Loop in Series with Capacitor
         # ----------------------------------------------------
+        # 7fcdd369: Oval Parallel Loop in Series with Capacitor
+        # ----------------------------------------------------
         if "7fcdd369" in stem:
-            w, h = 420.0, 220.0
+            w, h = 400.0, 230.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, xB = 40.0, 380.0
-            x_l, x_r = 110.0, 250.0
-            y_m = 110.0
+            xA, xB = 55.0, 345.0
+            x_l, x_r = 120.0, 230.0
+            y_m = 115.0
 
             circles = [
                 Circle(id="term_a", center=(xA, y_m), radius=4.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
                 Circle(id="term_b", center=(xB, y_m), radius=4.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
             ]
+
+            bezier_paths = [
+                # Upper circular loop (Left arc & Right arc)
+                BezierPath(id="arc_ul", path_d=f"M {x_l} {y_m} C {x_l} 82.0 140.0 60.0 170.0 60.0", stroke_width=2.2, stroke_color="#111111"),
+                BezierPath(id="arc_ur", path_d=f"M 180.0 60.0 C 210.0 60.0 {x_r} 82.0 {x_r} {y_m}", stroke_width=2.2, stroke_color="#111111"),
+
+                # Lower circular loop (Left arc & Right arc)
+                BezierPath(id="arc_ll", path_d=f"M {x_l} {y_m} C {x_l} 148.0 140.0 170.0 170.0 170.0", stroke_width=2.2, stroke_color="#111111"),
+                BezierPath(id="arc_lr", path_d=f"M 180.0 170.0 C 210.0 170.0 {x_r} 148.0 {x_r} {y_m}", stroke_width=2.2, stroke_color="#111111"),
+            ]
+
             segments = [
+                # Left lead from Terminal A
                 Segment(id="lead_a", start=(xA, y_m), end=(x_l, y_m), stroke_width=2.2, color="#111111"),
-                # Upper arch
-                Segment(id="ua1", start=(x_l, y_m), end=(145.0, 60.0), stroke_width=2.2, color="#111111"),
-                Segment(id="ua2", start=(175.0, 60.0), end=(x_r, y_m), stroke_width=2.2, color="#111111"),
-                Segment(id="ct_p1", start=(160.0 - 8.0, 45.0), end=(160.0 - 8.0, 75.0), stroke_width=2.8, color="#111111"),
-                Segment(id="ct_p2", start=(160.0 + 8.0, 45.0), end=(160.0 + 8.0, 75.0), stroke_width=2.8, color="#111111"),
-                Segment(id="ct_w1", start=(145.0, 60.0), end=(152.0, 60.0), stroke_width=2.2, color="#111111"),
-                Segment(id="ct_w2", start=(168.0, 60.0), end=(175.0, 60.0), stroke_width=2.2, color="#111111"),
-                # Lower arch
-                Segment(id="la1", start=(x_l, y_m), end=(145.0, 160.0), stroke_width=2.2, color="#111111"),
-                Segment(id="la2", start=(175.0, 160.0), end=(x_r, y_m), stroke_width=2.2, color="#111111"),
-                Segment(id="cb_p1", start=(160.0 - 8.0, 145.0), end=(160.0 - 8.0, 175.0), stroke_width=2.8, color="#111111"),
-                Segment(id="cb_p2", start=(160.0 + 8.0, 145.0), end=(160.0 + 8.0, 175.0), stroke_width=2.8, color="#111111"),
-                Segment(id="cb_w1", start=(145.0, 160.0), end=(152.0, 160.0), stroke_width=2.2, color="#111111"),
-                Segment(id="cb_w2", start=(168.0, 160.0), end=(175.0, 160.0), stroke_width=2.2, color="#111111"),
-                # Right series cap
-                Segment(id="to_c3", start=(x_r, y_m), end=(300.0, y_m), stroke_width=2.2, color="#111111"),
-                Segment(id="c3_p1", start=(300.0, y_m - 14.0), end=(300.0, y_m + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c3_p2", start=(312.0, y_m - 14.0), end=(312.0, y_m + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="from_c3", start=(312.0, y_m), end=(xB, y_m), stroke_width=2.2, color="#111111"),
+
+                # Top capacitor (0.01 uF)
+                Segment(id="c1_p1", start=(170.0, 44.0), end=(170.0, 76.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c1_p2", start=(180.0, 44.0), end=(180.0, 76.0), stroke_width=3.0, color="#111111"),
+
+                # Bottom capacitor (0.02 uF)
+                Segment(id="c2_p1", start=(170.0, 154.0), end=(170.0, 186.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c2_p2", start=(180.0, 154.0), end=(180.0, 186.0), stroke_width=3.0, color="#111111"),
+
+                # Middle wire to Series Capacitor (0.03 uF)
+                Segment(id="to_c3", start=(x_r, y_m), end=(275.0, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="c3_p1", start=(275.0, y_m - 16.0), end=(275.0, y_m + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c3_p2", start=(287.0, y_m - 16.0), end=(287.0, y_m + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="from_c3", start=(287.0, y_m), end=(xB, y_m), stroke_width=2.2, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_a", text="A", x=xA - 18.0, y=y_m + 4.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB + 18.0, y=y_m + 4.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_c1", text="0.01 \mu\text{F}", x=160.0, y=30.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_c2", text="0.02 \mu\text{F}", x=160.0, y=198.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_c3", text="0.03 \mu\text{F}", x=306.0, y=y_m - 22.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 16.0, y=y_m + 3.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 16.0, y=y_m + 3.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c1", text=r"0.01\text{ }\mu\text{F}", x=175.0, y=26.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text=r"0.02\text{ }\mu\text{F}", x=175.0, y=205.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text=r"0.03\text{ }\mu\text{F}", x=281.0, y=y_m - 24.0, font_size=16.0, font_weight="bold"),
             ]
-            return VisualIR(title="Oval Parallel Loop with Series Capacitor", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Oval Parallel Loop with Series Capacitor", width=w, height=h, coordinate_frame=cf, circles=circles, bezier_paths=bezier_paths, segments=segments, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # 801fd085: Bridge Network of 5 Capacitors between A and B
