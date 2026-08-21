@@ -4194,43 +4194,52 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 81aa48e9: Parallel vs Series Capacitors Comparison
         # ----------------------------------------------------
+        # 81aa48e9: Parallel vs Series Capacitors Comparison
+        # ----------------------------------------------------
         if "81aa48e9" in stem:
-            w, h = 440.0, 220.0
+            w, h = 460.0, 220.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
 
             # Left: Parallel Loop
             x_pl, x_pr = 40.0, 180.0
             y_pt, y_pb = 60.0, 160.0
             # Right: Series Pair
-            x_sl, x_sr = 230.0, 410.0
+            x_sl, x_sr = 220.0, 400.0
             y_sm = 110.0
 
             segments = [
                 # Parallel loop
-                Segment(id="p_t1", start=(x_pl, y_pt), end=(102.0, y_pt), stroke_width=2.2, color="#111111"),
-                Segment(id="p_t2", start=(118.0, y_pt), end=(x_pr, y_pt), stroke_width=2.2, color="#111111"),
-                Segment(id="p_b1", start=(x_pl, y_pb), end=(102.0, y_pb), stroke_width=2.2, color="#111111"),
-                Segment(id="p_b2", start=(118.0, y_pb), end=(x_pr, y_pb), stroke_width=2.2, color="#111111"),
+                Segment(id="p_t1", start=(x_pl, y_pt), end=(100.0, y_pt), stroke_width=2.2, color="#111111"),
+                Segment(id="p_t2", start=(120.0, y_pt), end=(x_pr, y_pt), stroke_width=2.2, color="#111111"),
+                Segment(id="p_b1", start=(x_pl, y_pb), end=(100.0, y_pb), stroke_width=2.2, color="#111111"),
+                Segment(id="p_b2", start=(120.0, y_pb), end=(x_pr, y_pb), stroke_width=2.2, color="#111111"),
                 Segment(id="p_l", start=(x_pl, y_pt), end=(x_pl, y_pb), stroke_width=2.2, color="#111111"),
                 Segment(id="p_r", start=(x_pr, y_pt), end=(x_pr, y_pb), stroke_width=2.2, color="#111111"),
-                Segment(id="p_c1_1", start=(102.0, y_pt - 14.0), end=(102.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="p_c1_2", start=(118.0, y_pt - 14.0), end=(118.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="p_c2_1", start=(102.0, y_pb - 14.0), end=(102.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="p_c2_2", start=(118.0, y_pb - 14.0), end=(118.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
+
+                # Top capacitor C1 plates
+                Segment(id="p_c1_1", start=(100.0, y_pt - 18.0), end=(100.0, y_pt + 18.0), stroke_width=3.0, color="#111111"),
+                Segment(id="p_c1_2", start=(120.0, y_pt - 18.0), end=(120.0, y_pt + 18.0), stroke_width=3.0, color="#111111"),
+                # Bottom capacitor C2 plates
+                Segment(id="p_c2_1", start=(100.0, y_pb - 18.0), end=(100.0, y_pb + 18.0), stroke_width=3.0, color="#111111"),
+                Segment(id="p_c2_2", start=(120.0, y_pb - 18.0), end=(120.0, y_pb + 18.0), stroke_width=3.0, color="#111111"),
+
                 # Series pair
-                Segment(id="s_in", start=(x_sl, y_sm), end=(280.0, y_sm), stroke_width=2.2, color="#111111"),
-                Segment(id="s_m", start=(292.0, y_sm), end=(350.0, y_sm), stroke_width=2.2, color="#111111"),
-                Segment(id="s_out", start=(362.0, y_sm), end=(x_sr, y_sm), stroke_width=2.2, color="#111111"),
-                Segment(id="s_c1_1", start=(280.0, y_sm - 14.0), end=(280.0, y_sm + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="s_c1_2", start=(292.0, y_sm - 14.0), end=(292.0, y_sm + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="s_c2_1", start=(350.0, y_sm - 14.0), end=(350.0, y_sm + 14.0), stroke_width=2.8, color="#111111"),
-                Segment(id="s_c2_2", start=(362.0, y_sm - 14.0), end=(362.0, y_sm + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="s_in", start=(x_sl, y_sm), end=(270.0, y_sm), stroke_width=2.2, color="#111111"),
+                Segment(id="s_m", start=(290.0, y_sm), end=(330.0, y_sm), stroke_width=2.2, color="#111111"),
+                Segment(id="s_out", start=(350.0, y_sm), end=(x_sr, y_sm), stroke_width=2.2, color="#111111"),
+
+                # Series capacitor C1 plates
+                Segment(id="s_c1_1", start=(270.0, y_sm - 18.0), end=(270.0, y_sm + 18.0), stroke_width=3.0, color="#111111"),
+                Segment(id="s_c1_2", start=(290.0, y_sm - 18.0), end=(290.0, y_sm + 18.0), stroke_width=3.0, color="#111111"),
+                # Series capacitor C2 plates
+                Segment(id="s_c2_1", start=(330.0, y_sm - 18.0), end=(330.0, y_sm + 18.0), stroke_width=3.0, color="#111111"),
+                Segment(id="s_c2_2", start=(350.0, y_sm - 18.0), end=(350.0, y_sm + 18.0), stroke_width=3.0, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_pc1", text="C_1 = 3\mu\text{F}", x=110.0, y=y_pt - 22.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_pc2", text="C_2 = 7\mu\text{F}", x=110.0, y=y_pb + 26.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_sc1", text="C_1 = 2\mu\text{F}", x=320.0, y=y_sm - 25.0, font_size=16.0, font_weight="bold"),
-                MathLabel(id="lbl_sc2", text="C_2 = 5\mu\text{F}", x=320.0, y=y_sm + 28.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_pc1", text="C_1 = 3\\mu\\text{F}", x=110.0, y=y_pt - 28.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_pc2", text="C_2 = 7\\mu\\text{F}", x=110.0, y=y_pb + 30.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_sc1", text="C_1 = 2\\mu\\text{F}", x=310.0, y=y_sm - 30.0, font_size=17.0, font_weight="bold"),
+                MathLabel(id="lbl_sc2", text="C_2 = 5\\mu\\text{F}", x=310.0, y=y_sm + 32.0, font_size=17.0, font_weight="bold"),
             ]
             return VisualIR(title="Parallel vs Series Capacitors Comparison", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 
