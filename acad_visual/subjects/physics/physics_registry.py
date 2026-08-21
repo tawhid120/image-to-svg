@@ -6458,49 +6458,59 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # f04e38ee: Rhombus / Diamond Bridge of Capacitors C1..C4
         # ----------------------------------------------------
+        # f04e38ee: Rhombus / Diamond Bridge of Capacitors C1..C4
+        # ----------------------------------------------------
         if "f04e38ee" in stem:
             w, h = 380.0, 320.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
             xA, yA = 40.0, 160.0
             xB, yB = 340.0, 160.0
-            xT, yT = 190.0, 40.0
-            xBtm, yBtm = 190.0, 280.0
+            xT, yT = 190.0, 50.0
+            xBtm, yBtm = 190.0, 270.0
             xL, xR = 80.0, 300.0
 
+            # Capacitors geometry
+            # TL branch: M = (135, 105), u=(0.7071, -0.7071), n=(0.7071, 0.7071)
+            # BR branch: M = (245, 215), u=(0.7071, -0.7071), n=(0.7071, 0.7071)
             segments = [
-                # Leads
+                # Leads A and B
                 Segment(id="in_a", start=(xA, yA), end=(xL, yA), stroke_width=2.2, color="#111111"),
                 Segment(id="out_b", start=(xR, yA), end=(xB, yA), stroke_width=2.2, color="#111111"),
-                # Top-left branch with C1
-                Segment(id="tl1", start=(xL, yA), end=(130.0, 105.0), stroke_width=2.2, color="#111111"),
-                Segment(id="tl2", start=(140.0, 95.0), end=(xT, yT), stroke_width=2.2, color="#111111"),
-                Segment(id="c1_p1", start=(125.0, 112.0), end=(135.0, 98.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c1_p2", start=(135.0, 102.0), end=(145.0, 88.0), stroke_width=2.8, color="#111111"),
-                # Top-right branch
+
+                # Top-left branch with Capacitor C1
+                Segment(id="tl_w1", start=(xL, yA), end=(130.8, 109.2), stroke_width=2.2, color="#111111"),
+                Segment(id="c1_p1", start=(120.2, 98.6), end=(141.4, 119.8), stroke_width=3.0, color="#111111"),
+                Segment(id="c1_p2", start=(128.6, 90.2), end=(149.8, 111.4), stroke_width=3.0, color="#111111"),
+                Segment(id="tl_w2", start=(139.2, 100.8), end=(xT, yT), stroke_width=2.2, color="#111111"),
+
+                # Top-right solid branch
                 Segment(id="tr", start=(xT, yT), end=(xR, yA), stroke_width=2.2, color="#111111"),
-                # Bottom-left branch
+
+                # Bottom-left solid branch
                 Segment(id="bl", start=(xL, yA), end=(xBtm, yBtm), stroke_width=2.2, color="#111111"),
-                # Bottom-right branch with C4
-                Segment(id="br1", start=(xBtm, yBtm), end=(240.0, 225.0), stroke_width=2.2, color="#111111"),
-                Segment(id="br2", start=(250.0, 215.0), end=(xR, yA), stroke_width=2.2, color="#111111"),
-                Segment(id="c4_p1", start=(235.0, 232.0), end=(245.0, 218.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c4_p2", start=(245.0, 222.0), end=(255.0, 208.0), stroke_width=2.8, color="#111111"),
-                # Central vertical branch with series C2 and C3
-                Segment(id="cv1", start=(xT, yT), end=(xT, 110.0), stroke_width=2.2, color="#111111"),
-                Segment(id="cv2", start=(xT, 125.0), end=(xT, 185.0), stroke_width=2.2, color="#111111"),
-                Segment(id="cv3", start=(xT, 200.0), end=(xT, yBtm), stroke_width=2.2, color="#111111"),
-                Segment(id="c2_p1", start=(xT - 14.0, 110.0), end=(xT + 14.0, 110.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c2_p2", start=(xT - 14.0, 125.0), end=(xT + 14.0, 125.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c3_p1", start=(xT - 14.0, 185.0), end=(xT + 14.0, 185.0), stroke_width=2.8, color="#111111"),
-                Segment(id="c3_p2", start=(xT - 14.0, 200.0), end=(xT + 14.0, 200.0), stroke_width=2.8, color="#111111"),
+
+                # Bottom-right branch with Capacitor C4
+                Segment(id="br_w1", start=(xBtm, yBtm), end=(240.8, 219.2), stroke_width=2.2, color="#111111"),
+                Segment(id="c4_p1", start=(230.2, 208.6), end=(251.4, 229.8), stroke_width=3.0, color="#111111"),
+                Segment(id="c4_p2", start=(238.6, 200.2), end=(259.8, 221.4), stroke_width=3.0, color="#111111"),
+                Segment(id="br_w2", start=(249.2, 210.8), end=(xR, yA), stroke_width=2.2, color="#111111"),
+
+                # Central vertical branch with series Capacitors C2 and C3
+                Segment(id="cv1", start=(xT, yT), end=(xT, 104.0), stroke_width=2.2, color="#111111"),
+                Segment(id="c2_p1", start=(xT - 15.0, 104.0), end=(xT + 15.0, 104.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c2_p2", start=(xT - 15.0, 116.0), end=(xT + 15.0, 116.0), stroke_width=3.0, color="#111111"),
+                Segment(id="cv2", start=(xT, 116.0), end=(xT, 204.0), stroke_width=2.2, color="#111111"),
+                Segment(id="c3_p1", start=(xT - 15.0, 204.0), end=(xT + 15.0, 204.0), stroke_width=3.0, color="#111111"),
+                Segment(id="c3_p2", start=(xT - 15.0, 216.0), end=(xT + 15.0, 216.0), stroke_width=3.0, color="#111111"),
+                Segment(id="cv3", start=(xT, 216.0), end=(xT, yBtm), stroke_width=2.2, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA + 4.0, font_size=22.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B", x=xB + 15.0, y=yA + 4.0, font_size=22.0, font_weight="bold"),
-                MathLabel(id="lbl_c1", text="C_1", x=115.0, y=85.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_c2", text="C_2", x=xT + 28.0, y=118.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_c3", text="C_3", x=xT - 28.0, y=192.0, font_size=18.0, font_weight="bold"),
-                MathLabel(id="lbl_c4", text="C_4", x=265.0, y=240.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 14.0, y=yA + 4.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 14.0, y=yA + 4.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="lbl_c1", text="C_1", x=115.0, y=80.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2", x=xT + 26.0, y=110.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text="C_3", x=xT - 26.0, y=210.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c4", text="C_4", x=275.0, y=240.0, font_size=18.0, font_weight="bold"),
             ]
             return VisualIR(title="Rhombus Bridge of Capacitors", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 
