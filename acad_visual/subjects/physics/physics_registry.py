@@ -7712,46 +7712,50 @@ class PhysicsRegistry:
 
         # 73. 2a7cf54c: Parallel plate capacitor (4 plates in box) + wedge + battery 10V
         if "2a7cf54c" in stem:
-            # Layout analysis from original scan:
-            # - Rectangle/box on the left containing 4 horizontal parallel lines (plates)
-            # - Right side of the box has a wedge/pointed shape (rhombus right side converging)
-            # - Bottom wire goes through a battery then back left
-            # - V = 10V label below battery
             bx_L, bx_R = 55.0, 220.0    # Box left/right x
             bx_T, bx_B = 40.0, 130.0    # Box top/bottom y
             wx = 255.0                    # Wedge tip x
-            wy = (bx_T + bx_B) / 2.0    # Wedge tip y (vertical midpoint)
+            wy = (bx_T + bx_B) / 2.0    # Wedge tip y (vertical midpoint) = 85
             bat_x = 165.0                # Battery center x
             bat_y = 175.0                # Battery y
+            # 4th plate y-position
+            pl4_y = bx_T + 72.0         # = 112.0
+            pl_x1 = bx_L + 8.0          # plate left x  = 63.0
+            pl_x2 = bx_R - 5.0          # plate right x = 215.0
+            pl_xm = (pl_x1 + pl_x2) / 2.0  # plate mid x = 139.0
+            tick_h = 7.0                 # tick mark half-height
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, 340.0), y_range=(0, 230.0), invert_y=True)
             segments = [
-                # ── Rectangular box outline ──
+                # ── Rectangular box outline (top, bottom, left sides) ──
                 Segment(id="box_t",  start=(bx_L, bx_T), end=(bx_R, bx_T), stroke_width=1.8, color="#111111"),
                 Segment(id="box_b",  start=(bx_L, bx_B), end=(bx_R, bx_B), stroke_width=1.8, color="#111111"),
                 Segment(id="box_l",  start=(bx_L, bx_T), end=(bx_L, bx_B), stroke_width=1.8, color="#111111"),
 
-                # ── Wedge: right side of box converges to a point ──
-                # Top-right corner → tip
+                # ── Wedge: right side converges from top-right and bottom-right to a point ──
                 Segment(id="wedge_t", start=(bx_R, bx_T), end=(wx, wy), stroke_width=1.8, color="#111111"),
-                # Bottom-right corner → tip
                 Segment(id="wedge_b", start=(bx_R, bx_B), end=(wx, wy), stroke_width=1.8, color="#111111"),
 
-                # ── 4 horizontal capacitor plates inside the box ──
-                Segment(id="pl1", start=(bx_L + 8.0, bx_T + 15.0), end=(bx_R - 5.0, bx_T + 15.0), stroke_width=3.5, color="#111111"),
-                Segment(id="pl2", start=(bx_L + 8.0, bx_T + 34.0), end=(bx_R - 5.0, bx_T + 34.0), stroke_width=3.5, color="#111111"),
-                Segment(id="pl3", start=(bx_L + 8.0, bx_T + 53.0), end=(bx_R - 5.0, bx_T + 53.0), stroke_width=3.5, color="#111111"),
-                Segment(id="pl4", start=(bx_L + 8.0, bx_T + 72.0), end=(bx_R - 5.0, bx_T + 72.0), stroke_width=3.5, color="#111111"),
+                # ── 4 horizontal capacitor plates (solid thick lines) ──
+                Segment(id="pl1", start=(pl_x1, bx_T + 15.0), end=(pl_x2, bx_T + 15.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl2", start=(pl_x1, bx_T + 34.0), end=(pl_x2, bx_T + 34.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl3", start=(pl_x1, bx_T + 53.0), end=(pl_x2, bx_T + 53.0), stroke_width=3.5, color="#111111"),
+                Segment(id="pl4", start=(pl_x1, pl4_y),        end=(pl_x2, pl4_y),        stroke_width=3.5, color="#111111"),
+
+                # ── 3 vertical tick marks ABOVE the bottom (4th) plate ──
+                # Left tick: at left end of plate
+                Segment(id="tick_l",  start=(pl_x1,  pl4_y - tick_h), end=(pl_x1,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
+                # Middle tick: at midpoint of plate
+                Segment(id="tick_m",  start=(pl_xm,  pl4_y - tick_h), end=(pl_xm,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
+                # Right tick: at right end of plate
+                Segment(id="tick_r",  start=(pl_x2,  pl4_y - tick_h), end=(pl_x2,  pl4_y - 1.0), stroke_width=1.8, color="#111111"),
 
                 # ── Circuit wiring ──
-                # Right wire: from wedge tip down to bottom rail
-                Segment(id="wr_d", start=(wx, wy), end=(wx, bat_y), stroke_width=1.8, color="#111111"),
-                # Bottom rail right→left via battery
-                Segment(id="w_bot_r", start=(wx, bat_y), end=(bat_x + 28.0, bat_y), stroke_width=1.8, color="#111111"),
-                Segment(id="w_bot_l", start=(bat_x - 28.0, bat_y), end=(bx_L, bat_y), stroke_width=1.8, color="#111111"),
-                # Left wire: from bottom rail up to box left
-                Segment(id="wl_u", start=(bx_L, bat_y), end=(bx_L, bx_B), stroke_width=1.8, color="#111111"),
+                Segment(id="wr_d",    start=(wx, wy),             end=(wx, bat_y),           stroke_width=1.8, color="#111111"),
+                Segment(id="w_bot_r", start=(wx, bat_y),          end=(bat_x + 28.0, bat_y), stroke_width=1.8, color="#111111"),
+                Segment(id="w_bot_l", start=(bat_x - 28.0, bat_y), end=(bx_L, bat_y),        stroke_width=1.8, color="#111111"),
+                Segment(id="wl_u",    start=(bx_L, bat_y),        end=(bx_L, bx_B),          stroke_width=1.8, color="#111111"),
 
-                # ── Battery (4-line symbol: |||| style) ──
+                # ── Battery (|||| symbol) ──
                 Segment(id="bat_a", start=(bat_x - 22.0, bat_y - 12.0), end=(bat_x - 22.0, bat_y + 12.0), stroke_width=3.0, color="#111111"),
                 Segment(id="bat_b", start=(bat_x - 12.0, bat_y - 8.0),  end=(bat_x - 12.0, bat_y + 8.0),  stroke_width=1.8, color="#111111"),
                 Segment(id="bat_c", start=(bat_x - 2.0,  bat_y - 12.0), end=(bat_x - 2.0,  bat_y + 12.0), stroke_width=3.0, color="#111111"),
