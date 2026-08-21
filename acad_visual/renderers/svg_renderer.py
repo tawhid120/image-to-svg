@@ -24,58 +24,73 @@ class UniversalSVGRenderer:
         self.ir = ir
 
     def _format_math_text(self, text: str) -> str:
-        # 1. Clean LaTeX degrees, primes and angles before anything else
+        # 1. Strip basic LaTeX text wrappers (\text{}, \mathrm{}, \mathbf{}, etc.)
+        text = re.sub(r'\\(?:text|mathrm|mathbf|mathit|textbf|textit|operatorname)\{([^}]*)\}', r'\1', text)
+
+        # 2. Fractions
+        text = re.sub(r'\\frac\{([^}]*)\}\{([^}]*)\}', r'\1/\2', text)
+
+        # 3. Square roots
+        text = re.sub(r'\\sqrt\{([^}]*)\}', r'√\1', text)
+        text = re.sub(r'\\sqrt', r'√', text)
+
+        # 4. Vectors and unit vectors
+        text = re.sub(r'\\hat\{i\}', 'î', text)
+        text = re.sub(r'\\hat\{j\}', 'ĵ', text)
+        text = re.sub(r'\\hat\{k\}', 'k̂', text)
+        text = re.sub(r'\\hat\{([^}])\}', r'\1̂', text)
+        text = re.sub(r'\\vec\{([^}])\}', r'\1⃗', text)
+        text = re.sub(r'\\overline\{([^}]*)\}', r'\1', text)
+
+        # 5. Degrees, primes, angles, operations
         text = re.sub(r'\^\{\\circ\}|\^\\circ|\\circ|\\degree', '°', text)
         text = re.sub(r'\^\{\\prime\}|\^\\prime|\\prime', '′', text)
         text = re.sub(r'\\angle', '∠', text)
+        text = re.sub(r'\\parallel', '∥', text)
+        text = re.sub(r'\\perp', '⊥', text)
+        text = re.sub(r'\\cdot', '·', text)
 
-        # 2. Map common LaTeX Greek symbols and operators to clean unicode glyphs
+        # 6. Delimiters and spacing
+        text = re.sub(r'\\left|\\right', '', text)
+        text = re.sub(r'\\[,;! ]|\\quad|\\qquad', ' ', text)
+
+        # 7. Common Greek & Math symbols
         latex_map = {
-            r"\alpha": "α",
-            r"\beta": "β",
-            r"\gamma": "γ",
-            r"\delta": "δ",
-            r"\theta": "θ",
-            r"\lambda": "λ",
-            r"\mu": "μ",
-            r"\pi": "π",
-            r"\rho": "ρ",
-            r"\sigma": "σ",
-            r"\phi": "φ",
-            r"\omega": "ω",
-            r"\Delta": "Δ",
-            r"\Theta": "Θ",
-            r"\Lambda": "Λ",
-            r"\Sigma": "Σ",
-            r"\Omega": "Ω",
-            r"\pm": "±",
-            r"\mp": "∓",
-            r"\times": "×",
-            r"\div": "÷",
-            r"\le": "≤",
-            r"\ge": "≥",
-            r"\neq": "≠",
-            r"\approx": "≈",
-            r"\infty": "∞",
-            r"\perp": "⊥",
+            r'\alpha': 'α', r'\beta': 'β', r'\gamma': 'γ', r'\delta': 'δ',
+            r'\epsilon': 'ε', r'\eta': 'η', r'\theta': 'θ', r'\lambda': 'λ',
+            r'\mu': 'μ', r'\pi': 'π', r'\rho': 'ρ', r'\sigma': 'σ',
+            r'\tau': 'τ', r'\phi': 'φ', r'\omega': 'ω',
+            r'\Delta': 'Δ', r'\Theta': 'Θ', r'\Lambda': 'Λ', r'\Sigma': 'Σ',
+            r'\Phi': 'Φ', r'\Omega': 'Ω',
+            r'\pm': '±', r'\mp': '∓', r'\times': '×', r'\div': '÷',
+            r'\le': '≤', r'\ge': '≥', r'\neq': '≠', r'\approx': '≈',
+            r'\infty': '∞', r'\to': '→', r'\leftarrow': '←', r'\rightarrow': '→'
         }
         for cmd, glyph in latex_map.items():
             text = text.replace(cmd, glyph)
 
-        # Map \sqrt{X} to √X
-        text = re.sub(r'\\sqrt\{([^}]+)\}', r'√\1', text)
-        text = re.sub(r'\\sqrt', r'√', text)
+        # Clean up any leftover lone backslashes before plain letters/spaces
+        text = re.sub(r'\\([a-zA-Z])', r'\1', text)
+        text = re.sub(r'\\', '', text)
 
-        escaped = html.escape(text)
-        def replace_sup(m):
-            c = m.group(1) or m.group(2)
-            return f'<tspan baseline-shift="super" font-size="70%">{c}</tspan>'
-        formatted = re.sub(r'\^\{([^}]+)\}|\^([0-9a-zA-Z\+\-°′]+)', replace_sup, escaped)
-        def replace_sub(m):
-            c = m.group(1) or m.group(2)
-            return f'<tspan baseline-shift="sub" font-size="70%">{c}</tspan>'
-        formatted = re.sub(r'\_\{([^}]+)\}|\_([0-9a-zA-Z\+\-]+)', replace_sub, formatted)
-        return formatted
+        # 8. Unicode Superscripts and Subscripts
+        sub_map = str.maketrans('0123456789+-=()aeoxhklmnpst', '₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎ₐₑₒₓₕₖₗₘₙₚₛₜ')
+        sup_map = str.maketrans('0123456789+-=()ni', '⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ⁿⁱ')
+
+        def to_sub(m):
+            content = m.group(1) or m.group(2)
+            return content.translate(sub_map)
+
+        def to_sup(m):
+            content = m.group(1) or m.group(2)
+            return content.translate(sup_map)
+
+        # Replace subscripts: _{...} or _X
+        text = re.sub(r'\_\{([^}]+)\}|\_([0-9a-zA-Z\+\-]+)', to_sub, text)
+        # Replace superscripts: ^{...} or ^X
+        text = re.sub(r'\^\{([^}]+)\}|\^([0-9a-zA-Z\+\-°′]+)', to_sup, text)
+
+        return html.escape(text)
 
     @staticmethod
     def _create_arrowhead_path(tip: Tuple[float, float], tangent: Tuple[float, float], size: float = 15.0, width: float = 7.0) -> str:
