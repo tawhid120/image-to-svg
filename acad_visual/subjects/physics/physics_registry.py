@@ -6478,23 +6478,24 @@ class PhysicsRegistry:
             return VisualIR(
                 width=w, height=h,
                 circles=[
-                    Circle(id="pt_a", center=(50, 70), radius=4, fill_color="#111111"),
-                    Circle(id="pt_b", center=(160, 66), radius=4, fill_color="#111111"),
-                    Circle(id="pt_c", center=(230, 64), radius=4, fill_color="#111111"),
-                    Circle(id="pt_d", center=(350, 60), radius=4, fill_color="#111111"),
+                    Circle(id="pt_a", center=(50, 65), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_b", center=(150, 65), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_c", center=(220, 65), radius=4.5, fill_color="#111111"),
+                    Circle(id="pt_d", center=(350, 65), radius=4.5, fill_color="#111111"),
                 ],
                 segments=[
-                    Segment(id="main_line", start=(50, 70), end=(350, 60), stroke_width=2.5),
-                    Segment(id="dim_line_l", start=(50, 75), end=(50, 120), stroke_width=1.5),
-                    Segment(id="dim_line_r", start=(350, 65), end=(350, 120), stroke_width=1.5),
-                    Segment(id="dim_arr", start=(50, 110), end=(350, 110), stroke_width=2, arrows=ArrowType.BOTH),
+                    Segment(id="main_line", start=(50, 65), end=(350, 65), stroke_width=2.5),
+                    Segment(id="dim_line_l", start=(50, 65), end=(50, 125), stroke_width=1.8),
+                    Segment(id="dim_line_r", start=(350, 65), end=(350, 125), stroke_width=1.8),
+                    Segment(id="dim_arr_l", start=(50, 110), end=(165, 110), stroke_width=2, arrows=ArrowType.START),
+                    Segment(id="dim_arr_r", start=(235, 110), end=(350, 110), stroke_width=2, arrows=ArrowType.END),
                 ],
                 labels=[
-                    MathLabel(id="lbl_a", text="A", x=35, y=75, font_size=18, font_weight="bold"),
-                    MathLabel(id="lbl_b", text="B", x=160, y=45, font_size=18, font_weight="bold"),
-                    MathLabel(id="lbl_c", text="C", x=230, y=43, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_a", text="A", x=35, y=65, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_b", text="B", x=150, y=42, font_size=18, font_weight="bold"),
+                    MathLabel(id="lbl_c", text="C", x=220, y=42, font_size=18, font_weight="bold"),
                     MathLabel(id="lbl_d", text="D", x=365, y=65, font_size=18, font_weight="bold"),
-                    MathLabel(id="lbl_dim", text="12 cm", x=200, y=105, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_dim", text="12 cm", x=200, y=110, font_size=16, font_weight="bold"),
                 ]
             )
 

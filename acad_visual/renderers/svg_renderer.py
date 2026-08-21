@@ -193,11 +193,19 @@ class UniversalSVGRenderer:
       font-family: 'Times New Roman', 'Cambria Math', 'STIXGeneral', serif;
       font-style: italic;
       user-select: none;
+      paint-order: stroke fill;
+      stroke: #ffffff;
+      stroke-width: 5px;
+      stroke-linejoin: round;
     }
     .roman-text {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-style: normal;
       user-select: none;
+      paint-order: stroke fill;
+      stroke: #ffffff;
+      stroke-width: 5px;
+      stroke-linejoin: round;
     }
     .vector-stroke {
       stroke-linecap: round;
