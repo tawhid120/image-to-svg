@@ -5562,47 +5562,53 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # bed33b73: Dual Right Triangle Structure with Charges
         # ----------------------------------------------------
+        # bed33b73: Dual Right Triangle Structure with Charges
+        # ----------------------------------------------------
         if "bed33b73" in stem:
-            w, h = 480.0, 260.0
+            w, h = 480.0, 250.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA = 70.0, 180.0
-            xB, yB = 310.0, 180.0
-            xE, yE = 110.0, 60.0
-            xF, yF = 270.0, 60.0
-            xC, yC = 190.0, 120.0
-            xD, yD = 440.0, 180.0
+            xA, yA = 70.0, 175.0
+            xB, yB = 310.0, 175.0
+            xE, yE = 105.0, 48.0
+            xF, yF = 275.0, 48.0
+            xC, yC = 190.0, 103.5
+            xD, yD = 435.0, 175.0
 
-            polygons = [
-                Polygon(id="left_tri", vertices=[(xA, yA), (xE, yE), (xB, yB)], stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
-                Polygon(id="right_tri", vertices=[(xA, yA), (xF, yF), (xB, yB)], stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
-            ]
             segments = [
+                # Side AE
+                Segment(id="seg_ae", start=(xA, yA), end=(xE, yE), stroke_width=2.5, color="#111111"),
+                # Straight diagonal line EB through C
+                Segment(id="seg_eb", start=(xE, yE), end=(xB, yB), stroke_width=2.5, color="#111111"),
+                # Side BF
+                Segment(id="seg_bf", start=(xB, yB), end=(xF, yF), stroke_width=2.5, color="#111111"),
+                # Straight diagonal line FA through C
+                Segment(id="seg_fa", start=(xF, yF), end=(xA, yA), stroke_width=2.5, color="#111111"),
                 # Base AB
                 Segment(id="base", start=(xA, yA), end=(xB, yB), stroke_width=2.5, color="#111111"),
                 # Extension to D
                 Segment(id="ext_d", start=(xB, yB), end=(xD, yD), stroke_width=2.2, color="#111111", stroke_style=StrokeStyle.DASHED),
             ]
             arc_markers = [
-                ArcAngleMarker(id="arc_e", vertex=(xE, yE), start_pt=(xA, yA), end_pt=(xB, yB), radius=22.0, stroke_width=1.8, color="#111111"),
-                ArcAngleMarker(id="arc_f", vertex=(xF, yF), start_pt=(xA, yA), end_pt=(xB, yB), radius=22.0, stroke_width=1.8, color="#111111"),
-                ArcAngleMarker(id="arc_c", vertex=(xC, yC), start_pt=(xA, yA), end_pt=(xB, yB), radius=22.0, stroke_width=1.8, color="#111111"),
+                ArcAngleMarker(id="arc_e", vertex=(xE, yE), start_pt=(xA, yA), end_pt=(xB, yB), radius=20.0, stroke_width=1.8, color="#111111"),
+                ArcAngleMarker(id="arc_f", vertex=(xF, yF), start_pt=(xA, yA), end_pt=(xB, yB), radius=20.0, stroke_width=1.8, color="#111111"),
+                ArcAngleMarker(id="arc_c", vertex=(xC, yC), start_pt=(xA, yA), end_pt=(xB, yB), radius=20.0, stroke_width=1.8, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_a", text="A (+5\text{ nC})", x=xA - 10.0, y=yA + 25.0, font_size=17.0, font_weight="bold"),
-                MathLabel(id="lbl_b", text="B (-9\text{ nC})", x=xB + 10.0, y=yB + 25.0, font_size=17.0, font_weight="bold"),
-                MathLabel(id="lbl_e", text="E", x=xE, y=yE - 18.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_f", text="F", x=xF, y=yF - 18.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_c", text="C", x=xC, y=yC - 20.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_d", text="D", x=xD + 15.0, y=yD + 4.0, font_size=20.0, font_weight="bold"),
-                MathLabel(id="lbl_90_e", text="90^\circ", x=xE + 15.0, y=yE + 25.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_90_f", text="90^\circ", x=xF - 15.0, y=yF + 25.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_90_c", text="90^\circ", x=xC, y=yC + 25.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_ae", text="40 cm", x=(xA + xE)/2.0 - 30.0, y=(yA + yE)/2.0, font_size=15.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_bf", text="40 cm", x=(xB + xF)/2.0 + 30.0, y=(yB + yF)/2.0, font_size=15.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_ec", text="30 cm", x=(xE + xC)/2.0 + 15.0, y=(yE + yC)/2.0 - 15.0, font_size=15.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_fc", text="30 cm", x=(xF + xC)/2.0 - 15.0, y=(yF + yC)/2.0 - 15.0, font_size=15.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_a", text="A (+5 nC)", x=xA - 5.0, y=yA + 24.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_b", text="B (-9 nC)", x=xB + 5.0, y=yB + 24.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_e", text="E", x=xE, y=yE - 14.0, font_size=19.0, font_weight="bold"),
+                MathLabel(id="lbl_f", text="F", x=xF, y=yF - 14.0, font_size=19.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC, y=yC - 16.0, font_size=19.0, font_weight="bold"),
+                MathLabel(id="lbl_d", text="D", x=xD + 15.0, y=yD + 2.0, font_size=19.0, font_weight="bold"),
+                MathLabel(id="lbl_90_e", text="90^\circ", x=xE + 16.0, y=yE + 24.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_90_f", text="90^\circ", x=xF - 16.0, y=yF + 24.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_90_c", text="90^\circ", x=xC, y=yC + 28.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_ae", text="40 cm", x=(xA + xE)/2.0 - 28.0, y=(yA + yE)/2.0, font_size=15.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bf", text="40 cm", x=(xB + xF)/2.0 + 28.0, y=(yB + yF)/2.0, font_size=15.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_ec", text="30 cm", x=(xE + xC)/2.0 + 6.0, y=(yE + yC)/2.0 - 14.0, font_size=15.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_fc", text="30 cm", x=(xF + xC)/2.0 - 6.0, y=(yF + yC)/2.0 - 14.0, font_size=15.0, font_weight="bold", math_mode=False),
             ]
-            return VisualIR(title="Dual Right Triangle Structure", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, arc_angles=arc_markers, labels=labels, background_color="#ffffff")
+            return VisualIR(title="Dual Right Triangle Structure", width=w, height=h, coordinate_frame=cf, segments=segments, arc_angles=arc_markers, labels=labels, background_color="#ffffff")
 
         # ----------------------------------------------------
         # c22bf0ed: 3D Cartesian Axes with ZX Plane Patch
