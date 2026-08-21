@@ -2419,35 +2419,37 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 4a24877f: Radial 3-Branch System with Rectangular Charge Cards
         # ----------------------------------------------------
+        # 4a24877f: Radial 3-Branch System with Rectangular Charge Cards
+        # ----------------------------------------------------
         if "4a24877f" in stem:
-            w, h = 340.0, 480.0
+            w, h = 420.0, 480.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xO, yO = 180.0, 250.0
+            xO, yO = 210.0, 240.0
 
             polygons = [
                 # Left box (Q3)
-                Polygon(id="box_q3", vertices=[(10.0, 140.0), (70.0, 140.0), (70.0, 380.0), (10.0, 380.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Polygon(id="box_q3", vertices=[(30.0, 140.0), (80.0, 140.0), (80.0, 340.0), (30.0, 340.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
                 # Top right box (Q1)
-                Polygon(id="box_q1", vertices=[(260.0, 10.0), (320.0, 10.0), (320.0, 240.0), (260.0, 240.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Polygon(id="box_q1", vertices=[(290.0, 20.0), (340.0, 20.0), (340.0, 220.0), (290.0, 220.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
                 # Bottom right box (Q2)
-                Polygon(id="box_q2", vertices=[(260.0, 280.0), (320.0, 280.0), (320.0, 500.0), (260.0, 500.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Polygon(id="box_q2", vertices=[(290.0, 260.0), (340.0, 260.0), (340.0, 460.0), (290.0, 460.0)], stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
             ]
             segments = [
                 # Left branch to Q3
-                Segment(id="br_q3", start=(70.0, yO), end=(xO, yO), stroke_width=2.2, color="#111111"),
+                Segment(id="br_q3", start=(80.0, yO), end=(xO, yO), stroke_width=2.2, color="#111111"),
                 # Top right branch to Q1
-                Segment(id="br_q1", start=(xO, yO), end=(260.0, 110.0), stroke_width=2.2, color="#111111"),
+                Segment(id="br_q1", start=(xO, yO), end=(290.0, 120.0), stroke_width=2.2, color="#111111"),
                 # Bottom right branch to Q2
-                Segment(id="br_q2", start=(xO, yO), end=(260.0, 410.0), stroke_width=2.2, color="#111111"),
+                Segment(id="br_q2", start=(xO, yO), end=(290.0, 360.0), stroke_width=2.2, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_o", text="O", x=xO + 18.0, y=yO, font_size=22.0, font_weight="bold"),
-                MathLabel(id="lbl_d3", text="3 m", x=120.0, y=yO - 18.0, font_size=17.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_d1", text="2 m", x=230.0, y=170.0, font_size=17.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_d2", text="1 m", x=235.0, y=310.0, font_size=17.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_q3", text="Q_3 = 1.95 \\times 10^{-9}\\text{C}", x=40.0, y=260.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_q1", text="Q_1 = 1.75 \\times 10^{-9}\\text{C}", x=290.0, y=125.0, font_size=15.0, font_weight="bold"),
-                MathLabel(id="lbl_q2", text="Q_2 = 1.6 \\times 10^{-9}\\text{C}", x=290.0, y=390.0, font_size=15.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO + 16.0, y=yO + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_d3", text="3 m", x=145.0, y=yO - 16.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="2 m", x=240.0, y=162.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_d2", text="1 m", x=240.0, y=318.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_q3", text="Q_3 = 1.95 \\times 10^{-9}\\text{ C}", x=55.0, y=240.0, font_size=15.0, font_weight="bold", rotation=-90.0),
+                MathLabel(id="lbl_q1", text="Q_1 = 1.75 \\times 10^{-9}\\text{ C}", x=315.0, y=120.0, font_size=15.0, font_weight="bold", rotation=-90.0),
+                MathLabel(id="lbl_q2", text="Q_2 = 1.6 \\times 10^{-9}\\text{ C}", x=315.0, y=360.0, font_size=15.0, font_weight="bold", rotation=-90.0),
             ]
             return VisualIR(title="Three Radial Charge Branches", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
 
@@ -2979,37 +2981,48 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 5d731a0b: Parallel Plate Capacitor with Battery 2V
         # ----------------------------------------------------
+        # 5d731a0b: Parallel Plate Capacitor with Battery 2V
+        # ----------------------------------------------------
         if "5d731a0b" in stem:
             w, h = 340.0, 360.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            y_t, y_b = 60.0, 300.0
-            x_l, x_r = 70.0, 270.0
-            y_p1, y_p2 = 130.0, 230.0
+
+            y_p1, y_p2 = 110.0, 230.0
+            x_plate_l, x_plate_r = 60.0, 150.0
+            x_plate_c = (x_plate_l + x_plate_r) / 2.0  # 105.0
+            x_bat = 240.0
 
             segments = [
-                # Left loop
-                Segment(id="l1", start=(x_l, y_p1), end=(x_l, y_t), stroke_width=2.2, color="#111111"),
-                Segment(id="l2", start=(x_l, y_t), end=(200.0, y_t), stroke_width=2.2, color="#111111"),
-                Segment(id="l3", start=(x_l, y_p2), end=(x_l, y_b), stroke_width=2.2, color="#111111"),
-                Segment(id="l4", start=(x_l, y_b), end=(200.0, y_b), stroke_width=2.2, color="#111111"),
-                # Right loop through battery
-                Segment(id="r1", start=(200.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
-                Segment(id="r2", start=(x_r, y_t), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
-                Segment(id="r3", start=(x_r, y_b), end=(200.0, y_b), stroke_width=2.2, color="#111111"),
-                # Plates
-                Segment(id="plate_top", start=(30.0, y_p1), end=(110.0, y_p1), stroke_width=3.5, color="#111111"),
-                Segment(id="plate_bot", start=(30.0, y_p2), end=(110.0, y_p2), stroke_width=3.5, color="#111111"),
-                # Battery
-                Segment(id="bp", start=(190.0, 200.0), end=(210.0, 200.0), stroke_width=3.0, color="#111111"),
-                Segment(id="bn", start=(195.0, 210.0), end=(205.0, 210.0), stroke_width=4.5, color="#111111"),
-                # Dimension d = 5mm
-                Segment(id="dim_d", start=(140.0, y_p1), end=(140.0, y_p2), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                # Capacitor Plates
+                Segment(id="plate_top", start=(x_plate_l, y_p1), end=(x_plate_r, y_p1), stroke_width=3.5, color="#111111"),
+                Segment(id="plate_bot", start=(x_plate_l, y_p2), end=(x_plate_r, y_p2), stroke_width=3.5, color="#111111"),
+
+                # Top wire: from top plate up, right, down to battery
+                Segment(id="w_top_v", start=(x_plate_c, y_p1), end=(x_plate_c, 50.0), stroke_width=2.2, color="#111111"),
+                Segment(id="w_top_h", start=(x_plate_c, 50.0), end=(x_bat, 50.0), stroke_width=2.2, color="#111111"),
+                Segment(id="w_top_down", start=(x_bat, 50.0), end=(x_bat, 145.0), stroke_width=2.2, color="#111111"),
+
+                # 4-Plate Multi-cell Battery on right wire
+                Segment(id="bat_p1", start=(x_bat - 20.0, 145.0), end=(x_bat + 20.0, 145.0), stroke_width=2.8, color="#111111"),
+                Segment(id="bat_n1", start=(x_bat - 12.0, 153.0), end=(x_bat + 12.0, 153.0), stroke_width=4.5, color="#111111"),
+                Segment(id="bat_p2", start=(x_bat - 20.0, 161.0), end=(x_bat + 20.0, 161.0), stroke_width=2.8, color="#111111"),
+                Segment(id="bat_n2", start=(x_bat - 12.0, 169.0), end=(x_bat + 12.0, 169.0), stroke_width=4.5, color="#111111"),
+
+                # Bottom wire: from battery down, left, up to bottom plate
+                Segment(id="w_bot_down", start=(x_bat, 169.0), end=(x_bat, 290.0), stroke_width=2.2, color="#111111"),
+                Segment(id="w_bot_h", start=(x_bat, 290.0), end=(x_plate_c, 290.0), stroke_width=2.2, color="#111111"),
+                Segment(id="w_bot_up", start=(x_plate_c, 290.0), end=(x_plate_c, y_p2), stroke_width=2.2, color="#111111"),
+
+                # Dimension d = 5 mm between plates with horizontal ticks
+                Segment(id="dim_d", start=(180.0, y_p1), end=(180.0, y_p2), stroke_width=1.8, color="#111111", arrows=ArrowType.BOTH),
+                Segment(id="tick_top", start=(168.0, y_p1), end=(192.0, y_p1), stroke_width=1.5, color="#111111"),
+                Segment(id="tick_bot", start=(168.0, y_p2), end=(192.0, y_p2), stroke_width=1.5, color="#111111"),
             ]
             labels = [
-                MathLabel(id="lbl_qp", text="+20 C", x=30.0, y=y_p1 - 20.0, font_size=18.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_qn", text="-20 C", x=30.0, y=y_p2 + 25.0, font_size=18.0, font_weight="bold", math_mode=False),
-                MathLabel(id="lbl_d", text="d = 5\\text{ mm}", x=140.0, y=(y_p1 + y_p2)/2.0, font_size=17.0, font_weight="bold"),
-                MathLabel(id="lbl_v", text="V = 2\\text{ V}", x=270.0, y=200.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qp", text="+20 C", x=38.0, y=y_p1, font_size=17.0, font_weight="bold", rotation=-90.0),
+                MathLabel(id="lbl_qn", text="-20 C", x=38.0, y=y_p2, font_size=17.0, font_weight="bold", rotation=-90.0),
+                MathLabel(id="lbl_d", text="d = 5\\text{ mm}", x=162.0, y=(y_p1 + y_p2) / 2.0, font_size=16.0, font_weight="bold", rotation=-90.0),
+                MathLabel(id="lbl_v", text="V = 2\\text{ V}", x=275.0, y=157.0, font_size=17.0, font_weight="bold", rotation=-90.0),
             ]
             return VisualIR(title="Parallel Plate Capacitor with Battery", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 

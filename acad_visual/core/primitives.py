@@ -197,3 +197,4 @@ class MathLabel:
     anchor: str = "middle"  # "start", "middle", "end"
     alignment_baseline: str = "central"
     math_mode: bool = True
+    rotation: float = 0.0

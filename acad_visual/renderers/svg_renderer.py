@@ -363,10 +363,11 @@ class UniversalSVGRenderer:
         for lbl in self.ir.labels:
             ftext = self._format_math_text(lbl.text)
             fclass = "math-text" if lbl.math_mode else "roman-text"
+            rot_attr = f' transform="rotate({lbl.rotation:.1f}, {lbl.x:.2f}, {lbl.y:.2f})"' if lbl.rotation != 0.0 else ''
             parts.append(
                 f'  <text x="{lbl.x:.2f}" y="{lbl.y:.2f}" font-size="{lbl.font_size:.1f}px" '
                 f'text-anchor="{lbl.anchor}" dominant-baseline="{lbl.alignment_baseline}" '
-                f'fill="{lbl.color}" class="{fclass}">{ftext}</text>'
+                f'fill="{lbl.color}" class="{fclass}"{rot_attr}>{ftext}</text>'
             )
 
         parts.append("</svg>")
