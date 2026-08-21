@@ -9,6 +9,7 @@ from typing import Dict, Any, List, Tuple
 from ...core.ir import VisualIR
 from ...core.primitives import (
     Point,
+    Circle,
     Segment,
     Polygon,
     ArcAngleMarker,
@@ -16,6 +17,7 @@ from ...core.primitives import (
     ArrowType,
     StrokeStyle,
 )
+
 from ...core.coordinate import CoordinateFrame
 
 
@@ -25,7 +27,9 @@ class PhysicsRegistry:
     @staticmethod
     def get_custom_reconstruction(img_name: str, w: float = 700.0, h: float = 500.0) -> VisualIR | None:
         name = img_name.lower()
+        stem = name
         cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=False)
+
 
         # ---------------------------------------------------------
         # 1. L-Shaped Orthogonal Charges (002cfa74)
@@ -737,4 +741,979 @@ class PhysicsRegistry:
             ]
             return VisualIR(title="Series-Parallel Capacitance Circuit", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 
+        # ----------------------------------------------------
+        # 19792d13: Series C1, C2 on top + parallel C3 middle + 9V battery
+        # ----------------------------------------------------
+        if "19792d13" in stem:
+            w, h = 500.0, 380.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_t, y_m, y_b = 80.0, 180.0, 300.0
+            x_l, x_r = 60.0, 440.0
+            x_c1, x_c2 = 150.0, 350.0
+            x_c3 = 250.0
+
+            segments = [
+                # Top rail
+                Segment(id="t1", start=(x_l, y_t), end=(x_c1 - 10.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t2", start=(x_c1 + 10.0, y_t), end=(x_c2 - 10.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t3", start=(x_c2 + 10.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
+                # Middle rail branches
+                Segment(id="m_v1", start=(110.0, y_t), end=(110.0, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="m_v2", start=(390.0, y_t), end=(390.0, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="m1", start=(110.0, y_m), end=(x_c3 - 10.0, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="m2", start=(x_c3 + 10.0, y_m), end=(390.0, y_m), stroke_width=2.2, color="#111111"),
+                # Outer loop
+                Segment(id="w_l", start=(x_l, y_t), end=(x_l, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="w_r", start=(x_r, y_t), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="b1", start=(x_l, y_b), end=(150.0, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="b2", start=(180.0, y_b), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                # C1 plates
+                Segment(id="c1_l", start=(x_c1 - 5.0, y_t - 18.0), end=(x_c1 - 5.0, y_t + 18.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x_c1 + 5.0, y_t - 18.0), end=(x_c1 + 5.0, y_t + 18.0), stroke_width=2.8, color="#111111"),
+                # C2 plates
+                Segment(id="c2_l", start=(x_c2 - 5.0, y_t - 18.0), end=(x_c2 - 5.0, y_t + 18.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x_c2 + 5.0, y_t - 18.0), end=(x_c2 + 5.0, y_t + 18.0), stroke_width=2.8, color="#111111"),
+                # C3 plates
+                Segment(id="c3_l", start=(x_c3 - 5.0, y_m - 18.0), end=(x_c3 - 5.0, y_m + 18.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x_c3 + 5.0, y_m - 18.0), end=(x_c3 + 5.0, y_m + 18.0), stroke_width=2.8, color="#111111"),
+                # Battery
+                Segment(id="bat_p", start=(155.0, y_b - 16.0), end=(155.0, y_b + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bat_n", start=(175.0, y_b - 9.0), end=(175.0, y_b + 9.0), stroke_width=4.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c1", text="C_1", x=x_c1, y=y_t - 26.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2", x=x_c2, y=y_t - 26.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text="C_3", x=x_c3, y=y_m + 32.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_bp", text="+", x=142.0, y=y_b + 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_v", text="9V", x=165.0, y=y_b + 38.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Bridge Capacitance Circuit", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1a07b659: Spheres A(X) and B(Y) with vertical drop stems
+        # ----------------------------------------------------
+        if "1a07b659" in stem:
+            w, h = 450.0, 420.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 70.0, 70.0
+            xB, yB = 370.0, 70.0
+            xR = 210.0
+            y_bot = 370.0
+
+            circles = [
+                Circle(id="circ_a_out", center=(xA, yA), radius=22.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="circ_a_in", center=(xA, yA), radius=14.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="circ_b_out", center=(xB, yB), radius=22.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="circ_b_in", center=(xB, yB), radius=14.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="circ_r", center=(xR, yA), radius=8.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            segments = [
+                Segment(id="ax_top", start=(xA + 22.0, yA), end=(xB - 22.0, yA), stroke_width=2.5, color="#111111"),
+                # Stems
+                Segment(id="stem_a", start=(xA, yA + 22.0), end=(xA, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="stem_b", start=(xB, yB + 22.0), end=(xB, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="stem_r", start=(xR, yA + 8.0), end=(xR, 145.0), stroke_width=2.0, color="#111111"),
+                # Dimension 10cm
+                Segment(id="dim_10", start=(xA, 145.0), end=(xR, 145.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+                # Dimension 30cm
+                Segment(id="dim_30", start=(xA, y_bot - 20.0), end=(xB, y_bot - 20.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_x", text="X", x=xA, y=yA - 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 34.0, y=yA + 6.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_y", text="Y", x=xB, y=yB - 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 34.0, y=yB + 6.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_r", text="R", x=xR, y=yA - 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="10 cm", x=(xA + xR)/2.0, y=135.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d2", text="30 cm", x=(xA + xB)/2.0, y=y_bot - 30.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Electrodes with Drop Axes", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1ae3ec6b: Spheres r1, r2 with distance d
+        # ----------------------------------------------------
+        if "1ae3ec6b" in stem:
+            w, h = 500.0, 220.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA, rA = 90.0, 75.0, 36.0
+            xB, yB, rB = 400.0, 75.0, 48.0
+            y_dim = 160.0
+
+            circles = [
+                Circle(id="cA", center=(xA, yA), radius=rA, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="cB", center=(xB, yB), radius=rB, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                Segment(id="d_a", start=(xA, yA), end=(xA, y_dim + 15.0), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DASHED),
+                Segment(id="d_b", start=(xB, yB), end=(xB, y_dim + 15.0), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DASHED),
+                Segment(id="dim_d", start=(xA, y_dim), end=(xB, y_dim), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_r1", text="r_1", x=xA, y=yA + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r2", text="r_2", x=xB, y=yB + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d", text="d", x=(xA + xB)/2.0, y=y_dim - 8.0, font_size=20.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Charged Spheres Radius and Distance", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1b07a253: Rectangle ACDB with charges & diagonal sqrt(5)m
+        # ----------------------------------------------------
+        if "1b07a253" in stem:
+            w, h = 500.0, 220.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 70.0, 60.0
+            xB, yB = 380.0, 60.0
+            xC, yC = 70.0, 170.0
+            xD, yD = 380.0, 170.0
+
+            polygons = [
+                Polygon(id="rect", vertices=[(xA, yA), (xB, yB), (xD, yD), (xC, yC)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            segments = [
+                Segment(id="diag", start=(xA, yA), end=(xD, yD), stroke_width=1.8, color="#111111", stroke_style=StrokeStyle.DASHED),
+            ]
+            labels = [
+                MathLabel(id="lbl_a_q", text="(q_1 = 4C)", x=xA - 15.0, y=yA - 20.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_a", text="A", x=xA - 16.0, y=yA + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 16.0, y=yB + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC - 16.0, y=yC + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d_q", text="D(q_2 = 2C)", x=xD + 45.0, y=yD + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_top", text="2 m", x=(xA + xB)/2.0, y=yA - 14.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bot", text="2 m", x=(xC + xD)/2.0, y=yC + 20.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_l", text="1 m", x=xA - 24.0, y=(yA + yC)/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="1 m", x=xB + 24.0, y=(yB + yD)/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_diag", text=r"\sqrt{5}\text{ m}", x=(xA + xD)/2.0 + 10.0, y=(yA + yD)/2.0 - 10.0, font_size=16.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Rectangle Potential Geometry", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1cb0e8e9: Series C3 (1F) + Parallel C1 (1F), C2 (2F)
+        # ----------------------------------------------------
+        if "1cb0e8e9" in stem:
+            w, h = 480.0, 260.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_t, y_par_t, y_par_b, y_bot = 80.0, 50.0, 110.0, 190.0
+            x_l, x_c3, x_sp, x_c12, x_r = 50.0, 120.0, 190.0, 290.0, 420.0
+
+            segments = [
+                # Series left
+                Segment(id="s1", start=(x_l, y_t), end=(x_c3 - 10.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="s2", start=(x_c3 + 10.0, y_t), end=(x_sp, y_t), stroke_width=2.2, color="#111111"),
+                # Split
+                Segment(id="sp_l", start=(x_sp, y_par_t), end=(x_sp, y_par_b), stroke_width=2.2, color="#111111"),
+                Segment(id="sp_r", start=(370.0, y_par_t), end=(370.0, y_par_b), stroke_width=2.2, color="#111111"),
+                # Top parallel
+                Segment(id="p_t1", start=(x_sp, y_par_t), end=(x_c12 - 10.0, y_par_t), stroke_width=2.2, color="#111111"),
+                Segment(id="p_t2", start=(x_c12 + 10.0, y_par_t), end=(370.0, y_par_t), stroke_width=2.2, color="#111111"),
+                # Bot parallel
+                Segment(id="p_b1", start=(x_sp, y_par_b), end=(x_c12 - 10.0, y_par_b), stroke_width=2.2, color="#111111"),
+                Segment(id="p_b2", start=(x_c12 + 10.0, y_par_b), end=(370.0, y_par_b), stroke_width=2.2, color="#111111"),
+                # Loop back
+                Segment(id="w_r1", start=(370.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="w_r2", start=(x_r, y_t), end=(x_r, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="w_l", start=(x_l, y_t), end=(x_l, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="b_l", start=(x_l, y_bot), end=(180.0, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="b_r", start=(230.0, y_bot), end=(x_r, y_bot), stroke_width=2.2, color="#111111"),
+                # Plates
+                Segment(id="c3_l", start=(x_c3 - 5.0, y_t - 15.0), end=(x_c3 - 5.0, y_t + 15.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x_c3 + 5.0, y_t - 15.0), end=(x_c3 + 5.0, y_t + 15.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_l", start=(x_c12 - 5.0, y_par_t - 15.0), end=(x_c12 - 5.0, y_par_t + 15.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x_c12 + 5.0, y_par_t - 15.0), end=(x_c12 + 5.0, y_par_t + 15.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_l", start=(x_c12 - 5.0, y_par_b - 15.0), end=(x_c12 - 5.0, y_par_b + 15.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x_c12 + 5.0, y_par_b - 15.0), end=(x_c12 + 5.0, y_par_b + 15.0), stroke_width=2.8, color="#111111"),
+            ]
+            circles = [
+                Circle(id="term_l", center=(180.0, y_bot), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="term_r", center=(230.0, y_bot), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c3", text="C_3\\ 1F", x=x_c3, y=y_t + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c1", text="C_1\\ 1F", x=x_c12, y=y_par_t + 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2\\ 2F", x=x_c12, y=y_par_b + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_v", text="10 V", x=205.0, y=y_bot + 24.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Series Parallel Network", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1d5ba862: Parallel C1 (3uF), C2 (4uF) + Series C3 (2uF) with 6V
+        # ----------------------------------------------------
+        if "1d5ba862" in stem:
+            w, h = 480.0, 320.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_top, y_par_t, y_par_b, y_bot = 100.0, 60.0, 140.0, 260.0
+            x_l, x_c12, x_sp, x_c3, x_r = 50.0, 150.0, 220.0, 340.0, 430.0
+
+            segments = [
+                # Left loop with upward arrow
+                Segment(id="w_l", start=(x_l, y_bot), end=(x_l, y_top), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                Segment(id="sp_l_h", start=(x_l, y_top), end=(90.0, y_top), stroke_width=2.2, color="#111111"),
+                Segment(id="sp_l_v", start=(90.0, y_par_t), end=(90.0, y_par_b), stroke_width=2.2, color="#111111"),
+                # Top parallel branch
+                Segment(id="pt1", start=(90.0, y_par_t), end=(x_c12 - 10.0, y_par_t), stroke_width=2.2, color="#111111"),
+                Segment(id="pt2", start=(x_c12 + 10.0, y_par_t), end=(x_sp, y_par_t), stroke_width=2.2, color="#111111"),
+                # Bot parallel branch
+                Segment(id="pb1", start=(90.0, y_par_b), end=(x_c12 - 10.0, y_par_b), stroke_width=2.2, color="#111111"),
+                Segment(id="pb2", start=(x_c12 + 10.0, y_par_b), end=(x_sp, y_par_b), stroke_width=2.2, color="#111111"),
+                # Right split join & series C3
+                Segment(id="sp_r_v", start=(x_sp, y_par_t), end=(x_sp, y_par_b), stroke_width=2.2, color="#111111"),
+                Segment(id="s1", start=(x_sp, y_top), end=(x_c3 - 10.0, y_top), stroke_width=2.2, color="#111111"),
+                Segment(id="s2", start=(x_c3 + 10.0, y_top), end=(x_r, y_top), stroke_width=2.2, color="#111111"),
+                # Right downward wire with arrow
+                Segment(id="w_r", start=(x_r, y_top), end=(x_r, y_bot), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                # Bottom wire with battery
+                Segment(id="wb1", start=(x_l, y_bot), end=(180.0, y_bot), stroke_width=2.2, color="#111111"),
+                Segment(id="wb2", start=(200.0, y_bot), end=(x_r, y_bot), stroke_width=2.2, color="#111111"),
+                # Plates
+                Segment(id="c1_l", start=(x_c12 - 5.0, y_par_t - 16.0), end=(x_c12 - 5.0, y_par_t + 16.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x_c12 + 5.0, y_par_t - 16.0), end=(x_c12 + 5.0, y_par_t + 16.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_l", start=(x_c12 - 5.0, y_par_b - 16.0), end=(x_c12 - 5.0, y_par_b + 16.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x_c12 + 5.0, y_par_b - 16.0), end=(x_c12 + 5.0, y_par_b + 16.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_l", start=(x_c3 - 5.0, y_top - 16.0), end=(x_c3 - 5.0, y_top + 16.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x_c3 + 5.0, y_top - 16.0), end=(x_c3 + 5.0, y_top + 16.0), stroke_width=2.8, color="#111111"),
+                # Battery plates
+                Segment(id="bat_p", start=(185.0, y_bot - 16.0), end=(185.0, y_bot + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bat_n", start=(195.0, y_bot - 9.0), end=(195.0, y_bot + 9.0), stroke_width=4.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c1", text="C_1\\ 3\\mu\\text{F}", x=x_c12, y=y_par_t - 26.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2 = 4\\mu\\text{F}", x=x_c12, y=y_par_b + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3_t", text="C_3", x=x_c3 - 60.0, y=y_top - 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3_v", text="2\\mu\\text{F}", x=x_c3, y=y_top - 26.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_v", text="6 V", x=190.0, y=y_bot + 32.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Capacitor Network with Current Direction", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1eff81ef: Y-shaped 3 charges +Q1, +Q2, +Q3 from center O
+        # ----------------------------------------------------
+        if "1eff81ef" in stem:
+            w, h = 380.0, 320.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xO, yO = 190.0, 160.0
+            x1, y1 = 100.0, 50.0
+            x2, y2 = 280.0, 50.0
+            x3, y3 = 190.0, 270.0
+
+            circles = [
+                Circle(id="c1", center=(x1, y1), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="c2", center=(x2, y2), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="c3", center=(x3, y3), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            segments = [
+                Segment(id="b1", start=(xO, yO), end=(x1, y1), stroke_width=2.5, color="#111111"),
+                Segment(id="b2", start=(xO, yO), end=(x2, y2), stroke_width=2.5, color="#111111"),
+                Segment(id="b3", start=(xO, yO), end=(x3, y3), stroke_width=2.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_o", text="O", x=xO - 20.0, y=yO + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_q1", text="+Q_1", x=x1 - 36.0, y=y1 + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_q2", text="+Q_2", x=x2 + 36.0, y=y2 + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_q3", text="+Q_3", x=x3 + 36.0, y=y3 + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_r1", text="r_1", x=(xO+x1)/2.0 - 18.0, y=(yO+y1)/2.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r2", text="r_2", x=(xO+x2)/2.0 + 18.0, y=(yO+y2)/2.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r3", text="r_3", x=xO + 16.0, y=(yO+y3)/2.0, font_size=18.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Radial Three-Charge System", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1fe16df4: 3D Parallel Plates with Uniform Field & Point P
+        # ----------------------------------------------------
+        if "1fe16df4" in stem:
+            w, h = 360.0, 360.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            # Left plate
+            x_l1, x_l2 = 60.0, 100.0
+            y_t1, y_b1 = 40.0, 300.0
+            # Right plate
+            x_r1, x_r2 = 240.0, 280.0
+
+            polygons = [
+                Polygon(id="plate_l", vertices=[(x_l2, y_t1), (x_l1, y_t1 + 30.0), (x_l1, y_b1), (x_l2, y_b1 - 30.0)], stroke_width=2.5, stroke_color="#111111", fill_color="#f9f9f9"),
+                Polygon(id="plate_r", vertices=[(x_r2, y_t1), (x_r1, y_t1 + 30.0), (x_r1, y_b1), (x_r2, y_b1 - 30.0)], stroke_width=2.5, stroke_color="#111111", fill_color="#f9f9f9"),
+            ]
+            arrows = []
+            for y_arr in [100.0, 140.0, 180.0, 220.0, 260.0]:
+                arrows.append(Segment(id=f"arr_{int(y_arr)}", start=(x_l2 + 10.0, y_arr), end=(x_r1 - 10.0, y_arr), stroke_width=2.0, color="#111111", arrows=ArrowType.END))
+            
+            circles = [
+                Circle(id="pt_p", center=(150.0, 200.0), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_p", text="P", x=180.0, y=195.0, font_size=20.0, font_weight="bold"),
+            ]
+            # Plus on left plate
+            for i, y_pos in enumerate([80.0, 125.0, 170.0, 215.0, 260.0]):
+                labels.append(MathLabel(id=f"lbl_p_{i}", text="+", x=(x_l1+x_l2)/2.0, y=y_pos, font_size=18.0, font_weight="bold"))
+                labels.append(MathLabel(id=f"lbl_m_{i}", text="-", x=(x_r1+x_r2)/2.0, y=y_pos, font_size=22.0, font_weight="bold"))
+
+            return VisualIR(title="Uniform Electric Field between Plates", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=arrows, circles=circles, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 214b5a1e: Hanging Pith Balls Electrostatic Equilibrium
+        # ----------------------------------------------------
+        if "214b5a1e" in stem:
+            w, h = 500.0, 360.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 270.0, 50.0
+            xB, yB = 100.0, 270.0
+            xC, yC = 440.0, 270.0
+
+            circles = [
+                Circle(id="hinge_a", center=(xA, yA), radius=7.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="ball_b", center=(xB, yB), radius=9.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="ball_c", center=(xC, yC), radius=9.0, stroke_width=2.0, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                # Strings
+                Segment(id="str_b", start=(xA, yA), end=(xB, yB), stroke_width=2.5, color="#111111"),
+                Segment(id="str_c", start=(xA, yA), end=(xC, yC), stroke_width=2.5, color="#111111"),
+                # Dashed vertical bisector
+                Segment(id="v_bis", start=(xA, yA), end=(xA, yB), stroke_width=1.8, color="#111111", stroke_style=StrokeStyle.DASHED),
+                # Dashed horizontal
+                Segment(id="h_sep", start=(xB, yB), end=(xC, yC), stroke_width=1.8, color="#111111", stroke_style=StrokeStyle.DASHED),
+                # Vector forces at B
+                Segment(id="f_rep", start=(xB, yB), end=(xB - 55.0, yB), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="f_mg", start=(xB, yB), end=(xB, yB + 55.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="f_ty", start=(xB, yB), end=(xB, yB - 50.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="f_tx", start=(xB, yB - 50.0), end=(xB + 45.0, yB - 50.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="f_t", start=(xB, yB), end=(xB + 45.0, yB - 50.0), stroke_width=1.8, color="#111111", stroke_style=StrokeStyle.DASHED, arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_a", text="A", x=xA, y=yA - 18.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB - 18.0, y=yB + 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC + 18.0, y=yC + 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_f", text="F", x=xB - 68.0, y=yB + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_mg", text="mg", x=xB + 18.0, y=yB + 60.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_ty", text="0.8 T", x=xB - 28.0, y=yB - 40.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_tx", text="0.6 T", x=xB + 30.0, y=yB - 65.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_t", text="T", x=xB + 65.0, y=yB - 40.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_len", text="50 cm", x=(xA + xC)/2.0 + 35.0, y=(yA + yC)/2.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_ang_l", text="37°", x=xA - 30.0, y=yA + 60.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_ang_r", text="37°", x=xA + 30.0, y=yA + 60.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d1", text="30 cm", x=(xB + xA)/2.0, y=yB - 14.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d2", text="30 cm", x=(xA + xC)/2.0, y=yB - 14.0, font_size=16.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Electrostatic Pendulum Equilibrium", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 28670943: Electric Dipole Broadside-On Field Parallelogram
+        # ----------------------------------------------------
+        if "28670943" in stem:
+            w, h = 460.0, 380.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 60.0, 320.0
+            xB, yB = 400.0, 320.0
+            xO, yO = 230.0, 320.0
+            xP, yP = 230.0, 110.0
+            xR, yR = 130.0, 110.0
+            xM, yM = 180.0, 50.0
+            xN, yN = 180.0, 170.0
+
+            segments = [
+                # Base line
+                Segment(id="base", start=(xA, yA), end=(xB, yB), stroke_width=2.2, color="#111111"),
+                # Triangle legs
+                Segment(id="leg_a", start=(xA, yA), end=(xM - 20.0, yM - 20.0), stroke_width=2.2, color="#111111"),
+                Segment(id="leg_b", start=(xB, yB), end=(xP, yP), stroke_width=2.2, color="#111111"),
+                # Bisector OP
+                Segment(id="op", start=(xO, yA + 20.0), end=(xP, yP), stroke_width=2.0, color="#111111"),
+                # Resultant parallelogram at P
+                Segment(id="p_r", start=(xP, yP), end=(xR, yR), stroke_width=2.2, color="#111111", arrows=ArrowType.END),
+                Segment(id="p_m", start=(xP, yP), end=(xM, yM), stroke_width=2.0, color="#111111"),
+                Segment(id="m_r", start=(xM, yM), end=(xR, yR), stroke_width=2.0, color="#111111"),
+                Segment(id="p_n", start=(xP, yP), end=(xN, yN), stroke_width=2.0, color="#111111"),
+                Segment(id="n_r", start=(xN, yN), end=(xR, yR), stroke_width=2.0, color="#111111"),
+                # Incoming arrow to R
+                Segment(id="arr_in", start=(xR - 60.0, yR), end=(xR, yR), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Dimension l, l
+                Segment(id="dim_l1", start=(xA, yA + 25.0), end=(xO, yA + 25.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+                Segment(id="dim_l2", start=(xO, yA + 25.0), end=(xB, yA + 25.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA - 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 15.0, y=yA - 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qa", text="-q", x=xA - 20.0, y=yA + 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qb", text="+q", x=xB + 20.0, y=yA + 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO - 15.0, y=yA - 10.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_p", text="P", x=xP + 16.0, y=yP - 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r", text="R", x=xR - 16.0, y=yR + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_m", text="M", x=xM - 8.0, y=yM - 12.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_n", text="N", x=xN - 8.0, y=yN + 18.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_th1", text="\\theta", x=xP - 45.0, y=yP - 18.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_th2", text="\\theta", x=xP - 45.0, y=yP + 18.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_r", text="r", x=xO + 12.0, y=(yA + yP)/2.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_l1", text="l", x=(xA + xO)/2.0, y=yA + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_l2", text="l", x=(xO + xB)/2.0, y=yA + 20.0, font_size=18.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Electric Dipole Broadside Field", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 28c59301: Square 4m x 4m with +2C and +4C charges
+        # ----------------------------------------------------
+        if "28c59301" in stem:
+            w, h = 400.0, 400.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            x_l, x_r = 80.0, 320.0
+            y_t, y_b = 80.0, 320.0
+
+            polygons = [
+                Polygon(id="sq", vertices=[(x_l, y_t), (x_r, y_t), (x_r, y_b), (x_l, y_b)], stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            circles = [
+                Circle(id="pt_o", center=(w/2.0, h/2.0), radius=5.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_tl", text="+2 C", x=x_l, y=y_t - 20.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_tr", text="+2 C", x=x_r, y=y_t - 20.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bl", text="+4 C", x=x_l, y=y_b + 28.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_br", text="+4 C", x=x_r, y=y_b + 28.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_top", text="4 m", x=w/2.0, y=y_t - 16.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bot", text="4 m", x=w/2.0, y=y_b + 26.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_l", text="4 m", x=x_l - 28.0, y=h/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="4 m", x=x_r + 28.0, y=h/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_o", text="O", x=w/2.0 + 10.0, y=h/2.0 - 10.0, font_size=18.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Square Four Charge Geometry", width=w, height=h, coordinate_frame=cf, polygons=polygons, circles=circles, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2ffa08f9: Deflection Plates P (+400V), Q (-400V) & Electron Beam
+        # ----------------------------------------------------
+        if "2ffa08f9" in stem:
+            w, h = 480.0, 260.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            yP, yQ = 80.0, 180.0
+            x_start, x_end = 170.0, 420.0
+
+            segments = [
+                # Plate P & Q
+                Segment(id="plt_p", start=(x_start, yP), end=(x_end, yP), stroke_width=2.5, color="#111111"),
+                Segment(id="plt_q", start=(x_start, yQ), end=(x_end, yQ), stroke_width=2.5, color="#111111"),
+                # Potential stems
+                Segment(id="stem_p", start=(300.0, yP), end=(300.0, yP - 40.0), stroke_width=2.0, color="#111111"),
+                Segment(id="stem_q", start=(300.0, yQ), end=(300.0, yQ + 40.0), stroke_width=2.0, color="#111111"),
+                # Distance dimension
+                Segment(id="dim_d", start=(x_end + 15.0, yP), end=(x_end + 15.0, yQ), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # Electron beam
+                Segment(id="e_beam", start=(30.0, 130.0), end=(150.0, 130.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_p", text="P", x=x_start - 16.0, y=yP + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_q", text="Q", x=x_start - 16.0, y=yQ + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_vp", text="+400V", x=330.0, y=yP - 45.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_vq", text="-400V", x=330.0, y=yQ + 55.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_gap", text="20 mm", x=x_end + 45.0, y=(yP + yQ)/2.0 + 4.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_e", text="ইলেকট্রন", x=90.0, y=155.0, font_size=16.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Electron Beam Deflection Plates", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 21a01538: Parallel plate capacitor with "বায়ু", 2 cm, 5 V battery
+        # ----------------------------------------------------
+        if "21a01538" in stem:
+            w, h = 400.0, 320.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            x_l, x_r = 70.0, 330.0
+            y_t, y_b = 100.0, 240.0
+            x_p1, x_p2 = 150.0, 250.0
+
+            polygons = [
+                Polygon(id="p1", vertices=[(x_p1 - 10.0, 40.0), (x_p1 + 10.0, 40.0), (x_p1 + 10.0, 160.0), (x_p1 - 10.0, 160.0)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Polygon(id="p2", vertices=[(x_p2 - 10.0, 40.0), (x_p2 + 10.0, 40.0), (x_p2 + 10.0, 160.0), (x_p2 - 10.0, 160.0)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                Segment(id="w1", start=(x_l, y_t), end=(x_p1 - 10.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="w2", start=(x_p2 + 10.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="w3", start=(x_l, y_t), end=(x_l, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="w4", start=(x_r, y_t), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="wb1", start=(x_l, y_b), end=(180.0, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="wb2", start=(210.0, y_b), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="dim_gap", start=(x_p1 + 10.0, 120.0), end=(x_p2 - 10.0, 120.0), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # Battery
+                Segment(id="bp", start=(185.0, y_b - 16.0), end=(185.0, y_b + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bn", start=(205.0, y_b - 9.0), end=(205.0, y_b + 9.0), stroke_width=4.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_air", text="বায়ু", x=(x_p1 + x_p2)/2.0, y=55.0, font_size=20.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_gap", text="2 cm", x=(x_p1 + x_p2)/2.0, y=95.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_v", text="5 V", x=(x_p1 + x_p2)/2.0 - 5.0, y=y_b + 34.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Parallel Plate Air Capacitor", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 21e7235c: Parallel 2uF, 1uF + series 3uF
+        # ----------------------------------------------------
+        if "21e7235c" in stem:
+            w, h = 450.0, 220.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_m = 110.0
+            y_pt, y_pb = 60.0, 160.0
+            x_l, x_sp_l, x_c12, x_sp_r, x_c3, x_r = 40.0, 100.0, 180.0, 260.0, 340.0, 410.0
+
+            segments = [
+                # Left lead
+                Segment(id="l_lead", start=(x_l, y_m), end=(x_sp_l, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="sp_l_v", start=(x_sp_l, y_pt), end=(x_sp_l, y_pb), stroke_width=2.2, color="#111111"),
+                Segment(id="sp_r_v", start=(x_sp_r, y_pt), end=(x_sp_r, y_pb), stroke_width=2.2, color="#111111"),
+                # Top branch
+                Segment(id="pt1", start=(x_sp_l, y_pt), end=(x_c12 - 8.0, y_pt), stroke_width=2.2, color="#111111"),
+                Segment(id="pt2", start=(x_c12 + 8.0, y_pt), end=(x_sp_r, y_pt), stroke_width=2.2, color="#111111"),
+                # Bot branch
+                Segment(id="pb1", start=(x_sp_l, y_pb), end=(x_c12 - 8.0, y_pb), stroke_width=2.2, color="#111111"),
+                Segment(id="pb2", start=(x_c12 + 8.0, y_pb), end=(x_sp_r, y_pb), stroke_width=2.2, color="#111111"),
+                # Series C3 & right lead
+                Segment(id="s1", start=(x_sp_r, y_m), end=(x_c3 - 8.0, y_m), stroke_width=2.2, color="#111111"),
+                Segment(id="s2", start=(x_c3 + 8.0, y_m), end=(x_r, y_m), stroke_width=2.2, color="#111111"),
+                # Plates
+                Segment(id="c1_l", start=(x_c12 - 5.0, y_pt - 14.0), end=(x_c12 - 5.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x_c12 + 5.0, y_pt - 14.0), end=(x_c12 + 5.0, y_pt + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_l", start=(x_c12 - 5.0, y_pb - 14.0), end=(x_c12 - 5.0, y_pb + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x_c12 + 5.0, y_pb - 14.0), end=(x_c12 + 5.0, y_pb + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_l", start=(x_c3 - 5.0, y_m - 14.0), end=(x_c3 - 5.0, y_m + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x_c3 + 5.0, y_m - 14.0), end=(x_c3 + 5.0, y_m + 14.0), stroke_width=2.8, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c1", text="2\\mu\\text{F}", x=x_c12, y=y_pt - 24.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="1\\mu\\text{F}", x=x_c12, y=y_pb + 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text="3\\mu\\text{F}", x=x_c3, y=y_m + 30.0, font_size=18.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Three Capacitor Combination", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 22ba4041: Spheres A(+) and B(-) with drop stem to C
+        # ----------------------------------------------------
+        if "22ba4041" in stem:
+            w, h = 520.0, 360.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA, rA = 100.0, 140.0, 42.0
+            xB, yB, rB = 340.0, 140.0, 56.0
+            xC, yC = 340.0, 330.0
+
+            circles = [
+                Circle(id="cA", center=(xA, yA), radius=rA, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="cB", center=(xB, yB), radius=rB, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                # Horizontal axis
+                Segment(id="h_ax", start=(xA, yA), end=(xB, yB), stroke_width=2.0, color="#111111"),
+                # Vertical stem from B down to C
+                Segment(id="v_stem", start=(xB, yB), end=(xC, yC), stroke_width=2.0, color="#111111"),
+                # Dashed bottom guide
+                Segment(id="d_bot", start=(xC, yC), end=(xC + 50.0, yC), stroke_width=1.5, color="#111111", stroke_style=StrokeStyle.DASHED),
+                # Dimension vertical 6sqrt(3)m
+                Segment(id="dim_v", start=(xB + 75.0, yB), end=(xB + 75.0, yC), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # Internal radius lines
+                Segment(id="rad_a", start=(xA, yA), end=(xA, yA - rA), stroke_width=1.8, color="#111111"),
+                Segment(id="rad_b", start=(xB, yB), end=(xB + rB*0.866, yB - rB*0.5), stroke_width=1.8, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_q1", text="Q_1 = 2 \\times 10^{-9}\\text{ C}", x=xA, y=yA - 65.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_q2", text="Q_2 = -3 \\times 10^{-9}\\text{ C}", x=xB, y=yB - 80.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA - 15.0, y=yA + 16.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 15.0, y=yB + 16.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d_pt", text="D", x=xB + 15.0, y=yB + rB + 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC - 18.0, y=yC + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_r1", text="r_1 = 1\\text{ m}", x=xA + 32.0, y=yA - 10.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_r2", text="r_2 = 2\\text{ m}", x=xB - 15.0, y=yB - 25.0, font_size=14.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_h", text=r"6\sqrt{3}\text{ m}", x=(xA+rA + xB-rB)/2.0, y=yA - 14.0, font_size=16.0, font_weight="bold"),
+                MathLabel(id="lbl_dist_v", text=r"6\sqrt{3}\text{ m}", x=xB + 115.0, y=(yB + yC)/2.0, font_size=16.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Dual Charged Spheres with Orthogonal Target", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2304da6b: Sphere centered O with radial axis O-A-B-M, "চিত্র-১"
+        # ----------------------------------------------------
+        if "2304da6b" in stem:
+            w, h = 480.0, 300.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xO, yO, rS = 130.0, 140.0, 80.0
+            xA = xO + 60.0
+            xB = xO + rS + 80.0
+            xM = xB + 80.0
+
+            circles = [
+                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="pt_o", center=(xO, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_a", center=(xA, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_b", center=(xB, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_m", center=(xM, yO), radius=3.5, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            segments = [
+                # Horizontal ray
+                Segment(id="ray", start=(xO, yO), end=(xM, yO), stroke_width=2.0, color="#111111"),
+                # Vertical radius
+                Segment(id="rad_v", start=(xO, yO), end=(xO, yO + rS), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Dimension 3cm
+                Segment(id="dim_3", start=(xO, yO - 20.0), end=(xA, yO - 20.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+                # Dimension 9cm
+                Segment(id="dim_9", start=(xO + rS, yO - 20.0), end=(xB, yO - 20.0), stroke_width=1.5, color="#111111", arrows=ArrowType.END),
+                # Dimension markers
+                Segment(id="m_o", start=(xO, yO - 30.0), end=(xO, yO), stroke_width=1.5, color="#111111"),
+                Segment(id="m_b", start=(xB, yO - 30.0), end=(xB, yO), stroke_width=1.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_q", text=r"+2 \times 10^{-10}\text{ C}", x=xO, y=yO - rS - 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_p", text="P", x=xO - rS - 18.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO - 18.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA + 12.0, y=yO + 18.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_m", text="M", x=xM + 14.0, y=yO + 4.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="3cm", x=(xO + xA)/2.0, y=yO - 28.0, font_size=14.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d2", text="9 cm", x=(xO + rS + xB)/2.0, y=yO - 28.0, font_size=14.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="r = 4 cm", x=xO + 38.0, y=yO + rS/2.0 + 10.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_fig", text="চিত্র-১", x=xO, y=yO + rS + 35.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Charged Sphere Radial Potential Profile", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2433c2d7: Equilateral triangle ABC with 20 cm sides
+        # ----------------------------------------------------
+        if "2433c2d7" in stem:
+            w, h = 360.0, 320.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 50.0, 270.0
+            xB, yB = 310.0, 270.0
+            xC, yC = 180.0, 45.0
+
+            polygons = [
+                Polygon(id="tri", vertices=[(xA, yA), (xB, yB), (xC, yC)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            labels = [
+                MathLabel(id="lbl_a", text="A", x=xA - 16.0, y=yA + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 16.0, y=yB + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC, y=yC - 16.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_base", text="20 cm", x=(xA + xB)/2.0, y=yA + 24.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_l", text="20 cm", x=(xA + xC)/2.0 - 45.0, y=(yA + yC)/2.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="20 cm", x=(xB + xC)/2.0 + 45.0, y=(yB + yC)/2.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Equilateral Triangle 20cm", width=w, height=h, coordinate_frame=cf, polygons=polygons, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 247b95a6: Conductor bars A and grounded B
+        # ----------------------------------------------------
+        if "247b95a6" in stem:
+            w, h = 420.0, 180.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            polygons = [
+                Polygon(id="bar_a", vertices=[(60.0, 40.0), (190.0, 40.0), (190.0, 85.0), (60.0, 85.0)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Polygon(id="bar_b", vertices=[(230.0, 40.0), (370.0, 40.0), (370.0, 85.0), (230.0, 85.0)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                # Ground wire from bar B
+                Segment(id="gw", start=(350.0, 85.0), end=(350.0, 125.0), stroke_width=2.2, color="#111111"),
+                Segment(id="g1", start=(330.0, 125.0), end=(370.0, 125.0), stroke_width=2.5, color="#111111"),
+                Segment(id="g2", start=(338.0, 133.0), end=(362.0, 133.0), stroke_width=2.2, color="#111111"),
+                Segment(id="g3", start=(344.0, 141.0), end=(356.0, 141.0), stroke_width=2.0, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_a", text="A", x=40.0, y=68.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=215.0, y=68.0, font_size=22.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Electrostatic Induction Bars", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 25cb3d15: Rectangle ABCD with diagonals intersecting at O
+        # ----------------------------------------------------
+        if "25cb3d15" in stem:
+            w, h = 420.0, 300.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 50.0, 240.0
+            xB, yB = 370.0, 240.0
+            xC, yC = 370.0, 60.0
+            xD, yD = 50.0, 60.0
+
+            polygons = [
+                Polygon(id="rect", vertices=[(xA, yA), (xB, yB), (xC, yC), (xD, yD)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            segments = [
+                Segment(id="d1", start=(xA, yA), end=(xC, yC), stroke_width=2.0, color="#111111"),
+                Segment(id="d2", start=(xB, yB), end=(xD, yD), stroke_width=2.0, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_a", text="A", x=xA - 18.0, y=yA + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 18.0, y=yB + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c", text="C", x=xC + 18.0, y=yC + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_d", text="D", x=xD - 18.0, y=yD + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=w/2.0, y=h/2.0 + 26.0, font_size=20.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Rectangle Diagonals Geometry", width=w, height=h, coordinate_frame=cf, polygons=polygons, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 25d14cd5: Series 3 capacitors 6uF, 8uF, 10uF with 20V battery
+        # ----------------------------------------------------
+        if "25d14cd5" in stem:
+            w, h = 480.0, 260.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_t, y_b = 60.0, 210.0
+            x_l, x_r = 40.0, 440.0
+            x1, x2, x3 = 140.0, 240.0, 340.0
+
+            segments = [
+                # Top wire
+                Segment(id="t1", start=(x_l, y_t), end=(x1 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t2", start=(x1 + 8.0, y_t), end=(x2 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t3", start=(x2 + 8.0, y_t), end=(x3 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t4", start=(x3 + 8.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
+                # Sides
+                Segment(id="w_l", start=(x_l, y_t), end=(x_l, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="w_r", start=(x_r, y_t), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                # Bottom wire with battery
+                Segment(id="b1", start=(x_l, y_b), end=(120.0, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="b2", start=(150.0, y_b), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                # Plates
+                Segment(id="c1_l", start=(x1 - 5.0, y_t - 14.0), end=(x1 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x1 + 5.0, y_t - 14.0), end=(x1 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_l", start=(x2 - 5.0, y_t - 14.0), end=(x2 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x2 + 5.0, y_t - 14.0), end=(x2 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_l", start=(x3 - 5.0, y_t - 14.0), end=(x3 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x3 + 5.0, y_t - 14.0), end=(x3 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                # Battery
+                Segment(id="bp", start=(125.0, y_b - 16.0), end=(125.0, y_b + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bn", start=(145.0, y_b - 9.0), end=(145.0, y_b + 9.0), stroke_width=4.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c1", text="6\\mu\\text{F}", x=x1, y=y_t + 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="8\\mu\\text{F}", x=x2, y=y_t + 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text="10\\mu\\text{F}", x=x3, y=y_t + 30.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_p", text="+", x=112.0, y=y_b - 15.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_m", text="-", x=160.0, y=y_b - 15.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_v", text="20V", x=135.0, y=y_b + 34.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Three Series Capacitors 20V", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 27fc0004: Sphere center O, radius 0.5m, internal A (0.3m), external B (0.5m)
+        # ----------------------------------------------------
+        if "27fc0004" in stem:
+            w, h = 420.0, 340.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xO, yO, rS = 140.0, 160.0, 110.0
+            xA = xO + 65.0
+            xB = xO + rS + 90.0
+
+            circles = [
+                Circle(id="sph", center=(xO, yO), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="pt_o", center=(xO, yO), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_a", center=(xA, yO), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_b", center=(xB, yO + 15.0), radius=4.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            segments = [
+                # Internal OA arrow
+                Segment(id="d_oa", start=(xO, yO), end=(xA, yO), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # External Surface-to-B arrow
+                Segment(id="d_sb", start=(xO + rS, yO + 5.0), end=(xB, yO + 15.0), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+                # Downward radius arrow
+                Segment(id="d_rad", start=(xO, yO), end=(xO, yO + rS), stroke_width=1.8, color="#111111", arrows=ArrowType.END),
+            ]
+            labels = [
+                MathLabel(id="lbl_o", text="O", x=xO - 20.0, y=yO - 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA, y=yO + 25.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB, y=yO + 40.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_d1", text="0.3 m", x=(xO + xA)/2.0, y=yO - 18.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d2", text="0.5 m", x=(xO + rS + xB)/2.0, y=yO - 8.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_rad", text="0.5 m", x=xO - 15.0, y=yO + rS/2.0, font_size=16.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Charged Sphere Internal External Potential", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 29039d3a: Spheres A (+12uC), B (+4uC), midpoint O, marker D, d=10cm
+        # ----------------------------------------------------
+        if "29039d3a" in stem:
+            w, h = 480.0, 220.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA, rS = 80.0, 110.0, 32.0
+            xB, yB = 400.0, 110.0
+            xO = (xA + xB)/2.0
+            xD = xO + 35.0
+
+            circles = [
+                Circle(id="cA", center=(xA, yA), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+                Circle(id="cB", center=(xB, yB), radius=rS, stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff"),
+            ]
+            segments = [
+                # Connecting axis
+                Segment(id="axis", start=(xA + rS, yA), end=(xB - rS, yA), stroke_width=2.2, color="#111111"),
+                # Markers O and D
+                Segment(id="m_o", start=(xO, yA - 12.0), end=(xO, yA), stroke_width=2.0, color="#111111"),
+                Segment(id="m_d", start=(xD, yA - 18.0), end=(xD, yA), stroke_width=2.0, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_qa", text="12\\mu\\text{C}", x=xA, y=yA - 46.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_qb", text="4\\mu\\text{C}", x=xB, y=yA - 46.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_pa", text="+", x=xA, y=yA + 6.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="lbl_pb", text="+", x=xB, y=yB + 6.0, font_size=22.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A", x=xA, y=yA + 52.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB, y=yB + 52.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_o", text="O", x=xO, y=yA - 22.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d", text="D", x=xD, y=yA - 28.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_dist", text="d = 10 cm", x=xO, y=yA + 30.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Collinear Charges with Neutral Point", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2c572490: 2D Cartesian axes O with A(-a, 0)(+q) and B(a, 0)(+q)
+        # ----------------------------------------------------
+        if "2c572490" in stem:
+            w, h = 420.0, 240.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xO, yO = 210.0, 120.0
+            xA = xO - 120.0
+            xB = xO + 120.0
+
+            circles = [
+                Circle(id="pt_a", center=(xA, yO), radius=5.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+                Circle(id="pt_b", center=(xB, yO), radius=5.0, stroke_width=1.0, stroke_color="#111111", fill_color="#111111"),
+            ]
+            segments = [
+                # X axis
+                Segment(id="x_ax", start=(40.0, yO), end=(380.0, yO), stroke_width=2.5, color="#111111"),
+                # Y axis
+                Segment(id="y_ax", start=(xO, 20.0), end=(xO, 220.0), stroke_width=2.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_qa", text="+q", x=xA, y=yO - 25.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_qb", text="+q", x=xB, y=yO - 25.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_a", text="A(-a, 0)", x=xA - 10.0, y=yO + 32.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_b", text="B(a, 0)", x=xB + 10.0, y=yO + 32.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_o", text="O", x=xO + 18.0, y=yO + 24.0, font_size=20.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Cartesian Dipole Axes", width=w, height=h, coordinate_frame=cf, circles=circles, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2e6d60e7: Rectangle ABCD with A(-2 x 10^-9 C), C(1.5 x 10^-9 C), 2m x 1.5m
+        # ----------------------------------------------------
+        if "2e6d60e7" in stem:
+            w, h = 480.0, 340.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 60.0, 60.0
+            xB, yB = 340.0, 60.0
+            xD, yD = 60.0, 270.0
+            xC, yC = 340.0, 270.0
+
+            polygons = [
+                Polygon(id="rect", vertices=[(xA, yA), (xB, yB), (xC, yC), (xD, yD)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            labels = [
+                MathLabel(id="lbl_qa", text="A (-2 \\times 10^{-9}\\text{C})", x=xA + 40.0, y=yA - 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_b", text="B", x=xB + 18.0, y=yB - 8.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_qc", text="C (1.5 \\times 10^{-9}\\text{C})", x=xC + 85.0, y=yC + 20.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_d", text="D", x=xD - 18.0, y=yD + 8.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_top", text="2m", x=(xA+xB)/2.0, y=yA + 26.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bot", text="2m", x=(xD+xC)/2.0, y=yD - 18.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_l", text="1.5 m", x=xA + 40.0, y=(yA+yD)/2.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="1.5 m", x=xB - 40.0, y=(yB+yC)/2.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Rectangle Potential Diagonal Charges", width=w, height=h, coordinate_frame=cf, polygons=polygons, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 2ff2c209: Square ACDB 2cm x 2cm with +7C on 4 corners
+        # ----------------------------------------------------
+        if "2ff2c209" in stem:
+            w, h = 380.0, 380.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            xA, yA = 80.0, 80.0
+            xB, yB = 300.0, 80.0
+            xC, yC = 80.0, 300.0
+            xD, yD = 300.0, 300.0
+
+            polygons = [
+                Polygon(id="sq", vertices=[(xA, yA), (xB, yB), (xD, yD), (xC, yC)], stroke_width=2.2, stroke_color="#111111", fill_color="#ffffff")
+            ]
+            labels = [
+                MathLabel(id="lbl_qa", text="+ 7 C", x=xA - 20.0, y=yA - 26.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_a", text="A", x=xA - 18.0, y=yA + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_qb", text="+ 7 C", x=xB + 20.0, y=yB - 26.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_b", text="B", x=xB + 18.0, y=yB + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_qc", text="+ 7 C", x=xC - 20.0, y=yC + 28.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_c", text="C", x=xC - 18.0, y=yC + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_qd", text="+ 7 C", x=xD + 20.0, y=yD + 28.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_d", text="D", x=xD + 18.0, y=yD + 4.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_top", text="2 cm", x=(xA+xB)/2.0, y=yA - 16.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_bot", text="2 cm", x=(xC+xD)/2.0, y=yC + 26.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_l", text="2 cm", x=xA - 32.0, y=(yA+yC)/2.0, font_size=16.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_r", text="2 cm", x=xB + 32.0, y=(yB+yD)/2.0, font_size=16.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Square Four Identical 7C Charges", width=w, height=h, coordinate_frame=cf, polygons=polygons, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1eb72acb: 3 parallel branches: 200V, C1, C2
+        # ----------------------------------------------------
+        if "1eb72acb" in stem:
+            w, h = 420.0, 300.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_t, y_b = 60.0, 240.0
+            x1, x2, x3 = 80.0, 210.0, 340.0
+
+            segments = [
+                # Top & bottom rails
+                Segment(id="top", start=(x1, y_t), end=(x3, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="bot", start=(x1, y_b), end=(x3, y_b), stroke_width=2.2, color="#111111"),
+                # Branch 1 (Source)
+                Segment(id="b1_t", start=(x1, y_t), end=(x1, 140.0), stroke_width=2.2, color="#111111"),
+                Segment(id="b1_b", start=(x1, 160.0), end=(x1, y_b), stroke_width=2.2, color="#111111"),
+                # Branch 2 (C1)
+                Segment(id="b2_t", start=(x2, y_t), end=(x2, 140.0), stroke_width=2.2, color="#111111"),
+                Segment(id="b2_b", start=(x2, 160.0), end=(x2, y_b), stroke_width=2.2, color="#111111"),
+                # Branch 3 (C2)
+                Segment(id="b3_t", start=(x3, y_t), end=(x3, 140.0), stroke_width=2.2, color="#111111"),
+                Segment(id="b3_b", start=(x3, 160.0), end=(x3, y_b), stroke_width=2.2, color="#111111"),
+                # Source plates
+                Segment(id="sp_t", start=(x1 - 15.0, 140.0), end=(x1 + 15.0, 140.0), stroke_width=2.8, color="#111111"),
+                Segment(id="sp_b", start=(x1 - 15.0, 160.0), end=(x1 + 15.0, 160.0), stroke_width=2.8, color="#111111"),
+                # C1 plates
+                Segment(id="c1_t", start=(x2 - 15.0, 140.0), end=(x2 + 15.0, 140.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_b", start=(x2 - 15.0, 160.0), end=(x2 + 15.0, 160.0), stroke_width=2.8, color="#111111"),
+                # C2 plates
+                Segment(id="c2_t", start=(x3 - 15.0, 140.0), end=(x3 + 15.0, 140.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_b", start=(x3 - 15.0, 160.0), end=(x3 + 15.0, 160.0), stroke_width=2.8, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_v", text="200 V", x=x1 - 45.0, y=155.0, font_size=18.0, font_weight="bold", math_mode=False),
+                MathLabel(id="lbl_c1", text="C_1", x=x2 + 25.0, y=155.0, font_size=20.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2", x=x3 + 25.0, y=155.0, font_size=20.0, font_weight="bold"),
+            ]
+            return VisualIR(title="Three Branch Parallel Capacitor Circuit", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
+        # ----------------------------------------------------
+        # 1ebaf5a2: Series 3 capacitors C1=2uF, C2=4uF, C3=6uF, 12V
+        # ----------------------------------------------------
+        if "1ebaf5a2" in stem:
+            w, h = 480.0, 260.0
+            cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
+            y_t, y_b = 60.0, 210.0
+            x_l, x_r = 40.0, 440.0
+            x1, x2, x3 = 110.0, 240.0, 370.0
+
+            segments = [
+                # Top wire
+                Segment(id="t1", start=(x_l, y_t), end=(x1 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t2", start=(x1 + 8.0, y_t), end=(x2 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t3", start=(x2 + 8.0, y_t), end=(x3 - 8.0, y_t), stroke_width=2.2, color="#111111"),
+                Segment(id="t4", start=(x3 + 8.0, y_t), end=(x_r, y_t), stroke_width=2.2, color="#111111"),
+                # Sides
+                Segment(id="w_l", start=(x_l, y_t), end=(x_l, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="w_r", start=(x_r, y_t), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                # Bottom wire with battery
+                Segment(id="b1", start=(x_l, y_b), end=(120.0, y_b), stroke_width=2.2, color="#111111"),
+                Segment(id="b2", start=(140.0, y_b), end=(x_r, y_b), stroke_width=2.2, color="#111111"),
+                # Plates
+                Segment(id="c1_l", start=(x1 - 5.0, y_t - 14.0), end=(x1 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c1_r", start=(x1 + 5.0, y_t - 14.0), end=(x1 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_l", start=(x2 - 5.0, y_t - 14.0), end=(x2 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c2_r", start=(x2 + 5.0, y_t - 14.0), end=(x2 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_l", start=(x3 - 5.0, y_t - 14.0), end=(x3 - 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                Segment(id="c3_r", start=(x3 + 5.0, y_t - 14.0), end=(x3 + 5.0, y_t + 14.0), stroke_width=2.8, color="#111111"),
+                # Battery
+                Segment(id="bp", start=(125.0, y_b - 16.0), end=(125.0, y_b + 16.0), stroke_width=3.0, color="#111111"),
+                Segment(id="bn", start=(135.0, y_b - 9.0), end=(135.0, y_b + 9.0), stroke_width=4.5, color="#111111"),
+            ]
+            labels = [
+                MathLabel(id="lbl_c1", text="C_1 = 2\\ \\mu\\text{F}", x=x1 + 10.0, y=y_t + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c2", text="C_2 = 4\\ \\mu\\text{F}", x=x2 + 10.0, y=y_t + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_c3", text="C_3 = 6\\ \\mu\\text{F}", x=x3 + 10.0, y=y_t + 32.0, font_size=18.0, font_weight="bold"),
+                MathLabel(id="lbl_v", text="12V", x=130.0, y=y_b + 34.0, font_size=18.0, font_weight="bold", math_mode=False),
+            ]
+            return VisualIR(title="Three Series Capacitors 12V", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
+
         return None
+
+

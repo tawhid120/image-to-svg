@@ -42,6 +42,18 @@ class ConicType(str, Enum):
 
 
 @dataclass
+class Circle:
+    """A 2D geometric circle or sphere boundary."""
+    id: str
+    center: Tuple[float, float]
+    radius: float
+    stroke_width: float = 2.0
+    stroke_color: str = "#111111"
+    fill_color: Optional[str] = None
+    stroke_style: StrokeStyle = StrokeStyle.SOLID
+
+
+@dataclass
 class Point:
     """A 2D geometric point or node."""
     id: str
@@ -53,6 +65,7 @@ class Point:
     color: str = "#000000"
     radius: float = 3.5
     is_intersection: bool = False
+
 
 
 @dataclass

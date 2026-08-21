@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from typing import List, Dict, Any, Optional
 from .primitives import (
     Point,
+    Circle,
     Segment,
     ConicCurve,
     BezierPath,
@@ -36,7 +37,9 @@ class VisualIR:
     
     # Primitives & Elements
     points: List[Point] = field(default_factory=list)
+    circles: List[Circle] = field(default_factory=list)
     segments: List[Segment] = field(default_factory=list)
+
     conics: List[ConicCurve] = field(default_factory=list)
     bezier_paths: List[BezierPath] = field(default_factory=list)
     polygons: List[Polygon] = field(default_factory=list)

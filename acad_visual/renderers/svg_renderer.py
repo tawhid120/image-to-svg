@@ -220,10 +220,21 @@ class UniversalSVGRenderer:
             arc_data = AnalyticalGeometrySolver.compute_arc_angle(aa.vertex, aa.start_pt, aa.end_pt, aa.radius)
             parts.append(f'  <path d="{arc_data["path_d"]}" fill="none" stroke="{aa.color}" stroke-width="{aa.stroke_width}" class="vector-stroke" />')
 
-        # 8. Render Points
+        # 8. Render Circles / Spheres
+        for circ in self.ir.circles:
+            cx, cy = circ.center
+            fill = circ.fill_color if circ.fill_color else "none"
+            dash = ' stroke-dasharray="6,4"' if circ.stroke_style == StrokeStyle.DASHED else ""
+            parts.append(
+                f'  <circle cx="{cx:.2f}" cy="{cy:.2f}" r="{circ.radius:.2f}" fill="{fill}" '
+                f'stroke="{circ.stroke_color}" stroke-width="{circ.stroke_width}"{dash} class="vector-stroke" />'
+            )
+
+        # 9. Render Points
         for pt in self.ir.points:
             if pt.visible:
                 parts.append(f'  <circle cx="{pt.x:.2f}" cy="{pt.y:.2f}" r="{pt.radius:.2f}" fill="{pt.color}" />')
+
 
         # 9. Render Callouts (Biology / Anatomy Leader Lines)
         for cl in self.ir.callouts:
