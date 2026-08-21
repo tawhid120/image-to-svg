@@ -2022,60 +2022,90 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # 3a8380d7: Quantum Numbers Table (n=4)
         # ----------------------------------------------------
+        # 3a8380d7: Quantum Numbers Table (n=4)
+        # ----------------------------------------------------
         if "3a8380d7" in stem:
-            w, h = 540.0, 420.0
+            w, h = 540.0, 440.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            # Table grid
-            x_cols = [30.0, 130.0, 220.0, 340.0, 440.0, 510.0]
-            y_rows = [30.0, 90.0, 150.0, 210.0, 280.0, 360.0]
+            # Table grid columns and rows
+            x_cols = [30.0, 125.0, 210.0, 335.0, 435.0, 510.0]
+            y_rows = [25.0, 105.0, 160.0, 215.0, 290.0, 375.0, 415.0]
 
             segments = [
-                # Horizontal lines
+                # Horizontal table grid lines
                 Segment(id="h0", start=(x_cols[0], y_rows[0]), end=(x_cols[-1], y_rows[0]), stroke_width=2.0, color="#111111"),
                 Segment(id="h1", start=(x_cols[0], y_rows[1]), end=(x_cols[-1], y_rows[1]), stroke_width=2.0, color="#111111"),
                 Segment(id="h2", start=(x_cols[1], y_rows[2]), end=(x_cols[-1], y_rows[2]), stroke_width=1.5, color="#111111"),
                 Segment(id="h3", start=(x_cols[1], y_rows[3]), end=(x_cols[-1], y_rows[3]), stroke_width=1.5, color="#111111"),
                 Segment(id="h4", start=(x_cols[1], y_rows[4]), end=(x_cols[-1], y_rows[4]), stroke_width=1.5, color="#111111"),
                 Segment(id="h5", start=(x_cols[0], y_rows[5]), end=(x_cols[-1], y_rows[5]), stroke_width=2.0, color="#111111"),
-                # Vertical lines
-                Segment(id="v0", start=(x_cols[0], y_rows[0]), end=(x_cols[0], y_rows[5]), stroke_width=2.0, color="#111111"),
+                Segment(id="h6", start=(x_cols[0], y_rows[6]), end=(x_cols[-1], y_rows[6]), stroke_width=2.0, color="#111111"),
+
+                # Vertical grid lines
+                Segment(id="v0", start=(x_cols[0], y_rows[0]), end=(x_cols[0], y_rows[6]), stroke_width=2.0, color="#111111"),
                 Segment(id="v1", start=(x_cols[1], y_rows[0]), end=(x_cols[1], y_rows[5]), stroke_width=2.0, color="#111111"),
                 Segment(id="v2", start=(x_cols[2], y_rows[0]), end=(x_cols[2], y_rows[5]), stroke_width=1.5, color="#111111"),
                 Segment(id="v3", start=(x_cols[3], y_rows[0]), end=(x_cols[3], y_rows[5]), stroke_width=1.5, color="#111111"),
                 Segment(id="v4", start=(x_cols[4], y_rows[0]), end=(x_cols[4], y_rows[5]), stroke_width=1.5, color="#111111"),
-                Segment(id="v5", start=(x_cols[5], y_rows[0]), end=(x_cols[5], y_rows[5]), stroke_width=2.0, color="#111111"),
+                Segment(id="v5", start=(x_cols[5], y_rows[0]), end=(x_cols[5], y_rows[6]), stroke_width=2.0, color="#111111"),
             ]
             labels = [
-                # Headers
-                MathLabel(id="th1", text="প্রধান কোয়ান্টাম সংখ্যা", x=80.0, y=60.0, font_size=13.0, font_weight="bold", math_mode=False),
-                MathLabel(id="th2", text="সহকারী কোয়ান্টাম সংখ্যা", x=175.0, y=60.0, font_size=13.0, font_weight="bold", math_mode=False),
-                MathLabel(id="th3", text="চুম্বকীয় কোয়ান্টাম সংখ্যা", x=280.0, y=60.0, font_size=13.0, font_weight="bold", math_mode=False),
-                MathLabel(id="th4", text="স্পিন কোয়ান্টাম সংখ্যা", x=390.0, y=60.0, font_size=13.0, font_weight="bold", math_mode=False),
-                MathLabel(id="th5", text="অরবিটাল সংখ্যা", x=475.0, y=60.0, font_size=13.0, font_weight="bold", math_mode=False),
-                # n=4 column
-                MathLabel(id="r_n", text="n = 4", x=80.0, y=225.0, font_size=18.0, font_weight="bold"),
-                # Row 0
-                MathLabel(id="r0_l", text="l = 0", x=175.0, y=120.0, font_size=16.0),
-                MathLabel(id="r0_m", text="m = 0", x=280.0, y=120.0, font_size=16.0),
-                MathLabel(id="r0_s", text="(\\pm \\frac{1}{2})", x=390.0, y=120.0, font_size=16.0),
-                MathLabel(id="r0_o", text="1", x=475.0, y=120.0, font_size=16.0),
-                # Row 1
-                MathLabel(id="r1_l", text="l = 1", x=175.0, y=180.0, font_size=16.0),
-                MathLabel(id="r1_m", text="m = -1, 0, +1", x=280.0, y=180.0, font_size=15.0),
-                MathLabel(id="r1_s", text="3(\\pm \\frac{1}{2})", x=390.0, y=180.0, font_size=16.0),
-                MathLabel(id="r1_o", text="3", x=475.0, y=180.0, font_size=16.0),
-                # Row 2
-                MathLabel(id="r2_l", text="l = 2", x=175.0, y=245.0, font_size=16.0),
-                MathLabel(id="r2_m", text="m = -2, -1, 0, +1, +2", x=280.0, y=245.0, font_size=13.0),
-                MathLabel(id="r2_s", text="5(\\pm \\frac{1}{2})", x=390.0, y=245.0, font_size=16.0),
-                MathLabel(id="r2_o", text="5", x=475.0, y=245.0, font_size=16.0),
-                # Row 3
-                MathLabel(id="r3_l", text="l = 3", x=175.0, y=320.0, font_size=16.0),
-                MathLabel(id="r3_m", text="m = -3, -2, -1, 0, +1, +2, +3", x=280.0, y=320.0, font_size=11.0),
-                MathLabel(id="r3_s", text="7(\\pm \\frac{1}{2})", x=390.0, y=320.0, font_size=16.0),
-                MathLabel(id="r3_o", text="7", x=475.0, y=320.0, font_size=16.0),
-                # Total
-                MathLabel(id="lbl_tot", text="মোট অরবিটাল সংখ্যা = 16টি", x=360.0, y=390.0, font_size=16.0, font_weight="bold", math_mode=False),
+                # Column 1 Header: প্রধান কোয়ান্টাম সংখ্যা
+                MathLabel(id="th1_1", text="প্রধান", x=77.5, y=45.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th1_2", text="কোয়ান্টাম", x=77.5, y=65.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th1_3", text="সংখ্যা", x=77.5, y=85.0, font_size=13.5, font_weight="bold", math_mode=False),
+
+                # Column 2 Header: সহকারী কোয়ান্টাম সংখ্যা
+                MathLabel(id="th2_1", text="সহকারী", x=167.5, y=45.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th2_2", text="কোয়ান্টাম", x=167.5, y=65.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th2_3", text="সংখ্যা", x=167.5, y=85.0, font_size=13.5, font_weight="bold", math_mode=False),
+
+                # Column 3 Header: চুম্বকীয় কোয়ান্টাম সংখ্যা
+                MathLabel(id="th3_1", text="চুম্বকীয়", x=272.5, y=45.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th3_2", text="কোয়ান্টাম", x=272.5, y=65.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th3_3", text="সংখ্যা", x=272.5, y=85.0, font_size=13.5, font_weight="bold", math_mode=False),
+
+                # Column 4 Header: স্পিন কোয়ান্টাম সংখ্যা
+                MathLabel(id="th4_1", text="স্পিন", x=385.0, y=45.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th4_2", text="কোয়ান্টাম", x=385.0, y=65.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th4_3", text="সংখ্যা", x=385.0, y=85.0, font_size=13.5, font_weight="bold", math_mode=False),
+
+                # Column 5 Header: অরবিটাল সংখ্যা
+                MathLabel(id="th5_1", text="অরবিটাল", x=472.5, y=55.0, font_size=13.5, font_weight="bold", math_mode=False),
+                MathLabel(id="th5_2", text="সংখ্যা", x=472.5, y=75.0, font_size=13.5, font_weight="bold", math_mode=False),
+
+                # n = 4 (Spans all rows vertically)
+                MathLabel(id="r_n", text="n = 4", x=77.5, y=240.0, font_size=18.0, font_weight="bold"),
+
+                # Row 0 (l = 0)
+                MathLabel(id="r0_l", text="l = 0", x=167.5, y=132.5, font_size=16.0),
+                MathLabel(id="r0_m", text="m = 0", x=272.5, y=132.5, font_size=16.0),
+                MathLabel(id="r0_s", text=r"(\pm \frac{1}{2})", x=385.0, y=132.5, font_size=16.0),
+                MathLabel(id="r0_o", text="1", x=472.5, y=132.5, font_size=16.0),
+
+                # Row 1 (l = 1)
+                MathLabel(id="r1_l", text="l = 1", x=167.5, y=187.5, font_size=16.0),
+                MathLabel(id="r1_m", text="m = -1, 0, +1", x=272.5, y=187.5, font_size=15.0),
+                MathLabel(id="r1_s", text=r"3(\pm \frac{1}{2})", x=385.0, y=187.5, font_size=16.0),
+                MathLabel(id="r1_o", text="3", x=472.5, y=187.5, font_size=16.0),
+
+                # Row 2 (l = 2)
+                MathLabel(id="r2_l", text="l = 2", x=167.5, y=252.5, font_size=16.0),
+                MathLabel(id="r2_m1", text="m = -2, -1,", x=272.5, y=242.0, font_size=14.0),
+                MathLabel(id="r2_m2", text="0, +1, +2", x=272.5, y=263.0, font_size=14.0),
+                MathLabel(id="r2_s", text=r"5(\pm \frac{1}{2})", x=385.0, y=252.5, font_size=16.0),
+                MathLabel(id="r2_o", text="5", x=472.5, y=252.5, font_size=16.0),
+
+                # Row 3 (l = 3)
+                MathLabel(id="r3_l", text="l = 3", x=167.5, y=332.5, font_size=16.0),
+                MathLabel(id="r3_m1", text="m = -3, -2,", x=272.5, y=312.0, font_size=13.0),
+                MathLabel(id="r3_m2", text="-1, 0, +1,", x=272.5, y=332.5, font_size=13.0),
+                MathLabel(id="r3_m3", text="+2, +3", x=272.5, y=353.0, font_size=13.0),
+                MathLabel(id="r3_s", text=r"7(\pm \frac{1}{2})", x=385.0, y=332.5, font_size=16.0),
+                MathLabel(id="r3_o", text="7", x=472.5, y=332.5, font_size=16.0),
+
+                # Bottom Footer: মোট অরবিটাল সংখ্যা = 16টি
+                MathLabel(id="lbl_tot", text="মোট অরবিটাল সংখ্যা = 16টি", x=360.0, y=395.0, font_size=16.0, font_weight="bold", math_mode=False),
             ]
             return VisualIR(title="Quantum Numbers Table", width=w, height=h, coordinate_frame=cf, segments=segments, labels=labels, background_color="#ffffff")
 
