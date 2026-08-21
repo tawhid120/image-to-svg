@@ -56,6 +56,7 @@ acad_output/
 *.jpeg
 *.webp
 models/
+legacy_archive/
 image_to_svg_project/
 downloaded_diagrams/
 analysis/
@@ -73,20 +74,3 @@ res/
 stamp-cert-sha256
 *.dex
 *.bin
-
-# Ignore root scratch files and non-package scripts
-/*.py
-!/setup.py
-/*.json
-/*.json.bak
-/*.txt
-!/requirements.txt
-/*.html
-/*.js
-katex_dist/
-kotlin/
-math_recon/
-physics_work/
-reconstructed_output/
-solutions_latex/
-svg_diagrams/
