@@ -6561,12 +6561,14 @@ class PhysicsRegistry:
         # ----------------------------------------------------
         # f9e511e4: Three Charges A, B, C with Electric Field Lines
         # ----------------------------------------------------
+        # f9e511e4: Three Charges A, B, C with Electric Field Lines
+        # ----------------------------------------------------
         if "f9e511e4" in stem:
             w, h = 420.0, 360.0
             cf = CoordinateFrame(origin_x=0.0, origin_y=0.0, x_range=(0, w), y_range=(0, h), invert_y=True)
-            xA, yA, rA = 210.0, 80.0, 18.0
-            xB, yB, rB = 120.0, 230.0, 18.0
-            xC, yC, rC = 300.0, 230.0, 18.0
+            xA, yA, rA = 210.0, 75.0, 18.0
+            xB, yB, rB = 120.0, 220.0, 18.0
+            xC, yC, rC = 300.0, 220.0, 18.0
 
             circles = [
                 Circle(id="sph_a", center=(xA, yA), radius=rA, stroke_width=2.5, stroke_color="#111111", fill_color="#ffffff"),
@@ -6575,45 +6577,55 @@ class PhysicsRegistry:
             ]
 
             bezier_paths = [
-                # 3 Curved field lines from A to B
+                # 3 Curved field lines from A to B (flowing from A to B)
                 BezierPath(id="ab_outer", path_d=f"M {xA - 14.0} {yA - 6.0} C {xA - 90.0} {yA + 20.0} {xB - 35.0} {yB - 80.0} {xB - 14.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
                 BezierPath(id="ab_mid", path_d=f"M {xA - 10.0} {yA + 12.0} C {xA - 55.0} {yA + 55.0} {xB + 5.0} {yB - 65.0} {xB + 4.0} {yB - 17.0}", stroke_width=2.0, stroke_color="#111111"),
                 BezierPath(id="ab_inner", path_d=f"M {xA - 3.0} {yA + 17.0} C {xA - 25.0} {yA + 80.0} {xB + 40.0} {yB - 35.0} {xB + 16.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
 
-                # Mid-curve arrowheads from A to B (pointing downwards along the trajectories)
+                # Mid-curve arrowheads from A to B (pointing downwards into B)
                 BezierPath(id="arr_ab_out", path_d="M 125.0 135.0 L 129.0 122.0 L 121.0 126.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
                 BezierPath(id="arr_ab_mid", path_d="M 152.0 148.0 L 157.0 135.0 L 149.0 138.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
                 BezierPath(id="arr_ab_inn", path_d="M 175.0 170.0 L 182.0 158.0 L 173.0 160.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
 
-                # 3 Curved field lines from A to C
+                # Outer-left swooping field line entering B from top-left
+                BezierPath(id="b_outer_ray", path_d=f"M {xB - 40.0} {yB - 90.0} C {xB - 55.0} {yB - 50.0} {xB - 35.0} {yB - 20.0} {xB - rB} {yB}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="arr_b_outer", path_d=f"M {xB - 38.0} {yB - 40.0} L {xB - 38.0} {yB - 54.0} L {xB - 46.0} {yB - 46.0} Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+
+                # 3 Curved field lines from A to C (flowing from A to C)
                 BezierPath(id="ac_outer", path_d=f"M {xA + 14.0} {yA - 6.0} C {xA + 90.0} {yA + 20.0} {xC + 35.0} {yB - 80.0} {xC + 14.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
                 BezierPath(id="ac_mid", path_d=f"M {xA + 10.0} {yA + 12.0} C {xA + 55.0} {yA + 55.0} {xC - 5.0} {yB - 65.0} {xC - 4.0} {yB - 17.0}", stroke_width=2.0, stroke_color="#111111"),
                 BezierPath(id="ac_inner", path_d=f"M {xA + 3.0} {yA + 17.0} C {xA + 25.0} {yA + 80.0} {xC - 40.0} {yB - 35.0} {xC - 16.0} {yB - 6.0}", stroke_width=2.0, stroke_color="#111111"),
 
-                # Mid-curve arrowheads from A to C (pointing downwards along the trajectories)
+                # Mid-curve arrowheads from A to C (pointing downwards into C)
                 BezierPath(id="arr_ac_out", path_d="M 295.0 135.0 L 299.0 126.0 L 291.0 122.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
                 BezierPath(id="arr_ac_mid", path_d="M 268.0 148.0 L 271.0 138.0 L 263.0 135.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
                 BezierPath(id="arr_ac_inn", path_d="M 245.0 170.0 L 247.0 160.0 L 238.0 158.0 Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
+
+                # Outer-right swooping field line entering C from top-right
+                BezierPath(id="c_outer_ray", path_d=f"M {xC + 60.0} {yC - 70.0} C {xC + 45.0} {yC - 40.0} {xC + 30.0} {yC - 10.0} {xC + rC} {yC + 3.0}", stroke_width=2.0, stroke_color="#111111"),
+                BezierPath(id="arr_c_outer", path_d=f"M {xC + 38.0} {yC - 20.0} L {xC + 48.0} {yC - 28.0} L {xC + 48.0} {yC - 16.0} Z", stroke_color="#111111", stroke_width=1.0, fill_color="#111111", fill_opacity=1.0),
             ]
 
             segments = [
-                # Outward field lines from A (Pointing Up and Outwards)
+                # Outward field lines from Charge A (Positive Source: all arrows pointing OUT)
                 Segment(id="fa_top", start=(xA, yA - rA), end=(xA, yA - rA - 42.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
                 Segment(id="fa_tl", start=(xA - 13.0, yA - 13.0), end=(xA - 48.0, yA - 38.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
                 Segment(id="fa_tr", start=(xA + 13.0, yA - 13.0), end=(xA + 48.0, yA - 38.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
                 Segment(id="fa_l", start=(xA - rA, yA), end=(xA - rA - 35.0, yA - 10.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
                 Segment(id="fa_r", start=(xA + rA, yA), end=(xA + rA + 35.0, yA - 10.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Central downward ray from A between B and C
+                Segment(id="fa_mid_down", start=(xA, yA + rA), end=(xA, yA + rA + 60.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
 
-                # Outward/downward diverging field lines from B
-                Segment(id="fb_l", start=(xB - 14.0, yB + 6.0), end=(xB - 45.0, yB + 40.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fb_b", start=(xB - 3.0, yB + rB), end=(xB - 15.0, yB + rB + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fb_r", start=(xB + 10.0, yB + rB - 2.0), end=(xB + 22.0, yB + rB + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Inward field lines entering Charge B from bottom (Negative Sink: all arrows pointing UP into B)
+                Segment(id="fb_bl", start=(xB - 35.0, yB + 68.0), end=(xB - 13.0, yB + 13.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fb_b", start=(xB - 5.0, yB + 75.0), end=(xB - 2.0, yB + rB), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fb_br", start=(xB + 25.0, yB + 68.0), end=(xB + 10.0, yB + 15.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
 
-                # Outward/downward diverging field lines from C
-                Segment(id="fc_l", start=(xC - 10.0, yC + rC - 2.0), end=(xC - 22.0, yC + rC + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fc_b", start=(xC + 3.0, yC + rC), end=(xC + 15.0, yC + rC + 45.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fc_r", start=(xC + 14.0, yC + 6.0), end=(xC + 45.0, yC + 40.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
-                Segment(id="fc_far_r", start=(xC + rC, yC - 4.0), end=(xC + rC + 40.0, yC - 25.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                # Inward field lines entering Charge C from bottom & right (Negative Sink: all arrows pointing UP into C)
+                Segment(id="fc_bl", start=(xC - 25.0, yC + 68.0), end=(xC - 10.0, yC + 15.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_b", start=(xC + 5.0, yC + 75.0), end=(xC + 2.0, yC + rC), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_br", start=(xC + 35.0, yC + 68.0), end=(xC + 13.0, yC + 13.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
+                Segment(id="fc_far_r", start=(xC + 55.0, yC + 30.0), end=(xC + rC + 2.0, yC + 8.0), stroke_width=2.0, color="#111111", arrows=ArrowType.END),
             ]
             labels = [
                 MathLabel(id="lbl_a", text="A", x=xA, y=yA, font_size=18.0, font_weight="bold"),
