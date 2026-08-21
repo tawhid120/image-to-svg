@@ -252,8 +252,9 @@ class UniversalSVGRenderer:
         for poly in self.ir.polygons:
             pts_str = " ".join([f"{vx:.2f},{vy:.2f}" for vx, vy in poly.vertices])
             fill = poly.fill_color if poly.fill_color else "none"
+            opacity = poly.fill_opacity if (fill != "none" and poly.fill_opacity > 0.0) else (1.0 if fill != "none" else 0.0)
             parts.append(
-                f'  <polygon points="{pts_str}" fill="{fill}" fill-opacity="{poly.fill_opacity}" '
+                f'  <polygon points="{pts_str}" fill="{fill}" fill-opacity="{opacity}" '
                 f'stroke="{poly.stroke_color}" stroke-width="{poly.stroke_width}" class="vector-stroke" />'
             )
 

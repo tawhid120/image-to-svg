@@ -7420,15 +7420,15 @@ class PhysicsRegistry:
                     Segment(id="ga_lead_r", start=(345, 90), end=(385, 90), stroke_width=2.5),
                 ],
                 polygons=[
-                    # Dielectric in (খ) bottom half
-                    Polygon(id="diel_kha", vertices=[(185, 90), (220, 90), (220, 150), (185, 150)], stroke_width=1.5, fill_color="#888888"),
-                    # Dielectric in (গ) left vertical half
-                    Polygon(id="diel_ga", vertices=[(310, 30), (327, 30), (327, 150), (310, 150)], stroke_width=1.5, fill_color="#888888"),
+                    # Dielectric in (খ) bottom half (dark solid shaded slab)
+                    Polygon(id="diel_kha", vertices=[(185, 90), (220, 90), (220, 150), (185, 150)], stroke_width=2.0, fill_color="#444444", fill_opacity=0.85),
+                    # Dielectric in (গ) left vertical half (dark solid shaded slab)
+                    Polygon(id="diel_ga", vertices=[(310, 30), (328, 30), (328, 150), (310, 150)], stroke_width=2.0, fill_color="#444444", fill_opacity=0.85),
                 ],
                 labels=[
-                    MathLabel(id="lbl_ka", text="(ক)", x=78, y=180, font_size=16, font_weight="bold"),
-                    MathLabel(id="lbl_kha", text="(খ)", x=203, y=180, font_size=16, font_weight="bold"),
-                    MathLabel(id="lbl_ga", text="(গ)", x=328, y=180, font_size=16, font_weight="bold"),
+                    MathLabel(id="lbl_ka", text="(ক)", x=78, y=180, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_kha", text="(খ)", x=203, y=180, font_size=17, font_weight="bold"),
+                    MathLabel(id="lbl_ga", text="(গ)", x=328, y=180, font_size=17, font_weight="bold"),
                 ]
             )
 

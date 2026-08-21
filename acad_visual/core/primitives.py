@@ -118,7 +118,7 @@ class Polygon:
     id: str
     vertices: List[Tuple[float, float]]
     fill_color: Optional[str] = None
-    fill_opacity: float = 0.0
+    fill_opacity: float = 1.0
     stroke_color: str = "#111111"
     stroke_width: float = 2.0
     stroke_style: StrokeStyle = StrokeStyle.SOLID
